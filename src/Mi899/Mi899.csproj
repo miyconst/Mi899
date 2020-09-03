@@ -6,4 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Mi899.Data\Mi899.Data.csproj" />
+  </ItemGroup>
+
 </Project>

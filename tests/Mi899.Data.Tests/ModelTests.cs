@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 using Xunit;
@@ -47,6 +48,26 @@ namespace Mi899.Data.Tests
             foreach (string id in ids)
             {
                 Assert.Single(_model.Motherboards.Where(x => x.Id == id));
+            }
+        }
+
+        [Fact]
+        public void AllImageFilesExist()
+        {
+            foreach (ILink link in _model.Motherboards.SelectMany(x => x.Images))
+            {
+                Assert.True(Path.IsPathRooted(link.Url));
+                Assert.True(File.Exists(link.Url));
+            }
+        }
+
+        [Fact]
+        public void AllBiosFilesExist()
+        {
+            foreach (string pathname in _model.Bioses.Select(x => x.FileName))
+            {
+                Assert.True(Path.IsPathRooted(pathname));
+                Assert.True(File.Exists(pathname));
             }
         }
     }
