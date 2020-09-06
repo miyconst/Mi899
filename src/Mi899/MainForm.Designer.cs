@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.readMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exploreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.motherboardsStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiExploreMotherboards = new System.Windows.Forms.ToolStripMenuItem();
+            this.biosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.afuWinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,24 +46,23 @@
             this.tightenRamTimingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.biosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tlpMain.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tlpMain
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tlpMain.ColumnCount = 1;
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpMain.Controls.Add(this.menuStrip1, 0, 0);
+            this.tlpMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpMain.Location = new System.Drawing.Point(0, 0);
+            this.tlpMain.Name = "tlpMain";
+            this.tlpMain.RowCount = 2;
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpMain.Size = new System.Drawing.Size(800, 450);
+            this.tlpMain.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -109,17 +109,24 @@
             // exploreToolStripMenuItem
             // 
             this.exploreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.motherboardsStripMenuItem,
+            this.msiExploreMotherboards,
             this.biosToolStripMenuItem});
             this.exploreToolStripMenuItem.Name = "exploreToolStripMenuItem";
             this.exploreToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
             this.exploreToolStripMenuItem.Text = "&Explore";
             // 
-            // motherboardsStripMenuItem
+            // msiExploreMotherboards
             // 
-            this.motherboardsStripMenuItem.Name = "motherboardsStripMenuItem";
-            this.motherboardsStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.motherboardsStripMenuItem.Text = "Motherboards";
+            this.msiExploreMotherboards.Name = "msiExploreMotherboards";
+            this.msiExploreMotherboards.Size = new System.Drawing.Size(149, 22);
+            this.msiExploreMotherboards.Text = "Motherboards";
+            this.msiExploreMotherboards.Click += new System.EventHandler(this.msiExploreMotherboards_Click);
+            // 
+            // biosToolStripMenuItem
+            // 
+            this.biosToolStripMenuItem.Name = "biosToolStripMenuItem";
+            this.biosToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.biosToolStripMenuItem.Text = "BIOS";
             // 
             // toolsToolStripMenuItem
             // 
@@ -184,24 +191,18 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
-            // biosToolStripMenuItem
-            // 
-            this.biosToolStripMenuItem.Name = "biosToolStripMenuItem";
-            this.biosToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.biosToolStripMenuItem.Text = "BIOS";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tlpMain);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "Mi899";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.tlpMain.ResumeLayout(false);
+            this.tlpMain.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -210,7 +211,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tlpMain;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem readMeToolStripMenuItem;
@@ -224,7 +225,7 @@
         private System.Windows.Forms.ToolStripMenuItem howToToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem motherboardsStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msiExploreMotherboards;
         private System.Windows.Forms.ToolStripMenuItem unlockTurboBoostToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tightenRamTimingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem biosToolStripMenuItem;

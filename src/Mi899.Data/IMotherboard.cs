@@ -13,5 +13,7 @@ namespace Mi899.Data
         string Description { get; }
         ILink[] Images { get; }
         ILink[] Links { get; }
+        bool IsFptCompatible { get; }
+        bool IsAfuWinCompatible { get; }
     }
 }
