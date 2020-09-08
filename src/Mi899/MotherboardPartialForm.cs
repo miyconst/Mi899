@@ -15,10 +15,14 @@ namespace Mi899
     public partial class MotherboardPartialForm : UserControl
     {
         private IMotherboard _motherboard;
+        private GenericBindingList<IBios> _bioses;
 
-        public MotherboardPartialForm(IMotherboard motherboard)
+        public MotherboardPartialForm(IMotherboard motherboard, Model model)
         {
+            if (model == null) throw new ArgumentNullException(nameof(model));
+
             _motherboard = motherboard ?? throw new ArgumentNullException(nameof(motherboard));
+            _bioses = new GenericBindingList<IBios>(model.Bioses.Where(x => x.MotherboardIds.Contains(motherboard.Id)));
             InitializeComponent();
             InitializeExtraComponent();
         }
@@ -59,9 +63,42 @@ namespace Mi899
                 Image = new Bitmap(x.Url)
             }).ToList();
             grdImages.AutoResizeColumns();
+
+            grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                HeaderText = nameof(IBios.Id),
+                DataPropertyName = nameof(IBios.Id),
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            });
+
+            grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                HeaderText = nameof(IBios.Name),
+                DataPropertyName = nameof(IBios.Name),
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            });
+
+            grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                HeaderText = "TU Driver",
+                ToolTipText = "Turbo Boost Unlock Driver",
+                DataPropertyName = nameof(IBios.TurboUnlockDriver),
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            });
+
+            grdBioses.Columns.Add(new DataGridViewLinkColumn()
+            {
+                HeaderText = "Path",
+                DataPropertyName = nameof(IBios.FileName),
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            });
+
+            grdBioses.AutoGenerateColumns = false;
+            grdBioses.DataSource = _bioses;
+            grdBioses.AutoResizeColumns();
         }
 
-        private void grdImages_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void grd_PathCellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0 || e.ColumnIndex < 0)
             {
@@ -91,5 +128,9 @@ namespace Mi899
 
             Process.Start(startInfo);
         }
+
+        private void grdImages_CellContentClick(object sender, DataGridViewCellEventArgs e) => grd_PathCellContentClick(sender, e);
+
+        private void grdBioses_CellContentClick(object sender, DataGridViewCellEventArgs e) => grd_PathCellContentClick(sender, e);
     }
 }

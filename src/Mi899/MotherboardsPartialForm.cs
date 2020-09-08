@@ -106,7 +106,7 @@ namespace Mi899
             if (grid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
                 IMotherboard motherboard = _motherboards[e.RowIndex];
-                MotherboardPartialForm form = new MotherboardPartialForm(motherboard);
+                MotherboardPartialForm form = new MotherboardPartialForm(motherboard, _model);
 
                 _mainForm.Open(form);
             }

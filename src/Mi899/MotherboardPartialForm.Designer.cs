@@ -50,6 +50,8 @@
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.tpImages = new System.Windows.Forms.TabPage();
             this.grdImages = new System.Windows.Forms.DataGridView();
+            this.tpBioses = new System.Windows.Forms.TabPage();
+            this.grdBioses = new System.Windows.Forms.DataGridView();
             this.tpLinks = new System.Windows.Forms.TabPage();
             this.tlpMain.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -59,6 +61,8 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tpImages.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdImages)).BeginInit();
+            this.tpBioses.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdBioses)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpMain
@@ -104,6 +108,7 @@
             // 
             this.tcTabs.Controls.Add(this.tpInfo);
             this.tcTabs.Controls.Add(this.tpImages);
+            this.tcTabs.Controls.Add(this.tpBioses);
             this.tcTabs.Controls.Add(this.tpLinks);
             this.tcTabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcTabs.Location = new System.Drawing.Point(203, 3);
@@ -316,6 +321,26 @@
             this.grdImages.Text = "dataGridView1";
             this.grdImages.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdImages_CellContentClick);
             // 
+            // tpBioses
+            // 
+            this.tpBioses.Controls.Add(this.grdBioses);
+            this.tpBioses.Location = new System.Drawing.Point(4, 24);
+            this.tpBioses.Name = "tpBioses";
+            this.tpBioses.Size = new System.Drawing.Size(660, 480);
+            this.tpBioses.TabIndex = 3;
+            this.tpBioses.Text = "BIOS";
+            // 
+            // grdBioses
+            // 
+            this.grdBioses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdBioses.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdBioses.Location = new System.Drawing.Point(0, 0);
+            this.grdBioses.Name = "grdBioses";
+            this.grdBioses.Size = new System.Drawing.Size(660, 480);
+            this.grdBioses.TabIndex = 0;
+            this.grdBioses.Text = "dataGridView1";
+            this.grdBioses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdBioses_CellContentClick);
+            // 
             // tpLinks
             // 
             this.tpLinks.Location = new System.Drawing.Point(4, 24);
@@ -342,6 +367,8 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tpImages.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdImages)).EndInit();
+            this.tpBioses.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grdBioses)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -371,5 +398,7 @@
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.TabPage tpImages;
         private System.Windows.Forms.DataGridView grdImages;
+        private System.Windows.Forms.TabPage tpBioses;
+        private System.Windows.Forms.DataGridView grdBioses;
     }
 }
