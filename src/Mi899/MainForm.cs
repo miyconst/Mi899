@@ -46,5 +46,10 @@ namespace Mi899
         {
             Open(new BiosesPartialForm(_model));
         }
+
+        private void msiExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
