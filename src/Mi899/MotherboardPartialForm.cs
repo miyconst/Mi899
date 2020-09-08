@@ -96,6 +96,24 @@ namespace Mi899
             grdBioses.AutoGenerateColumns = false;
             grdBioses.DataSource = _bioses;
             grdBioses.AutoResizeColumns();
+
+            grdLinks.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                HeaderText = nameof(ILink.Name),
+                DataPropertyName = nameof(ILink.Name),
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            });
+
+            grdLinks.Columns.Add(new DataGridViewLinkColumn()
+            {
+                HeaderText = "URL",
+                DataPropertyName = nameof(ILink.Url),
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            });
+
+            grdLinks.AutoGenerateColumns = false;
+            grdLinks.DataSource = _motherboard.Links;
+            grdLinks.AutoResizeColumns();
         }
 
         private void grd_PathCellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -120,10 +138,9 @@ namespace Mi899
             }
 
             FileInfo fi = new FileInfo(path);
-            ProcessStartInfo startInfo = new ProcessStartInfo
+            ProcessStartInfo startInfo = new ProcessStartInfo(fi.FullName)
             {
-                Arguments = fi.Directory.FullName,
-                FileName = "explorer.exe"
+                UseShellExecute = true
             };
 
             Process.Start(startInfo);
@@ -132,5 +149,27 @@ namespace Mi899
         private void grdImages_CellContentClick(object sender, DataGridViewCellEventArgs e) => grd_PathCellContentClick(sender, e);
 
         private void grdBioses_CellContentClick(object sender, DataGridViewCellEventArgs e) => grd_PathCellContentClick(sender, e);
+
+        private void grdLinks_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.ColumnIndex < 0)
+            {
+                return;
+            }
+
+            DataGridView grid = (DataGridView)sender;
+
+            if (!(grid.Columns[e.ColumnIndex] is DataGridViewLinkColumn))
+            {
+                return;
+            }
+
+            string url = grid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value?.ToString();
+            ProcessStartInfo psi = new ProcessStartInfo(url)
+            {
+                UseShellExecute = true
+            };
+            Process.Start(psi);
+        }
     }
 }

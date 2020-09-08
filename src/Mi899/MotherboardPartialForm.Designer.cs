@@ -53,6 +53,7 @@
             this.tpBioses = new System.Windows.Forms.TabPage();
             this.grdBioses = new System.Windows.Forms.DataGridView();
             this.tpLinks = new System.Windows.Forms.TabPage();
+            this.grdLinks = new System.Windows.Forms.DataGridView();
             this.tlpMain.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMotherboard)).BeginInit();
@@ -63,6 +64,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdImages)).BeginInit();
             this.tpBioses.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdBioses)).BeginInit();
+            this.tpLinks.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdLinks)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpMain
@@ -343,6 +346,7 @@
             // 
             // tpLinks
             // 
+            this.tpLinks.Controls.Add(this.grdLinks);
             this.tpLinks.Location = new System.Drawing.Point(4, 24);
             this.tpLinks.Name = "tpLinks";
             this.tpLinks.Padding = new System.Windows.Forms.Padding(3);
@@ -350,6 +354,17 @@
             this.tpLinks.TabIndex = 1;
             this.tpLinks.Text = "Links";
             this.tpLinks.UseVisualStyleBackColor = true;
+            // 
+            // grdLinks
+            // 
+            this.grdLinks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdLinks.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdLinks.Location = new System.Drawing.Point(3, 3);
+            this.grdLinks.Name = "grdLinks";
+            this.grdLinks.Size = new System.Drawing.Size(654, 474);
+            this.grdLinks.TabIndex = 0;
+            this.grdLinks.Text = "dataGridView1";
+            this.grdLinks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdLinks_CellContentClick);
             // 
             // MotherboardPartialForm
             // 
@@ -369,6 +384,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdImages)).EndInit();
             this.tpBioses.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdBioses)).EndInit();
+            this.tpLinks.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grdLinks)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -400,5 +417,6 @@
         private System.Windows.Forms.DataGridView grdImages;
         private System.Windows.Forms.TabPage tpBioses;
         private System.Windows.Forms.DataGridView grdBioses;
+        private System.Windows.Forms.DataGridView grdLinks;
     }
 }
