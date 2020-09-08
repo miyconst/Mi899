@@ -10,6 +10,7 @@ namespace Mi899.Data
         public string Model { get; set; }
         public string Version { get; set; }
         public string[] Tags { get; set; }
+        public string TagsString => string.Join(", ", Tags);
         public string Description { get; set; }
         public Link[] Images { get; set; }
         public Link[] Links { get; set; }

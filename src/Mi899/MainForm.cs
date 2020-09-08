@@ -12,6 +12,7 @@ namespace Mi899
     public partial class MainForm : Form
     {
         private Model _model;
+        private Control _lastControl;
 
         public MainForm()
         {
@@ -19,10 +20,16 @@ namespace Mi899
             InitializeComponent();
         }
 
-        private void Open(UserControl control)
+        public void Open(UserControl control)
         {
+            if (_lastControl != null)
+            {
+                tlpMain.Controls.Remove(_lastControl);
+            }
+
             tlpMain.Controls.Add(control, 0, 1);
             control.Dock = DockStyle.Fill;
+            _lastControl = control;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -32,7 +39,7 @@ namespace Mi899
 
         private void msiExploreMotherboards_Click(object sender, EventArgs e)
         {
-            Open(new MotherboardsPartialForm(_model));
+            Open(new MotherboardsPartialForm(this, _model));
         }
 
         private void msiExploreBioses_Click(object sender, EventArgs e)

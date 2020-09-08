@@ -65,6 +65,7 @@
             this.grdMotherboards.Size = new System.Drawing.Size(897, 500);
             this.grdMotherboards.TabIndex = 0;
             this.grdMotherboards.Text = "dataGridView1";
+            this.grdMotherboards.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdMotherboards_CellContentClick);
             // 
             // tlpSearch
             // 

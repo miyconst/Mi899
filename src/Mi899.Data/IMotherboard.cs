@@ -10,6 +10,7 @@ namespace Mi899.Data
         string Model { get; }
         string Version { get; }
         string[] Tags { get; }
+        string TagsString { get; }
         string Description { get; }
         ILink[] Images { get; }
         ILink[] Links { get; }
