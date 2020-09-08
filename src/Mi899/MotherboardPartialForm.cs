@@ -38,6 +38,8 @@ namespace Mi899
             txtVersion.Text = _motherboard.Version;
             txtTags.Text = _motherboard.TagsString;
             txtDescription.Text = _motherboard.Description;
+            cbFpt.Checked = _motherboard.IsFptCompatible;
+            cbAfuWin.Checked = _motherboard.IsAfuWinCompatible;
 
             grdImages.Columns.Add(new DataGridViewImageColumn()
             {

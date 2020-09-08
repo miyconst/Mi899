@@ -46,8 +46,11 @@
             this.tightenRamTimingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ssStatus = new System.Windows.Forms.StatusStrip();
+            this.tsslVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.tlpMain.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.ssStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlpMain
@@ -55,18 +58,21 @@
             this.tlpMain.ColumnCount = 1;
             this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpMain.Controls.Add(this.menuStrip1, 0, 0);
+            this.tlpMain.Controls.Add(this.ssStatus, 0, 2);
             this.tlpMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpMain.Location = new System.Drawing.Point(0, 0);
             this.tlpMain.Name = "tlpMain";
-            this.tlpMain.RowCount = 2;
+            this.tlpMain.RowCount = 3;
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpMain.Size = new System.Drawing.Size(1188, 681);
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tlpMain.Size = new System.Drawing.Size(1188, 636);
             this.tlpMain.TabIndex = 0;
             // 
             // menuStrip1
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuStrip1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.exploreToolStripMenuItem,
@@ -85,25 +91,25 @@
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(47, 26);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // readMeToolStripMenuItem
             // 
             this.readMeToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.readMeToolStripMenuItem.Name = "readMeToolStripMenuItem";
-            this.readMeToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.readMeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.readMeToolStripMenuItem.Text = "Read me!";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(120, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(127, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // exploreToolStripMenuItem
@@ -112,20 +118,20 @@
             this.msiExploreMotherboards,
             this.msiExploreBioses});
             this.exploreToolStripMenuItem.Name = "exploreToolStripMenuItem";
-            this.exploreToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
+            this.exploreToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
             this.exploreToolStripMenuItem.Text = "&Explore";
             // 
             // msiExploreMotherboards
             // 
             this.msiExploreMotherboards.Name = "msiExploreMotherboards";
-            this.msiExploreMotherboards.Size = new System.Drawing.Size(149, 22);
+            this.msiExploreMotherboards.Size = new System.Drawing.Size(158, 22);
             this.msiExploreMotherboards.Text = "Motherboards";
             this.msiExploreMotherboards.Click += new System.EventHandler(this.msiExploreMotherboards_Click);
             // 
             // msiExploreBioses
             // 
             this.msiExploreBioses.Name = "msiExploreBioses";
-            this.msiExploreBioses.Size = new System.Drawing.Size(149, 22);
+            this.msiExploreBioses.Size = new System.Drawing.Size(158, 22);
             this.msiExploreBioses.Text = "BIOS";
             this.msiExploreBioses.Click += new System.EventHandler(this.msiExploreBioses_Click);
             // 
@@ -135,19 +141,19 @@
             this.fptToolStripMenuItem,
             this.afuWinToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(54, 26);
             this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // fptToolStripMenuItem
             // 
             this.fptToolStripMenuItem.Name = "fptToolStripMenuItem";
-            this.fptToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.fptToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.fptToolStripMenuItem.Text = "FPT";
             // 
             // afuWinToolStripMenuItem
             // 
             this.afuWinToolStripMenuItem.Name = "afuWinToolStripMenuItem";
-            this.afuWinToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.afuWinToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.afuWinToolStripMenuItem.Text = "AfuWin";
             // 
             // helpToolStripMenuItem
@@ -157,7 +163,7 @@
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(47, 26);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // howToToolStripMenuItem
@@ -166,40 +172,58 @@
             this.unlockTurboBoostToolStripMenuItem,
             this.tightenRamTimingsToolStripMenuItem});
             this.howToToolStripMenuItem.Name = "howToToolStripMenuItem";
-            this.howToToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.howToToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.howToToolStripMenuItem.Text = "How to";
             // 
             // unlockTurboBoostToolStripMenuItem
             // 
             this.unlockTurboBoostToolStripMenuItem.Name = "unlockTurboBoostToolStripMenuItem";
-            this.unlockTurboBoostToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.unlockTurboBoostToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.unlockTurboBoostToolStripMenuItem.Text = "Unlock Turbo Boost";
             // 
             // tightenRamTimingsToolStripMenuItem
             // 
             this.tightenRamTimingsToolStripMenuItem.Name = "tightenRamTimingsToolStripMenuItem";
-            this.tightenRamTimingsToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.tightenRamTimingsToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.tightenRamTimingsToolStripMenuItem.Text = "Tighten RAM timings";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(113, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(127, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
+            // 
+            // ssStatus
+            // 
+            this.ssStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ssStatus.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ssStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsslVersion});
+            this.ssStatus.Location = new System.Drawing.Point(0, 606);
+            this.ssStatus.Name = "ssStatus";
+            this.ssStatus.Size = new System.Drawing.Size(1188, 30);
+            this.ssStatus.TabIndex = 1;
+            // 
+            // tsslVersion
+            // 
+            this.tsslVersion.Name = "tsslVersion";
+            this.tsslVersion.Size = new System.Drawing.Size(301, 25);
+            this.tsslVersion.Text = "Mi899 Version 1.0.0 - Copyright © Miyconst";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 681);
+            this.ClientSize = new System.Drawing.Size(1188, 636);
             this.Controls.Add(this.tlpMain);
+            this.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(1024, 720);
+            this.MinimumSize = new System.Drawing.Size(1024, 675);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mi899";
@@ -208,6 +232,8 @@
             this.tlpMain.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.ssStatus.ResumeLayout(false);
+            this.ssStatus.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -232,5 +258,7 @@
         private System.Windows.Forms.ToolStripMenuItem unlockTurboBoostToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tightenRamTimingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem msiExploreBioses;
+        private System.Windows.Forms.StatusStrip ssStatus;
+        private System.Windows.Forms.ToolStripStatusLabel tsslVersion;
     }
 }
