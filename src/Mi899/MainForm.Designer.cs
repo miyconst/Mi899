@@ -36,7 +36,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exploreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msiExploreMotherboards = new System.Windows.Forms.ToolStripMenuItem();
-            this.biosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiExploreBioses = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.afuWinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -110,7 +110,7 @@
             // 
             this.exploreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msiExploreMotherboards,
-            this.biosToolStripMenuItem});
+            this.msiExploreBioses});
             this.exploreToolStripMenuItem.Name = "exploreToolStripMenuItem";
             this.exploreToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
             this.exploreToolStripMenuItem.Text = "&Explore";
@@ -122,11 +122,12 @@
             this.msiExploreMotherboards.Text = "Motherboards";
             this.msiExploreMotherboards.Click += new System.EventHandler(this.msiExploreMotherboards_Click);
             // 
-            // biosToolStripMenuItem
+            // msiExploreBioses
             // 
-            this.biosToolStripMenuItem.Name = "biosToolStripMenuItem";
-            this.biosToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.biosToolStripMenuItem.Text = "BIOS";
+            this.msiExploreBioses.Name = "msiExploreBioses";
+            this.msiExploreBioses.Size = new System.Drawing.Size(149, 22);
+            this.msiExploreBioses.Text = "BIOS";
+            this.msiExploreBioses.Click += new System.EventHandler(this.msiExploreBioses_Click);
             // 
             // toolsToolStripMenuItem
             // 
@@ -228,6 +229,6 @@
         private System.Windows.Forms.ToolStripMenuItem msiExploreMotherboards;
         private System.Windows.Forms.ToolStripMenuItem unlockTurboBoostToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tightenRamTimingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem biosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msiExploreBioses;
     }
 }

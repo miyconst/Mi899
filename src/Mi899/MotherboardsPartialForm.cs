@@ -83,7 +83,7 @@ namespace Mi899
                 SortMode = DataGridViewColumnSortMode.Automatic
             });
 
-            bsMotherboards.DataSource = _model.Motherboards.ToList();
+            bsMotherboards.DataSource = new GenericBindingList<IMotherboard>(_model.Motherboards);
             grdMotherboards.AutoGenerateColumns = false;
             grdMotherboards.DataSource = bsMotherboards;
             grdMotherboards.AutoResizeColumns();

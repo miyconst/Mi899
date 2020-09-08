@@ -19,6 +19,12 @@ namespace Mi899
             InitializeComponent();
         }
 
+        private void Open(UserControl control)
+        {
+            tlpMain.Controls.Add(control, 0, 1);
+            control.Dock = DockStyle.Fill;
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
 
@@ -26,9 +32,12 @@ namespace Mi899
 
         private void msiExploreMotherboards_Click(object sender, EventArgs e)
         {
-            MotherboardsPartialForm frm = new MotherboardsPartialForm(_model);
-            tlpMain.Controls.Add(frm, 0, 1);
-            frm.Dock = DockStyle.Fill;
+            Open(new MotherboardsPartialForm(_model));
+        }
+
+        private void msiExploreBioses_Click(object sender, EventArgs e)
+        {
+            Open(new BiosesPartialForm(_model));
         }
     }
 }

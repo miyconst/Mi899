@@ -9,6 +9,7 @@ namespace Mi899.Data
         public string[] MotherboardIds { get; set; }
         public string Description { get; set; }
         public string[] Tags { get; set; }
+        public string TagsString => string.Join(", ", Tags);
 
         public string FileName { get; set; }
 
