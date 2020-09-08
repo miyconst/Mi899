@@ -1,0 +1,20 @@
+﻿{
+  "En": {
+    "MainForm.msiExit.Text": "E&xit",
+    "MainForm.msiExplore.Text": "&Explore",
+    "MainForm.msiFile.Text": "&File",
+    "MainForm.msiHelp.Text": "&Help",
+    "MainForm.msiTools.Text": "&Tools",
+    "MainForm.Text": "Mi899 - X99 Tool Set",
+    "MainForm.tsslVersion.Text": "Mi899 Version 1.0.0 - Copyright © Miyconst"
+  },
+  "Ua": {
+    "MainForm.msiExit.Text": "E&xit",
+    "MainForm.msiExplore.Text": "&Explore",
+    "MainForm.msiFile.Text": "Ф&айл",
+    "MainForm.msiHelp.Text": "&Help",
+    "MainForm.msiTools.Text": "&Tools",
+    "MainForm.Text": "Mi899 - X99 Tool Set",
+    "MainForm.tsslVersion.Text": "Mi899 Версія 1.0.0 - Авторське право © Miyconst"
+  }
+}
