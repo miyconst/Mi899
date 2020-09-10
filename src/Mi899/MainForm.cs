@@ -16,13 +16,15 @@ namespace Mi899
         private Control _lastControl;
         private MotherboardPartialForm _motherboardPartialForm;
         private MotherboardsPartialForm _motherboardsPartialForm;
+        private BiosesPartialForm _biosesPartialForm;
 
-        public MainForm(I18n i18n, Model model, MotherboardsPartialForm motherboardsPartialForm, MotherboardPartialForm motherboardPartialForm)
+        public MainForm(I18n i18n, Model model, MotherboardsPartialForm motherboardsPartialForm, MotherboardPartialForm motherboardPartialForm, BiosesPartialForm biosesPartialForm)
         {
             _i18n = i18n ?? throw new ArgumentNullException(nameof(i18n));
             _model = model ?? throw new ArgumentNullException(nameof(model));
             _motherboardPartialForm = motherboardPartialForm ?? throw new ArgumentNullException(nameof(motherboardPartialForm));
             _motherboardsPartialForm = motherboardsPartialForm ?? throw new ArgumentNullException(nameof(motherboardsPartialForm));
+            _biosesPartialForm = biosesPartialForm ?? throw new ArgumentNullException(nameof(biosesPartialForm));
 
             _motherboardsPartialForm.MotherboardSelected += MotherboardsPartialForm_MotherboardSelected;
 
@@ -60,7 +62,9 @@ namespace Mi899
                 msiToolsHowTo,
                 msiToolsHowToTurboUnlock,
                 tsslVersion,
-                _motherboardsPartialForm
+                _motherboardsPartialForm,
+                _motherboardPartialForm,
+                _biosesPartialForm
             };
         }
 
@@ -88,7 +92,7 @@ namespace Mi899
 
         private void msiExploreBioses_Click(object sender, EventArgs e)
         {
-            Open(new BiosesPartialForm(_model));
+            Open(_biosesPartialForm);
         }
 
         private void msiExit_Click(object sender, EventArgs e)

@@ -6,10 +6,11 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using Mi899.Data;
+using System.Linq;
 
 namespace Mi899
 {
-    public partial class BiosesPartialForm : UserControl
+    public partial class BiosesPartialForm : UserControl, II18nCompatible
     {
         private Model _model;
 
@@ -20,10 +21,26 @@ namespace Mi899
             InitializeDataGridComponent();
         }
 
+        public void ApplyI18n(I18n i18n)
+        {
+            this.ApplyI18nToChildren(i18n);
+        }
+
+        public IEnumerable<IComponent> SelectI18nCompatibleComponents()
+        {
+            List<IComponent> components = new List<IComponent>();
+
+            components.Add(lblSearch);
+            components.AddRange(grdBioses.Columns.OfType<IComponent>());
+
+            return components;
+        }
+
         private void InitializeDataGridComponent()
         {
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colId",
                 HeaderText = nameof(IBios.Id),
                 DataPropertyName = nameof(IBios.Id),
                 ReadOnly = true,
@@ -33,6 +50,7 @@ namespace Mi899
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colName",
                 HeaderText = nameof(IBios.Name),
                 DataPropertyName = nameof(IBios.Name),
                 ReadOnly = true,
@@ -42,6 +60,7 @@ namespace Mi899
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colTuDriver",
                 HeaderText = "TU Driver",
                 DataPropertyName = nameof(IBios.TurboUnlockDriver),
                 ReadOnly = true,
@@ -51,6 +70,7 @@ namespace Mi899
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colTags",
                 HeaderText = nameof(IBios.Tags),
                 DataPropertyName = nameof(IBios.TagsString),
                 ReadOnly = true,

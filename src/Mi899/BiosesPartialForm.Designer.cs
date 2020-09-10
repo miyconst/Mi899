@@ -32,7 +32,7 @@
             this.grdBioses = new System.Windows.Forms.DataGridView();
             this.tlpSearch = new System.Windows.Forms.TableLayoutPanel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblSearch = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
@@ -59,7 +59,7 @@
             this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpSearch.Controls.Add(this.textBox2, 1, 0);
-            this.tlpSearch.Controls.Add(this.label2, 0, 0);
+            this.tlpSearch.Controls.Add(this.lblSearch, 0, 0);
             this.tlpSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpSearch.Location = new System.Drawing.Point(0, 0);
             this.tlpSearch.Margin = new System.Windows.Forms.Padding(0);
@@ -77,15 +77,15 @@
             this.textBox2.Size = new System.Drawing.Size(692, 23);
             this.textBox2.TabIndex = 1;
             // 
-            // label2
+            // lblSearch
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Search:";
+            this.lblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(3, 7);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(45, 15);
+            this.lblSearch.TabIndex = 0;
+            this.lblSearch.Text = "Search:";
             // 
             // textBox1
             // 
@@ -144,7 +144,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tlpMain;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.BindingSource bsBioses;
     }

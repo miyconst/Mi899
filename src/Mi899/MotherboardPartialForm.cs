@@ -12,7 +12,7 @@ using System.Diagnostics;
 
 namespace Mi899
 {
-    public partial class MotherboardPartialForm : UserControl
+    public partial class MotherboardPartialForm : UserControl, II18nCompatible
     {
         Model _model;
 
@@ -54,12 +54,40 @@ namespace Mi899
             grdLinks.AutoResizeColumns();
         }
 
+        public void ApplyI18n(I18n i18n)
+        {
+            this.ApplyI18nToChildren(i18n);
+        }
+
+        public IEnumerable<IComponent> SelectI18nCompatibleComponents()
+        {
+            List<IComponent> components = new List<IComponent>();
+
+            components.AddRange(new Control[]
+            {
+                lblId,
+                lblName,
+                lblBrand,
+                lblModel,
+                lblVersion,
+                lblTags,
+                lblDescription,
+                lblTools
+            });
+            components.AddRange(grdBioses.Columns.OfType<IComponent>());
+            components.AddRange(grdImages.Columns.OfType<IComponent>());
+            components.AddRange(grdLinks.Columns.OfType<IComponent>());
+
+            return components;
+        }
+
         private void InitializeExtraComponent()
         {
             tcTabs.SelectedTab = tcTabs.TabPages[0];
 
             grdImages.Columns.Add(new DataGridViewImageColumn()
             {
+                Name = "colImage",
                 HeaderText = "Image",
                 DataPropertyName = "Image",
                 ImageLayout = DataGridViewImageCellLayout.Stretch,
@@ -68,6 +96,7 @@ namespace Mi899
 
             grdImages.Columns.Add(new DataGridViewLinkColumn()
             {
+                Name = "colPath",
                 HeaderText = "Path",
                 DataPropertyName = nameof(ILink.Url),
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
@@ -78,6 +107,7 @@ namespace Mi899
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colId",
                 HeaderText = nameof(IBios.Id),
                 DataPropertyName = nameof(IBios.Id),
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
@@ -85,6 +115,7 @@ namespace Mi899
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colName",
                 HeaderText = nameof(IBios.Name),
                 DataPropertyName = nameof(IBios.Name),
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
@@ -92,6 +123,7 @@ namespace Mi899
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colTuDriver",
                 HeaderText = "TU Driver",
                 ToolTipText = "Turbo Boost Unlock Driver",
                 DataPropertyName = nameof(IBios.TurboUnlockDriver),
@@ -100,6 +132,7 @@ namespace Mi899
 
             grdBioses.Columns.Add(new DataGridViewLinkColumn()
             {
+                Name = "colPath",
                 HeaderText = "Path",
                 DataPropertyName = nameof(IBios.FileName),
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
@@ -109,6 +142,7 @@ namespace Mi899
 
             grdLinks.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colName",
                 HeaderText = nameof(ILink.Name),
                 DataPropertyName = nameof(ILink.Name),
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
@@ -116,6 +150,7 @@ namespace Mi899
 
             grdLinks.Columns.Add(new DataGridViewLinkColumn()
             {
+                Name = "colUrl",
                 HeaderText = "URL",
                 DataPropertyName = nameof(ILink.Url),
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
