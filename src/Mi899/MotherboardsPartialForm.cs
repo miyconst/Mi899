@@ -48,12 +48,14 @@ namespace Mi899
         {
             grdMotherboards.Columns.Add(new DataGridViewButtonColumn()
             {
+                Name = "colSelect",
                 Text = "Select",
                 UseColumnTextForButtonValue = true
             });
 
             grdMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colId",
                 HeaderText = nameof(IMotherboard.Id),
                 DataPropertyName = nameof(IMotherboard.Id),
                 ReadOnly = true,
@@ -63,6 +65,7 @@ namespace Mi899
 
             grdMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colBrand",
                 HeaderText = nameof(IMotherboard.Brand),
                 DataPropertyName = nameof(IMotherboard.Brand),
                 ReadOnly = true,
@@ -72,6 +75,7 @@ namespace Mi899
 
             grdMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colModel",
                 HeaderText = nameof(IMotherboard.Model),
                 DataPropertyName = nameof(IMotherboard.Model),
                 ReadOnly = true,
@@ -81,6 +85,7 @@ namespace Mi899
 
             grdMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colVersion",
                 HeaderText = nameof(IMotherboard.Version),
                 DataPropertyName = nameof(IMotherboard.Version),
                 ReadOnly = true,
@@ -90,6 +95,7 @@ namespace Mi899
 
             grdMotherboards.Columns.Add(new DataGridViewCheckBoxColumn()
             {
+                Name = "colFpt",
                 HeaderText = "FPT",
                 ToolTipText = "Indicates whether this motherboard is compatible with FPT",
                 DataPropertyName = nameof(IMotherboard.IsFptCompatible),
@@ -100,6 +106,7 @@ namespace Mi899
 
             grdMotherboards.Columns.Add(new DataGridViewCheckBoxColumn()
             {
+                Name = "colAfuWin",
                 HeaderText = "AfuWin",
                 ToolTipText = "Indicates whether this motherboard is compatible with AfuWin",
                 DataPropertyName = nameof(IMotherboard.IsAfuWinCompatible),
