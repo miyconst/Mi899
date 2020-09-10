@@ -27,6 +27,9 @@ namespace Mi899
                     case ToolStripStatusLabel tssl:
                         tssl.ApplyI18nToProperties(i18n);
                         break;
+                    case DataGridViewButtonColumn dgvbc:
+                        dgvbc.ApplyI18nToProperties(i18n);
+                        break;
                     case DataGridViewColumn dgvc:
                         dgvc.ApplyI18nToProperties(i18n);
                         break;
@@ -65,6 +68,15 @@ namespace Mi899
 
             dgvc.HeaderText = i18n.Get(dgvc.HeaderText, parent.Name, dgvc.DataGridView.Name, dgvc.Name, nameof(DataGridViewColumn.HeaderText));
             dgvc.ToolTipText = i18n.Get(dgvc.ToolTipText, parent.Name, dgvc.DataGridView.Name, dgvc.Name, nameof(DataGridViewColumn.ToolTipText));
+        }
+
+        public static void ApplyI18nToProperties(this DataGridViewButtonColumn dgvbc, I18n i18n)
+        {
+            II18nCompatible parent = dgvbc.DataGridView.GetI18nCompatibleParent();
+
+            dgvbc.Text = i18n.Get(dgvbc.Text, parent.Name, dgvbc.DataGridView.Name, dgvbc.Name, nameof(DataGridViewButtonColumn.Text));
+            dgvbc.HeaderText = i18n.Get(dgvbc.HeaderText, parent.Name, dgvbc.DataGridView.Name, dgvbc.Name, nameof(DataGridViewButtonColumn.HeaderText));
+            dgvbc.ToolTipText = i18n.Get(dgvbc.ToolTipText, parent.Name, dgvbc.DataGridView.Name, dgvbc.Name, nameof(DataGridViewButtonColumn.ToolTipText));
         }
 
         public static II18nCompatible GetI18nCompatibleParent(this Control control)
