@@ -32,6 +32,64 @@
       ]
     },
     {
+      "Id": "hz-x99-t8",
+      "Name": "Huananzhi X99-T8",
+      "Brand": "Huananzhi",
+      "Model": "X99-T8",
+      "Version": "",
+      "Tags": [ "huananzhi", "t8", "ddr3" ],
+      "Description": "",
+      "IsFptCompatible": true,
+      "IsAfuWinCompatible": false,
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi X99-T8/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Huananzhi X99-T8/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Name": "Official page",
+          "Url": "http://www.huananzhi.com/html/1/149/150/444.html"
+        }
+      ]
+    },
+    {
+      "Id": "hz-x99-f8",
+      "Name": "Huananzhi X99-F8",
+      "Brand": "Huananzhi",
+      "Model": "X99-F8",
+      "Version": "",
+      "Tags": [ "huananzhi", "f8", "ddr4" ],
+      "Description": "",
+      "IsFptCompatible": true,
+      "IsAfuWinCompatible": false,
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi X99-F8/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Huananzhi X99-F8/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Name": "Official page",
+          "Url": "http://www.huananzhi.com/html/1/149/150/425.html"
+        },
+        {
+          "Name": "YouTube review",
+          "Url": "https://youtu.be/IiojHBaQ4hs"
+        }
+      ]
+    },
+    {
       "Id": "js-x99-d8",
       "Name": "JingSha X99 D8",
       "Brand": "JingSha",
@@ -67,7 +125,7 @@
     {
       "Id": "hz-x99-tf.rom",
       "Name": "Stock Huananzhi X99-TF BIOS",
-      "MotherboardIds": [ "hz-x99-tf", "js-x99-d8" ],
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8" ],
       "FileName": "Bioses/huananzhi-x99-tf.rom.zip",
       "Description": null,
       "TurboUnlockDriver": null,
