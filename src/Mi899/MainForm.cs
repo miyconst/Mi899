@@ -32,7 +32,7 @@ namespace Mi899
         private void MotherboardsPartialForm_MotherboardSelected(object sender, IMotherboard e)
         {
             _motherboardPartialForm.LoadData(e);
-            Open(_motherboardsPartialForm);
+            Open(_motherboardPartialForm);
         }
 
         public void ApplyI18n(I18n i18n)
