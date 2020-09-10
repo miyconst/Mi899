@@ -14,14 +14,24 @@ namespace Mi899
         private I18n _i18n;
         private Model _model;
         private Control _lastControl;
+        private ReadMePartialForm _readMePartialForm;
         private MotherboardPartialForm _motherboardPartialForm;
         private MotherboardsPartialForm _motherboardsPartialForm;
         private BiosesPartialForm _biosesPartialForm;
 
-        public MainForm(I18n i18n, Model model, MotherboardsPartialForm motherboardsPartialForm, MotherboardPartialForm motherboardPartialForm, BiosesPartialForm biosesPartialForm)
+        public MainForm
+        (
+            I18n i18n,
+            Model model,
+            ReadMePartialForm readMePartialForm,
+            MotherboardsPartialForm motherboardsPartialForm,
+            MotherboardPartialForm motherboardPartialForm,
+            BiosesPartialForm biosesPartialForm
+        )
         {
             _i18n = i18n ?? throw new ArgumentNullException(nameof(i18n));
             _model = model ?? throw new ArgumentNullException(nameof(model));
+            _readMePartialForm = readMePartialForm ?? throw new ArgumentNullException(nameof(readMePartialForm));
             _motherboardPartialForm = motherboardPartialForm ?? throw new ArgumentNullException(nameof(motherboardPartialForm));
             _motherboardsPartialForm = motherboardsPartialForm ?? throw new ArgumentNullException(nameof(motherboardsPartialForm));
             _biosesPartialForm = biosesPartialForm ?? throw new ArgumentNullException(nameof(biosesPartialForm));
@@ -29,6 +39,8 @@ namespace Mi899
             _motherboardsPartialForm.MotherboardSelected += MotherboardsPartialForm_MotherboardSelected;
 
             InitializeComponent();
+            Open(_readMePartialForm);
+            ApplyI18n(_i18n);
         }
 
         private void MotherboardsPartialForm_MotherboardSelected(object sender, IMotherboard e)
@@ -62,6 +74,7 @@ namespace Mi899
                 msiToolsHowTo,
                 msiToolsHowToTurboUnlock,
                 tsslVersion,
+                _readMePartialForm,
                 _motherboardsPartialForm,
                 _motherboardPartialForm,
                 _biosesPartialForm
@@ -82,7 +95,6 @@ namespace Mi899
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            ApplyI18n(_i18n);
         }
 
         private void msiExploreMotherboards_Click(object sender, EventArgs e)
@@ -117,6 +129,11 @@ namespace Mi899
         {
             _i18n.Language = I18n.LanguageEn;
             ApplyI18n(_i18n);
+        }
+
+        private void msiFileReadMe_Click(object sender, EventArgs e)
+        {
+            Open(_readMePartialForm);
         }
     }
 }

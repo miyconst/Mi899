@@ -105,6 +105,7 @@
             this.msiFileReadMe.Name = "msiFileReadMe";
             this.msiFileReadMe.Size = new System.Drawing.Size(130, 22);
             this.msiFileReadMe.Text = "Read me!";
+            this.msiFileReadMe.Click += new System.EventHandler(this.msiFileReadMe_Click);
             // 
             // toolStripSeparator2
             // 

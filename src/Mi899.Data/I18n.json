@@ -47,7 +47,8 @@
     "MotherboardsPartialForm.grdMotherboards.colModel.HeaderText": "Model",
     "MotherboardsPartialForm.grdMotherboards.colSelect.Text": "Select",
     "MotherboardsPartialForm.grdMotherboards.colVersion.HeaderText": "Version",
-    "MotherboardsPartialForm.lblSearch.Text": "Search:"
+    "MotherboardsPartialForm.lblSearch.Text": "Search:",
+    "ReadMePartialForm.wbReadme.DocumentText": "README.md"
   },
   "Ua": {
     "BiosesPartialForm.grdBioses.colId.HeaderText": "ID",
@@ -97,6 +98,7 @@
     "MotherboardsPartialForm.grdMotherboards.colModel.HeaderText": "Модель",
     "MotherboardsPartialForm.grdMotherboards.colSelect.Text": "Обрати",
     "MotherboardsPartialForm.grdMotherboards.colVersion.HeaderText": "Версія",
-    "MotherboardsPartialForm.lblSearch.Text": "Пошук:"
+    "MotherboardsPartialForm.lblSearch.Text": "Пошук:",
+    "ReadMePartialForm.wbReadme.DocumentText": "README.Ua.md"
   }
 }

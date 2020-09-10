@@ -20,6 +20,7 @@ namespace Mi899
                 .AddSingleton<I18n>(I18n.LoadFromJson())
                 .AddSingleton<Model>(Model.LoadFromJson())
                 .AddSingleton<MainForm>()
+                .AddTransient<ReadMePartialForm>()
                 .AddTransient<BiosesPartialForm>()
                 .AddTransient<MotherboardPartialForm>()
                 .AddTransient<MotherboardsPartialForm>()
