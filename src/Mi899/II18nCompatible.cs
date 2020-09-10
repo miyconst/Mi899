@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Mi899.Data;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace Mi899
@@ -7,6 +9,7 @@ namespace Mi899
     internal interface II18nCompatible
     {
         string Name { get; }
-        void InitializeI18n();
+        void ApplyI18n(I18n i18n);
+        IEnumerable<IComponent> SelectI18nCompatibleComponents();
     }
 }

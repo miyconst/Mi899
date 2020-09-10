@@ -14,32 +14,49 @@ namespace Mi899
 {
     public partial class MotherboardPartialForm : UserControl
     {
-        private IMotherboard _motherboard;
-        private GenericBindingList<IBios> _bioses;
+        Model _model;
 
-        public MotherboardPartialForm(IMotherboard motherboard, Model model)
+        public MotherboardPartialForm(Model model)
         {
-            if (model == null) throw new ArgumentNullException(nameof(model));
+            _model = model ?? throw new ArgumentNullException(nameof(model));
 
-            _motherboard = motherboard ?? throw new ArgumentNullException(nameof(motherboard));
-            _bioses = new GenericBindingList<IBios>(model.Bioses.Where(x => x.MotherboardIds.Contains(motherboard.Id)));
             InitializeComponent();
             InitializeExtraComponent();
+        }
+
+        public void LoadData(IMotherboard motherboard)
+        {
+            if (motherboard == null) throw new ArgumentNullException(nameof(motherboard));
+
+            picMotherboard.ImageLocation = motherboard.Images.FirstOrDefault()?.Url;
+            txtId.Text = motherboard.Id;
+            txtName.Text = motherboard.Name;
+            txtBrand.Text = motherboard.Brand;
+            txtModel.Text = motherboard.Model;
+            txtVersion.Text = motherboard.Version;
+            txtTags.Text = motherboard.TagsString;
+            txtDescription.Text = motherboard.Description;
+            cbFpt.Checked = motherboard.IsFptCompatible;
+            cbAfuWin.Checked = motherboard.IsAfuWinCompatible;
+
+            grdImages.DataSource = motherboard.Images.Select(x => new
+            {
+                x.Name,
+                x.Url,
+                Image = new Bitmap(x.Url)
+            }).ToList();
+            grdImages.AutoResizeColumns();
+
+            grdBioses.DataSource = new GenericBindingList<IBios>(_model.Bioses.Where(x => x.MotherboardIds.Contains(motherboard.Id)));
+            grdBioses.AutoResizeColumns();
+
+            grdLinks.DataSource = motherboard.Links;
+            grdLinks.AutoResizeColumns();
         }
 
         private void InitializeExtraComponent()
         {
             tcTabs.SelectedTab = tcTabs.TabPages[0];
-            picMotherboard.ImageLocation = _motherboard.Images.FirstOrDefault()?.Url;
-            txtId.Text = _motherboard.Id;
-            txtName.Text = _motherboard.Name;
-            txtBrand.Text = _motherboard.Brand;
-            txtModel.Text = _motherboard.Model;
-            txtVersion.Text = _motherboard.Version;
-            txtTags.Text = _motherboard.TagsString;
-            txtDescription.Text = _motherboard.Description;
-            cbFpt.Checked = _motherboard.IsFptCompatible;
-            cbAfuWin.Checked = _motherboard.IsAfuWinCompatible;
 
             grdImages.Columns.Add(new DataGridViewImageColumn()
             {
@@ -58,13 +75,6 @@ namespace Mi899
 
             grdImages.RowTemplate.Height = 120;
             grdImages.AutoGenerateColumns = false;
-            grdImages.DataSource = _motherboard.Images.Select(x => new
-            {
-                x.Name,
-                x.Url,
-                Image = new Bitmap(x.Url)
-            }).ToList();
-            grdImages.AutoResizeColumns();
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
@@ -96,8 +106,6 @@ namespace Mi899
             });
 
             grdBioses.AutoGenerateColumns = false;
-            grdBioses.DataSource = _bioses;
-            grdBioses.AutoResizeColumns();
 
             grdLinks.Columns.Add(new DataGridViewTextBoxColumn()
             {
@@ -114,8 +122,6 @@ namespace Mi899
             });
 
             grdLinks.AutoGenerateColumns = false;
-            grdLinks.DataSource = _motherboard.Links;
-            grdLinks.AutoResizeColumns();
         }
 
         private void grd_PathCellContentClick(object sender, DataGridViewCellEventArgs e)

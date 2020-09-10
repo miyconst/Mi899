@@ -32,21 +32,21 @@
             this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
             this.msMenu = new System.Windows.Forms.MenuStrip();
             this.msiFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.readMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiFileReadMe = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.msiExit = new System.Windows.Forms.ToolStripMenuItem();
             this.msiExplore = new System.Windows.Forms.ToolStripMenuItem();
             this.msiExploreMotherboards = new System.Windows.Forms.ToolStripMenuItem();
             this.msiExploreBioses = new System.Windows.Forms.ToolStripMenuItem();
             this.msiTools = new System.Windows.Forms.ToolStripMenuItem();
-            this.fptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.afuWinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiToolsFpt = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiToolsAfuWin = new System.Windows.Forms.ToolStripMenuItem();
             this.msiHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.howToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unlockTurboBoostToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tightenRamTimingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiToolsHowTo = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiToolsHowToTurboUnlock = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiHelpHowToRamTimings = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.msiLanguage = new System.Windows.Forms.ToolStripMenuItem();
             this.msiLanguageEnglish = new System.Windows.Forms.ToolStripMenuItem();
             this.msiLanguageUkrainian = new System.Windows.Forms.ToolStripMenuItem();
@@ -92,19 +92,19 @@
             // msiFile
             // 
             this.msiFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.readMeToolStripMenuItem,
+            this.msiFileReadMe,
             this.toolStripSeparator2,
             this.msiExit});
             this.msiFile.Name = "msiFile";
             this.msiFile.Size = new System.Drawing.Size(47, 26);
             this.msiFile.Text = "&File";
             // 
-            // readMeToolStripMenuItem
+            // msiFileReadMe
             // 
-            this.readMeToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.readMeToolStripMenuItem.Name = "readMeToolStripMenuItem";
-            this.readMeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.readMeToolStripMenuItem.Text = "Read me!";
+            this.msiFileReadMe.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.msiFileReadMe.Name = "msiFileReadMe";
+            this.msiFileReadMe.Size = new System.Drawing.Size(130, 22);
+            this.msiFileReadMe.Text = "Read me!";
             // 
             // toolStripSeparator2
             // 
@@ -144,65 +144,65 @@
             // msiTools
             // 
             this.msiTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fptToolStripMenuItem,
-            this.afuWinToolStripMenuItem});
+            this.msiToolsFpt,
+            this.msiToolsAfuWin});
             this.msiTools.Name = "msiTools";
             this.msiTools.Size = new System.Drawing.Size(54, 26);
             this.msiTools.Text = "&Tools";
             // 
-            // fptToolStripMenuItem
+            // msiToolsFpt
             // 
-            this.fptToolStripMenuItem.Name = "fptToolStripMenuItem";
-            this.fptToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.fptToolStripMenuItem.Text = "FPT";
+            this.msiToolsFpt.Name = "msiToolsFpt";
+            this.msiToolsFpt.Size = new System.Drawing.Size(116, 22);
+            this.msiToolsFpt.Text = "FPT";
             // 
-            // afuWinToolStripMenuItem
+            // msiToolsAfuWin
             // 
-            this.afuWinToolStripMenuItem.Name = "afuWinToolStripMenuItem";
-            this.afuWinToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.afuWinToolStripMenuItem.Text = "AfuWin";
+            this.msiToolsAfuWin.Name = "msiToolsAfuWin";
+            this.msiToolsAfuWin.Size = new System.Drawing.Size(116, 22);
+            this.msiToolsAfuWin.Text = "AfuWin";
             // 
             // msiHelp
             // 
             this.msiHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.howToToolStripMenuItem,
+            this.msiToolsHowTo,
             this.toolStripSeparator5,
-            this.aboutToolStripMenuItem});
+            this.msiHelpAbout});
             this.msiHelp.Name = "msiHelp";
             this.msiHelp.Size = new System.Drawing.Size(47, 26);
             this.msiHelp.Text = "&Help";
             // 
-            // howToToolStripMenuItem
+            // msiToolsHowTo
             // 
-            this.howToToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.unlockTurboBoostToolStripMenuItem,
-            this.tightenRamTimingsToolStripMenuItem});
-            this.howToToolStripMenuItem.Name = "howToToolStripMenuItem";
-            this.howToToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.howToToolStripMenuItem.Text = "How to";
+            this.msiToolsHowTo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msiToolsHowToTurboUnlock,
+            this.msiHelpHowToRamTimings});
+            this.msiToolsHowTo.Name = "msiToolsHowTo";
+            this.msiToolsHowTo.Size = new System.Drawing.Size(130, 22);
+            this.msiToolsHowTo.Text = "How to";
             // 
-            // unlockTurboBoostToolStripMenuItem
+            // msiToolsHowToTurboUnlock
             // 
-            this.unlockTurboBoostToolStripMenuItem.Name = "unlockTurboBoostToolStripMenuItem";
-            this.unlockTurboBoostToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.unlockTurboBoostToolStripMenuItem.Text = "Unlock Turbo Boost";
+            this.msiToolsHowToTurboUnlock.Name = "msiToolsHowToTurboUnlock";
+            this.msiToolsHowToTurboUnlock.Size = new System.Drawing.Size(207, 22);
+            this.msiToolsHowToTurboUnlock.Text = "Unlock Turbo Boost";
             // 
-            // tightenRamTimingsToolStripMenuItem
+            // msiHelpHowToRamTimings
             // 
-            this.tightenRamTimingsToolStripMenuItem.Name = "tightenRamTimingsToolStripMenuItem";
-            this.tightenRamTimingsToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.tightenRamTimingsToolStripMenuItem.Text = "Tighten RAM timings";
+            this.msiHelpHowToRamTimings.Name = "msiHelpHowToRamTimings";
+            this.msiHelpHowToRamTimings.Size = new System.Drawing.Size(207, 22);
+            this.msiHelpHowToRamTimings.Text = "Tighten RAM timings";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(127, 6);
             // 
-            // aboutToolStripMenuItem
+            // msiHelpAbout
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.aboutToolStripMenuItem.Text = "&About...";
+            this.msiHelpAbout.Name = "msiHelpAbout";
+            this.msiHelpAbout.Size = new System.Drawing.Size(130, 22);
+            this.msiHelpAbout.Text = "&About...";
             // 
             // msiLanguage
             // 
@@ -274,20 +274,20 @@
         private System.Windows.Forms.TableLayoutPanel tlpMain;
         private System.Windows.Forms.MenuStrip msMenu;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem readMeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msiFileReadMe;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem msiExit;
         private System.Windows.Forms.ToolStripMenuItem msiExplore;
         private System.Windows.Forms.ToolStripMenuItem msiTools;
-        private System.Windows.Forms.ToolStripMenuItem fptToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem afuWinToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msiToolsFpt;
+        private System.Windows.Forms.ToolStripMenuItem msiToolsAfuWin;
         private System.Windows.Forms.ToolStripMenuItem msiHelp;
-        private System.Windows.Forms.ToolStripMenuItem howToToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msiToolsHowTo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msiHelpAbout;
         private System.Windows.Forms.ToolStripMenuItem msiExploreMotherboards;
-        private System.Windows.Forms.ToolStripMenuItem unlockTurboBoostToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tightenRamTimingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msiToolsHowToTurboUnlock;
+        private System.Windows.Forms.ToolStripMenuItem msiHelpHowToRamTimings;
         private System.Windows.Forms.ToolStripMenuItem msiExploreBioses;
         private System.Windows.Forms.StatusStrip ssStatus;
         private System.Windows.Forms.ToolStripStatusLabel tsslVersion;

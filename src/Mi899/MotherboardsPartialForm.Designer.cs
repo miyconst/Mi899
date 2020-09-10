@@ -33,7 +33,7 @@
             this.grdMotherboards = new System.Windows.Forms.DataGridView();
             this.tlpSearch = new System.Windows.Forms.TableLayoutPanel();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSearch = new System.Windows.Forms.Label();
             this.bsMotherboards = new System.Windows.Forms.BindingSource(this.components);
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdMotherboards)).BeginInit();
@@ -73,7 +73,7 @@
             this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpSearch.Controls.Add(this.txtSearch, 1, 0);
-            this.tlpSearch.Controls.Add(this.label1, 0, 0);
+            this.tlpSearch.Controls.Add(this.lblSearch, 0, 0);
             this.tlpSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpSearch.Location = new System.Drawing.Point(0, 0);
             this.tlpSearch.Margin = new System.Windows.Forms.Padding(0);
@@ -91,15 +91,15 @@
             this.txtSearch.Size = new System.Drawing.Size(846, 23);
             this.txtSearch.TabIndex = 1;
             // 
-            // label1
+            // lblSearch
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Search:";
+            this.lblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(3, 7);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(45, 15);
+            this.lblSearch.TabIndex = 0;
+            this.lblSearch.Text = "Search:";
             // 
             // MotherboardsPartialForm
             // 
@@ -123,7 +123,7 @@
         private System.Windows.Forms.DataGridView grdMotherboards;
         private System.Windows.Forms.TableLayoutPanel tlpMain;
         private System.Windows.Forms.TableLayoutPanel tlpSearch;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.BindingSource bsMotherboards;
     }

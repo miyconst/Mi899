@@ -11,24 +11,57 @@ namespace Mi899
 {
     public partial class MainForm : Form, II18nCompatible
     {
+        private I18n _i18n;
         private Model _model;
         private Control _lastControl;
+        private MotherboardPartialForm _motherboardPartialForm;
+        private MotherboardsPartialForm _motherboardsPartialForm;
 
-        public MainForm()
+        public MainForm(I18n i18n, Model model, MotherboardsPartialForm motherboardsPartialForm, MotherboardPartialForm motherboardPartialForm)
         {
-            _model = Model.LoadFromJson();
+            _i18n = i18n ?? throw new ArgumentNullException(nameof(i18n));
+            _model = model ?? throw new ArgumentNullException(nameof(model));
+            _motherboardPartialForm = motherboardPartialForm ?? throw new ArgumentNullException(nameof(motherboardPartialForm));
+            _motherboardsPartialForm = motherboardsPartialForm ?? throw new ArgumentNullException(nameof(motherboardsPartialForm));
+
+            _motherboardsPartialForm.MotherboardSelected += MotherboardsPartialForm_MotherboardSelected;
+
             InitializeComponent();
-            InitializeI18n();
         }
 
-        public   void InitializeI18n()
+        private void MotherboardsPartialForm_MotherboardSelected(object sender, IMotherboard e)
         {
-            Text = I18n.Get(Text, Name, nameof(Text));
-            tsslVersion.Text = I18n.Get(tsslVersion.Text, Name, tsslVersion.Name, nameof(tsslVersion.Text));
-            msiFile.ApplyI18n();
-            msiExplore.ApplyI18n();
-            msiTools.ApplyI18n();
-            msiHelp.ApplyI18n();
+            _motherboardPartialForm.LoadData(e);
+            Open(_motherboardsPartialForm);
+        }
+
+        public void ApplyI18n(I18n i18n)
+        {
+            Text = i18n.Get(Text, Name, nameof(Text));
+            this.ApplyI18nToChildren(i18n);
+        }
+
+        public IEnumerable<IComponent> SelectI18nCompatibleComponents()
+        {
+            return new List<Component>()
+            {
+                msiExit,
+                msiExplore,
+                msiExploreBioses,
+                msiExploreMotherboards,
+                msiFile,
+                msiFileReadMe,
+                msiHelp,
+                msiHelpAbout,
+                msiHelpHowToRamTimings,
+                msiTools,
+                msiToolsAfuWin,
+                msiToolsFpt,
+                msiToolsHowTo,
+                msiToolsHowToTurboUnlock,
+                tsslVersion,
+                _motherboardsPartialForm
+            };
         }
 
         public void Open(UserControl control)
@@ -45,12 +78,12 @@ namespace Mi899
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            ApplyI18n(_i18n);
         }
 
         private void msiExploreMotherboards_Click(object sender, EventArgs e)
         {
-            Open(new MotherboardsPartialForm(this, _model));
+            Open(_motherboardsPartialForm);
         }
 
         private void msiExploreBioses_Click(object sender, EventArgs e)
@@ -66,20 +99,20 @@ namespace Mi899
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
 #if DEBUG
-            I18n.Dump();
+            _i18n.Dump();
 #endif
         }
 
         private void msiLanguageUkrainian_Click(object sender, EventArgs e)
         {
-            I18n.Language = I18n.LanguageUa;
-            InitializeI18n();
+            _i18n.Language = I18n.LanguageUa;
+            ApplyI18n(_i18n);
         }
 
         private void msiLanguageEnglish_Click(object sender, EventArgs e)
         {
-            I18n.Language = I18n.LanguageEn;
-            InitializeI18n();
+            _i18n.Language = I18n.LanguageEn;
+            ApplyI18n(_i18n);
         }
     }
 }

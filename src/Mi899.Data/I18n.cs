@@ -7,38 +7,27 @@ using System.Text;
 
 namespace Mi899.Data
 {
-    public static class I18n
+    public class I18n
     {
         public const string LanguageEn = "En";
         public const string LanguageUa = "Ua";
 
-        private static string _language = "En";
-        private static Dictionary<string, Dictionary<string, string>> _values;
+        private string _language = "En";
+        private Dictionary<string, Dictionary<string, string>> _values;
 
-        public static string Language
+        public string Language
         {
             get => _language;
             set => _language = value ?? throw new ArgumentNullException(nameof(value));
         }
 
-        static I18n()
+        public string Get(string text, params string[] ids)
         {
-            string dataPath = GetDataPath();
-            FileInfo fi = new FileInfo(dataPath);
-
-            if (!fi.Exists)
+            if (string.IsNullOrWhiteSpace(text))
             {
-                throw new FileNotFoundException(fi.FullName);
+                return text;
             }
 
-            using TextReader reader = new StreamReader(fi.FullName);
-            string json = reader.ReadToEnd();
-
-            _values = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, string>>>(json);
-        }
-
-        public static string Get(string text, params string[] ids)
-        {
             if (ids == null || !ids.Any())
             {
                 throw new ArgumentException(nameof(ids));
@@ -64,7 +53,7 @@ namespace Mi899.Data
             return value;
         }
 
-        public static void Dump()
+        public void Dump()
         {
             Dictionary<string, Dictionary<string, string>> result = _values
                 .OrderBy(x => x.Key)
@@ -80,6 +69,25 @@ namespace Mi899.Data
             using TextWriter writer = new StreamWriter(dataPath, false, Encoding.UTF8);
             writer.Write(json);
             writer.Flush();
+        }
+
+        public static I18n LoadFromJson()
+        {
+            I18n result = new I18n();
+            string dataPath = GetDataPath();
+            FileInfo fi = new FileInfo(dataPath);
+
+            if (!fi.Exists)
+            {
+                throw new FileNotFoundException(fi.FullName);
+            }
+
+            using TextReader reader = new StreamReader(fi.FullName);
+            string json = reader.ReadToEnd();
+
+            result._values = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, string>>>(json);
+
+            return result;
         }
 
         private static string GetDataPath()

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Extensions.DependencyInjection;
+using Mi899.Data;
 
 namespace Mi899
 {
@@ -14,10 +16,21 @@ namespace Mi899
         [STAThread]
         static void Main()
         {
+            using var services = new ServiceCollection()
+                .AddSingleton<I18n>(I18n.LoadFromJson())
+                .AddSingleton<Model>(Model.LoadFromJson())
+                .AddSingleton<MainForm>()
+                .AddTransient<BiosesPartialForm>()
+                .AddTransient<MotherboardPartialForm>()
+                .AddTransient<MotherboardsPartialForm>()
+                .BuildServiceProvider();
+
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            
+            MainForm frm = services.GetRequiredService<MainForm>();
+            Application.Run(frm);
         }
     }
 }

@@ -10,19 +10,34 @@ using System.Linq;
 
 namespace Mi899
 {
-    public partial class MotherboardsPartialForm : UserControl
+    public partial class MotherboardsPartialForm : UserControl, II18nCompatible
     {
-        private MainForm _mainForm;
         private Model _model;
         private GenericBindingList<IMotherboard> _motherboards;
 
-        public MotherboardsPartialForm(MainForm form, Model model)
+        public event EventHandler<IMotherboard> MotherboardSelected;
+
+        public MotherboardsPartialForm(Model model)
         {
-            _mainForm = form ?? throw new ArgumentNullException(nameof(form));
             _model = model ?? throw new ArgumentNullException(nameof(model));
             _motherboards = new GenericBindingList<IMotherboard>(_model.Motherboards);
             InitializeComponent();
             InitializeDataGridComponent();
+        }
+
+        public void ApplyI18n(I18n i18n)
+        {
+            this.ApplyI18nToChildren(i18n);
+        }
+
+        public IEnumerable<IComponent> SelectI18nCompatibleComponents()
+        {
+            List<IComponent> components = new List<IComponent>();
+
+            components.Add(lblSearch);
+            components.AddRange(grdMotherboards.Columns.OfType<DataGridViewColumn>());
+
+            return components;
         }
 
         private void MotherboardsPartialForm_Load(object sender, EventArgs e)
@@ -106,9 +121,7 @@ namespace Mi899
             if (grid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
                 IMotherboard motherboard = _motherboards[e.RowIndex];
-                MotherboardPartialForm form = new MotherboardPartialForm(motherboard, _model);
-
-                _mainForm.Open(form);
+                MotherboardSelected?.Invoke(this, motherboard);
             }
         }
     }
