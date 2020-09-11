@@ -55,9 +55,7 @@
             this.grdBioses = new System.Windows.Forms.DataGridView();
             this.tpLinks = new System.Windows.Forms.TabPage();
             this.grdLinks = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.cbFpt = new System.Windows.Forms.CheckBox();
-            this.cbAfuWin = new System.Windows.Forms.CheckBox();
+            this.txtTools = new System.Windows.Forms.TextBox();
             this.tlpMain.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMotherboard)).BeginInit();
@@ -70,7 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdBioses)).BeginInit();
             this.tpLinks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdLinks)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlpMain
@@ -141,6 +138,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.txtTools, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.lblName, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblTools, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.txtName, 1, 1);
@@ -156,7 +154,6 @@
             this.tableLayoutPanel1.Controls.Add(this.txtVersion, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.txtTags, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.txtDescription, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -383,39 +380,14 @@
             this.grdLinks.Text = "dataGridView1";
             this.grdLinks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdLinks_CellContentClick);
             // 
-            // panel1
+            // txtTools
             // 
-            this.panel1.Controls.Add(this.cbAfuWin);
-            this.panel1.Controls.Add(this.cbFpt);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(76, 280);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(578, 30);
-            this.panel1.TabIndex = 14;
-            // 
-            // cbFpt
-            // 
-            this.cbFpt.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cbFpt.AutoSize = true;
-            this.cbFpt.Enabled = false;
-            this.cbFpt.Location = new System.Drawing.Point(3, 6);
-            this.cbFpt.Name = "cbFpt";
-            this.cbFpt.Size = new System.Drawing.Size(45, 19);
-            this.cbFpt.TabIndex = 0;
-            this.cbFpt.Text = "FPT";
-            this.cbFpt.UseVisualStyleBackColor = true;
-            // 
-            // cbAfuWin
-            // 
-            this.cbAfuWin.AutoSize = true;
-            this.cbAfuWin.Enabled = false;
-            this.cbAfuWin.Location = new System.Drawing.Point(54, 6);
-            this.cbAfuWin.Name = "cbAfuWin";
-            this.cbAfuWin.Size = new System.Drawing.Size(66, 19);
-            this.cbAfuWin.TabIndex = 1;
-            this.cbAfuWin.Text = "AfuWin";
-            this.cbAfuWin.UseVisualStyleBackColor = true;
+            this.txtTools.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTools.Location = new System.Drawing.Point(79, 283);
+            this.txtTools.Name = "txtTools";
+            this.txtTools.ReadOnly = true;
+            this.txtTools.Size = new System.Drawing.Size(572, 23);
+            this.txtTools.TabIndex = 1;
             // 
             // MotherboardPartialForm
             // 
@@ -437,8 +409,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdBioses)).EndInit();
             this.tpLinks.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdLinks)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -472,8 +442,6 @@
         private System.Windows.Forms.DataGridView grdBioses;
         private System.Windows.Forms.DataGridView grdLinks;
         private System.Windows.Forms.Label lblTools;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox cbAfuWin;
-        private System.Windows.Forms.CheckBox cbFpt;
+        private System.Windows.Forms.TextBox txtTools;
     }
 }

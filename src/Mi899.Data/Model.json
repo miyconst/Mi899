@@ -1,4 +1,4 @@
-{
+﻿{
   "Motherboards": [
     {
       "Id": "hz-x99-tf",
@@ -8,8 +8,7 @@
       "Version": "",
       "Tags": [ "huananzhi", "tf", "ddr3", "ddr4" ],
       "Description": "",
-      "IsFptCompatible": true,
-      "IsAfuWinCompatible": false,
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
       "Images": [
         {
           "Name": "Top view",
@@ -40,7 +39,7 @@
       "Tags": [ "huananzhi", "t8", "ddr3" ],
       "Description": "",
       "IsFptCompatible": true,
-      "IsAfuWinCompatible": false,
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
       "Images": [
         {
           "Name": "Top view",
@@ -66,8 +65,7 @@
       "Version": "",
       "Tags": [ "huananzhi", "f8", "ddr4" ],
       "Description": "",
-      "IsFptCompatible": true,
-      "IsAfuWinCompatible": false,
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
       "Images": [
         {
           "Name": "Top view",
@@ -95,10 +93,9 @@
       "Brand": "JingSha",
       "Model": "X99-D8",
       "Version": "",
-      "Tags": [ "jingsha", "d8", "ddr4" ],
+      "Tags": [ "jingsha", "d8", "ddr4", "kllisre" ],
       "Description": "",
-      "IsFptCompatible": true,
-      "IsAfuWinCompatible": false,
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
       "Images": [
         {
           "Name": "Top view",
@@ -146,6 +143,21 @@
     }
   ],
   "Tools": [
-
+    {
+      "Id": "fpt-w64-9.1.10.1000",
+      "Name": "Flash Programming Tool (FPT)",
+      "Version": "9.1.10.1000",
+      "DumpCommand": "fptw64.exe -d {0}",
+      "FlashCommand": "fptw64.exe -f {0}",
+      "FileName": "Tools/fpt-w64-9.1.10.1000.zip"
+    },
+    {
+      "Id": "afu-win-x64-5.12.03.2045",
+      "Name": "AfuWin",
+      "Version": "5.12.03.2045",
+      "DumpCommand": "AFUWINx64.exe {0} /O",
+      "FlashCommand": "AFUWINx64.exe {0} /P /B /N /X",
+      "FileName": "Tools/afu-win-x64-5.12.03.2045.zip"
+    }
   ]
 }

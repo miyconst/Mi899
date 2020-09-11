@@ -93,28 +93,6 @@ namespace Mi899
                 SortMode = DataGridViewColumnSortMode.Automatic
             });
 
-            grdMotherboards.Columns.Add(new DataGridViewCheckBoxColumn()
-            {
-                Name = "colFpt",
-                HeaderText = "FPT",
-                ToolTipText = "Indicates whether this motherboard is compatible with FPT",
-                DataPropertyName = nameof(IMotherboard.IsFptCompatible),
-                ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
-                SortMode = DataGridViewColumnSortMode.Automatic
-            });
-
-            grdMotherboards.Columns.Add(new DataGridViewCheckBoxColumn()
-            {
-                Name = "colAfuWin",
-                HeaderText = "AfuWin",
-                ToolTipText = "Indicates whether this motherboard is compatible with AfuWin",
-                DataPropertyName = nameof(IMotherboard.IsAfuWinCompatible),
-                ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
-                SortMode = DataGridViewColumnSortMode.Automatic
-            });
-
             bsMotherboards.DataSource = _motherboards;
             grdMotherboards.AutoGenerateColumns = false;
             grdMotherboards.DataSource = bsMotherboards;

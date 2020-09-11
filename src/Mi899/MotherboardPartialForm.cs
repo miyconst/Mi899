@@ -36,8 +36,19 @@ namespace Mi899
             txtVersion.Text = motherboard.Version;
             txtTags.Text = motherboard.TagsString;
             txtDescription.Text = motherboard.Description;
-            cbFpt.Checked = motherboard.IsFptCompatible;
-            cbAfuWin.Checked = motherboard.IsAfuWinCompatible;
+
+            {
+                List<ITool> tools = _model.Tools.Where(x => motherboard.ToolIds.Contains(x.Id)).ToList();
+
+                if (tools.Any())
+                {
+                    txtTools.Text = string.Join(", ", tools.Select(x => x.Name));
+                }
+                else
+                {
+                    txtTools.Text = string.Empty;
+                }
+            }
 
             grdImages.DataSource = motherboard.Images.Select(x => new
             {

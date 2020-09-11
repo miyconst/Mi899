@@ -28,6 +28,7 @@ namespace Mi899.Data.Tests
         {
             var ids = _model.Motherboards.Select(x => x.Id)
                 .Union(_model.Bioses.Select(x => x.Id))
+                .Union(_model.Tools.Select(x => x.Id))
                 .GroupBy(x => x)
                 .ToList();
 
@@ -48,6 +49,19 @@ namespace Mi899.Data.Tests
             foreach (string id in ids)
             {
                 Assert.Single(_model.Motherboards.Where(x => x.Id == id));
+            }
+        }
+
+        [Fact]
+        public void AllMotherboardToolIdsAreValid()
+        {
+            var ids = _model.Motherboards
+                .SelectMany(x => x.ToolIds)
+                .Distinct();
+
+            foreach (string id in ids)
+            {
+                Assert.Single(_model.Tools.Where(x => x.Id == id));
             }
         }
 

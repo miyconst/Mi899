@@ -11,14 +11,17 @@ namespace Mi899.Data
     {
         private List<Motherboard> _motherboards;
         private List<Bios> _bioses;
+        private List<Tool> _tools;
 
         public IReadOnlyList<IMotherboard> Motherboards => _motherboards;
         public IReadOnlyList<IBios> Bioses => _bioses;
+        public IReadOnlyList<ITool> Tools => _tools;
 
         public Model()
         {
             _motherboards = new List<Motherboard>();
             _bioses = new List<Bios>();
+            _tools = new List<Tool>();
         }
 
         public static Model LoadFromJson()
@@ -49,6 +52,11 @@ namespace Mi899.Data
             foreach (Bios b in model._bioses)
             {
                 b.FileName = Path.Combine(di.FullName, b.FileName);
+            }
+
+            foreach (Tool t in model._tools)
+            {
+                t.FileName = Path.Combine(di.FullName, t.FileName);
             }
 
             return model;

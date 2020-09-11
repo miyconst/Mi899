@@ -14,8 +14,7 @@ namespace Mi899.Data
         public string Description { get; set; }
         public Link[] Images { get; set; }
         public Link[] Links { get; set; }
-        public bool IsFptCompatible { get; set; }
-        public bool IsAfuWinCompatible { get; set; }
+        public string[] ToolIds { get; set; }
 
         ILink[] IMotherboard.Images => Images;
         ILink[] IMotherboard.Links => Links;
