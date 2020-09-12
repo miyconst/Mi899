@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -50,7 +51,7 @@ namespace Mi899
         private void MotherboardPartialForm_ToolSelected(object sender, ITool e)
         {
             MotherboardPartialForm form = (MotherboardPartialForm)sender;
-            _toolPartialForm.LoadData(form.Motherboard, e, null);
+            _toolPartialForm.LoadData(form.Motherboard, e);
             Open(_toolPartialForm);
         }
 
@@ -79,11 +80,9 @@ namespace Mi899
                 msiHelp,
                 msiHelpAbout,
                 msiHelpHowToRamTimings,
-                msiTools,
-                msiToolsAfuWin,
-                msiToolsFpt,
-                msiToolsHowTo,
-                msiToolsHowToTurboUnlock,
+                msiHelpHowTo,
+                msiHelpHowToTurboUnlock,
+                msiHelpHowToUseCh341a,
                 tsslVersion,
                 _readMePartialForm,
                 _motherboardsPartialForm,
@@ -93,7 +92,7 @@ namespace Mi899
             };
         }
 
-        public void Open(UserControl control)
+        private void Open(UserControl control)
         {
             if (_lastControl != null)
             {
@@ -103,6 +102,17 @@ namespace Mi899
             tlpMain.Controls.Add(control, 0, 1);
             control.Dock = DockStyle.Fill;
             _lastControl = control;
+        }
+
+        private void OpenUrl(string url)
+        {
+            ProcessStartInfo psi = new ProcessStartInfo(url)
+            {
+                UseShellExecute = true
+            };
+
+            Process.Start(psi);
+
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -146,6 +156,21 @@ namespace Mi899
         private void msiFileReadMe_Click(object sender, EventArgs e)
         {
             Open(_readMePartialForm);
+        }
+
+        private void msiHelpHowToRamTimings_Click(object sender, EventArgs e)
+        {
+            OpenUrl("https://youtu.be/mIqep7v2xCY");
+        }
+
+        private void msiHelpHowToTurboUnlock_Click(object sender, EventArgs e)
+        {
+            OpenUrl("http://www.miyconst.com/Blog/View/2081/xeon-e5-2600-v3-turbo-boost-unlock");
+        }
+
+        private void msiHelpHowToUseCh341a_Click(object sender, EventArgs e)
+        {
+            OpenUrl("http://www.miyconst.com/Blog/View/2086/ch341a-minimal-usage-guide-how-to-read-and-write-a-motherboard-bios");
         }
     }
 }

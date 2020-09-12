@@ -38,13 +38,11 @@
             this.msiExplore = new System.Windows.Forms.ToolStripMenuItem();
             this.msiExploreMotherboards = new System.Windows.Forms.ToolStripMenuItem();
             this.msiExploreBioses = new System.Windows.Forms.ToolStripMenuItem();
-            this.msiTools = new System.Windows.Forms.ToolStripMenuItem();
-            this.msiToolsFpt = new System.Windows.Forms.ToolStripMenuItem();
-            this.msiToolsAfuWin = new System.Windows.Forms.ToolStripMenuItem();
             this.msiHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.msiToolsHowTo = new System.Windows.Forms.ToolStripMenuItem();
-            this.msiToolsHowToTurboUnlock = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiHelpHowTo = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiHelpHowToTurboUnlock = new System.Windows.Forms.ToolStripMenuItem();
             this.msiHelpHowToRamTimings = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiHelpHowToUseCh341a = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.msiHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.msiLanguage = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,7 +78,6 @@
             this.msMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msiFile,
             this.msiExplore,
-            this.msiTools,
             this.msiHelp,
             this.msiLanguage});
             this.msMenu.Location = new System.Drawing.Point(0, 0);
@@ -142,57 +139,46 @@
             this.msiExploreBioses.Text = "BIOS";
             this.msiExploreBioses.Click += new System.EventHandler(this.msiExploreBioses_Click);
             // 
-            // msiTools
-            // 
-            this.msiTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msiToolsFpt,
-            this.msiToolsAfuWin});
-            this.msiTools.Name = "msiTools";
-            this.msiTools.Size = new System.Drawing.Size(54, 26);
-            this.msiTools.Text = "&Tools";
-            // 
-            // msiToolsFpt
-            // 
-            this.msiToolsFpt.Name = "msiToolsFpt";
-            this.msiToolsFpt.Size = new System.Drawing.Size(116, 22);
-            this.msiToolsFpt.Text = "FPT";
-            // 
-            // msiToolsAfuWin
-            // 
-            this.msiToolsAfuWin.Name = "msiToolsAfuWin";
-            this.msiToolsAfuWin.Size = new System.Drawing.Size(116, 22);
-            this.msiToolsAfuWin.Text = "AfuWin";
-            // 
             // msiHelp
             // 
             this.msiHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msiToolsHowTo,
+            this.msiHelpHowTo,
             this.toolStripSeparator5,
             this.msiHelpAbout});
             this.msiHelp.Name = "msiHelp";
             this.msiHelp.Size = new System.Drawing.Size(47, 26);
             this.msiHelp.Text = "&Help";
             // 
-            // msiToolsHowTo
+            // msiHelpHowTo
             // 
-            this.msiToolsHowTo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msiToolsHowToTurboUnlock,
-            this.msiHelpHowToRamTimings});
-            this.msiToolsHowTo.Name = "msiToolsHowTo";
-            this.msiToolsHowTo.Size = new System.Drawing.Size(130, 22);
-            this.msiToolsHowTo.Text = "How to";
+            this.msiHelpHowTo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msiHelpHowToTurboUnlock,
+            this.msiHelpHowToRamTimings,
+            this.msiHelpHowToUseCh341a});
+            this.msiHelpHowTo.Name = "msiHelpHowTo";
+            this.msiHelpHowTo.Size = new System.Drawing.Size(130, 22);
+            this.msiHelpHowTo.Text = "How to";
             // 
-            // msiToolsHowToTurboUnlock
+            // msiHelpHowToTurboUnlock
             // 
-            this.msiToolsHowToTurboUnlock.Name = "msiToolsHowToTurboUnlock";
-            this.msiToolsHowToTurboUnlock.Size = new System.Drawing.Size(207, 22);
-            this.msiToolsHowToTurboUnlock.Text = "Unlock Turbo Boost";
+            this.msiHelpHowToTurboUnlock.Name = "msiHelpHowToTurboUnlock";
+            this.msiHelpHowToTurboUnlock.Size = new System.Drawing.Size(305, 22);
+            this.msiHelpHowToTurboUnlock.Text = "Unlock Turbo Boost";
+            this.msiHelpHowToTurboUnlock.Click += new System.EventHandler(this.msiHelpHowToTurboUnlock_Click);
             // 
             // msiHelpHowToRamTimings
             // 
             this.msiHelpHowToRamTimings.Name = "msiHelpHowToRamTimings";
-            this.msiHelpHowToRamTimings.Size = new System.Drawing.Size(207, 22);
+            this.msiHelpHowToRamTimings.Size = new System.Drawing.Size(305, 22);
             this.msiHelpHowToRamTimings.Text = "Tighten RAM timings";
+            this.msiHelpHowToRamTimings.Click += new System.EventHandler(this.msiHelpHowToRamTimings_Click);
+            // 
+            // msiHelpHowToUseCh341a
+            // 
+            this.msiHelpHowToUseCh341a.Name = "msiHelpHowToUseCh341a";
+            this.msiHelpHowToUseCh341a.Size = new System.Drawing.Size(305, 22);
+            this.msiHelpHowToUseCh341a.Text = "How to use CH341A BIOS Programmer";
+            this.msiHelpHowToUseCh341a.Click += new System.EventHandler(this.msiHelpHowToUseCh341a_Click);
             // 
             // toolStripSeparator5
             // 
@@ -279,15 +265,12 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem msiExit;
         private System.Windows.Forms.ToolStripMenuItem msiExplore;
-        private System.Windows.Forms.ToolStripMenuItem msiTools;
-        private System.Windows.Forms.ToolStripMenuItem msiToolsFpt;
-        private System.Windows.Forms.ToolStripMenuItem msiToolsAfuWin;
         private System.Windows.Forms.ToolStripMenuItem msiHelp;
-        private System.Windows.Forms.ToolStripMenuItem msiToolsHowTo;
+        private System.Windows.Forms.ToolStripMenuItem msiHelpHowTo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem msiHelpAbout;
         private System.Windows.Forms.ToolStripMenuItem msiExploreMotherboards;
-        private System.Windows.Forms.ToolStripMenuItem msiToolsHowToTurboUnlock;
+        private System.Windows.Forms.ToolStripMenuItem msiHelpHowToTurboUnlock;
         private System.Windows.Forms.ToolStripMenuItem msiHelpHowToRamTimings;
         private System.Windows.Forms.ToolStripMenuItem msiExploreBioses;
         private System.Windows.Forms.StatusStrip ssStatus;
@@ -296,5 +279,6 @@
         private System.Windows.Forms.ToolStripMenuItem msiLanguage;
         private System.Windows.Forms.ToolStripMenuItem msiLanguageEnglish;
         private System.Windows.Forms.ToolStripMenuItem msiLanguageUkrainian;
+        private System.Windows.Forms.ToolStripMenuItem msiHelpHowToUseCh341a;
     }
 }

@@ -13,10 +13,12 @@ namespace Mi899
 {
     public partial class ReadMePartialForm : UserControl, II18nCompatible
     {
-        WebBrowser _browser = new WebBrowser();
+        private WebBrowser _browser = new WebBrowser();
+        private MdToHtmlConverter _mdToHtmlConverter;
 
-        public ReadMePartialForm()
+        public ReadMePartialForm(MdToHtmlConverter mdToHtmlConverter)
         {
+            _mdToHtmlConverter = mdToHtmlConverter ?? throw new ArgumentNullException(nameof(mdToHtmlConverter));
             InitializeComponent();
             _browser.Name = "wbReadme";
             _browser.Dock = DockStyle.Fill;
@@ -28,7 +30,7 @@ namespace Mi899
             string path = GetReadmeMdPath(i18n);
             using TextReader reader = new StreamReader(path);
             string md = reader.ReadToEnd();
-            string html = "<style>* { font-family: Consolas; } a { text-decoration: none; }</style>" + CommonMarkConverter.Convert(md);
+            string html = _mdToHtmlConverter.Convert(md);
 
             _browser.DocumentText = html;
         }

@@ -13,11 +13,10 @@
     "MainForm.msiFileReadMe.Text": "Read me!",
     "MainForm.msiHelp.Text": "&Help",
     "MainForm.msiHelpAbout.Text": "&About...",
+    "MainForm.msiHelpHowTo.Text": "How to",
     "MainForm.msiHelpHowToRamTimings.Text": "Tighten RAM timings",
-    "MainForm.msiTools.Text": "&Tools",
-    "MainForm.msiToolsAfuWin.Text": "AfuWin",
-    "MainForm.msiToolsHowTo.Text": "How to",
-    "MainForm.msiToolsHowToTurboUnlock.Text": "Unlock Turbo Boost",
+    "MainForm.msiHelpHowToTurboUnlock.Text": "Unlock Turbo Boost",
+    "MainForm.msiHelpHowToUseCh341a.Text": "How to use CH341A BIOS Programmer",
     "MainForm.Text": "Mi899 - X99 Tool Set",
     "MainForm.tsslVersion.Text": "Mi899 Version 1.0.0 - Copyright © Miyconst",
     "MotherboardPartialForm.grdBioses.colId.HeaderText": "Id",
@@ -49,7 +48,8 @@
     "ToolPartialForm.cbExecuteScript.Text": "Execute script",
     "ToolPartialForm.lblBios.Text": "BIOS:",
     "ToolPartialForm.lblMotherboard.Text": "Motherboard:",
-    "ToolPartialForm.lblTool.Text": "Tool:"
+    "ToolPartialForm.lblTool.Text": "Tool:",
+    "ToolPartialForm.ToolPartialForm.txtReadme.Text": "# BIOS read and write \r\n\r\nOn this form you can dump your current BIOS to create a backup or flash selected BIOS onto your motherboar.\r\n\r\n## Mi899:\r\n\r\n- Prepares files and scripts to simplify BIOS read/write process.\r\n- Copies the files and the scripts into a temp folder.\r\n- Opens the temp folder location.\r\n- Does NOT read or write your motherboard’s BIOS.\r\n- Does NOT validate compatibility of your motherboard with the selected BIOS.\r\n- Does NOT validate the BIOS read/write result.\r\n\r\n## Final warning:\r\n\r\nIf something goes wrong, you are the only one responsible for your actions."
   },
   "Ua": {
     "BiosesPartialForm.grdBioses.colId.HeaderText": "ID",
@@ -65,10 +65,10 @@
     "MainForm.msiFileReadMe.Text": "Прочитай мене!",
     "MainForm.msiHelp.Text": "&Допомога",
     "MainForm.msiHelpAbout.Text": "&Про програму...",
+    "MainForm.msiHelpHowTo.Text": "Як виконати",
     "MainForm.msiHelpHowToRamTimings.Text": "Налаштувати затримки ОЗП",
-    "MainForm.msiTools.Text": "&Інструменти",
-    "MainForm.msiToolsHowTo.Text": "Як виконати",
-    "MainForm.msiToolsHowToTurboUnlock.Text": "Unlock Turbo Boost",
+    "MainForm.msiHelpHowToTurboUnlock.Text": "Unlock Turbo Boost",
+    "MainForm.msiHelpHowToUseCh341a.Text": "Як використовувати CH341A BIOS программер",
     "MainForm.Text": "Mi899 - X99 Інструменти",
     "MainForm.tsslVersion.Text": "Mi899 Версія 1.0.0 - Авторське право © Miyconst",
     "MotherboardPartialForm.grdBioses.colId.HeaderText": "Id",
@@ -100,6 +100,7 @@
     "ToolPartialForm.cbExecuteScript.Text": "Виконати скріпт",
     "ToolPartialForm.lblBios.Text": "BIOS:",
     "ToolPartialForm.lblMotherboard.Text": "Материнська плата:",
-    "ToolPartialForm.lblTool.Text": "Інструмент:"
+    "ToolPartialForm.lblTool.Text": "Інструмент:",
+    "ToolPartialForm.ToolPartialForm.txtReadme.Text": "# Зчитування та запис BIOS \r\n\r\nУ цій формі ви можете зберегти поточний BIOS, щоб створити резервну копію або прошити обраний BIOS на вашу материнську плату.\r\n\r\n## Mi899:\r\n\r\n- Готує файли та скріпти для спрощення процесу зчитування та запису BIOS.\r\n- Копіює необхідні файли та скріпти у тимчасову папку.\r\n- Відкриває розташування тимчасової папки.\r\n- НЕ читає і не пише BIOS вашої материнської плати.\r\n- НЕ перевіряє сумісність вашої материнської плати з обраним BIOS.\r\n- НЕ перевіряє результат зчитування або запису BIOS.\r\n\r\n## Остаточне попередження:\r\n\r\nЯкщо щось піде не так, саме ви будете відповідальними за ваші дії."
   }
 }
