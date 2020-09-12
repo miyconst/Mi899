@@ -33,6 +33,12 @@ namespace Mi899
                     case DataGridViewColumn dgvc:
                         dgvc.ApplyI18nToProperties(i18n);
                         break;
+                    case Button button:
+                        button.ApplyI18nToProperties(i18n);
+                        break;
+                    case CheckBox cb:
+                        cb.ApplyI18nToProperties(i18n);
+                        break;
                     default:
                         throw new NotImplementedException($"Unable to apply I18n to a component of type {c.GetType()}.");
                 }
@@ -60,6 +66,20 @@ namespace Mi899
             II18nCompatible parent = label.GetI18nCompatibleParent();
 
             label.Text = i18n.Get(label.Text, parent.Name, label.Name, nameof(ToolStripStatusLabel.Text));
+        }
+
+        public static void ApplyI18nToProperties(this Button button, I18n i18n)
+        {
+            II18nCompatible parent = button.GetI18nCompatibleParent();
+
+            button.Text = i18n.Get(button.Text, parent.Name, button.Name, nameof(ToolStripStatusLabel.Text));
+        }
+
+        public static void ApplyI18nToProperties(this CheckBox cb, I18n i18n)
+        {
+            II18nCompatible parent = cb.GetI18nCompatibleParent();
+
+            cb.Text = i18n.Get(cb.Text, parent.Name, cb.Name, nameof(ToolStripStatusLabel.Text));
         }
 
         public static void ApplyI18nToProperties(this DataGridViewColumn dgvc, I18n i18n)

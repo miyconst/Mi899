@@ -18,6 +18,7 @@ namespace Mi899
         private MotherboardPartialForm _motherboardPartialForm;
         private MotherboardsPartialForm _motherboardsPartialForm;
         private BiosesPartialForm _biosesPartialForm;
+        private ToolPartialForm _toolPartialForm;
 
         public MainForm
         (
@@ -26,7 +27,8 @@ namespace Mi899
             ReadMePartialForm readMePartialForm,
             MotherboardsPartialForm motherboardsPartialForm,
             MotherboardPartialForm motherboardPartialForm,
-            BiosesPartialForm biosesPartialForm
+            BiosesPartialForm biosesPartialForm,
+            ToolPartialForm toolPartialForm
         )
         {
             _i18n = i18n ?? throw new ArgumentNullException(nameof(i18n));
@@ -35,12 +37,21 @@ namespace Mi899
             _motherboardPartialForm = motherboardPartialForm ?? throw new ArgumentNullException(nameof(motherboardPartialForm));
             _motherboardsPartialForm = motherboardsPartialForm ?? throw new ArgumentNullException(nameof(motherboardsPartialForm));
             _biosesPartialForm = biosesPartialForm ?? throw new ArgumentNullException(nameof(biosesPartialForm));
+            _toolPartialForm = toolPartialForm ?? throw new ArgumentNullException(nameof(toolPartialForm));
 
             _motherboardsPartialForm.MotherboardSelected += MotherboardsPartialForm_MotherboardSelected;
+            _motherboardPartialForm.ToolSelected += MotherboardPartialForm_ToolSelected;
 
             InitializeComponent();
             Open(_readMePartialForm);
             ApplyI18n(_i18n);
+        }
+
+        private void MotherboardPartialForm_ToolSelected(object sender, ITool e)
+        {
+            MotherboardPartialForm form = (MotherboardPartialForm)sender;
+            _toolPartialForm.LoadData(form.Motherboard, e, null);
+            Open(_toolPartialForm);
         }
 
         private void MotherboardsPartialForm_MotherboardSelected(object sender, IMotherboard e)
@@ -77,7 +88,8 @@ namespace Mi899
                 _readMePartialForm,
                 _motherboardsPartialForm,
                 _motherboardPartialForm,
-                _biosesPartialForm
+                _biosesPartialForm,
+                _toolPartialForm
             };
         }
 

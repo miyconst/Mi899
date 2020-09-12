@@ -14,7 +14,9 @@ namespace Mi899
 {
     public partial class MotherboardPartialForm : UserControl, II18nCompatible
     {
-        Model _model;
+        private Model _model;
+        public event EventHandler<ITool> ToolSelected;
+        public IMotherboard Motherboard { get; private set; }
 
         public MotherboardPartialForm(Model model)
         {
@@ -26,7 +28,7 @@ namespace Mi899
 
         public void LoadData(IMotherboard motherboard)
         {
-            if (motherboard == null) throw new ArgumentNullException(nameof(motherboard));
+            Motherboard = motherboard ?? throw new ArgumentNullException(nameof(motherboard));
 
             picMotherboard.ImageLocation = motherboard.Images.FirstOrDefault()?.Url;
             txtId.Text = motherboard.Id;
@@ -40,13 +42,24 @@ namespace Mi899
             {
                 List<ITool> tools = _model.Tools.Where(x => motherboard.ToolIds.Contains(x.Id)).ToList();
 
-                if (tools.Any())
+                flpTools.Controls.Clear();
+
+                foreach (ITool item in tools)
                 {
-                    txtTools.Text = string.Join(", ", tools.Select(x => x.Name));
-                }
-                else
-                {
-                    txtTools.Text = string.Empty;
+                    ITool tool = item;
+                    LinkLabel lbl = new LinkLabel()
+                    {
+                        Text = tool.Name,
+                        AutoSize = true,
+                        Anchor = AnchorStyles.Left | AnchorStyles.Right
+                    };
+
+                    flpTools.Controls.Add(lbl);
+
+                    lbl.Click += (s, a) =>
+                    {
+                        ToolSelected?.Invoke(this, tool);
+                    };
                 }
             }
 
