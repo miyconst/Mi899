@@ -261,6 +261,7 @@
             this.btnFlash.TabIndex = 1;
             this.btnFlash.Text = "Flash selected BIOS";
             this.btnFlash.UseVisualStyleBackColor = true;
+            this.btnFlash.Click += new System.EventHandler(this.btnFlash_Click);
             // 
             // cbExecuteScript
             // 

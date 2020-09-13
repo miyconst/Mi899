@@ -85,7 +85,23 @@ namespace Mi899
 
         private void btnDump_Click(object sender, EventArgs e)
         {
+            Cursor = Cursors.WaitCursor;
             _toolManager.Dump(_motherboard, _tool, cbExecuteScript.Checked);
+            Cursor = Cursors.Default;
+        }
+
+        private void btnFlash_Click(object sender, EventArgs e)
+        {
+            IBios bios = ddlBioses.SelectedItem as IBios;
+
+            if (bios == null)
+            {
+                return;
+            }
+
+            Cursor = Cursors.WaitCursor;
+            _toolManager.Flash(_motherboard, bios, _tool, cbExecuteScript.Checked);
+            Cursor = Cursors.Default;
         }
     }
 }
