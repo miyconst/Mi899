@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
@@ -44,6 +45,7 @@ namespace Mi899
             _motherboardPartialForm.ToolSelected += MotherboardPartialForm_ToolSelected;
 
             InitializeComponent();
+            _i18n.Language = ConfigurationManager.AppSettings[nameof(I18n.Language)];
             Open(_readMePartialForm);
             ApplyI18n(_i18n);
         }
@@ -115,6 +117,18 @@ namespace Mi899
 
         }
 
+        private void SetLanguage(string language)
+        {
+            _i18n.Language = language;
+
+            Configuration c = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            c.AppSettings.Settings.Remove(nameof(I18n.Language));
+            c.AppSettings.Settings.Add(nameof(I18n.Language), _i18n.Language);
+            c.Save();
+
+            ApplyI18n(_i18n);
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
         }
@@ -143,14 +157,12 @@ namespace Mi899
 
         private void msiLanguageUkrainian_Click(object sender, EventArgs e)
         {
-            _i18n.Language = I18n.LanguageUa;
-            ApplyI18n(_i18n);
+            SetLanguage(I18n.LanguageUa);
         }
 
         private void msiLanguageEnglish_Click(object sender, EventArgs e)
         {
-            _i18n.Language = I18n.LanguageEn;
-            ApplyI18n(_i18n);
+            SetLanguage(I18n.LanguageEn);
         }
 
         private void msiFileReadMe_Click(object sender, EventArgs e)
