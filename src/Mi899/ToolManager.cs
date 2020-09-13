@@ -16,14 +16,18 @@ namespace Mi899
             if (motherboard == null) throw new ArgumentNullException(nameof(motherboard));
             if (tool == null) throw new ArgumentNullException(nameof(tool));
 
-            string path = Path.GetTempPath();
+            string path = Path.Combine(Path.GetTempPath(), nameof(Mi899), DateTime.Now.ToString("yyyy.MM.dd-HH.mm.ss"));
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
             FileInfo toolFi = new FileInfo(tool.FileName);
-            FileInfo tempToolFi = new FileInfo(Path.Combine(path, toolFi.Name));
             FileInfo tempBatFi = new FileInfo(Path.Combine(path, "dump.bat"));
             string dumpFileName = $"{motherboard.Id}-{DateTime.Now:yyyyMMdd-HHmmss}.rom";
 
-            File.Copy(toolFi.FullName, tempToolFi.FullName);
-            ZipFile.ExtractToDirectory(tempToolFi.FullName, tempToolFi.Directory.FullName);
+            ZipFile.ExtractToDirectory(toolFi.FullName, path);
 
             using TextWriter writer = new StreamWriter(tempBatFi.FullName);
 
@@ -31,6 +35,7 @@ namespace Mi899
             writer.WriteLine($":: {motherboard.Name} {motherboard.Version}");
             writer.WriteLine($":: {tool.Name} {tool.Version}");
             writer.WriteLine();
+            writer.WriteLine("cd /d %~dp0");
             writer.WriteLine(string.Format(tool.DumpCommand, dumpFileName));
             writer.WriteLine("PAUSE");
 
