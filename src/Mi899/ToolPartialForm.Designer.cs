@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToolPartialForm));
             this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
             this.tlpLeftColumn = new System.Windows.Forms.TableLayoutPanel();
@@ -48,7 +47,6 @@
             this.btnFlash = new System.Windows.Forms.Button();
             this.cbExecuteScript = new System.Windows.Forms.CheckBox();
             this.txtReadme = new System.Windows.Forms.RichTextBox();
-            this.ttpDefault = new System.Windows.Forms.ToolTip(this.components);
             this.tlpMain.SuspendLayout();
             this.tlpLeftColumn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMotherboard)).BeginInit();
@@ -274,8 +272,8 @@
             this.cbExecuteScript.Size = new System.Drawing.Size(149, 19);
             this.cbExecuteScript.TabIndex = 2;
             this.cbExecuteScript.Text = "Execute script";
-            this.ttpDefault.SetToolTip(this.cbExecuteScript, "Mark this checkbox to start the generated script automatically.");
             this.cbExecuteScript.UseVisualStyleBackColor = true;
+            this.cbExecuteScript.Visible = false;
             // 
             // txtReadme
             // 
@@ -325,7 +323,6 @@
         private System.Windows.Forms.Button btnFlash;
         private System.Windows.Forms.RichTextBox txtReadme;
         private System.Windows.Forms.CheckBox cbExecuteScript;
-        private System.Windows.Forms.ToolTip ttpDefault;
         private System.Windows.Forms.ComboBox ddlBioses;
     }
 }
