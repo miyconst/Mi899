@@ -1,17 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using Mi899.Data;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using System.IO;
-using System.IO.Compression;
-using System.Diagnostics;
-using CommonMark;
 
 namespace Mi899
 {
@@ -43,7 +38,6 @@ namespace Mi899
             _motherboard = motherboard ?? throw new ArgumentNullException(nameof(motherboard)); ;
             _tool = tool ?? throw new ArgumentNullException(nameof(tool));
 
-            picMotherboard.ImageLocation = motherboard.Images.FirstOrDefault()?.Url;
             txtMotherboard.Text = motherboard.Name;
             txtMotherboardVersion.Text = motherboard.Version;
             txtTool.Text = tool.Name;
@@ -102,6 +96,20 @@ namespace Mi899
             Cursor = Cursors.WaitCursor;
             _toolManager.Flash(_motherboard, bios, _tool, cbExecuteScript.Checked);
             Cursor = Cursors.Default;
+        }
+
+        private void ddlBioses_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox ddl = (ComboBox)sender;
+
+            if (ddl.SelectedItem is IBios bios)
+            {
+                txtBiosDescription.Text = bios.Description;
+            }
+            else
+            {
+                txtBiosDescription.Text = string.Empty;
+            }
         }
     }
 }

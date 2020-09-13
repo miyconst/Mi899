@@ -14,7 +14,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Bioses\huananzhi-x99-f8.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\huananzhi-x99-f8.tu.v3p0.ffs.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\huananzhi-x99-f8.tu.v3p50.ffs.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\huananzhi-x99-f8.tu.v3p70.ffs.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\huananzhi-x99-f8.tu.v3p80.ffs.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\huananzhi-x99-f8.tu.v3p90.ffs.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Bioses\huananzhi-x99-tf.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\jingsha-x99-d8-svk.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Bioses\jingsha-x99-d8.rom.zip">

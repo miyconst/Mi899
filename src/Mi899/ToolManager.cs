@@ -76,7 +76,7 @@ namespace Mi899
 
             if (bios != null)
             {
-                writer.Write($":: BIOS: {bios.Name}");
+                writer.WriteLine($":: BIOS: {bios.Name}");
             }
 
             writer.WriteLine($":: Tool: {tool.Name} {tool.Version}");
