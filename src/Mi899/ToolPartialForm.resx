@@ -60,7 +60,7 @@
   <data name="txtReadme.Text" xml:space="preserve">
     <value># BIOS read and write 
 
-On this form you can dump your current BIOS to create a backup or flash selected BIOS onto your motherboard.
+On this form, you can dump your current BIOS to create a backup or flash selected BIOS onto your motherboard.
 
 ## Mi899:
 
@@ -68,11 +68,26 @@ On this form you can dump your current BIOS to create a backup or flash selected
 - Copies the files and the scripts into a temp folder.
 - Opens the temp folder location.
 - Does NOT read or write your motherboard’s BIOS.
-- Does NOT validate compatibility of your motherboard with the selected BIOS.
-- Does NOT validate the BIOS read/write result.
+- Does NOT validate the compatibility of your motherboard with the selected BIOS.
+- Does NOT validate the BIOS read/write the result.
 
 ## Final warning:
 
-If something goes wrong, you are the only one responsible for your actions. </value>
+If something goes wrong, you are the only one responsible for your actions. 
+
+## Usage
+
+### To dump your current motherboard BIOS:
+
+- Click the `[Dump current BIOS]` button.
+- Wait until Mi899 opens a temp folder with prepared files.
+- Run the `dump.bat` script from the folder as administrator.
+
+### To flash a BIOS onto your motherboard:
+
+- Select the desired BIOS in the `BIOS` drop-down list located on the left side of the form.
+- Click the `[Flash selected BIOS]` button.
+- Wait until Mi899 opens a temp folder with prepared files.
+- Run the `flash.bat` script from the folder as administrator.</value>
   </data>
 </root>
