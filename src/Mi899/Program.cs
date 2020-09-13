@@ -21,6 +21,7 @@ namespace Mi899
                 .AddSingleton<Model>(Model.LoadFromJson())
                 .AddSingleton<MainForm>()
                 .AddTransient<MdToHtmlConverter>()
+                .AddTransient<ToolManager>()
                 .AddTransient<ReadMePartialForm>()
                 .AddTransient<BiosesPartialForm>()
                 .AddTransient<MotherboardPartialForm>()

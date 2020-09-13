@@ -22,11 +22,13 @@ namespace Mi899
         private IMotherboard _motherboard;
         private ITool _tool;
         private WebBrowser _wbReadme;
+        private ToolManager _toolManager;
 
-        public ToolPartialForm([NotNull] Model model, [NotNull] MdToHtmlConverter mdToHtmlConverter)
+        public ToolPartialForm([NotNull] Model model, [NotNull] MdToHtmlConverter mdToHtmlConverter, [NotNull] ToolManager toolManager)
         {
             _model = model ?? throw new ArgumentNullException(nameof(model));
             _mdToHtmlConverter = mdToHtmlConverter ?? throw new ArgumentNullException(nameof(mdToHtmlConverter));
+            _toolManager = toolManager ?? throw new ArgumentNullException(nameof(toolManager));
             InitializeComponent();
             ddlBioses.DisplayMember = nameof(IBios.Name);
             ddlBioses.ValueMember = nameof(IBios.Id);
@@ -83,30 +85,7 @@ namespace Mi899
 
         private void btnDump_Click(object sender, EventArgs e)
         {
-            string path = Path.GetTempPath();
-            FileInfo toolFi = new FileInfo(_tool.FileName);
-            FileInfo tempToolFi = new FileInfo(Path.Combine(path, toolFi.Name));
-            FileInfo tempBatFi = new FileInfo(Path.Combine(path, "dump.bat"));
-            string dumpFileName = $"{_motherboard.Id}-{DateTime.Now:yyyyMMdd-HHmmss}.rom";
-
-            File.Copy(toolFi.FullName, tempToolFi.FullName);
-            ZipFile.ExtractToDirectory(tempToolFi.FullName, tempToolFi.Directory.FullName);
-
-            using TextWriter writer = new StreamWriter(tempBatFi.FullName);
-
-            writer.WriteLine($":: {nameof(Mi899)} - {DateTime.Now.ToShortDateString()} {DateTime.Now.ToShortTimeString()}");
-            writer.WriteLine($":: {_motherboard.Name} {_motherboard.Version}");
-            writer.WriteLine($":: {_tool.Name} {_tool.Version}");
-            writer.WriteLine();
-            writer.WriteLine(string.Format(_tool.DumpCommand, dumpFileName));
-            writer.WriteLine("PAUSE");
-
-            ProcessStartInfo psi = new ProcessStartInfo(path)
-            {
-                UseShellExecute = true
-            };
-
-            Process.Start(psi);
+            _toolManager.Dump(_motherboard, _tool, cbExecuteScript.Checked);
         }
     }
 }
