@@ -12,12 +12,12 @@ namespace Mi899
 {
     public partial class ToolPartialForm : UserControl, II18nCompatible
     {
-        private Model _model;
-        private MdToHtmlConverter _mdToHtmlConverter;
+        private readonly Model _model;
+        private readonly MdToHtmlConverter _mdToHtmlConverter;
         private IMotherboard _motherboard;
         private ITool _tool;
-        private WebBrowser _wbReadme;
-        private ToolManager _toolManager;
+        private readonly WebBrowser _wbReadme;
+        private readonly ToolManager _toolManager;
 
         public ToolPartialForm([NotNull] Model model, [NotNull] MdToHtmlConverter mdToHtmlConverter, [NotNull] ToolManager toolManager)
         {
@@ -28,8 +28,10 @@ namespace Mi899
             ddlBioses.DisplayMember = nameof(IBios.Name);
             ddlBioses.ValueMember = nameof(IBios.Id);
             txtReadme.Visible = false;
-            _wbReadme = new WebBrowser();
-            _wbReadme.Dock = DockStyle.Fill;
+            _wbReadme = new WebBrowser()
+            {
+                Dock = DockStyle.Fill
+            };
             tlpRightColumn.Controls.Add(_wbReadme, 0, 0);
         }
 
@@ -41,6 +43,7 @@ namespace Mi899
             txtMotherboard.Text = motherboard.Name;
             txtMotherboardVersion.Text = motherboard.Version;
             txtTool.Text = tool.Name;
+            txtToolVersion.Text = tool.Version;
 
             {
                 IBios[] bioses = _model
@@ -105,10 +108,12 @@ namespace Mi899
             if (ddl.SelectedItem is IBios bios)
             {
                 txtBiosDescription.Text = bios.Description;
+                txtBiosTurboUnlockDriver.Text = bios.TurboUnlockDriver;
             }
             else
             {
                 txtBiosDescription.Text = string.Empty;
+                txtBiosTurboUnlockDriver.Text = string.Empty;
             }
         }
     }

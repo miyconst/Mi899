@@ -31,8 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.grdBioses = new System.Windows.Forms.DataGridView();
             this.tlpSearch = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
@@ -52,14 +53,17 @@
             this.grdBioses.Size = new System.Drawing.Size(743, 338);
             this.grdBioses.TabIndex = 0;
             this.grdBioses.Text = "dataGridView1";
+            this.grdBioses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdBioses_CellContentClick);
             // 
             // tlpSearch
             // 
-            this.tlpSearch.ColumnCount = 2;
+            this.tlpSearch.ColumnCount = 3;
             this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpSearch.Controls.Add(this.textBox2, 1, 0);
+            this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tlpSearch.Controls.Add(this.txtSearch, 1, 0);
             this.tlpSearch.Controls.Add(this.lblSearch, 0, 0);
+            this.tlpSearch.Controls.Add(this.btnSearch, 2, 0);
             this.tlpSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpSearch.Location = new System.Drawing.Point(0, 0);
             this.tlpSearch.Margin = new System.Windows.Forms.Padding(0);
@@ -69,13 +73,14 @@
             this.tlpSearch.Size = new System.Drawing.Size(749, 30);
             this.tlpSearch.TabIndex = 1;
             // 
-            // textBox2
+            // txtSearch
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(54, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(692, 23);
-            this.textBox2.TabIndex = 1;
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Location = new System.Drawing.Point(54, 3);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(572, 23);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // lblSearch
             // 
@@ -86,6 +91,17 @@
             this.lblSearch.Size = new System.Drawing.Size(45, 15);
             this.lblSearch.TabIndex = 0;
             this.lblSearch.Text = "Search:";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.Location = new System.Drawing.Point(632, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(114, 23);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Text = "Apply";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // textBox1
             // 
@@ -145,7 +161,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tlpMain;
         private System.Windows.Forms.Label lblSearch;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.BindingSource bsBioses;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

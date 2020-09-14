@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -13,24 +14,26 @@ namespace Mi899
 {
     public partial class MainForm : Form, II18nCompatible
     {
-        private I18n _i18n;
-        private Model _model;
+        private readonly I18n _i18n;
+        private readonly Model _model;
         private Control _lastControl;
-        private ReadMePartialForm _readMePartialForm;
-        private MotherboardPartialForm _motherboardPartialForm;
-        private MotherboardsPartialForm _motherboardsPartialForm;
-        private BiosesPartialForm _biosesPartialForm;
-        private ToolPartialForm _toolPartialForm;
+        private readonly ReadMePartialForm _readMePartialForm;
+        private readonly MotherboardPartialForm _motherboardPartialForm;
+        private readonly MotherboardsPartialForm _motherboardsPartialForm;
+        private readonly BiosesPartialForm _biosesPartialForm;
+        private readonly ToolPartialForm _toolPartialForm;
+        private readonly AboutPartialForm _aboutPartialForm;
 
         public MainForm
         (
-            I18n i18n,
-            Model model,
-            ReadMePartialForm readMePartialForm,
-            MotherboardsPartialForm motherboardsPartialForm,
-            MotherboardPartialForm motherboardPartialForm,
-            BiosesPartialForm biosesPartialForm,
-            ToolPartialForm toolPartialForm
+            [NotNull] I18n i18n,
+            [NotNull] Model model,
+            [NotNull] ReadMePartialForm readMePartialForm,
+            [NotNull] MotherboardsPartialForm motherboardsPartialForm,
+            [NotNull] MotherboardPartialForm motherboardPartialForm,
+            [NotNull] BiosesPartialForm biosesPartialForm,
+            [NotNull] ToolPartialForm toolPartialForm,
+            [NotNull] AboutPartialForm aboutPartialForm
         )
         {
             _i18n = i18n ?? throw new ArgumentNullException(nameof(i18n));
@@ -40,6 +43,7 @@ namespace Mi899
             _motherboardsPartialForm = motherboardsPartialForm ?? throw new ArgumentNullException(nameof(motherboardsPartialForm));
             _biosesPartialForm = biosesPartialForm ?? throw new ArgumentNullException(nameof(biosesPartialForm));
             _toolPartialForm = toolPartialForm ?? throw new ArgumentNullException(nameof(toolPartialForm));
+            _aboutPartialForm = aboutPartialForm ?? throw new ArgumentNullException(nameof(aboutPartialForm));
 
             _motherboardsPartialForm.MotherboardSelected += MotherboardsPartialForm_MotherboardSelected;
             _motherboardPartialForm.ToolSelected += MotherboardPartialForm_ToolSelected;
@@ -90,7 +94,8 @@ namespace Mi899
                 _motherboardsPartialForm,
                 _motherboardPartialForm,
                 _biosesPartialForm,
-                _toolPartialForm
+                _toolPartialForm,
+                _aboutPartialForm
             };
         }
 
@@ -114,7 +119,6 @@ namespace Mi899
             };
 
             Process.Start(psi);
-
         }
 
         private void SetLanguage(string language)
@@ -183,6 +187,11 @@ namespace Mi899
         private void msiHelpHowToUseCh341a_Click(object sender, EventArgs e)
         {
             OpenUrl("http://www.miyconst.com/Blog/View/2086/ch341a-minimal-usage-guide-how-to-read-and-write-a-motherboard-bios");
+        }
+
+        private void msiHelpAbout_Click(object sender, EventArgs e)
+        {
+            Open(_aboutPartialForm);
         }
     }
 }

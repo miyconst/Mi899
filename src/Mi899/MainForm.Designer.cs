@@ -68,7 +68,7 @@
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tlpMain.Size = new System.Drawing.Size(1188, 636);
+            this.tlpMain.Size = new System.Drawing.Size(1008, 636);
             this.tlpMain.TabIndex = 0;
             // 
             // msMenu
@@ -82,7 +82,7 @@
             this.msiLanguage});
             this.msMenu.Location = new System.Drawing.Point(0, 0);
             this.msMenu.Name = "msMenu";
-            this.msMenu.Size = new System.Drawing.Size(1188, 30);
+            this.msMenu.Size = new System.Drawing.Size(1008, 30);
             this.msMenu.TabIndex = 0;
             this.msMenu.Text = "menuStrip1";
             // 
@@ -93,7 +93,7 @@
             this.toolStripSeparator2,
             this.msiExit});
             this.msiFile.Name = "msiFile";
-            this.msiFile.Size = new System.Drawing.Size(47, 26);
+            this.msiFile.Size = new System.Drawing.Size(47, 28);
             this.msiFile.Text = "&File";
             // 
             // msiFileReadMe
@@ -122,7 +122,7 @@
             this.msiExploreMotherboards,
             this.msiExploreBioses});
             this.msiExplore.Name = "msiExplore";
-            this.msiExplore.Size = new System.Drawing.Size(68, 26);
+            this.msiExplore.Size = new System.Drawing.Size(68, 28);
             this.msiExplore.Text = "&Explore";
             // 
             // msiExploreMotherboards
@@ -146,7 +146,7 @@
             this.toolStripSeparator5,
             this.msiHelpAbout});
             this.msiHelp.Name = "msiHelp";
-            this.msiHelp.Size = new System.Drawing.Size(47, 26);
+            this.msiHelp.Size = new System.Drawing.Size(47, 28);
             this.msiHelp.Text = "&Help";
             // 
             // msiHelpHowTo
@@ -190,6 +190,7 @@
             this.msiHelpAbout.Name = "msiHelpAbout";
             this.msiHelpAbout.Size = new System.Drawing.Size(130, 22);
             this.msiHelpAbout.Text = "&About...";
+            this.msiHelpAbout.Click += new System.EventHandler(this.msiHelpAbout_Click);
             // 
             // msiLanguage
             // 
@@ -197,7 +198,7 @@
             this.msiLanguageEnglish,
             this.msiLanguageUkrainian});
             this.msiLanguage.Name = "msiLanguage";
-            this.msiLanguage.Size = new System.Drawing.Size(75, 26);
+            this.msiLanguage.Size = new System.Drawing.Size(75, 28);
             this.msiLanguage.Text = "&Language";
             // 
             // msiLanguageEnglish
@@ -222,20 +223,20 @@
             this.tsslVersion});
             this.ssStatus.Location = new System.Drawing.Point(0, 606);
             this.ssStatus.Name = "ssStatus";
-            this.ssStatus.Size = new System.Drawing.Size(1188, 30);
+            this.ssStatus.Size = new System.Drawing.Size(1008, 30);
             this.ssStatus.TabIndex = 1;
             // 
             // tsslVersion
             // 
             this.tsslVersion.Name = "tsslVersion";
-            this.tsslVersion.Size = new System.Drawing.Size(301, 25);
+            this.tsslVersion.Size = new System.Drawing.Size(301, 27);
             this.tsslVersion.Text = "Mi899 Version 1.0.0 - Copyright © Miyconst";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 636);
+            this.ClientSize = new System.Drawing.Size(1008, 636);
             this.Controls.Add(this.tlpMain);
             this.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -260,7 +261,6 @@
 
         private System.Windows.Forms.TableLayoutPanel tlpMain;
         private System.Windows.Forms.MenuStrip msMenu;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem msiFileReadMe;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem msiExit;

@@ -34,6 +34,7 @@
             this.tlpSearch = new System.Windows.Forms.TableLayoutPanel();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.bsMotherboards = new System.Windows.Forms.BindingSource(this.components);
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdMotherboards)).BeginInit();
@@ -69,11 +70,13 @@
             // 
             // tlpSearch
             // 
-            this.tlpSearch.ColumnCount = 2;
+            this.tlpSearch.ColumnCount = 3;
             this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tlpSearch.Controls.Add(this.txtSearch, 1, 0);
             this.tlpSearch.Controls.Add(this.lblSearch, 0, 0);
+            this.tlpSearch.Controls.Add(this.btnSearch, 2, 0);
             this.tlpSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpSearch.Location = new System.Drawing.Point(0, 0);
             this.tlpSearch.Margin = new System.Windows.Forms.Padding(0);
@@ -88,8 +91,9 @@
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.Location = new System.Drawing.Point(54, 3);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(846, 23);
+            this.txtSearch.Size = new System.Drawing.Size(726, 23);
             this.txtSearch.TabIndex = 1;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // lblSearch
             // 
@@ -100,6 +104,17 @@
             this.lblSearch.Size = new System.Drawing.Size(45, 15);
             this.lblSearch.TabIndex = 0;
             this.lblSearch.Text = "Search:";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.Location = new System.Drawing.Point(786, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(114, 23);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Text = "Apply";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // MotherboardsPartialForm
             // 
@@ -126,5 +141,6 @@
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.BindingSource bsMotherboards;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

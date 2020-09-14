@@ -14,9 +14,9 @@ namespace Mi899
 {
     public partial class MotherboardPartialForm : UserControl, II18nCompatible
     {
-        private Model _model;
+        private readonly Model _model;
         public event EventHandler<ITool> ToolSelected;
-        public IMotherboard Motherboard { get; private set; }
+        public MotherboardRowData Motherboard { get; private set; }
 
         public MotherboardPartialForm(Model model)
         {
@@ -28,16 +28,16 @@ namespace Mi899
 
         public void LoadData(IMotherboard motherboard)
         {
-            Motherboard = motherboard ?? throw new ArgumentNullException(nameof(motherboard));
+            Motherboard = new MotherboardRowData(motherboard ?? throw new ArgumentNullException(nameof(motherboard)));
 
-            picMotherboard.ImageLocation = motherboard.Images.FirstOrDefault()?.Url;
-            txtId.Text = motherboard.Id;
-            txtName.Text = motherboard.Name;
-            txtBrand.Text = motherboard.Brand;
-            txtModel.Text = motherboard.Model;
-            txtVersion.Text = motherboard.Version;
-            txtTags.Text = motherboard.TagsString;
-            txtDescription.Text = motherboard.Description;
+            picMotherboard.ImageLocation = Motherboard.Images.FirstOrDefault()?.Url;
+            txtId.Text = Motherboard.Id;
+            txtName.Text = Motherboard.Name;
+            txtBrand.Text = Motherboard.Brand;
+            txtModel.Text = Motherboard.Model;
+            txtVersion.Text = Motherboard.Version;
+            txtTags.Text = Motherboard.TagsString;
+            txtDescription.Text = Motherboard.Description;
 
             {
                 List<ITool> tools = _model.Tools.Where(x => motherboard.ToolIds.Contains(x.Id)).ToList();
@@ -109,13 +109,16 @@ namespace Mi899
         {
             tcTabs.SelectedTab = tcTabs.TabPages[0];
 
+            grdImages.RowTemplate.Height = 120;
+            grdImages.AutoGenerateColumns = false;
+
             grdImages.Columns.Add(new DataGridViewImageColumn()
             {
                 Name = "colImage",
                 HeaderText = "Image",
                 DataPropertyName = "Image",
                 ImageLayout = DataGridViewImageCellLayout.Stretch,
-                Width = 120
+                Width = grdImages.RowTemplate.Height
             });
 
             grdImages.Columns.Add(new DataGridViewLinkColumn()
@@ -125,9 +128,6 @@ namespace Mi899
                 DataPropertyName = nameof(ILink.Url),
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
-
-            grdImages.RowTemplate.Height = 120;
-            grdImages.AutoGenerateColumns = false;
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {

@@ -27,6 +27,7 @@ namespace Mi899
                 .AddTransient<MotherboardPartialForm>()
                 .AddTransient<MotherboardsPartialForm>()
                 .AddTransient<ToolPartialForm>()
+                .AddTransient<AboutPartialForm>()
                 .BuildServiceProvider();
 
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
