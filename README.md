@@ -2,7 +2,7 @@
 
 This application is designed to simplify the life of the Chinese LGA 2011-3 X99 motherboard owners and collect useful information about the motherboards and compatible BIOS modifications.
 
-Read full readme - [`Mi899/README.md`](Mi899/README.md).
+Read full readme - [`src/Mi899/README.md`](Mi899/README.md).
 
 ## Requirements
 
