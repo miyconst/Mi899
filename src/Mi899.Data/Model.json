@@ -119,7 +119,70 @@
           "Url": "https://youtu.be/u__OXCuxM_U"
         }
       ]
+    },
+    {
+      "Id": "hz-X99-F8D",
+      "Name": "Huananzhi X99-F8D",
+      "Brand": "Huananzhi",
+      "Model": "X99-F8D",
+      "Version": "2.0",
+      "Tags": [ "huananzhi", "f8d", "ddr4" ],
+      "Description": "",
+      "IsFptCompatible": true,
+      "IsAfuWinCompatible": false,
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi X99-F8D/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Huananzhi X99-F8D/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Name": "Official page",
+          "Url": "??"
+        },
+        {
+          "Name": "YouTube review",
+          "Url": "https://www.youtube.com/watch?v=yfZW2b1WOlw&ab_channel=Miyconst"
+        }
+      ]
+    },
+    {
+      "Id": "hz-X99-T8D",
+      "Name": "Huananzhi X99-T8D",
+      "Brand": "Huananzhi",
+      "Model": "X99-T8D",
+      "Version": "",
+      "Tags": [ "huananzhi", "t8d", "ddr3" ],
+      "Description": "",
+      "IsFptCompatible": false,
+      "IsAfuWinCompatible": true,
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi X99-T8D/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Huananzhi X99-T8D/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Name": "Official page",
+          "Url": ""
+        },
+        {
+          "Name": "YouTube review",
+          "Url": ""
+        }
+      ]
     }
+
 
   ],
   "Bioses": [
