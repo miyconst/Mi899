@@ -39,7 +39,7 @@
             this.txtMotherboard = new System.Windows.Forms.TextBox();
             this.lblBios = new System.Windows.Forms.Label();
             this.ddlBioses = new System.Windows.Forms.ComboBox();
-            this.txtBiosTurboUnlockDriver = new System.Windows.Forms.TextBox();
+            this.txtBiosProperties = new System.Windows.Forms.TextBox();
             this.txtToolVersion = new System.Windows.Forms.TextBox();
             this.tlpRightColumn = new System.Windows.Forms.TableLayoutPanel();
             this.tlpButtons = new System.Windows.Forms.TableLayoutPanel();
@@ -80,7 +80,7 @@
             this.tlpInfo.Controls.Add(this.txtMotherboard, 0, 1);
             this.tlpInfo.Controls.Add(this.lblBios, 0, 3);
             this.tlpInfo.Controls.Add(this.ddlBioses, 0, 4);
-            this.tlpInfo.Controls.Add(this.txtBiosTurboUnlockDriver, 0, 5);
+            this.tlpInfo.Controls.Add(this.txtBiosProperties, 0, 5);
             this.tlpInfo.Controls.Add(this.txtToolVersion, 0, 9);
             this.tlpInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpInfo.Location = new System.Drawing.Point(3, 3);
@@ -91,10 +91,10 @@
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tlpInfo.Size = new System.Drawing.Size(444, 694);
             this.tlpInfo.TabIndex = 1;
@@ -104,11 +104,11 @@
             this.txtTool.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTool.Location = new System.Drawing.Point(3, 485);
+            this.txtTool.Location = new System.Drawing.Point(3, 521);
             this.txtTool.Multiline = true;
             this.txtTool.Name = "txtTool";
             this.txtTool.ReadOnly = true;
-            this.txtTool.Size = new System.Drawing.Size(438, 175);
+            this.txtTool.Size = new System.Drawing.Size(438, 139);
             this.txtTool.TabIndex = 1;
             // 
             // lblTool
@@ -116,7 +116,7 @@
             this.lblTool.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTool.AutoSize = true;
             this.lblTool.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTool.Location = new System.Drawing.Point(3, 460);
+            this.lblTool.Location = new System.Drawing.Point(3, 496);
             this.lblTool.Name = "lblTool";
             this.lblTool.Size = new System.Drawing.Size(438, 14);
             this.lblTool.TabIndex = 0;
@@ -127,11 +127,11 @@
             this.txtBiosDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBiosDescription.Location = new System.Drawing.Point(3, 183);
+            this.txtBiosDescription.Location = new System.Drawing.Point(3, 322);
             this.txtBiosDescription.Multiline = true;
             this.txtBiosDescription.Name = "txtBiosDescription";
             this.txtBiosDescription.ReadOnly = true;
-            this.txtBiosDescription.Size = new System.Drawing.Size(438, 266);
+            this.txtBiosDescription.Size = new System.Drawing.Size(438, 163);
             this.txtBiosDescription.TabIndex = 1;
             // 
             // txtMotherboardVersion
@@ -187,14 +187,17 @@
             this.ddlBioses.TabIndex = 2;
             this.ddlBioses.SelectedIndexChanged += new System.EventHandler(this.ddlBioses_SelectedIndexChanged);
             // 
-            // txtBiosTurboUnlockDriver
+            // txtBiosProperties
             // 
-            this.txtBiosTurboUnlockDriver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBiosTurboUnlockDriver.Location = new System.Drawing.Point(3, 153);
-            this.txtBiosTurboUnlockDriver.Name = "txtBiosTurboUnlockDriver";
-            this.txtBiosTurboUnlockDriver.ReadOnly = true;
-            this.txtBiosTurboUnlockDriver.Size = new System.Drawing.Size(438, 23);
-            this.txtBiosTurboUnlockDriver.TabIndex = 3;
+            this.txtBiosProperties.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBiosProperties.Location = new System.Drawing.Point(3, 153);
+            this.txtBiosProperties.Multiline = true;
+            this.txtBiosProperties.Name = "txtBiosProperties";
+            this.txtBiosProperties.ReadOnly = true;
+            this.txtBiosProperties.Size = new System.Drawing.Size(438, 163);
+            this.txtBiosProperties.TabIndex = 3;
             // 
             // txtToolVersion
             // 
@@ -319,7 +322,7 @@
         private System.Windows.Forms.RichTextBox txtReadme;
         private System.Windows.Forms.CheckBox cbExecuteScript;
         private System.Windows.Forms.ComboBox ddlBioses;
-        private System.Windows.Forms.TextBox txtBiosTurboUnlockDriver;
+        private System.Windows.Forms.TextBox txtBiosProperties;
         private System.Windows.Forms.TextBox txtToolVersion;
     }
 }

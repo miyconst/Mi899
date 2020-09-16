@@ -25,8 +25,8 @@ namespace Mi899
             _mdToHtmlConverter = mdToHtmlConverter ?? throw new ArgumentNullException(nameof(mdToHtmlConverter));
             _toolManager = toolManager ?? throw new ArgumentNullException(nameof(toolManager));
             InitializeComponent();
-            ddlBioses.DisplayMember = nameof(IBios.Name);
-            ddlBioses.ValueMember = nameof(IBios.Id);
+            ddlBioses.DisplayMember = nameof(BiosRowData.Name);
+            ddlBioses.ValueMember = nameof(BiosRowData.Id);
             txtReadme.Visible = false;
             _wbReadme = new WebBrowser()
             {
@@ -46,10 +46,11 @@ namespace Mi899
             txtToolVersion.Text = tool.Version;
 
             {
-                IBios[] bioses = _model
+                BiosRowData[] bioses = _model
                     .Bioses
                     .Where(x => x.MotherboardIds.Contains(motherboard.Id))
                     .OrderBy(x => x.Name)
+                    .Select(x => new BiosRowData(x))
                     .ToArray();
                 ddlBioses.Items.Clear();
                 ddlBioses.Items.AddRange(bioses);
@@ -89,7 +90,7 @@ namespace Mi899
 
         private void btnFlash_Click(object sender, EventArgs e)
         {
-            IBios bios = ddlBioses.SelectedItem as IBios;
+            BiosRowData bios = ddlBioses.SelectedItem as BiosRowData;
 
             if (bios == null)
             {
@@ -105,15 +106,15 @@ namespace Mi899
         {
             ComboBox ddl = (ComboBox)sender;
 
-            if (ddl.SelectedItem is IBios bios)
+            if (ddl.SelectedItem is BiosRowData bios)
             {
                 txtBiosDescription.Text = bios.Description;
-                txtBiosTurboUnlockDriver.Text = bios.TurboUnlockDriver;
+                txtBiosProperties.Text = bios.PropertiesString;
             }
             else
             {
                 txtBiosDescription.Text = string.Empty;
-                txtBiosTurboUnlockDriver.Text = string.Empty;
+                txtBiosProperties.Text = string.Empty;
             }
         }
     }

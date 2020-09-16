@@ -170,68 +170,62 @@
         {
           "Name": "YouTube review",
           "Url": "https://youtu.be/u__OXCuxM_U"
+        }
+      ]
+    },
+    {
+      "Id": "hz-x99-f8D",
+      "Name": "Huananzhi X99-F8D",
+      "Brand": "Huananzhi",
+      "Model": "X99-F8D",
+      "Version": "2.0",
+      "Tags": [ "huananzhi", "f8d", "ddr4" ],
+      "Description": "",
+      "ToolIds": [],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi X99-F8D/TopView.jpg"
         },
         {
-          "Id": "hz-X99-F8D",
-          "Name": "Huananzhi X99-F8D",
-          "Brand": "Huananzhi",
-          "Model": "X99-F8D",
-          "Version": "2.0",
-          "Tags": [ "huananzhi", "f8d", "ddr4" ],
-          "Description": "",
-          "IsFptCompatible": true,
-          "IsAfuWinCompatible": false,
-          "Images": [
-            {
-              "Name": "Top view",
-              "Url": "Images/Huananzhi X99-F8D/TopView.jpg"
-            },
-            {
-              "Name": "IO panel",
-              "Url": "Images/Huananzhi X99-F8D/IoPanel.jpg"
-            }
-          ],
-          "Links": [
-            {
-              "Name": "Official page",
-              "Url": "??"
-            },
-            {
-              "Name": "YouTube review",
-              "Url": "https://www.youtube.com/watch?v=yfZW2b1WOlw&ab_channel=Miyconst"
-            }
-          ]
+          "Name": "IO panel",
+          "Url": "Images/Huananzhi X99-F8D/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Name": "Official page",
+          "Url": "http://www.huananzhi.com/html/1/149/150/490.html"
         },
         {
-          "Id": "hz-X99-T8D",
-          "Name": "Huananzhi X99-T8D",
-          "Brand": "Huananzhi",
-          "Model": "X99-T8D",
-          "Version": "",
-          "Tags": [ "huananzhi", "t8d", "ddr3" ],
-          "Description": "",
-          "IsFptCompatible": false,
-          "IsAfuWinCompatible": true,
-          "Images": [
-            {
-              "Name": "Top view",
-              "Url": "Images/Huananzhi X99-T8D/TopView.jpg"
-            },
-            {
-              "Name": "IO panel",
-              "Url": "Images/Huananzhi X99-T8D/IoPanel.jpg"
-            }
-          ],
-          "Links": [
-            {
-              "Name": "Official page",
-              "Url": ""
-            },
-            {
-              "Name": "YouTube review",
-              "Url": ""
-            }
-          ]
+          "Name": "YouTube review",
+          "Url": "https://youtu.be/yfZW2b1WOlw"
+        }
+      ]
+    },
+    {
+      "Id": "hz-x99-t8d",
+      "Name": "Huananzhi X99-T8D",
+      "Brand": "Huananzhi",
+      "Model": "X99-T8D",
+      "Version": "",
+      "Tags": [ "huananzhi", "t8d", "ddr3" ],
+      "Description": "",
+      "ToolIds": [],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi X99-T8D/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Huananzhi X99-T8D/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Name": "Official page",
+          "Url": "http://www.huananzhi.com/html/1/149/150/455.html"
         }
       ]
     }
@@ -242,10 +236,11 @@
       "Name": "Stock Huananzhi X99-TF BIOS",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-tf.rom.zip",
-      "Description": "BIOS Settings: Default.",
-      "TurboUnlockDriver": null,
-      "IsTurboUnlocked": false,
-      "Chipset": [ "X99", "C612" ],
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "X99", "C612" ],
       "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
     },
     {
@@ -253,10 +248,11 @@
       "Name": "Stock Huananzhi X99-F8 BIOS, Miyconst optimized",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-f8.mi8.rom.zip",
-      "Description": "BIOS Settings: Miyconst optimal.",
-      "TurboUnlockDriver": null,
-      "IsTurboUnlocked": false,
-      "Chipset": [ "X99", "C612" ],
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal"
+      },
+      "Chipsets": [ "X99", "C612" ],
       "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
     },
     {
@@ -264,10 +260,11 @@
       "Name": "Stock JingSha X99-D8 BIOS",
       "MotherboardIds": [ "js-x99-d8" ],
       "FileName": "Bioses/jingsha-x99-d8.rom.zip",
-      "Description": "BIOS Settings: Default.",
-      "TurboUnlockDriver": null,
-      "IsTurboUnlocked": false,
-      "Chipset": [ "X99", "C612" ],
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "X99", "C612" ],
       "Tags": [ "jingsha", "d8", "stock", "x99", "c612" ]
     },
     {
@@ -275,10 +272,12 @@
       "Name": "Stock JingSha X99-D8 BIOS with RAM timings",
       "MotherboardIds": [ "js-x99-d8" ],
       "FileName": "Bioses/jingsha-x99-d8-svk.rom.zip",
-      "Description": "BIOS Settings: Default.\r\nAuthor: VK user Sergey. https://bit.ly/3hzcavK",
-      "TurboUnlockDriver": null,
-      "IsTurboUnlocked": false,
-      "Chipset": [ "X99", "C612" ],
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "VK user Sergey, https://bit.ly/3hzcavK"
+      },
+      "Chipsets": [ "X99", "C612" ],
       "Tags": [ "jingsha", "d8", "stock", "x99", "c612" ]
     },
     {
@@ -286,10 +285,14 @@
       "Name": "Stock Huananzhi X99-F8 BIOS with FFS Turbo Unlock",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p0.ffs.rom.zip",
-      "Description": "BIOS Settings: Default.\r\nCPU Voltage: Default.\r\nIMC Voltage: Default.",
-      "TurboUnlockDriver": "v3_payne_0_0.ffs",
-      "IsTurboUnlocked": true,
-      "Chipset": [ "X99", "C612" ],
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "CPU Voltage": "Default",
+        "IMC Voltage": "Default",
+        "Turbo Unlock Driver": "v3_payne_0_0.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
       "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
     },
     {
@@ -297,10 +300,14 @@
       "Name": "Stock Huananzhi X99-F8 BIOS with FFS (-50/50mv) Turbo Unlock",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p50.ffs.mi8.rom.zip",
-      "Description": "BIOS Settings: Miyconst optimal.\r\nCPU Voltage: -50mv.\r\nIMC Voltage: -50mv.",
-      "TurboUnlockDriver": "v3_payne_50_50.ffs",
-      "IsTurboUnlocked": true,
-      "Chipset": [ "X99", "C612" ],
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_50_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
       "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
     },
     {
@@ -308,10 +315,14 @@
       "Name": "Stock Huananzhi X99-F8 BIOS with FFS (-70/50mv) Turbo Unlock",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p70.ffs.mi8.rom.zip",
-      "Description": "BIOS Settings: Miyconst optimal.\r\nCPU Voltage: -70mv.\r\nIMC Voltage: -50mv.",
-      "TurboUnlockDriver": "v3_payne_70_50.ffs",
-      "IsTurboUnlocked": true,
-      "Chipset": [ "X99", "C612" ],
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_70_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
       "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
     },
     {
@@ -319,10 +330,14 @@
       "Name": "Stock Huananzhi X99-F8 BIOS with FFS (-80/50mv) Turbo Unlock",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p80.ffs.mi8.rom.zip",
-      "Description": "BIOS Settings: Miyconst optimal.\r\nCPU Voltage: -70mv.\r\nIMC Voltage: -50mv.",
-      "TurboUnlockDriver": "v3_payne_80_50.ffs",
-      "IsTurboUnlocked": true,
-      "Chipset": [ "X99", "C612" ],
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_80_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
       "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
     },
     {
@@ -330,10 +345,14 @@
       "Name": "Stock Huananzhi X99-F8 BIOS with FFS (-90/50mv) Turbo Unlock",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p90.ffs.mi8.rom.zip",
-      "Description": "BIOS Settings: Miyconst optimal.\r\nCPU Voltage: -90mv.\r\nIMC Voltage: -50mv.",
-      "TurboUnlockDriver": "v3_payne_90_50.ffs",
-      "IsTurboUnlocked": true,
-      "Chipset": [ "X99", "C612" ],
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_90_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
       "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
     }
   ],

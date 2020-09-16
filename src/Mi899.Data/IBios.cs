@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Mi899.Data
 {
@@ -9,10 +10,8 @@ namespace Mi899.Data
         string[] MotherboardIds { get; }
         string Description { get; }
         string[] Tags { get; }
-        string TagsString { get; }
         string FileName { get; }
-        string TurboUnlockDriver { get; }
-        bool IsTurboUnlocked { get; }
+        IReadOnlyDictionary<string, string> Properties { get; }
         string[] Chipsets { get; }
     }
 }

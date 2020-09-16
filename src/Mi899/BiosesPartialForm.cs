@@ -44,21 +44,11 @@ namespace Mi899
         {
             grdBioses.RowTemplate.Height = 80;
 
-            //grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
-            //{
-            //    Name = "colId",
-            //    HeaderText = nameof(IBios.Id),
-            //    DataPropertyName = nameof(IBios.Id),
-            //    ReadOnly = true,
-            //    AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
-            //    SortMode = DataGridViewColumnSortMode.Automatic,
-            //});
-
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colName",
-                HeaderText = nameof(IBios.Name),
-                DataPropertyName = nameof(IBios.Name),
+                HeaderText = nameof(BiosRowData.Name),
+                DataPropertyName = nameof(BiosRowData.Name),
                 ReadOnly = true,
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
                 SortMode = DataGridViewColumnSortMode.Automatic,
@@ -70,19 +60,23 @@ namespace Mi899
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
-                Name = "colTuDriver",
-                HeaderText = "TU Driver",
-                DataPropertyName = nameof(IBios.TurboUnlockDriver),
+                Name = "colProperties",
+                HeaderText = nameof(BiosRowData.Properties),
+                DataPropertyName = nameof(BiosRowData.PropertiesString),
                 ReadOnly = true,
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
-                SortMode = DataGridViewColumnSortMode.Automatic
+                SortMode = DataGridViewColumnSortMode.Automatic,
+                DefaultCellStyle = new DataGridViewCellStyle()
+                {
+                    WrapMode = DataGridViewTriState.True
+                }
             });
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colDescription",
-                HeaderText = nameof(IBios.Description),
-                DataPropertyName = nameof(IBios.Description),
+                HeaderText = nameof(BiosRowData.Description),
+                DataPropertyName = nameof(BiosRowData.Description),
                 ReadOnly = true,
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
                 SortMode = DataGridViewColumnSortMode.Automatic,
@@ -95,8 +89,22 @@ namespace Mi899
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colTags",
-                HeaderText = nameof(IBios.Tags),
-                DataPropertyName = nameof(IBios.TagsString),
+                HeaderText = nameof(BiosRowData.Tags),
+                DataPropertyName = nameof(BiosRowData.TagsString),
+                ReadOnly = true,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                SortMode = DataGridViewColumnSortMode.Automatic,
+                DefaultCellStyle = new DataGridViewCellStyle()
+                {
+                    WrapMode = DataGridViewTriState.True
+                }
+            });
+
+            grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "colChipsets",
+                HeaderText = nameof(BiosRowData.Chipsets),
+                DataPropertyName = nameof(BiosRowData.ChipsetsStrings),
                 ReadOnly = true,
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
                 SortMode = DataGridViewColumnSortMode.Automatic,
@@ -110,7 +118,7 @@ namespace Mi899
             {
                 Name = "colFileName",
                 HeaderText = "File path",
-                DataPropertyName = nameof(IBios.FileName),
+                DataPropertyName = nameof(BiosRowData.FileName),
                 ReadOnly = true,
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
                 SortMode = DataGridViewColumnSortMode.Automatic,
@@ -129,7 +137,7 @@ namespace Mi899
         private void PopulateDataSource()
         {
             string key = txtSearch.Text;
-            IEnumerable<IBios> source = _model.Bioses;
+            IEnumerable<BiosRowData> source = _model.Bioses.Select(x => new BiosRowData(x));
 
             if (!string.IsNullOrWhiteSpace(key))
             { 
@@ -138,10 +146,11 @@ namespace Mi899
                     x => x.Name.Contains(key, StringComparison.OrdinalIgnoreCase)
                         || x.TagsString.Contains(key, StringComparison.OrdinalIgnoreCase)
                         || x.Description.Contains(key, StringComparison.OrdinalIgnoreCase)
+                        || x.PropertiesString.Contains(key, StringComparison.OrdinalIgnoreCase)
                 );
             }
 
-            bsBioses.DataSource = new GenericBindingList<IBios>(source);
+            bsBioses.DataSource = new GenericBindingList<BiosRowData>(source);
         }
 
         private void grdBioses_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -150,9 +159,9 @@ namespace Mi899
 
             if (grid.Columns[e.ColumnIndex] is DataGridViewLinkColumn && e.RowIndex >= 0)
             {
-                GenericBindingList<IBios> list = (GenericBindingList<IBios>)bsBioses.DataSource;
+                GenericBindingList<BiosRowData> list = (GenericBindingList<BiosRowData>)bsBioses.DataSource;
 
-                IBios bios = list[e.RowIndex];
+                BiosRowData bios = list[e.RowIndex];
                 ProcessStartInfo psi = new ProcessStartInfo(bios.FileName)
                 {
                     UseShellExecute = true

@@ -71,7 +71,13 @@ namespace Mi899
             }).ToList();
             grdImages.AutoResizeColumns();
 
-            grdBioses.DataSource = new GenericBindingList<IBios>(_model.Bioses.Where(x => x.MotherboardIds.Contains(motherboard.Id)));
+            grdBioses.DataSource = new GenericBindingList<BiosRowData>
+            (
+                _model
+                    .Bioses
+                    .Where(x => x.MotherboardIds.Contains(motherboard.Id))
+                    .Select(x => new BiosRowData(x))
+            );
             grdBioses.AutoResizeColumns();
 
             grdLinks.DataSource = motherboard.Links;
@@ -118,7 +124,8 @@ namespace Mi899
                 HeaderText = "Image",
                 DataPropertyName = "Image",
                 ImageLayout = DataGridViewImageCellLayout.Stretch,
-                Width = grdImages.RowTemplate.Height
+                Width = grdImages.RowTemplate.Height,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.None
             });
 
             grdImages.Columns.Add(new DataGridViewLinkColumn()
@@ -132,25 +139,36 @@ namespace Mi899
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colId",
-                HeaderText = nameof(IBios.Id),
-                DataPropertyName = nameof(IBios.Id),
+                HeaderText = nameof(BiosRowData.Id),
+                DataPropertyName = nameof(BiosRowData.Id),
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colName",
-                HeaderText = nameof(IBios.Name),
-                DataPropertyName = nameof(IBios.Name),
+                HeaderText = nameof(BiosRowData.Name),
+                DataPropertyName = nameof(BiosRowData.Name),
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
-                Name = "colTuDriver",
-                HeaderText = "TU Driver",
-                ToolTipText = "Turbo Boost Unlock Driver",
-                DataPropertyName = nameof(IBios.TurboUnlockDriver),
+                Name = "colProperties",
+                HeaderText = nameof(BiosRowData.Properties),
+                DataPropertyName = nameof(BiosRowData.PropertiesString),
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                DefaultCellStyle = new DataGridViewCellStyle()
+                {
+                    WrapMode = DataGridViewTriState.True
+                }
+            });
+
+            grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                Name = "colChipsets",
+                HeaderText = nameof(BiosRowData.Chipsets),
+                DataPropertyName = nameof(BiosRowData.ChipsetsStrings),
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
 
@@ -158,10 +176,11 @@ namespace Mi899
             {
                 Name = "colPath",
                 HeaderText = "Path",
-                DataPropertyName = nameof(IBios.FileName),
+                DataPropertyName = nameof(BiosRowData.FileName),
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
 
+            grdBioses.RowTemplate.Height = 60;
             grdBioses.AutoGenerateColumns = false;
 
             grdLinks.Columns.Add(new DataGridViewTextBoxColumn()
