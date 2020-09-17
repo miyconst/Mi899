@@ -6,7 +6,7 @@ Read full readme - [`src/Mi899/README.md`](src/Mi899/README.md).
 
 ## Requirements
 
-- .NET Core 3.1 SDK is required to compile the application.
-- .NET Core 3.1 Runtime is required to run the application.
+- Windows x64 is required to run the application.
+- .NET Core 3.1 SDK is required to develop the application.
 
 [Download .NET Core](https://dotnet.microsoft.com/download) from the official Microsoft website.

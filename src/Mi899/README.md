@@ -20,7 +20,7 @@ This application is designed to simplify the life of the Chinese LGA 2011-3 X99 
 
 If you would like to contribute to the project you can:
 
-- Provide an application translation into a new language. I am looking for Spanish, Italian, and Portuguese translations.
+- Provide an application translation into a new language. I am looking for Polish, Spanish, Italian, and Portuguese translations.
 - Add information about another motherboard or BIOS modification.
 - Report bugs and issues.
 - Buy me a beer or a coffee to keep me motivated. [Donate with PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LXN9NNXVF34M8&source=url).
@@ -28,7 +28,7 @@ If you would like to contribute to the project you can:
 ### How to contribute
 
 - All contributions should be provided in a form of a [GitHub Pull Request](https://yangsu.github.io/pull-request-tutorial/#:~:text=What%20is%20a%20Pull%20Request,follow%2Dup%20commits%20if%20necessary.).
-- [Create a GitHub Issue](https://github.com/miyconst/Mi899) if you want to report a bug or contact me.
+- [Create a GitHub Issue](https://github.com/miyconst/Mi899) if you want to report a bug or suggest something.
 
 ## Connect with me
 
