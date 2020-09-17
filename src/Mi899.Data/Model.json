@@ -228,6 +228,26 @@
           "Url": "http://www.huananzhi.com/html/1/149/150/455.html"
         }
       ]
+    },
+    {
+      "Id": "mn-x99z",
+      "Name": "Machinist X99Z",
+      "Brand": "Machinist",
+      "Model": "X99Z",
+      "Version": "V102",
+      "Tags": [ "machinist", "kllisre", "qiyida", "atermiter", "x99z", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X99Z/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Machinist X99Z/IoPanel.jpg"
+        }
+      ]
     }
   ],
   "Bioses": [
@@ -269,12 +289,13 @@
     },
     {
       "Id": "js-x99-d8-svk",
-      "Name": "Stock JingSha X99-D8 BIOS with RAM timings",
+      "Name": "Stock JingSha X99-D8 BIOS, RAM timings",
       "MotherboardIds": [ "js-x99-d8" ],
       "FileName": "Bioses/jingsha-x99-d8-svk.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Settings": "Default",
+        "RAM timings": "Unlocked",
         "Author": "VK user Sergey, https://bit.ly/3hzcavK"
       },
       "Chipsets": [ "X99", "C612" ],
@@ -282,7 +303,7 @@
     },
     {
       "Id": "hz-x99-f8.tu.v3p0.ffs",
-      "Name": "Stock Huananzhi X99-F8 BIOS with FFS Turbo Unlock",
+      "Name": "Stock Huananzhi X99-F8 BIOS, TU FFS",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p0.ffs.rom.zip",
       "Description": "",
@@ -293,11 +314,11 @@
         "Turbo Unlock Driver": "v3_payne_0_0.ffs"
       },
       "Chipsets": [ "X99", "C612" ],
-      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
+      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
     },
     {
       "Id": "hz-x99-f8.tu.v3p50.ffs.mi8",
-      "Name": "Stock Huananzhi X99-F8 BIOS with FFS (-50/50mv) Turbo Unlock",
+      "Name": "Stock Huananzhi X99-F8 BIOS, TU FFS -50/50mv",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p50.ffs.mi8.rom.zip",
       "Description": "",
@@ -308,11 +329,11 @@
         "Turbo Unlock Driver": "v3_payne_50_50.ffs"
       },
       "Chipsets": [ "X99", "C612" ],
-      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
+      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
     },
     {
       "Id": "hz-x99-f8.tu.v3p70.ffs.mi8",
-      "Name": "Stock Huananzhi X99-F8 BIOS with FFS (-70/50mv) Turbo Unlock",
+      "Name": "Stock Huananzhi X99-F8 BIOS, TU FFS -70/50mv",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p70.ffs.mi8.rom.zip",
       "Description": "",
@@ -323,11 +344,11 @@
         "Turbo Unlock Driver": "v3_payne_70_50.ffs"
       },
       "Chipsets": [ "X99", "C612" ],
-      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
+      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
     },
     {
       "Id": "hz-x99-f8.tu.v3p80.ffs.mi8",
-      "Name": "Stock Huananzhi X99-F8 BIOS with FFS (-80/50mv) Turbo Unlock",
+      "Name": "Stock Huananzhi X99-F8 BIOS, TU FFS -80/50mv",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p80.ffs.mi8.rom.zip",
       "Description": "",
@@ -338,11 +359,11 @@
         "Turbo Unlock Driver": "v3_payne_80_50.ffs"
       },
       "Chipsets": [ "X99", "C612" ],
-      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
+      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
     },
     {
       "Id": "hz-x99-f8.tu.v3p90.ffs.mi8",
-      "Name": "Stock Huananzhi X99-F8 BIOS with FFS (-90/50mv) Turbo Unlock",
+      "Name": "Stock Huananzhi X99-F8 BIOS, TU FFS -90/50mv",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p90.ffs.mi8.rom.zip",
       "Description": "",
@@ -353,7 +374,140 @@
         "Turbo Unlock Driver": "v3_payne_90_50.ffs"
       },
       "Chipsets": [ "X99", "C612" ],
-      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
+      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
+    },
+    {
+      "Id": "mn-z99x",
+      "Name": "Stock Machinist X99Z BIOS",
+      "MotherboardIds": [ "mn-x99z" ],
+      "FileName": "Bioses/machinist-x99z.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99z", "stock", "x99", "c612" ]
+    },
+    {
+      "Id": "mn-z99x.mi8",
+      "Name": "Stock Machinist X99Z BIOS, RAM timings",
+      "MotherboardIds": [ "mn-x99z" ],
+      "FileName": "Bioses/machinist-x99z.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Unlocked"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99z", "stock", "x99", "c612" ]
+    },
+    {
+      "Id": "mn-z99x.tu.mi8",
+      "Name": "Stock Machinist X99Z BIOS, RAM timings, TU EFI",
+      "MotherboardIds": [ "mn-x99z" ],
+      "FileName": "Bioses/machinist-x99z.tu.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Unlocked",
+        "Turbo Unlock Driver": "Manual EFI installation is required"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99z", "tu", "x99", "c612" ]
+    },
+    {
+      "Id": "mn-z99x.mi8.macos",
+      "Name": "Stock Machinist X99Z BIOS, RAM timings, macOS",
+      "MotherboardIds": [ "mn-x99z" ],
+      "FileName": "Bioses/machinist-x99z.mi8.macos.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "macOS optimal",
+        "RAM timings": "Unlocked",
+        "Boot Logo": "macOS"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99z", "stock", "x99", "c612", "macos" ]
+    },
+    {
+      "Id": "machinist-x99z.tu.v3p0.mi8",
+      "Name": "Stock Machinist X99Z BIOS, RAM timings, TU FFS",
+      "MotherboardIds": [ "mn-x99z" ],
+      "FileName": "Bioses/machinist-x99z.tu.v3p0.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Unlocked",
+        "CPU Voltage": "Default",
+        "IMC Voltage": "Default",
+        "Turbo Unlock Driver": "v3_payne_0_0.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99z", "tu", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99z.tu.v3p50.mi8",
+      "Name": "Stock Machinist X99Z BIOS, RAM timings, TU FFS -50/50mv",
+      "MotherboardIds": [ "mn-x99z" ],
+      "FileName": "Bioses/machinist-x99z.tu.v3p50.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Unlocked",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_50_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99z", "tu", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99z.tu.v3p70.mi8",
+      "Name": "Stock Machinist X99Z BIOS, RAM timings, TU FFS -70/50mv",
+      "MotherboardIds": [ "mn-x99z" ],
+      "FileName": "Bioses/machinist-x99z.tu.v3p70.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Unlocked",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_70_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99z", "tu", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99z.tu.v3p80.mi8",
+      "Name": "Stock Machinist X99Z BIOS, RAM timings, TU FFS -80/50mv",
+      "MotherboardIds": [ "mn-x99z" ],
+      "FileName": "Bioses/machinist-x99z.tu.v3p80.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Unlocked",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_80_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99z", "tu", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99z.tu.v3p90.mi8",
+      "Name": "Stock Machinist X99Z BIOS, RAM timings, TU FFS -90/50mv",
+      "MotherboardIds": [ "mn-x99z" ],
+      "FileName": "Bioses/machinist-x99z.tu.v3p90.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Unlocked",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_90_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99z", "tu", "x99", "c612" ]
     }
   ],
   "Tools": [
@@ -367,7 +521,7 @@
     },
     {
       "Id": "afu-win-x64-5.12.03.2045",
-      "Name": "AfuWin",
+      "Name": "AMI Flasher Utility (AfuWin)",
       "Version": "5.12.03.2045",
       "DumpCommand": "AFUWINx64.exe {0} /O",
       "FlashCommand": "AFUWINx64.exe {0} /P /B /N /X",
