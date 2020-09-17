@@ -111,6 +111,12 @@ namespace Mi899
             return components;
         }
 
+        public override void Refresh()
+        {
+            base.Refresh();
+            grdImages.Columns[0].Width = grdImages.RowTemplate.Height;
+        }
+
         private void InitializeExtraComponent()
         {
             tcTabs.SelectedTab = tcTabs.TabPages[0];
@@ -125,7 +131,8 @@ namespace Mi899
                 DataPropertyName = "Image",
                 ImageLayout = DataGridViewImageCellLayout.Stretch,
                 Width = grdImages.RowTemplate.Height,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.None
+                MinimumWidth = grdImages.RowTemplate.Height,
+                Resizable = DataGridViewTriState.False
             });
 
             grdImages.Columns.Add(new DataGridViewLinkColumn()
@@ -133,7 +140,7 @@ namespace Mi899
                 Name = "colPath",
                 HeaderText = "Path",
                 DataPropertyName = nameof(ILink.Url),
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
@@ -141,7 +148,7 @@ namespace Mi899
                 Name = "colId",
                 HeaderText = nameof(BiosRowData.Id),
                 DataPropertyName = nameof(BiosRowData.Id),
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
@@ -149,7 +156,7 @@ namespace Mi899
                 Name = "colName",
                 HeaderText = nameof(BiosRowData.Name),
                 DataPropertyName = nameof(BiosRowData.Name),
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
             grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
@@ -157,7 +164,7 @@ namespace Mi899
                 Name = "colProperties",
                 HeaderText = nameof(BiosRowData.Properties),
                 DataPropertyName = nameof(BiosRowData.PropertiesString),
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 DefaultCellStyle = new DataGridViewCellStyle()
                 {
                     WrapMode = DataGridViewTriState.True
@@ -169,7 +176,7 @@ namespace Mi899
                 Name = "colChipsets",
                 HeaderText = nameof(BiosRowData.Chipsets),
                 DataPropertyName = nameof(BiosRowData.ChipsetsStrings),
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
             grdBioses.Columns.Add(new DataGridViewLinkColumn()
@@ -177,7 +184,7 @@ namespace Mi899
                 Name = "colPath",
                 HeaderText = "Path",
                 DataPropertyName = nameof(BiosRowData.FileName),
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
             grdBioses.RowTemplate.Height = 60;
@@ -188,7 +195,7 @@ namespace Mi899
                 Name = "colName",
                 HeaderText = nameof(ILink.Name),
                 DataPropertyName = nameof(ILink.Name),
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
             grdLinks.Columns.Add(new DataGridViewLinkColumn()
@@ -196,7 +203,7 @@ namespace Mi899
                 Name = "colUrl",
                 HeaderText = "URL",
                 DataPropertyName = nameof(ILink.Url),
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
             grdLinks.AutoGenerateColumns = false;

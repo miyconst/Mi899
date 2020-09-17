@@ -75,7 +75,7 @@ namespace Mi899
                 HeaderText = nameof(IMotherboard.Name),
                 DataPropertyName = nameof(IMotherboard.Name),
                 ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 SortMode = DataGridViewColumnSortMode.Automatic
             });
 
@@ -85,7 +85,7 @@ namespace Mi899
                 HeaderText = nameof(IMotherboard.Version),
                 DataPropertyName = nameof(IMotherboard.Version),
                 ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 SortMode = DataGridViewColumnSortMode.Automatic
             });
 
@@ -95,7 +95,7 @@ namespace Mi899
                 HeaderText = nameof(IMotherboard.Description),
                 DataPropertyName = nameof(IMotherboard.Description),
                 ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 SortMode = DataGridViewColumnSortMode.Automatic,
                 DefaultCellStyle = new DataGridViewCellStyle()
                 {
@@ -109,7 +109,7 @@ namespace Mi899
                 HeaderText = nameof(IMotherboard.Tags),
                 DataPropertyName = nameof(MotherboardRowData.TagsString),
                 ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 SortMode = DataGridViewColumnSortMode.Automatic,
                 DefaultCellStyle = new DataGridViewCellStyle()
                 {

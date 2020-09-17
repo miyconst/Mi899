@@ -108,6 +108,7 @@ namespace Mi899
 
             tlpMain.Controls.Add(control, 0, 1);
             control.Dock = DockStyle.Fill;
+            control.Refresh();
             _lastControl = control;
         }
 

@@ -50,7 +50,7 @@ namespace Mi899
                 HeaderText = nameof(BiosRowData.Name),
                 DataPropertyName = nameof(BiosRowData.Name),
                 ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 SortMode = DataGridViewColumnSortMode.Automatic,
                 DefaultCellStyle = new DataGridViewCellStyle() 
                 { 
@@ -64,7 +64,7 @@ namespace Mi899
                 HeaderText = nameof(BiosRowData.Properties),
                 DataPropertyName = nameof(BiosRowData.PropertiesString),
                 ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 SortMode = DataGridViewColumnSortMode.Automatic,
                 DefaultCellStyle = new DataGridViewCellStyle()
                 {
@@ -78,7 +78,7 @@ namespace Mi899
                 HeaderText = nameof(BiosRowData.Description),
                 DataPropertyName = nameof(BiosRowData.Description),
                 ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 SortMode = DataGridViewColumnSortMode.Automatic,
                 DefaultCellStyle = new DataGridViewCellStyle()
                 {
@@ -92,7 +92,7 @@ namespace Mi899
                 HeaderText = nameof(BiosRowData.Tags),
                 DataPropertyName = nameof(BiosRowData.TagsString),
                 ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 SortMode = DataGridViewColumnSortMode.Automatic,
                 DefaultCellStyle = new DataGridViewCellStyle()
                 {
@@ -106,7 +106,7 @@ namespace Mi899
                 HeaderText = nameof(BiosRowData.Chipsets),
                 DataPropertyName = nameof(BiosRowData.ChipsetsStrings),
                 ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 SortMode = DataGridViewColumnSortMode.Automatic,
                 DefaultCellStyle = new DataGridViewCellStyle()
                 {
@@ -120,7 +120,7 @@ namespace Mi899
                 HeaderText = "File path",
                 DataPropertyName = nameof(BiosRowData.FileName),
                 ReadOnly = true,
-                AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 SortMode = DataGridViewColumnSortMode.Automatic,
                 DefaultCellStyle = new DataGridViewCellStyle()
                 {
