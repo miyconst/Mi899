@@ -170,7 +170,7 @@
     "MotherboardsPartialForm.grdMotherboards.colTags.HeaderText": "Tags",
     "MotherboardsPartialForm.grdMotherboards.colVersion.HeaderText": "Versão",
     "MotherboardsPartialForm.lblSearch.Text": "Procurar:",
-    "ReadMePartialForm.wbReadme.DocumentText": "README.ptbr.md",
+    "ReadMePartialForm.wbReadme.DocumentText": "README.pt.md",
     "ToolPartialForm.btnDump.Text": "Despejar BIOS atual",
     "ToolPartialForm.btnFlash.Text": "Flash BIOS selecionada",
     "ToolPartialForm.cbExecuteScript.Text": "Executar script",
