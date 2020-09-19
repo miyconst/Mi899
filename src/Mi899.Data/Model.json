@@ -248,6 +248,32 @@
           "Url": "Images/Machinist X99Z/IoPanel.jpg"
         }
       ]
+    },
+    {
+      "Id": "vn-x99",
+      "Name": "Veineda X99",
+      "Brand": "Veineda",
+      "Model": "X99",
+      "Version": "V1.0",
+      "Tags": [ "veineda", "x99", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Veineda X99/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Veineda X99/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Name": "YouTube review",
+          "Url": "https://youtu.be/GCtCYys7qzM"
+        }
+      ]
     }
   ],
   "Bioses": [
@@ -508,6 +534,116 @@
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "machinist", "x99z", "tu", "x99", "c612" ]
+    },
+    {
+      "Id": "veineda-x99",
+      "Name": "Stock Veineda X99 BIOS",
+      "MotherboardIds": [ "vn-x99" ],
+      "FileName": "Bioses/veineda-x99.rom.zip",
+      "Description": "",
+      "Properties": {},
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "veineda", "x99", "c612" ]
+    },
+    {
+      "Id": "veineda-x99.mi8",
+      "Name": "Stock Veineda X99 BIOS, Miyconst optimal",
+      "MotherboardIds": [ "vn-x99" ],
+      "FileName": "Bioses/veineda-x99.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "veineda", "x99", "c612" ]
+    },
+    {
+      "Id": "veineda-x99.tu.mi8",
+      "Name": "Stock Veineda X99 BIOS, TU EFI",
+      "MotherboardIds": [ "vn-x99" ],
+      "FileName": "Bioses/veineda-x99.tu.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "Turbo Unlock Driver": "Manual EFI installation is required"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "veineda", "x99", "x99", "c612", "tu" ]
+    },
+    {
+      "Id": "veineda-x99.tu.v3p0.mi8",
+      "Name": "Stock Veineda X99 BIOS, TU FFS",
+      "MotherboardIds": [ "vn-x99" ],
+      "FileName": "Bioses/veineda-x99.tu.v3p0.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "CPU Voltage": "Default",
+        "IMC Voltage": "Default",
+        "Turbo Unlock Driver": "v3_payne_0_0.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "veineda", "x99", "x99", "c612", "tu" ]
+    },
+    {
+      "Id": "veineda-x99.tu.v3p50.mi8",
+      "Name": "Stock Veineda X99 BIOS, TU FFS -50/50mv",
+      "MotherboardIds": [ "vn-x99" ],
+      "FileName": "Bioses/veineda-x99.tu.v3p50.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_50_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "veineda", "x99", "x99", "c612", "tu" ]
+    },
+    {
+      "Id": "veineda-x99.tu.v3p70.mi8",
+      "Name": "Stock Veineda X99 BIOS, TU FFS -70/50mv",
+      "MotherboardIds": [ "vn-x99" ],
+      "FileName": "Bioses/veineda-x99.tu.v3p70.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_70_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "veineda", "x99", "x99", "c612", "tu" ]
+    },
+    {
+      "Id": "veineda-x99.tu.v3p80.mi8",
+      "Name": "Stock Veineda X99 BIOS, TU FFS -80/50mv",
+      "MotherboardIds": [ "vn-x99" ],
+      "FileName": "Bioses/veineda-x99.tu.v3p80.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_80_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "veineda", "x99", "x99", "c612", "tu" ]
+    },
+    {
+      "Id": "veineda-x99.tu.v3p90.mi8",
+      "Name": "Stock Veineda X99 BIOS, TU FFS -90/50mv",
+      "MotherboardIds": [ "vn-x99" ],
+      "FileName": "Bioses/veineda-x99.tu.v3p90.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_90_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "veineda", "x99", "x99", "c612", "tu" ]
     }
   ],
   "Tools": [
