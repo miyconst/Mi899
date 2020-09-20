@@ -9,9 +9,6 @@ namespace Mi899.Data
 {
     public class I18n
     {
-        public const string LanguageEn = "En";
-        public const string LanguageUa = "Ua";
-
         private string _language = "En";
         private Dictionary<string, Dictionary<string, string>> _values;
 

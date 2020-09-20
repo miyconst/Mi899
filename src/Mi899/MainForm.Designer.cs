@@ -46,8 +46,6 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.msiHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.msiLanguage = new System.Windows.Forms.ToolStripMenuItem();
-            this.msiLanguageEnglish = new System.Windows.Forms.ToolStripMenuItem();
-            this.msiLanguageUkrainian = new System.Windows.Forms.ToolStripMenuItem();
             this.ssStatus = new System.Windows.Forms.StatusStrip();
             this.tsslVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.tlpMain.SuspendLayout();
@@ -93,7 +91,7 @@
             this.toolStripSeparator2,
             this.msiExit});
             this.msiFile.Name = "msiFile";
-            this.msiFile.Size = new System.Drawing.Size(47, 28);
+            this.msiFile.Size = new System.Drawing.Size(47, 26);
             this.msiFile.Text = "&File";
             // 
             // msiFileReadMe
@@ -122,7 +120,7 @@
             this.msiExploreMotherboards,
             this.msiExploreBioses});
             this.msiExplore.Name = "msiExplore";
-            this.msiExplore.Size = new System.Drawing.Size(68, 28);
+            this.msiExplore.Size = new System.Drawing.Size(68, 26);
             this.msiExplore.Text = "&Explore";
             // 
             // msiExploreMotherboards
@@ -146,7 +144,7 @@
             this.toolStripSeparator5,
             this.msiHelpAbout});
             this.msiHelp.Name = "msiHelp";
-            this.msiHelp.Size = new System.Drawing.Size(47, 28);
+            this.msiHelp.Size = new System.Drawing.Size(47, 26);
             this.msiHelp.Text = "&Help";
             // 
             // msiHelpHowTo
@@ -194,26 +192,9 @@
             // 
             // msiLanguage
             // 
-            this.msiLanguage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msiLanguageEnglish,
-            this.msiLanguageUkrainian});
             this.msiLanguage.Name = "msiLanguage";
-            this.msiLanguage.Size = new System.Drawing.Size(75, 28);
+            this.msiLanguage.Size = new System.Drawing.Size(75, 26);
             this.msiLanguage.Text = "&Language";
-            // 
-            // msiLanguageEnglish
-            // 
-            this.msiLanguageEnglish.Name = "msiLanguageEnglish";
-            this.msiLanguageEnglish.Size = new System.Drawing.Size(144, 22);
-            this.msiLanguageEnglish.Text = "English";
-            this.msiLanguageEnglish.Click += new System.EventHandler(this.msiLanguageEnglish_Click);
-            // 
-            // msiLanguageUkrainian
-            // 
-            this.msiLanguageUkrainian.Name = "msiLanguageUkrainian";
-            this.msiLanguageUkrainian.Size = new System.Drawing.Size(144, 22);
-            this.msiLanguageUkrainian.Text = "Українська";
-            this.msiLanguageUkrainian.Click += new System.EventHandler(this.msiLanguageUkrainian_Click);
             // 
             // ssStatus
             // 
@@ -229,7 +210,7 @@
             // tsslVersion
             // 
             this.tsslVersion.Name = "tsslVersion";
-            this.tsslVersion.Size = new System.Drawing.Size(301, 27);
+            this.tsslVersion.Size = new System.Drawing.Size(301, 25);
             this.tsslVersion.Text = "Mi899 Version 1.0.0 - Copyright © Miyconst";
             // 
             // MainForm
@@ -277,8 +258,6 @@
         private System.Windows.Forms.ToolStripStatusLabel tsslVersion;
         private System.Windows.Forms.ToolStripMenuItem msiFile;
         private System.Windows.Forms.ToolStripMenuItem msiLanguage;
-        private System.Windows.Forms.ToolStripMenuItem msiLanguageEnglish;
-        private System.Windows.Forms.ToolStripMenuItem msiLanguageUkrainian;
         private System.Windows.Forms.ToolStripMenuItem msiHelpHowToUseCh341a;
     }
 }

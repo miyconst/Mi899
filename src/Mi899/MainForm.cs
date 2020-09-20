@@ -49,9 +49,29 @@ namespace Mi899
             _motherboardPartialForm.ToolSelected += MotherboardPartialForm_ToolSelected;
 
             InitializeComponent();
+            InitializeLanguageToolStripMenuItems();
             _i18n.Language = ConfigurationManager.AppSettings[nameof(I18n.Language)];
             Open(_readMePartialForm);
             ApplyI18n(_i18n);
+        }
+
+        private void InitializeLanguageToolStripMenuItems()
+        {
+            foreach (ILanguage l in _model.Languages)
+            {
+                ILanguage language = l;
+                ToolStripMenuItem tsmi = new ToolStripMenuItem()
+                {
+                    Text = l.Name
+                };
+
+                tsmi.Click += (s, e) =>
+                {
+                    SetLanguage(l.Code);
+                };
+
+                msiLanguage.DropDownItems.Add(tsmi);
+            }
         }
 
         private void MotherboardPartialForm_ToolSelected(object sender, ITool e)
@@ -158,16 +178,6 @@ namespace Mi899
 #if DEBUG
             _i18n.Dump();
 #endif
-        }
-
-        private void msiLanguageUkrainian_Click(object sender, EventArgs e)
-        {
-            SetLanguage(I18n.LanguageUa);
-        }
-
-        private void msiLanguageEnglish_Click(object sender, EventArgs e)
-        {
-            SetLanguage(I18n.LanguageEn);
         }
 
         private void msiFileReadMe_Click(object sender, EventArgs e)

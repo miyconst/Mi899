@@ -12,16 +12,19 @@ namespace Mi899.Data
         private List<Motherboard> _motherboards;
         private List<Bios> _bioses;
         private List<Tool> _tools;
+        private List<Language> _languages;
 
         public IReadOnlyList<IMotherboard> Motherboards => _motherboards;
         public IReadOnlyList<IBios> Bioses => _bioses;
         public IReadOnlyList<ITool> Tools => _tools;
+        public IReadOnlyList<ILanguage> Languages => _languages;
 
         public Model()
         {
             _motherboards = new List<Motherboard>();
             _bioses = new List<Bios>();
             _tools = new List<Tool>();
+            _languages = new List<Language>();
         }
 
         public static Model LoadFromJson()

@@ -1,4 +1,26 @@
 ﻿{
+  "Languages": [
+    {
+      "Name": "English",
+      "Code": "En"
+    },
+    {
+      "Name": "Española",
+      "Code": "Es"
+    },
+    {
+      "Name": "Portuguesa",
+      "Code": "Pt"
+    },
+    {
+      "Name": "Svenska",
+      "Code": "Se"
+    },
+    {
+      "Name": "Українська",
+      "Code": "Ua"
+    }
+  ],
   "Motherboards": [
     {
       "Id": "hz-x99-tf",
