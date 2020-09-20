@@ -20,7 +20,7 @@ Essa aplicação é designada para simplificar a vida de quem tem uma placa-mãe
 
 Se você gostaria de contribuir com o projeto você pode:
 
-- Providenciar uma tradução do aplicativo para outra língua. Estou de olho em traduções de Polish, Spanish, Italian, and Portuguese.
+- Providenciar uma tradução do aplicativo para outra língua. Estou de olho em traduções de polonês e italiano.
 - Adicionar informações sobre qualquer outra placa-mãe e modificações de BIOS.
 - Reportar bugs e problemas.
 - Me comprar uma cerveja ou um café me deixa motivado. [Donate with PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LXN9NNXVF34M8&source=url).

@@ -40,6 +40,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="README.Es.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="README.Pt.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="README.Se.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="README.Ua.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
