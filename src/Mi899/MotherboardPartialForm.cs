@@ -102,7 +102,11 @@ namespace Mi899
                 lblVersion,
                 lblTags,
                 lblDescription,
-                lblTools
+                lblTools,
+                tpInfo,
+                tpImages,
+                tpBioses,
+                tpLinks
             });
             components.AddRange(grdBioses.Columns.OfType<IComponent>());
             components.AddRange(grdImages.Columns.OfType<IComponent>());

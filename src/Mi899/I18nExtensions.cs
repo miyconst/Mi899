@@ -39,6 +39,9 @@ namespace Mi899
                     case CheckBox cb:
                         cb.ApplyI18nToProperties(i18n);
                         break;
+                    case TabPage tb:
+                        tb.ApplyI18nToProperties(i18n);
+                        break;
                     default:
                         throw new NotImplementedException($"Unable to apply I18n to a component of type {c.GetType()}.");
                 }
@@ -97,6 +100,12 @@ namespace Mi899
             dgvbc.Text = i18n.Get(dgvbc.Text, parent.Name, dgvbc.DataGridView.Name, dgvbc.Name, nameof(DataGridViewButtonColumn.Text));
             dgvbc.HeaderText = i18n.Get(dgvbc.HeaderText, parent.Name, dgvbc.DataGridView.Name, dgvbc.Name, nameof(DataGridViewButtonColumn.HeaderText));
             dgvbc.ToolTipText = i18n.Get(dgvbc.ToolTipText, parent.Name, dgvbc.DataGridView.Name, dgvbc.Name, nameof(DataGridViewButtonColumn.ToolTipText));
+        }
+
+        public static void ApplyI18nToProperties(this TabPage tp, I18n i18n)
+        {
+            II18nCompatible parent = tp.GetI18nCompatibleParent();
+            tp.Text = i18n.Get(tp.Text, parent.Name, tp.Name, nameof(TabPage.Text));
         }
 
         public static II18nCompatible GetI18nCompatibleParent(this Control control)
