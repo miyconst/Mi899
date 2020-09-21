@@ -43,6 +43,9 @@
     <None Update="README.Es.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="README.Fr.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="README.Pt.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

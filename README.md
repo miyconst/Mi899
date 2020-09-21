@@ -19,7 +19,8 @@ Read full readme - [`src/Mi899/README.md`](src/Mi899/README.md).
 ## Translations
 
 - English by [@miyconst](https://github.com/miyconst).
-- Spanish (Español) by [@skyirim](https://github.com/skyirim).
+- French (Français) by [@Nicolas-93](https://github.com/Nicolas-93).
 - Portuguese (Portugues) by [@osamabilad4](https://github.com/osamabilad4).
+- Spanish (Español) by [@skyirim](https://github.com/skyirim).
 - Swedish (Svenska) by [@gabichernia](https://github.com/gabichernia).
 - Ukrainian (Українська) by [@miyconst](https://github.com/miyconst).
