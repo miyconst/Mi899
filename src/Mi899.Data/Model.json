@@ -43,12 +43,29 @@
       ],
       "Links": [
         {
-          "Name": "Official page",
+          "Author": "Huananzhi",
+          "Name": "🇨🇳 Official page",
           "Url": "http://www.huananzhi.com/html/1/149/150/349.html"
         },
         {
-          "Name": "YouTube review",
+          "Author": "Miyconst",
+          "Name": "🇺🇦 E5-2640 V3 Turbo Unlock та розгін i7-6800k на Huananzhi X99-TF V1.1 LGA 2011-3",
+          "Url": "https://youtu.be/eVBye0LlBW4"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 E5-2640 V3 Turbo Unlock & i7-6800k overclock on Huananzhi X99-TF V1.1 LGA 2011-3",
           "Url": "https://youtu.be/ctuOXMLATW4"
+        },
+        {
+          "Author": "PC by TQ",
+          "Name": "🇵🇱 Płyty główne z Aliexpress Huanan X99 TF, Jingsha X99 D8",
+          "Url": "https://www.youtube.com/watch?v=EYMDUzKDBNA"
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Huananzhi Gaming X99-TF",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/huananzhi-gaming-x99-tf/"
         }
       ]
     },
@@ -74,8 +91,14 @@
       ],
       "Links": [
         {
-          "Name": "Official page",
+          "Author": "Huananzhi",
+          "Name": "🇨🇳 Official page",
           "Url": "http://www.huananzhi.com/html/1/149/150/444.html"
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Huananzhi X99-T8",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/huananzhi-x99-t8/"
         }
       ]
     },
@@ -100,12 +123,24 @@
       ],
       "Links": [
         {
-          "Name": "Official page",
+          "Author": "Huananzhi",
+          "Name": "🇨🇳 Official page",
           "Url": "http://www.huananzhi.com/html/1/149/150/425.html"
         },
         {
-          "Name": "YouTube review",
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Detailed review of Huananzhi X99-F8 LGA 2011-3 | CPU Overclocking | Turbo Boost Unlock",
           "Url": "https://youtu.be/IiojHBaQ4hs"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Детальний огляд Huananzhi X99-F8 LGA 2011-3 | Розгін ЦП | Розблокування Турбо Бусту",
+          "Url": "https://youtu.be/rszlzJM_l7E"
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Huananzhi X99-F8",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/huananzhi-x99-f8/"
         }
       ]
     },
@@ -130,12 +165,24 @@
       ],
       "Links": [
         {
-          "Name": "Official page",
+          "Author": "Huananzhi",
+          "Name": "🇨🇳 Official page",
           "Url": "http://www.huananzhi.com/html/1/149/150/316.html"
         },
         {
-          "Name": "YouTube review",
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Detailed Review of Huananzhi X99-8M V1.1 LGA 2011-3 | E5-2640 V3 Turbo Unlock | i7-6800k",
           "Url": "https://youtu.be/dIsU-rxj-l0"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Huananzhi X99-8M V1.1 LGA 2011-3 | E5-2640 V3 Turbo Unlock | Core i7-6800k",
+          "Url": "https://youtu.be/Ccbk7g3In4M"
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Huananzhi X99-8M",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/huananzhi-x99-8m/"
         }
       ]
     },
@@ -160,8 +207,14 @@
       ],
       "Links": [
         {
-          "Name": "Official page",
+          "Author": "Huananzhi",
+          "Name": "🇨🇳 Official page",
           "Url": "http://www.huananzhi.com/html/1/149/150/445.html"
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Huananzhi X99-8MD3",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/huananzhi_x99-8md3/"
         }
       ]
     },
@@ -186,12 +239,29 @@
       ],
       "Links": [
         {
-          "Name": "Official page",
+          "Author": "SZMZIT",
+          "Name": "🇨🇳 Official page",
           "Url": "https://www.szmzit.com/superior-performance-intel-x99-chipset-lga2011-3-motherboard-support-reg-ecc-ddr4-ram-up-to-256gb_p77.html"
         },
         {
-          "Name": "YouTube review",
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Detailed review of Kllisre X99 D8 LGA 2011-3 | CPU Overclocking | Turbo Boost Unlock | Nvidia SLI",
           "Url": "https://youtu.be/u__OXCuxM_U"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Детальний огляд Kllisre X99 D8 LGA 2011-3 | Розгін ЦП | Розблокування Турбо Бусту | Nvidia SLI",
+          "Url": "https://youtu.be/JYhGJnINHc0"
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Jingsha x99-D8",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/jingsha-x99-d8/"
+        },
+        {
+          "Author": "PC by TQ",
+          "Name": "🇵🇱 Płyty główne z Aliexpress Huanan X99 TF, Jingsha X99 D8",
+          "Url": "https://www.youtube.com/watch?v=EYMDUzKDBNA"
         }
       ]
     },
@@ -216,12 +286,24 @@
       ],
       "Links": [
         {
-          "Name": "Official page",
+          "Author": "Huananzhi",
+          "Name": "🇨🇳 Official page",
           "Url": "http://www.huananzhi.com/html/1/149/150/490.html"
         },
         {
-          "Name": "YouTube review",
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Detailed review of Huananzhi X99-F8D Dual LGA 2011-3 | E5-2678 V3 | E5-2620 V4 | Turbo Unlock",
           "Url": "https://youtu.be/yfZW2b1WOlw"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Детальний огляд Huananzhi X99-F8D Dual LGA 2011-3 | E5-2678 V3 | E5-2620 V4 | Turbo Boost Unlock",
+          "Url": "https://youtu.be/HnnS-qCCC4c"
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Huananzhi X99-F8D",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/huananzhi-x99-f8d/"
         }
       ]
     },
@@ -246,8 +328,19 @@
       ],
       "Links": [
         {
-          "Name": "Official page",
+          "Author": "Huananzhi",
+          "Name": "🇨🇳 Official page",
           "Url": "http://www.huananzhi.com/html/1/149/150/455.html"
+        },
+        {
+          "Author": "ТехноПланета",
+          "Name": "🇷🇺 Huananzhi X99-T8D - неоднозначная ТОПовая двухпроцессорная материнская плата с DDR3 памятью",
+          "Url": "https://www.youtube.com/watch?v=b9cWEeYvwjA"
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Huananzhi X99-T8D",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/huananzhi-x99d-t8d/"
         }
       ]
     },
@@ -268,6 +361,33 @@
         {
           "Name": "IO panel",
           "Url": "Images/Machinist X99Z/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Detailed review and revive of Machinist X99Z LGA 2011-3 | CPU Overclocking | Turbo Boost Unlock",
+          "Url": "https://youtu.be/AvVceGyyvm4"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Детальний огляд та відродження Machinist X99Z LGA 2011-3 | Розгін ЦП | Розблокування Турбо Бусту",
+          "Url": "https://youtu.be/16QTLE02-uw"
+        },
+        {
+          "Author": "Mik Gambit",
+          "Name": "🇷🇺 Прошивка BIOS платы X99Z V102 MACHINIST часть 2 | меняем тайминги из биоса",
+          "Url": "https://www.youtube.com/watch?v=Br0SYceE1Bw"
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 X99Z v102 \\ X99M-CE5",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/x99z-v102/"
+        },
+        {
+          "Author": "PhilsComputerLab",
+          "Name": "🇦🇺 X99 LGA 2011-v3 Motherboard 6-Core CPU and 16 GB DDR4 RAM Bundle!",
+          "Url": "https://www.youtube.com/watch?v=hpUDGdDq4VQ"
         }
       ]
     },
@@ -292,8 +412,19 @@
       ],
       "Links": [
         {
-          "Name": "YouTube review",
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Detailed review of Veineda X99 LGA 2011-3 | Xeon E5 V3 & V4 | Core i7 | Turbo Boost Unlock",
           "Url": "https://youtu.be/GCtCYys7qzM"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Veineda X99 LGA 2011-3 - детальний огляд | Xeon E5 V3 та V4 | Core i7 | Turbo Boost Unlock",
+          "Url": "https://youtu.be/3N4OStQhQqo"
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Veineda X99 V367",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/veineda-x99-v367/"
         }
       ]
     }

@@ -192,6 +192,14 @@ namespace Mi899
 
             grdLinks.Columns.Add(new DataGridViewTextBoxColumn()
             {
+                Name = "colAuthor",
+                HeaderText = nameof(ILink.Author),
+                DataPropertyName = nameof(ILink.Author),
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+            });
+
+            grdLinks.Columns.Add(new DataGridViewTextBoxColumn()
+            {
                 Name = "colName",
                 HeaderText = nameof(ILink.Name),
                 DataPropertyName = nameof(ILink.Name),
