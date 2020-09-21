@@ -11,6 +11,11 @@ Read full readme - [`src/Mi899/README.md`](src/Mi899/README.md).
 
 [Download .NET Core](https://dotnet.microsoft.com/download) from the official Microsoft website.
 
+## Video Tutorials
+
+- [🇬🇧 Mi899 – X99 Tool Set | read, write BIOS & unlock turbo-boost with a few mouse clicks](https://youtu.be/bO2t790vhg8).
+- [🇺🇦 Mi899 – X99 Інструмент | зчитати, записати BIOS, розблокувати турбо-буст в декілька дотиків мишки](https://youtu.be/42VNBEpS-6w).
+
 ## Translations
 
 - English by [@miyconst](https://github.com/miyconst).
