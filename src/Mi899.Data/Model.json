@@ -480,6 +480,7 @@
       "Description": "After flashing this BIOS you will not be able to use Flash Programming Tool (FPT) any more.",
       "Properties": {
         "BIOS Settings": "Miyconst optimal",
+        "O.C. Features": "Unlocked",
         "Author": "BIOS-iEngineer",
         "URL": "https://github.com/BIOS-iEngineer/HUANANZHI-X99-TF"
       },
