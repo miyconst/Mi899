@@ -29,8 +29,8 @@
       "Model": "X99-TF",
       "Version": "",
       "Tags": [ "huananzhi", "tf", "ddr3", "ddr4" ],
-      "Description": "",
-      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
+      "Description": "FPT is the recommended tool.\r\nAfuWin works as well.",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
       "Images": [
         {
           "Name": "Top view",
@@ -59,9 +59,9 @@
       "Model": "X99-T8",
       "Version": "",
       "Tags": [ "huananzhi", "t8", "ddr3" ],
-      "Description": "",
+      "Description": "FPT is the recommended tool.\r\nAfuWin works as well.",
       "IsFptCompatible": true,
-      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
       "Images": [
         {
           "Name": "Top view",
@@ -86,8 +86,8 @@
       "Model": "X99-F8",
       "Version": "",
       "Tags": [ "huananzhi", "f8", "ddr4" ],
-      "Description": "",
-      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
+      "Description": "FPT is the recommended tool.\r\nAfuWin works as well.",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
       "Images": [
         {
           "Name": "Top view",
@@ -196,7 +196,7 @@
       ]
     },
     {
-      "Id": "hz-x99-f8D",
+      "Id": "hz-x99-f8d",
       "Name": "Huananzhi X99-F8D",
       "Brand": "Huananzhi",
       "Model": "X99-F8D",
@@ -312,6 +312,50 @@
       "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
     },
     {
+      "Id": "hz-x99-tf-20200817.rom",
+      "Name": "Stock Huananzhi X99-TF BIOS, 2020.08.17 update",
+      "MotherboardIds": [ "hz-x99-tf" ],
+      "FileName": "Bioses/huananzhi-x99-tf-20200817.rom.zip",
+      "Description": "Official Huananzhi BIOS update:\r\n-Optimized internal keyboard compatibility.\r\n-Enable 'Above 4G Decoding' option.\r\n-Audio management cannot select access device (I have no clue what it means).",
+      "Properties": {
+        "WARNING": "This BIOS may brick your motherboard when flashed with FPT/AfuWin",
+        "RAM Timings": "Not available",
+        "Overclocking": "Does not work",
+        "BIOS Settings": "Default",
+        "URL": "http://www.huananzhi.com/html/1/149/150/349.html"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "huananzhi", "tf", "stock", "x99", "c612" ]
+    },
+    {
+      "Id": "hz-x99-tf.bi.rbe.rom",
+      "Name": "BY99RD25 BIOS for Huananzhi X99-TF Republic of Belarus Edition",
+      "MotherboardIds": [ "hz-x99-tf" ],
+      "FileName": "Bioses/huananzhi-x99-tf.bi.rbe.rom.zip",
+      "Description": "After flashing this BIOS you will not be able to use Flash Programming Tool (FPT) any more.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "BIOS-iEngineer",
+        "URL": "https://github.com/BIOS-iEngineer/HUANANZHI-X99-TF"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "huananzhi", "tf", "stock", "x99", "c612" ]
+    },
+    {
+      "Id": "hz-x99-tf.bi.rbe.mi8.rom",
+      "Name": "BY99RD25 BIOS for Huananzhi X99-TF Republic of Belarus Edition / Mi8",
+      "MotherboardIds": [ "hz-x99-tf" ],
+      "FileName": "Bioses/huananzhi-x99-tf.bi.rbe.mi8.rom.zip",
+      "Description": "After flashing this BIOS you will not be able to use Flash Programming Tool (FPT) any more.",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "Author": "BIOS-iEngineer",
+        "URL": "https://github.com/BIOS-iEngineer/HUANANZHI-X99-TF"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "huananzhi", "tf", "stock", "x99", "c612" ]
+    },
+    {
       "Id": "hz-x99-f8.mi8.rom",
       "Name": "Stock Huananzhi X99-F8 BIOS, Miyconst optimized",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m" ],
@@ -344,7 +388,8 @@
       "Properties": {
         "BIOS Settings": "Default",
         "RAM timings": "Unlocked",
-        "Author": "VK user Sergey, https://bit.ly/3hzcavK"
+        "Author": "VK user Sergey",
+        "URL": "https://bit.ly/3hzcavK"
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "jingsha", "d8", "stock", "x99", "c612" ]
