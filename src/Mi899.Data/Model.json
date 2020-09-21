@@ -735,7 +735,7 @@
     },
     {
       "Id": "mn-x99z.bi.rbe.rom",
-      "Name": "BY99RD25 BIOS for Machinist X99Z Republic of Belarus Edition",
+      "Name": "C612RD23 BIOS for Machinist X99Z Republic of Belarus Edition",
       "MotherboardIds": [ "mn-x99z" ],
       "FileName": "Bioses/machinist-x99z.bi.rbe.rom.zip",
       "Description": "I have not yet tested this BIOS myself.",
