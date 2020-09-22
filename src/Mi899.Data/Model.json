@@ -465,7 +465,7 @@
     {
       "Id": "hz-x99-tf.bi.rbe.rom",
       "Name": "BY99RD25 BIOS for Huananzhi X99-TF Republic of Belarus Edition",
-      "MotherboardIds": [ "hz-x99-tf" ],
+      "MotherboardIds": [ "hz-x99-tf", "js-x99-d8" ],
       "FileName": "Bioses/huananzhi-x99-tf.bi.rbe.rom.zip",
       "Description": "After flashing this BIOS you will not be able to use Flash Programming Tool (FPT) any more.",
       "Properties": {
@@ -479,7 +479,7 @@
     {
       "Id": "hz-x99-tf.bi.rbe.mi8.rom",
       "Name": "BY99RD25 BIOS for Huananzhi X99-TF Republic of Belarus Edition / Mi8",
-      "MotherboardIds": [ "hz-x99-tf" ],
+      "MotherboardIds": [ "hz-x99-tf", "js-x99-d8" ],
       "FileName": "Bioses/huananzhi-x99-tf.bi.rbe.mi8.rom.zip",
       "Description": "After flashing this BIOS you will not be able to use Flash Programming Tool (FPT) any more.",
       "Properties": {
