@@ -431,7 +431,35 @@
           "Url": "https://xeon-e5450.ru/socket-2011-3/veineda-x99-v367/"
         }
       ]
+    },
+    {
+      "Id": "ks-x99-d4",
+      "Name": " Kllisre X99 D4",
+      "Brand": " Kllisre ",
+      "Model": " X99-D4",
+      "Version": "1.0",
+      "Tags": [ "kllisre ", "d4", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/ Kllisre X99 D4/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/ Kllisre X99 D4/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Kllisre X99 D4",
+          "Url": " https://xeon-e5450.ru/socket-2011-3/jingsha-kllisre-x99-d4/"
+        }
+      ]
     }
+
   ],
   "Bioses": [
     {
