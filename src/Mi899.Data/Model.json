@@ -23,6 +23,10 @@
     {
       "Name": "Українська",
       "Code": "Ua"
+    },
+    {
+      "Name": "Русский",
+      "Code": "Ru"
     }
   ],
   "Motherboards": [
@@ -444,11 +448,11 @@
       "Images": [
         {
           "Name": "Top view",
-          "Url": "Images/ Kllisre X99 D4/TopView.jpg"
+          "Url": "Images/Kllisre X99-D4/TopView.jpg"
         },
         {
           "Name": "IO panel",
-          "Url": "Images/ Kllisre X99 D4/IoPanel.jpg"
+          "Url": "Images/Kllisre X99-D4/IoPanel.jpg"
         }
       ],
       "Links": [
