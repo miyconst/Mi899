@@ -491,9 +491,35 @@
           "Url": "https://xeon-e5450.ru/socket-2011-3/jingsha-kllisre-x99-d4/"
         }
       ]
+    },
+    {
+      "Id": "js-x99-gt",
+      "Name": "JingSha X99-GT",
+      "Brand": "JingSha",
+      "Model": "X99-GT",
+      "Version": "1.0",
+      "Tags": [ "JingSha", "gt", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/JingSha X99-GT/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/JingSha X99-GT/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 JingSha X99-GT",
+          "Url": " https://xeon-e5450.ru/socket-2011-3/x99-gt-v1-0/"
+        }
+      ]
     }
-
-  ],
+],
   "Bioses": [
     {
       "Id": "hz-x99-tf.rom",
