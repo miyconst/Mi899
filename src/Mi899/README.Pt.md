@@ -18,7 +18,7 @@ Essa aplicação é designada para simplificar a vida de quem tem uma placa-mãe
 
 ❗ Eu sou o único que possui o direito sobre o projeto Mi899 .
 
-Se você gostaria de contribuir com o projeto você pode:
+Se você deseja contribuir com o projeto você pode:
 
 - Providenciar uma tradução do aplicativo para outra língua. Estou de olho em traduções de polonês e italiano.
 - Adicionar informações sobre qualquer outra placa-mãe e modificações de BIOS.
