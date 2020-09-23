@@ -462,6 +462,35 @@
           "Url": " https://xeon-e5450.ru/socket-2011-3/jingsha-kllisre-x99-d4/"
         }
       ]
+    },
+    {
+      "Id": "js-x99-d4",
+      "Name": "JingSha X99-D4",
+      "Brand": "JingSha ",
+      "Model": " X99-D4",
+      "Version": "",
+      "Tags": [ "jingsha ", "d4", "ddr4" ],
+      "Description": "FPT is the recommended tool.\r\nAfuWin works as well.",
+      "IsFptCompatible": "folse",
+      "ToolIds": [ "" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/JingSha X99-D4/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/JingSha X99-D4/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 JingSha X99-D4",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/jingsha-kllisre-x99-d4/"
+        }
+      ]
     }
 
   ],
