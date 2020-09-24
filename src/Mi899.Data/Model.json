@@ -518,35 +518,7 @@
           "Url": " https://xeon-e5450.ru/socket-2011-3/x99-gt-v1-0/"
         }
       ]
-    },
-    {
-      "Id": "js-x99",
-      "Name": "Veineda X99",
-      "Brand": "JingSha",
-      "Model": "X99-GT",
-      "Version": "1.0",
-      "Tags": [ "JingSha", "ddr3" ],
-      "Description": "",
-      "ToolIds": [ "" ],
-      "Images": [
-        {
-          "Name": "Top view",
-          "Url": "Images/JingSha X99/TopView.jpg"
-        },
-        {
-          "Name": "IO panel",
-          "Url": "Images/JingSha X99/IoPanel.jpg"
-        }
-      ],
-      "Links": [
-        {
-          "Author": "xeon-e5450.ru",
-          "Name": "🇷🇺 JingSha X99 ",
-          "Url": " https://xeon-e5450.ru/socket-2011-3/x99-gt-v1-0/"
-        }
-      ]
     }
-
   ],
   "Bioses": [
     {
