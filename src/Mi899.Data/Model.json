@@ -431,6 +431,28 @@
           "Url": "https://xeon-e5450.ru/socket-2011-3/veineda-x99-v367/"
         }
       ]
+    },
+    {
+      "Id": "az-x99-pe7",
+      "Name": "Alzenit X99-PE7",
+      "Brand": "Alzenit",
+      "Model": "X99-PE7",
+      "Version": "",
+      "Tags": [ "alzenit", "runing", "x99", "ddr4", "pe7" ],
+      "Description": "",
+      "ToolIds": [ "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Alzenit X99-PE7/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Alzenit X99-PE7/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+      ]
     }
   ],
   "Bioses": [
@@ -739,18 +761,33 @@
       "Tags": [ "machinist", "x99z", "tu", "x99", "c612" ]
     },
     {
-      "Id": "mn-x99z.bi.rbe.rom",
+      "Id": "mn-x99z.bi.rbe",
       "Name": "C612RD23 BIOS for Machinist X99Z Republic of Belarus Edition",
-      "MotherboardIds": [ "mn-x99z" ],
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7" ],
       "FileName": "Bioses/machinist-x99z.bi.rbe.rom.zip",
-      "Description": "I have not yet tested this BIOS myself.",
+      "Description": "",
       "Properties": {
         "BIOS Settings": "Default",
         "Author": "BIOS-iEngineer",
         "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102"
       },
       "Chipsets": [ "X99", "C612" ],
-      "Tags": [ "machinist", "x99z", "x99", "c612" ]
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "mn-x99z.bi.rbe.mi8",
+      "Name": "C612RD23 BIOS for Machinist X99Z Republic of Belarus Edition / Mi8",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7" ],
+      "FileName": "Bioses/machinist-x99z.bi.rbe.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "O.C. Features": "Unlocked",
+        "Author": "BIOS-iEngineer",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
     },
     {
       "Id": "veineda-x99",
@@ -861,6 +898,18 @@
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "veineda", "x99", "c612", "tu" ]
+    },
+    {
+      "Id": "alzenit-x99-pe7",
+      "Name": "Stock Alzenit X99-PE7 BIOS",
+      "MotherboardIds": [ "az-x99-pe7" ],
+      "FileName": "Bioses/alzenit-x99-pe7.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "alzenit", "runing", "x99", "c612", "pe7" ]
     }
   ],
   "Tools": [

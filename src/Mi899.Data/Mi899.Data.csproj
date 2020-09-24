@@ -22,6 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Bioses\alzenit-x99-pe7.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Bioses\huananzhi-x99-f8.mi8.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -56,6 +59,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Bioses\jingsha-x99-d8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\machinist-x99z.bi.rbe.mi8.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Bioses\machinist-x99z.bi.rbe.rom.zip">
@@ -114,6 +120,12 @@
     </None>
     <None Update="I18n.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Alzenit X99-PE7\IoPanel.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Alzenit X99-PE7\TopView.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\Huananzhi X99-8MD3\IoPanel.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
