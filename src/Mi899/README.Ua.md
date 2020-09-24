@@ -25,7 +25,7 @@
 - Повідомити про помилки та проблеми.
 - Підняти мою мотивацію купивши мені пляшку пива або чашку кави. [Внести пожертвування за допомоги PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LXN9NNXVF34M8&source=url).
 
-### Як робити внестки
+### Як робити внески
 
 - Усі внески повинні надаватися у формі [GitHub Pull Request](https://yangsu.github.io/pull-request-tutorial/#:~:text=What%20is%20a%20Pull%20Request,follow%2Dup%20commits%20if%20necessary.).
 - [Створіть GitHub Issue](https://github.com/miyconst/Mi899) якщо ви бажаєте повідомити про помилку або щось запропонувати.
