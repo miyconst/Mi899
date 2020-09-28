@@ -219,7 +219,7 @@
     "MainForm.msiHelpHowToTurboUnlock.Text": "Sbloccare Turbo Boost",
     "MainForm.msiHelpHowToUseCh341a.Text": "Come usare CH341A per programmare i BIOS",
     "MainForm.Text": "Mi899 - X99 Strumenti",
-    "MainForm.tsslVersion.Text": "Mi899 Versione 1.0.0 - Copyright © Miyconst",
+    "MainForm.tsslVersion.Text": "Mi899 Versione 1.0.1 - Copyright © Miyconst",
     "MotherboardPartialForm.grdBioses.colChipsets.HeaderText": "Chipsets",
     "MotherboardPartialForm.grdBioses.colId.HeaderText": "Id",
     "MotherboardPartialForm.grdBioses.colName.HeaderText": "Nome",
