@@ -394,7 +394,7 @@
     "AboutPartialForm.lblToolSet.Text": "X99 Инструменты",
     "AboutPartialForm.lblVersionCaption.Text": "Версия:",
     "BiosesPartialForm.btnSearch.Text": "Искать",
-    "BiosesPartialForm.grdBioses.colChipsets.HeaderText": "Chipsets",
+    "BiosesPartialForm.grdBioses.colChipsets.HeaderText": "Чипсеты",
     "BiosesPartialForm.grdBioses.colDescription.HeaderText": "Описание",
     "BiosesPartialForm.grdBioses.colFileName.HeaderText": "Путь",
     "BiosesPartialForm.grdBioses.colName.HeaderText": "Название",
