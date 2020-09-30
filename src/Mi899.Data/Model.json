@@ -482,7 +482,7 @@
       "Tags": [ "jingsha ", "d4", "ddr4" ],
       "Description": "",
       "IsFptCompatible": "folse",
-      "ToolIds": [ "" ],
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
       "Images": [
         {
           "Name": "Top view",
