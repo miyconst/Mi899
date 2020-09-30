@@ -415,7 +415,7 @@
     "MainForm.msiHelpHowToUseCh341a.Text": "Использовать CH341A BIOS программатор",
     "MainForm.Text": "Mi899 - X99 Инструменты",
     "MainForm.tsslVersion.Text": "Mi899 Версия 1.0.1 - Авторское право © Miyconst",
-    "MotherboardPartialForm.grdBioses.colChipsets.HeaderText": "Чипсеты ",
+    "MotherboardPartialForm.grdBioses.colChipsets.HeaderText": "Чипсеты",
     "MotherboardPartialForm.grdBioses.colId.HeaderText": "Id",
     "MotherboardPartialForm.grdBioses.colName.HeaderText": "Название",
     "MotherboardPartialForm.grdBioses.colPath.HeaderText": "Путь",
