@@ -27,6 +27,10 @@
     {
       "Name": "Українська",
       "Code": "Ua"
+    },
+    {
+      "Name": "Русский",
+      "Code": "Ru"
     }
   ],
   "Motherboards": [
@@ -433,6 +437,97 @@
           "Author": "xeon-e5450.ru",
           "Name": "🇷🇺 Veineda X99 V367",
           "Url": "https://xeon-e5450.ru/socket-2011-3/veineda-x99-v367/"
+        }
+      ]
+    },
+    {
+      "Id": "ks-x99-d4",
+      "Name": " Kllisre X99 D4",
+      "Brand": " Kllisre ",
+      "Model": " X99-D4",
+      "Version": "1.0",
+      "Tags": [ "kllisre ", "d4", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Kllisre X99-D4/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Kllisre X99-D4/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Kllisre X99 D4",
+          "Url": " https://xeon-e5450.ru/socket-2011-3/jingsha-kllisre-x99-d4/"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Detailed review of Kllisre X99 D4 LGA 2011-3 | CPU Overclocking | Turbo Boost Unlock",
+          "Url": "https://youtu.be/3iPQvGxKjG4"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Детальний огляд Kllisre X99 D4 LGA 2011-3 | Розгін ЦП | Розблокування Турбо Бусту",
+          "Url": "https://youtu.be/Oy_g4XidwAY"
+        }
+      ]
+    },
+    {
+      "Id": "js-x99-d4",
+      "Name": "JingSha X99-D4",
+      "Brand": "JingSha ",
+      "Model": " X99-D4",
+      "Version": "",
+      "Tags": [ "jingsha ", "d4", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/JingSha X99-D4/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/JingSha X99-D4/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 JingSha X99-D4",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/jingsha-kllisre-x99-d4/"
+        }
+      ]
+    },
+    {
+      "Id": "js-x99-gt",
+      "Name": "JingSha X99-GT",
+      "Brand": "JingSha",
+      "Model": "X99-GT",
+      "Version": "1.0",
+      "Tags": [ "JingSha", "gt", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/JingSha X99-GT/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/JingSha X99-GT/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 JingSha X99-GT",
+          "Url": " https://xeon-e5450.ru/socket-2011-3/x99-gt-v1-0/"
         }
       ]
     },
