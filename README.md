@@ -20,6 +20,7 @@ Read full readme - [`src/Mi899/README.md`](src/Mi899/README.md).
 
 - English by [@miyconst](https://github.com/miyconst).
 - French (Français) by [@Nicolas-93](https://github.com/Nicolas-93).
+- Italian (Italiano) by Emanuele Galdieri.
 - Portuguese (Portugues) by [@osamabilad4](https://github.com/osamabilad4).
 - Spanish (Español) by [@skyirim](https://github.com/skyirim).
 - Swedish (Svenska) by [@gabichernia](https://github.com/gabichernia).
