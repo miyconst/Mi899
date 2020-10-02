@@ -49,27 +49,27 @@
             this.txtVersion = new System.Windows.Forms.TextBox();
             this.txtTags = new System.Windows.Forms.TextBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
+            this.flpTools = new System.Windows.Forms.FlowLayoutPanel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.tpImages = new System.Windows.Forms.TabPage();
             this.grdImages = new System.Windows.Forms.DataGridView();
             this.tpBioses = new System.Windows.Forms.TabPage();
             this.grdBioses = new System.Windows.Forms.DataGridView();
             this.tpLinks = new System.Windows.Forms.TabPage();
             this.grdLinks = new System.Windows.Forms.DataGridView();
-            this.flpTools = new System.Windows.Forms.FlowLayoutPanel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.tlpMain.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMotherboard)).BeginInit();
             this.tcTabs.SuspendLayout();
             this.tpInfo.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.flpTools.SuspendLayout();
             this.tpImages.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdImages)).BeginInit();
             this.tpBioses.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdBioses)).BeginInit();
             this.tpLinks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdLinks)).BeginInit();
-            this.flpTools.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlpMain
@@ -207,9 +207,9 @@
             this.lblId.AutoSize = true;
             this.lblId.Location = new System.Drawing.Point(3, 7);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(21, 15);
+            this.lblId.Size = new System.Drawing.Size(20, 15);
             this.lblId.TabIndex = 2;
-            this.lblId.Text = "ID:";
+            this.lblId.Text = "Id:";
             // 
             // lblBrand
             // 
@@ -318,6 +318,27 @@
             this.txtDescription.Size = new System.Drawing.Size(572, 94);
             this.txtDescription.TabIndex = 13;
             // 
+            // flpTools
+            // 
+            this.flpTools.Controls.Add(this.linkLabel1);
+            this.flpTools.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpTools.Location = new System.Drawing.Point(76, 287);
+            this.flpTools.Margin = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this.flpTools.Name = "flpTools";
+            this.flpTools.Size = new System.Drawing.Size(578, 23);
+            this.flpTools.TabIndex = 14;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.linkLabel1.Location = new System.Drawing.Point(3, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(60, 15);
+            this.linkLabel1.TabIndex = 0;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
+            // 
             // tpImages
             // 
             this.tpImages.Controls.Add(this.grdImages);
@@ -382,27 +403,6 @@
             this.grdLinks.Text = "dataGridView1";
             this.grdLinks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdLinks_CellContentClick);
             // 
-            // flpTools
-            // 
-            this.flpTools.Controls.Add(this.linkLabel1);
-            this.flpTools.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpTools.Location = new System.Drawing.Point(76, 287);
-            this.flpTools.Margin = new System.Windows.Forms.Padding(0, 7, 0, 0);
-            this.flpTools.Name = "flpTools";
-            this.flpTools.Size = new System.Drawing.Size(578, 23);
-            this.flpTools.TabIndex = 14;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.linkLabel1.Location = new System.Drawing.Point(3, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(60, 15);
-            this.linkLabel1.TabIndex = 0;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
-            // 
             // MotherboardPartialForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -417,14 +417,14 @@
             this.tpInfo.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.flpTools.ResumeLayout(false);
+            this.flpTools.PerformLayout();
             this.tpImages.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdImages)).EndInit();
             this.tpBioses.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdBioses)).EndInit();
             this.tpLinks.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdLinks)).EndInit();
-            this.flpTools.ResumeLayout(false);
-            this.flpTools.PerformLayout();
             this.ResumeLayout(false);
 
         }
