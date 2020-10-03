@@ -285,7 +285,7 @@
       "Version": "2.0",
       "Tags": [ "huananzhi", "f8d", "ddr4" ],
       "Description": "",
-      "ToolIds": [],
+      "ToolIds": [ "afu-win-x64-5.12.03.2045" ],
       "Images": [
         {
           "Name": "Top view",
@@ -327,7 +327,7 @@
       "Version": "",
       "Tags": [ "huananzhi", "t8d", "ddr3" ],
       "Description": "",
-      "ToolIds": [],
+      "ToolIds": [ "afu-win-x64-5.12.03.2045" ],
       "Images": [
         {
           "Name": "Top view",
@@ -512,7 +512,7 @@
       "Version": "1.0",
       "Tags": [ "JingSha", "gt", "ddr4" ],
       "Description": "",
-      "ToolIds": [ "" ],
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
       "Images": [
         {
           "Name": "Top view",
