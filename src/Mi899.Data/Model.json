@@ -599,7 +599,7 @@
     },
     {
       "Id": "hz-x99-tf.bi.rbe.mi8.rom",
-      "Name": "BY99RD25 BIOS for Huananzhi X99-TF Republic of Belarus Edition / Mi8",
+      "Name": "BY99RD25 BIOS for Huananzhi X99-TF Republic of Belarus Edition, Mi8",
       "MotherboardIds": [ "hz-x99-tf", "js-x99-d8" ],
       "FileName": "Bioses/huananzhi-x99-tf.bi.rbe.mi8.rom.zip",
       "Description": "After flashing this BIOS you will not be able to use Flash Programming Tool (FPT) any more.\r\nThis BIOS has problems with legacy boot, UEFI works well.",
@@ -868,7 +868,7 @@
       "Properties": {
         "BIOS Settings": "Default",
         "Author": "BIOS-iEngineer",
-        "Release": "Release 09/25/2020 - C612RD23R BIOS for MACHINIST X99Z V102 Motherboard (07/31/2020)",
+        "Release": "09/25/2020 - C612RD23R BIOS for MACHINIST X99Z V102 Motherboard (07/31/2020)",
         "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102"
       },
       "Chipsets": [ "X99", "C612" ],
@@ -876,15 +876,125 @@
     },
     {
       "Id": "mn-x99z.bi.rbe.mi8",
-      "Name": "C612RD23 BIOS for Machinist X99Z Republic of Belarus Edition / Mi8",
+      "Name": "C612RD23 BIOS for Machinist X99Z Republic of Belarus Edition, Mi8",
       "MotherboardIds": [ "mn-x99z", "az-x99-pe7" ],
       "FileName": "Bioses/machinist-x99z.bi.rbe.mi8.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Settings": "Miyconst optimal",
         "O.C. Features": "Unlocked",
+        "IIO Configuration": "Unlocked",
         "Author": "BIOS-iEngineer",
+        "Release": "09/25/2020 - C612RD23R BIOS for MACHINIST X99Z V102 Motherboard (07/31/2020)",
         "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "mn-x99z.bi.rbe.tu.mi8",
+      "Name": "C612RD23 BIOS for Machinist X99Z Republic of Belarus Edition, Mi8, TU EFI",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7" ],
+      "FileName": "Bioses/machinist-x99z.bi.rbe.tu.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "O.C. Features": "Unlocked",
+        "IIO Configuration": "Unlocked",
+        "Author": "BIOS-iEngineer",
+        "Release": "09/25/2020 - C612RD23R BIOS for MACHINIST X99Z V102 Motherboard (07/31/2020)",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "Turbo Unlock Driver": "Manual EFI installation is required"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "mn-x99z.bi.rbe.tu.v3p0.mi8",
+      "Name": "C612RD23 BIOS for Machinist X99Z Republic of Belarus Edition, Mi8, TU FFS",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7" ],
+      "FileName": "Bioses/machinist-x99z.bi.rbe.tu.v3p0.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "O.C. Features": "Unlocked",
+        "IIO Configuration": "Unlocked",
+        "Author": "BIOS-iEngineer",
+        "Release": "09/25/2020 - C612RD23R BIOS for MACHINIST X99Z V102 Motherboard (07/31/2020)",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "Turbo Unlock Driver": "v3_payne_0_0.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "mn-x99z.bi.rbe.tu.v3p50.mi8",
+      "Name": "C612RD23 BIOS for Machinist X99Z Republic of Belarus Edition, Mi8, TU FFS -50/50mv",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7" ],
+      "FileName": "Bioses/machinist-x99z.bi.rbe.tu.v3p50.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "O.C. Features": "Unlocked",
+        "IIO Configuration": "Unlocked",
+        "Author": "BIOS-iEngineer",
+        "Release": "09/25/2020 - C612RD23R BIOS for MACHINIST X99Z V102 Motherboard (07/31/2020)",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "Turbo Unlock Driver": "v3_payne_50_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "mn-x99z.bi.rbe.tu.v3p70.mi8",
+      "Name": "C612RD23 BIOS for Machinist X99Z Republic of Belarus Edition, Mi8, TU FFS -70/50mv",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7" ],
+      "FileName": "Bioses/machinist-x99z.bi.rbe.tu.v3p70.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "O.C. Features": "Unlocked",
+        "IIO Configuration": "Unlocked",
+        "Author": "BIOS-iEngineer",
+        "Release": "09/25/2020 - C612RD23R BIOS for MACHINIST X99Z V102 Motherboard (07/31/2020)",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "Turbo Unlock Driver": "v3_payne_70_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "mn-x99z.bi.rbe.tu.v3p80.mi8",
+      "Name": "C612RD23 BIOS for Machinist X99Z Republic of Belarus Edition, Mi8, TU FFS -80/50mv",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7" ],
+      "FileName": "Bioses/machinist-x99z.bi.rbe.tu.v3p80.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "O.C. Features": "Unlocked",
+        "IIO Configuration": "Unlocked",
+        "Author": "BIOS-iEngineer",
+        "Release": "09/25/2020 - C612RD23R BIOS for MACHINIST X99Z V102 Motherboard (07/31/2020)",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "Turbo Unlock Driver": "v3_payne_80_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "mn-x99z.bi.rbe.tu.v3p90.mi8",
+      "Name": "C612RD23 BIOS for Machinist X99Z Republic of Belarus Edition, Mi8, TU FFS -90/50mv",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7" ],
+      "FileName": "Bioses/machinist-x99z.bi.rbe.tu.v3p90.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "O.C. Features": "Unlocked",
+        "IIO Configuration": "Unlocked",
+        "Author": "BIOS-iEngineer",
+        "Release": "09/25/2020 - C612RD23R BIOS for MACHINIST X99Z V102 Motherboard (07/31/2020)",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "Turbo Unlock Driver": "v3_payne_90_50.ffs"
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
