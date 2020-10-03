@@ -10,6 +10,8 @@
     <img src="https://img.shields.io/github/license/miyconst/Mi899.svg?style=for-the-badge&logo=appveyor" alt="License"/>
 </a>
 
+------------
+
 This application is designed to simplify the life of the Chinese LGA 2011-3 X99 motherboard owners and collect useful information about the motherboards and compatible BIOS modifications.
 
 Read full readme - [`src/Mi899/README.md`](src/Mi899/README.md).
