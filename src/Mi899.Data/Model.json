@@ -868,6 +868,7 @@
       "Properties": {
         "BIOS Settings": "Default",
         "Author": "BIOS-iEngineer",
+        "Release": "Release 09/25/2020 - C612RD23R BIOS for MACHINIST X99Z V102 Motherboard (07/31/2020)",
         "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102"
       },
       "Chipsets": [ "X99", "C612" ],
