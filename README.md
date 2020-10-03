@@ -1,5 +1,15 @@
 ﻿# Mi899
 
+<a href="https://github.com/miyconst/Mi899/releases/latest">
+    <img src="https://img.shields.io/github/v/release/miyconst/Mi899.svg?color=silver&style=for-the-badge&logo=appveyor" alt="Latest Version"/>
+</a>
+<a href="https://github.com/miyconst/Mi899/releases/download/1.0.1/Mi899-1.0.1.zip">
+    <img src="https://img.shields.io/github/downloads/miyconst/Mi899/total.svg?color=silver&style=for-the-badge&logo=appveyor" alt="Downloads"/>
+</a>
+<a href="https://github.com/miyconst/Mi899/blob/master/LICENSE.md">
+    <img src="https://img.shields.io/github/license/miyconst/Mi899.svg?style=for-the-badge&logo=appveyor" alt="License"/>
+</a>
+
 This application is designed to simplify the life of the Chinese LGA 2011-3 X99 motherboard owners and collect useful information about the motherboards and compatible BIOS modifications.
 
 Read full readme - [`src/Mi899/README.md`](src/Mi899/README.md).
