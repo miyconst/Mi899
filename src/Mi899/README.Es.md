@@ -16,14 +16,14 @@ Esta aplicación ha sido diseñada para simplificarle la vida a los dueños de p
 
 ## Contribuir
 
-❗ Yo soy titular de los derechos de todas las contribuciones al proyecto Mi899.
+❗ Yo soy el titular de los derechos de todas las contribuciones al proyecto Mi899.
 
 Si quieres contribuir en el proyecto, puedes hacer lo siguiente:
 
-- Traducir la aplicación a algún nuevo lenguaje. En este momento busco traducciones al polaco y italiano.
+- Traducir la aplicación a algún nuevo lenguaje. En este momento busco traducciones al polaco.
 - Añadir información sobre alguna otra placa base o modificaciones de BIOS.
 - Informar de bugs y problemas.
-- Invítarme a una cerveza o un café para mantenerme motivado. [Hacer donación por PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LXN9NNXVF34M8&source=url).
+- Invitarme a una cerveza o un café para mantenerme motivado. [Hacer donación por PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LXN9NNXVF34M8&source=url).
 
 ### Cómo contribuir
 
