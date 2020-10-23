@@ -542,6 +542,54 @@
       ]
     },
     {
+      "Id": "js-x99m-g2",
+      "Name": "JingSha X99M-G2",
+      "Brand": "JingSha",
+      "Model": "X99M-G2",
+      "Version": "1.0",
+      "Tags": [ "JingSha", "g2", "gt", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/JingSha X99M-G2/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/JingSha X99M-G2/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "ТехноПланета",
+          "Name": "🇷🇺 SZMZ X99M-G2 V1.0 - самая доступная плата для Xeon E5 2678v3. Обзор, настройка, лучший BIOS",
+          "Url": "https://www.youtube.com/watch?v=-thQZHU6n0I"
+        }
+      ]
+    },
+    {
+      "Id": "js-x99m-h2",
+      "Name": "JingSha X99M-H2",
+      "Brand": "JingSha",
+      "Model": "X99M-H2",
+      "Version": "1.0",
+      "Tags": [ "JingSha", "h2", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/JingSha X99M-H2/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/JingSha X99M-H2/IoPanel.jpg"
+        }
+      ],
+      "Links": [ ]
+    },
+    {
       "Id": "az-x99-pe7",
       "Name": "Alzenit X99-PE7",
       "Brand": "Alzenit",
@@ -1130,6 +1178,43 @@
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "alzenit", "runing", "x99", "c612", "pe7" ]
+    },
+    {
+      "Id": "jingsha-x99m-g2",
+      "Name": "Stock JingSha X99M-G2 BIOS",
+      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h2" ],
+      "FileName": "Bioses/jingsha-x99m-g2.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "jingsha", "x99m", "g2", "b85" ]
+    },
+    {
+      "Id": "jingsha-x99m-h2",
+      "Name": "Stock JingSha X99M-H2 BIOS",
+      "MotherboardIds": [ "js-x99m-h2" ],
+      "FileName": "Bioses/jingsha-x99m-h2.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "Q85" ],
+      "Tags": [ "jingsha", "x99m", "g2", "q85" ]
+    },
+    {
+      "Id": "jingsha-x99m-g2.mi8",
+      "Name": "Stock JingSha X99M-G2 BIOS, Miyconst optimal",
+      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h2" ],
+      "FileName": "Bioses/jingsha-x99m-g2.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Unlocked"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "jingsha", "x99m", "g2", "b85" ]
     }
   ],
   "Tools": [

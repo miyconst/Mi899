@@ -61,6 +61,15 @@
     <None Update="Bioses\jingsha-x99-d8.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Bioses\jingsha-x99m-g2.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\jingsha-x99m-g2.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\jingsha-x99m-h2.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Bioses\machinist-x99z.bi.rbe.mi8.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
