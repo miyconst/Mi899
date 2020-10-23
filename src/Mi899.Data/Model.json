@@ -525,9 +525,19 @@
       ],
       "Links": [
         {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Detailed review of JingSha X99-GT LGA 2011-3 | Turbo Boost Unlock and CPU overclock",
+          "Url": "https://youtu.be/M2QPbSqkrgU"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Детальний огляд JingSha X99-GT LGA 2011-3 | Розблокування Турбо-Бусту та розгін процесора",
+          "Url": "https://youtu.be/INI0PptEobI"
+        },
+        {
           "Author": "xeon-e5450.ru",
           "Name": "🇷🇺 JingSha X99-GT",
-          "Url": " https://xeon-e5450.ru/socket-2011-3/x99-gt-v1-0/"
+          "Url": "https://xeon-e5450.ru/socket-2011-3/x99-gt-v1-0/"
         }
       ]
     },
