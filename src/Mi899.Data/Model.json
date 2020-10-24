@@ -569,6 +569,27 @@
       ]
     },
     {
+      "Id": "js-x99m-h",
+      "Name": "JingSha X99M-H",
+      "Brand": "JingSha",
+      "Model": "X99M-H",
+      "Version": "1.0",
+      "Tags": [ "JingSha", "h", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/JingSha X99M-H/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/JingSha X99M-H/IoPanel.jpg"
+        }
+      ],
+      "Links": []
+    },
+    {
       "Id": "js-x99m-h2",
       "Name": "JingSha X99M-H2",
       "Brand": "JingSha",
@@ -587,7 +608,7 @@
           "Url": "Images/JingSha X99M-H2/IoPanel.jpg"
         }
       ],
-      "Links": [ ]
+      "Links": []
     },
     {
       "Id": "az-x99-pe7",
@@ -1190,6 +1211,18 @@
       },
       "Chipsets": [ "B85", "Q85" ],
       "Tags": [ "jingsha", "x99m", "g2", "b85", "q85" ]
+    },
+    {
+      "Id": "jingsha-x99m-h",
+      "Name": "Stock JingSha X99M-H BIOS",
+      "MotherboardIds": [ "js-x99m-h" ],
+      "FileName": "Bioses/jingsha-x99m-h.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "H81" ],
+      "Tags": [ "jingsha", "x99m", "h", "b81" ]
     },
     {
       "Id": "jingsha-x99m-h2",
