@@ -67,6 +67,24 @@
     <None Update="Bioses\jingsha-x99m-g2.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Bioses\jingsha-x99m-g2.tu.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\jingsha-x99m-g2.tu.v3p0.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\jingsha-x99m-g2.tu.v3p50.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\jingsha-x99m-g2.tu.v3p70.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\jingsha-x99m-g2.tu.v3p80.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\jingsha-x99m-g2.tu.v3p90.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Bioses\jingsha-x99m-h2.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
