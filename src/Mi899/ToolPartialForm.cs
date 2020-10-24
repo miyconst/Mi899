@@ -109,7 +109,17 @@ namespace Mi899
             if (ddl.SelectedItem is BiosRowData bios)
             {
                 txtBiosDescription.Text = bios.Description;
-                txtBiosProperties.Text = bios.PropertiesString;
+
+                if (!string.IsNullOrEmpty(bios.ChipsetsStrings))
+                {
+                    txtBiosProperties.Text = $"Chipsets: {bios.ChipsetsStrings}.";
+                    txtBiosProperties.Text += Environment.NewLine;
+                    txtBiosProperties.Text += bios.PropertiesString;
+                }
+                else
+                {
+                    txtBiosProperties.Text = bios.PropertiesString;
+                }
             }
             else
             {
