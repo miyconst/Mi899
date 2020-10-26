@@ -1239,115 +1239,108 @@
     {
       "Id": "jingsha-x99m-g2.mi8",
       "Name": "Stock JingSha X99M-G2 BIOS, Miyconst optimal",
-      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h2" ],
+      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h", "js-x99m-h2" ],
       "FileName": "Bioses/jingsha-x99m-g2.mi8.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Settings": "Miyconst optimal",
-        "RAM timings": "Unlocked",
-        "XE Ratio Limit": "Unlocked"
+        "RAM timings": "Unlocked"
       },
-      "Chipsets": [ "B85", "Q85" ],
+      "Chipsets": [ "B85", "Q85", "H81" ],
       "Tags": [ "jingsha", "x99m", "g2", "b85", "q85" ]
     },
     {
       "Id": "jingsha-x99m-g2.tu.mi8",
       "Name": "Stock JingSha X99M-G2 BIOS, TU EFI",
-      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h2" ],
+      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h", "js-x99m-h2" ],
       "FileName": "Bioses/jingsha-x99m-g2.tu.mi8.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Unlocked",
-        "XE Ratio Limit": "Unlocked",
         "Turbo Unlock Driver": "Manual EFI installation is required"
       },
-      "Chipsets": [ "B85", "Q85" ],
+      "Chipsets": [ "B85", "Q85", "H81" ],
       "Tags": [ "jingsha", "x99m", "g2", "b85", "q85" ]
     },
     {
       "Id": "jingsha-x99m-g2.tu.v3p0.mi8",
       "Name": "Stock JingSha X99M-G2 BIOS, TU FFS",
-      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h2" ],
+      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h", "js-x99m-h2" ],
       "FileName": "Bioses/jingsha-x99m-g2.tu.v3p0.mi8.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Unlocked",
-        "XE Ratio Limit": "Unlocked",
         "CPU Voltage": "Default",
         "IMC Voltage": "Default",
         "Turbo Unlock Driver": "v3_payne_0_0.ffs"
       },
-      "Chipsets": [ "B85", "Q85" ],
+      "Chipsets": [ "B85", "Q85", "H81" ],
       "Tags": [ "jingsha", "x99m", "g2", "b85", "q85" ]
     },
     {
       "Id": "jingsha-x99m-g2.tu.v3p50.mi8",
       "Name": "Stock JingSha X99M-G2 BIOS, TU FFS -50/50mv",
-      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h2" ],
+      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h", "js-x99m-h2" ],
       "FileName": "Bioses/jingsha-x99m-g2.tu.v3p50.mi8.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Unlocked",
-        "XE Ratio Limit": "Unlocked",
         "CPU Voltage": "-50mv",
         "IMC Voltage": "-50mv",
         "Turbo Unlock Driver": "v3_payne_50_50.ffs"
       },
-      "Chipsets": [ "B85", "Q85" ],
+      "Chipsets": [ "B85", "Q85", "H81" ],
       "Tags": [ "jingsha", "x99m", "g2", "b85", "q85" ]
     },
     {
       "Id": "jingsha-x99m-g2.tu.v3p70.mi8",
       "Name": "Stock JingSha X99M-G2 BIOS, TU FFS -70/50mv",
-      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h2" ],
+      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h", "js-x99m-h2" ],
       "FileName": "Bioses/jingsha-x99m-g2.tu.v3p70.mi8.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Unlocked",
-        "XE Ratio Limit": "Unlocked",
         "CPU Voltage": "-70mv",
         "IMC Voltage": "-50mv",
         "Turbo Unlock Driver": "v3_payne_70_50.ffs"
       },
-      "Chipsets": [ "B85", "Q85" ],
+      "Chipsets": [ "B85", "Q85", "H81" ],
       "Tags": [ "jingsha", "x99m", "g2", "b85", "q85" ]
     },
     {
       "Id": "jingsha-x99m-g2.tu.v3p80.mi8",
       "Name": "Stock JingSha X99M-G2 BIOS, TU FFS -80/50mv",
-      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h2" ],
+      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h", "js-x99m-h2" ],
       "FileName": "Bioses/jingsha-x99m-g2.tu.v3p80.mi8.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Unlocked",
-        "XE Ratio Limit": "Unlocked",
         "CPU Voltage": "-80mv",
         "IMC Voltage": "-50mv",
         "Turbo Unlock Driver": "v3_payne_80_50.ffs"
       },
-      "Chipsets": [ "B85", "Q85" ],
+      "Chipsets": [ "B85", "Q85", "H81" ],
       "Tags": [ "jingsha", "x99m", "g2", "b85", "q85" ]
     },
     {
       "Id": "jingsha-x99m-g2.tu.v3p90.mi8",
       "Name": "Stock JingSha X99M-G2 BIOS, TU FFS -90/50mv",
-      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h2" ],
+      "MotherboardIds": [ "js-x99m-g2", "js-x99m-h", "js-x99m-h2" ],
       "FileName": "Bioses/jingsha-x99m-g2.tu.v3p90.mi8.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Unlocked",
-        "XE Ratio Limit": "Unlocked",
         "CPU Voltage": "-90mv",
         "IMC Voltage": "-50mv",
         "Turbo Unlock Driver": "v3_payne_90_50.ffs"
       },
-      "Chipsets": [ "B85", "Q85" ],
+      "Chipsets": [ "B85", "Q85", "H81" ],
       "Tags": [ "jingsha", "x99m", "g2", "b85", "q85" ]
     }
   ],
