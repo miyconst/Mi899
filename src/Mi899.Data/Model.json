@@ -587,7 +587,18 @@
           "Url": "Images/JingSha X99M-H/IoPanel.jpg"
         }
       ],
-      "Links": []
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 JingSha X99M-H(2) – detailed review, E5-1660 V3, E5-2678 V3, E5-2620 V4, i7-5820k, i7-6800k",
+          "Url": "https://youtu.be/RwBP8cpNXs8"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 JingSha X99M-H(2) – детальний огляд, E5-1660 V3, E5-2678 V3, E5-2620 V4, i7-5820k, i7-6800k",
+          "Url": "https://youtu.be/9nLB7wN_8uA"
+        }
+      ]
     },
     {
       "Id": "js-x99m-h2",
@@ -608,7 +619,18 @@
           "Url": "Images/JingSha X99M-H2/IoPanel.jpg"
         }
       ],
-      "Links": []
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 JingSha X99M-H(2) – detailed review, E5-1660 V3, E5-2678 V3, E5-2620 V4, i7-5820k, i7-6800k",
+          "Url": "https://youtu.be/RwBP8cpNXs8"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 JingSha X99M-H(2) – детальний огляд, E5-1660 V3, E5-2678 V3, E5-2620 V4, i7-5820k, i7-6800k",
+          "Url": "https://youtu.be/9nLB7wN_8uA"
+        }
+      ]
     },
     {
       "Id": "az-x99-pe7",
