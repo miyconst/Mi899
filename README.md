@@ -12,6 +12,10 @@
 
 ------------
 
+Alternatively you can [download Mi899 from Microsoft OneDrive](https://1drv.ms/u/s!AtZZXDjjb94kgY1URfN0g6vTewMbdg?e=YPRl1z).
+
+------------
+
 This application is designed to simplify the life of the Chinese LGA 2011-3 X99 motherboard owners and collect useful information about the motherboards and compatible BIOS modifications.
 
 Read full readme - [`src/Mi899/README.md`](src/Mi899/README.md).
