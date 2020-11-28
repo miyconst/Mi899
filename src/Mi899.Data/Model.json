@@ -697,7 +697,7 @@
       "Brand": "Ant Country",
       "Model": "X99S-D4",
       "Version": "",
-      "Tags": [ "ant", "x99", "ddr3" ],
+      "Tags": [ "ant", "x99", "ddr4" ],
       "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
       "Images": [
         {
