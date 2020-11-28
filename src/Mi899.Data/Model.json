@@ -690,13 +690,40 @@
           "Url": "https://youtu.be/TkqTPXQN7JM"
         }
       ]
+    },
+    {
+      "Id": "ac-x99s-d4",
+      "Name": "Ant Country X99S Gaming D4",
+      "Brand": "Ant Country",
+      "Model": "X99S-D4",
+      "Version": "",
+      "Tags": [ "ant", "x99", "ddr3" ],
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Ant Country X99S-D4/TopView.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Ant Country X99S-D4 – motherboard review",
+          "Url": "https://youtu.be/keLTCRDy87g"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Ant Country X99S-D4 – огляд материнської плати",
+          "Url": "https://youtu.be/DbqFLTAL2ns"
+        }
+      ]
     }
   ],
   "Bioses": [
     {
       "Id": "hz-x99-tf.rom",
       "Name": "Stock Huananzhi X99-TF BIOS",
-      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3" ],
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
       "FileName": "Bioses/huananzhi-x99-tf.rom.zip",
       "Description": "",
       "Properties": {
@@ -753,7 +780,7 @@
     {
       "Id": "hz-x99-f8.mi8.rom",
       "Name": "Stock Huananzhi X99-F8 BIOS, Miyconst optimized",
-      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3" ],
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
       "FileName": "Bioses/huananzhi-x99-f8.mi8.rom.zip",
       "Description": "",
       "Properties": {
@@ -792,7 +819,7 @@
     {
       "Id": "hz-x99-f8.tu.v3p0.ffs",
       "Name": "Stock Huananzhi X99-F8 BIOS, TU FFS",
-      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3" ],
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p0.ffs.rom.zip",
       "Description": "",
       "Properties": {
@@ -807,7 +834,7 @@
     {
       "Id": "hz-x99-f8.tu.v3p50.ffs.mi8",
       "Name": "Stock Huananzhi X99-F8 BIOS, TU FFS -50/50mv",
-      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3" ],
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p50.ffs.mi8.rom.zip",
       "Description": "",
       "Properties": {
@@ -822,7 +849,7 @@
     {
       "Id": "hz-x99-f8.tu.v3p70.ffs.mi8",
       "Name": "Stock Huananzhi X99-F8 BIOS, TU FFS -70/50mv",
-      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3" ],
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p70.ffs.mi8.rom.zip",
       "Description": "",
       "Properties": {
@@ -837,7 +864,7 @@
     {
       "Id": "hz-x99-f8.tu.v3p80.ffs.mi8",
       "Name": "Stock Huananzhi X99-F8 BIOS, TU FFS -80/50mv",
-      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3" ],
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p80.ffs.mi8.rom.zip",
       "Description": "",
       "Properties": {
@@ -852,7 +879,7 @@
     {
       "Id": "hz-x99-f8.tu.v3p90.ffs.mi8",
       "Name": "Stock Huananzhi X99-F8 BIOS, TU FFS -90/50mv",
-      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3" ],
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
       "FileName": "Bioses/huananzhi-x99-f8.tu.v3p90.ffs.mi8.rom.zip",
       "Description": "",
       "Properties": {
@@ -1408,6 +1435,16 @@
       "MotherboardIds": [ "ac-x99s-d3" ],
       "FileName": "Bioses/ant-country-x99s-d3.rom.zip",
       "Description": "Stock Ant Country X99S Gaming D3 BIOS",
+      "Properties": {},
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "ant", "x99", "c612" ]
+    },
+    {
+      "Id": "ant-country-x99s-d4",
+      "Name": "Ant Country X99S Gaming D4",
+      "MotherboardIds": [ "ac-x99s-d4" ],
+      "FileName": "Bioses/ant-country-x99s-d4.rom.zip",
+      "Description": "Stock Ant Country X99S Gaming D4 BIOS",
       "Properties": {},
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "ant", "x99", "c612" ]
