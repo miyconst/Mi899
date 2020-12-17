@@ -31,6 +31,10 @@
     {
       "Name": "Русский",
       "Code": "Ru"
+    },
+    {
+      "Name": "Polski",
+      "Code": "Pl"
     }
   ],
   "Motherboards": [
