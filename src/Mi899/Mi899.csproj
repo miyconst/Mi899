@@ -42,6 +42,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="README.Pl.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="README.Es.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
