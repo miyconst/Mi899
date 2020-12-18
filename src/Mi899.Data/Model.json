@@ -17,6 +17,10 @@
       "Code": "It"
     },
     {
+      "Name": "Polski",
+      "Code": "Pl"
+    },
+    {
       "Name": "Português",
       "Code": "Pt"
     },
@@ -31,10 +35,6 @@
     {
       "Name": "Русский",
       "Code": "Ru"
-    },
-    {
-      "Name": "Polski",
-      "Code": "Pl"
     }
   ],
   "Motherboards": [
