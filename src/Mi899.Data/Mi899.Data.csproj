@@ -151,6 +151,24 @@
     <None Update="Bioses\machinist-x99z-c612rd24.s3tt.9050.mi8.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Bioses\machinist-x99z-c612rd24.tu.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\machinist-x99z-c612rd24.tu.v3p50.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\machinist-x99z-c612rd24.tu.v3p60.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\machinist-x99z-c612rd24.tu.v3p70.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\machinist-x99z-c612rd24.tu.v3p80.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\machinist-x99z-c612rd24.tu.v3p90.mi8.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Bioses\machinist-x99z.bi.rbe.mi8.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

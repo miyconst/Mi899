@@ -470,9 +470,19 @@
           "Url": ""
         },
         {
+          "Author": "HardBro",
+          "Name": "Machinist X99 K9 огляд, розпакування ТОП плата на LGA2011v3, обзор, Review, машиніст, X99-K9",
+          "Url": "https://www.youtube.com/watch?v=-q4vqo7ocS4&ab_channel=HardBro"
+        },
+        {
           "Author": "xeon-e5450.ru",
           "Name": "🇷🇺 Machinist X99-K9",
           "Url": "https://xeon-e5450.ru/socket-2011-3/machinist-x99-k9/"
+        },
+        {
+          "Author": "ZeMiAn",
+          "Name": "🇷🇺 \"Материнская плата MACHINIST X99 K9 на сокете LGA2011 v3: Обзор, \"чёрным, по белому\"",
+          "Url": "https://www.youtube.com/watch?v=6n_oz86WkVw&ab_channel=%D0%97%D0%B5%D0%9C%D0%B8%D0%90%D0%BD"
         }
       ]
     },
@@ -1212,6 +1222,131 @@
       "Tags": [ "machinist", "x99z", "tu", "x99", "c612" ]
     },
     {
+      "Id": "machinist-x99z-c612rd24.tu.mi8",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU EFI",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99z-c612rd24.tu.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "Author": "BIOS-iEngineer",
+        "Release": "11/02/2020 - C612RD24 BIOS for MACHINIST X99Z Motherboard",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "Turbo Unlock Driver": "Manual EFI installation is required"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99z-c612rd24.tu.v3p50.mi8",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -50/50mv",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99z-c612rd24.tu.v3p50.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "Author": "BIOS-iEngineer",
+        "Release": "11/02/2020 - C612RD24 BIOS for MACHINIST X99Z Motherboard",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_50_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99z-c612rd24.tu.v3p60.mi8",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -60/50mv",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99z-c612rd24.tu.v3p60.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "Author": "BIOS-iEngineer",
+        "Release": "11/02/2020 - C612RD24 BIOS for MACHINIST X99Z Motherboard",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_60_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99z-c612rd24.tu.v3p70.mi8",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -70/50mv",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99z-c612rd24.tu.v3p70.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "Author": "BIOS-iEngineer",
+        "Release": "11/02/2020 - C612RD24 BIOS for MACHINIST X99Z Motherboard",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_70_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99z-c612rd24.tu.v3p80.mi8",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -80/50mv",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99z-c612rd24.tu.v3p80.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "Author": "BIOS-iEngineer",
+        "Release": "11/02/2020 - C612RD24 BIOS for MACHINIST X99Z Motherboard",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_80_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99z-c612rd24.tu.v3p90.mi8",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -90/50mv",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99z-c612rd24.tu.v3p90.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "Author": "BIOS-iEngineer",
+        "Release": "11/02/2020 - C612RD24 BIOS for MACHINIST X99Z Motherboard",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_90_50.ffs"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99z-c612rd24.s3tt.10050.mi8",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -100/50mv",
+      "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99z-c612rd24.s3tt.10050.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "Author": "BIOS-iEngineer",
+        "Release": "11/02/2020 - C612RD24 BIOS for MACHINIST X99Z Motherboard",
+        "URL": "https://github.com/BIOS-iEngineer/MACHINIST-X99ZV102",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "Sleep Mode": "Works in UEFI mode"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
+    },
+    {
       "Id": "machinist-x99z-c612rd24",
       "Name": "C612RD24 BIOS for Machinist X99Z",
       "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
@@ -1243,7 +1378,7 @@
     },
     {
       "Id": "machinist-x99z-c612rd24.s3tt.5050.mi8",
-      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -50/50mv",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU PEI -50/50mv",
       "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
       "FileName": "Bioses/machinist-x99z-c612rd24.s3tt.5050.mi8.rom.zip",
       "Description": "",
@@ -1255,14 +1390,14 @@
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-50mv",
         "IMC Voltage": "-50mv",
-        "Sleep Mode": "Works"
+        "Sleep Mode": "Works in UEFI mode"
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
     },
     {
       "Id": "machinist-x99z-c612rd24.s3tt.6050.mi8",
-      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -60/50mv",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU PEI -60/50mv",
       "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
       "FileName": "Bioses/machinist-x99z-c612rd24.s3tt.6050.mi8.rom.zip",
       "Description": "",
@@ -1274,14 +1409,14 @@
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-60mv",
         "IMC Voltage": "-50mv",
-        "Sleep Mode": "Works"
+        "Sleep Mode": "Works in UEFI mode"
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
     },
     {
       "Id": "machinist-x99z-c612rd24.s3tt.7050.mi8",
-      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -70/50mv",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU PEI -70/50mv",
       "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
       "FileName": "Bioses/machinist-x99z-c612rd24.s3tt.7050.mi8.rom.zip",
       "Description": "",
@@ -1293,14 +1428,14 @@
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-70mv",
         "IMC Voltage": "-50mv",
-        "Sleep Mode": "Works"
+        "Sleep Mode": "Works in UEFI mode"
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
     },
     {
       "Id": "machinist-x99z-c612rd24.s3tt.8050.mi8",
-      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -80/50mv",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU PEI -80/50mv",
       "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
       "FileName": "Bioses/machinist-x99z-c612rd24.s3tt.8050.mi8.rom.zip",
       "Description": "",
@@ -1312,14 +1447,14 @@
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-80mv",
         "IMC Voltage": "-50mv",
-        "Sleep Mode": "Works"
+        "Sleep Mode": "Works in UEFI mode"
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
     },
     {
       "Id": "machinist-x99z-c612rd24.s3tt.9050.mi8",
-      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -90/50mv",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU PEI -90/50mv",
       "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
       "FileName": "Bioses/machinist-x99z-c612rd24.s3tt.9050.mi8.rom.zip",
       "Description": "",
@@ -1331,14 +1466,14 @@
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-90mv",
         "IMC Voltage": "-50mv",
-        "Sleep Mode": "Works"
+        "Sleep Mode": "Works in UEFI mode"
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
     },
     {
       "Id": "machinist-x99z-c612rd24.s3tt.10050.mi8",
-      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU FFS -100/50mv",
+      "Name": "C612RD24 BIOS for Machinist X99Z, Mi8, TU PEI -100/50mv",
       "MotherboardIds": [ "mn-x99z", "az-x99-pe7", "machinist-x99-k9" ],
       "FileName": "Bioses/machinist-x99z-c612rd24.s3tt.10050.mi8.rom.zip",
       "Description": "",
@@ -1350,7 +1485,7 @@
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-100mv",
         "IMC Voltage": "-50mv",
-        "Sleep Mode": "Works"
+        "Sleep Mode": "Works in UEFI mode"
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "machinist", "alzenit", "x99z", "x99", "c612" ]
