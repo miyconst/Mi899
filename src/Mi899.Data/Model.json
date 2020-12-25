@@ -1516,6 +1516,108 @@
       "Tags": [ "machinist", "x99-k9", "stock", "x99", "c612" ]
     },
     {
+      "Id": "machinist-x99-k9.oc.ru.s3tt.5050",
+      "Name": "Stock Machinist X99-K9 BIOS, O.C.RU, TU PEI -50/50mv",
+      "MotherboardIds": [ "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99-k9.oc.ru.s3tt.5050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "RAM timings": "Unlocked",
+        "URL": "https://forums.overclockers.ru/viewtopic.php?f=1&t=602922",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "Sleep Mode": "Works in UEFI mode"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99-k9", "stock", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99-k9.oc.ru.s3tt.6050",
+      "Name": "Stock Machinist X99-K9 BIOS, O.C.RU, TU PEI -60/50mv",
+      "MotherboardIds": [ "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99-k9.oc.ru.s3tt.6050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "RAM timings": "Unlocked",
+        "URL": "https://forums.overclockers.ru/viewtopic.php?f=1&t=602922",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "Sleep Mode": "Works in UEFI mode"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99-k9", "stock", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99-k9.oc.ru.s3tt.7050",
+      "Name": "Stock Machinist X99-K9 BIOS, O.C.RU, TU PEI -70/50mv",
+      "MotherboardIds": [ "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99-k9.oc.ru.s3tt.7050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "RAM timings": "Unlocked",
+        "URL": "https://forums.overclockers.ru/viewtopic.php?f=1&t=602922",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "Sleep Mode": "Works in UEFI mode"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99-k9", "stock", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99-k9.oc.ru.s3tt.8050",
+      "Name": "Stock Machinist X99-K9 BIOS, O.C.RU, TU PEI -80/50mv",
+      "MotherboardIds": [ "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99-k9.oc.ru.s3tt.8050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "RAM timings": "Unlocked",
+        "URL": "https://forums.overclockers.ru/viewtopic.php?f=1&t=602922",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "Sleep Mode": "Works in UEFI mode"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99-k9", "stock", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99-k9.oc.ru.s3tt.9050",
+      "Name": "Stock Machinist X99-K9 BIOS, O.C.RU, TU PEI -90/50mv",
+      "MotherboardIds": [ "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99-k9.oc.ru.s3tt.9050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "RAM timings": "Unlocked",
+        "URL": "https://forums.overclockers.ru/viewtopic.php?f=1&t=602922",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "Sleep Mode": "Works in UEFI mode"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99-k9", "stock", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99-k9.oc.ru.s3tt.10050",
+      "Name": "Stock Machinist X99-K9 BIOS, O.C.RU, TU PEI -100/50mv",
+      "MotherboardIds": [ "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99-k9.oc.ru.s3tt.10050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "RAM timings": "Unlocked",
+        "URL": "https://forums.overclockers.ru/viewtopic.php?f=1&t=602922",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "Sleep Mode": "Works in UEFI mode"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99-k9", "stock", "x99", "c612" ]
+    },
+    {
       "Id": "veineda-x99",
       "Name": "Stock Veineda X99 BIOS",
       "MotherboardIds": [ "vn-x99" ],

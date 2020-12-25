@@ -127,6 +127,24 @@
     <None Update="Bioses\machinist-x99-k9.oc.ru.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Bioses\machinist-x99-k9.oc.ru.s3tt.10050.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\machinist-x99-k9.oc.ru.s3tt.5050.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\machinist-x99-k9.oc.ru.s3tt.6050.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\machinist-x99-k9.oc.ru.s3tt.7050.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\machinist-x99-k9.oc.ru.s3tt.8050.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Bioses\machinist-x99-k9.oc.ru.s3tt.9050.rom.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Bioses\machinist-x99-k9.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
