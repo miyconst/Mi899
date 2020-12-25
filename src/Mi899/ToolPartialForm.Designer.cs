@@ -37,18 +37,22 @@
             this.txtMotherboardVersion = new System.Windows.Forms.TextBox();
             this.lblMotherboard = new System.Windows.Forms.Label();
             this.txtMotherboard = new System.Windows.Forms.TextBox();
-            this.lblBios = new System.Windows.Forms.Label();
             this.ddlBioses = new System.Windows.Forms.ComboBox();
             this.txtBiosProperties = new System.Windows.Forms.TextBox();
             this.txtToolVersion = new System.Windows.Forms.TextBox();
+            this.tlpBios = new System.Windows.Forms.TableLayoutPanel();
+            this.lblBios = new System.Windows.Forms.Label();
+            this.btnSelectBiosFile = new System.Windows.Forms.Button();
             this.tlpRightColumn = new System.Windows.Forms.TableLayoutPanel();
             this.tlpButtons = new System.Windows.Forms.TableLayoutPanel();
             this.btnDump = new System.Windows.Forms.Button();
             this.btnFlash = new System.Windows.Forms.Button();
             this.cbExecuteScript = new System.Windows.Forms.CheckBox();
             this.txtReadme = new System.Windows.Forms.RichTextBox();
+            this.ofdBiosFile = new System.Windows.Forms.OpenFileDialog();
             this.tlpMain.SuspendLayout();
             this.tlpInfo.SuspendLayout();
+            this.tlpBios.SuspendLayout();
             this.tlpRightColumn.SuspendLayout();
             this.tlpButtons.SuspendLayout();
             this.SuspendLayout();
@@ -78,10 +82,10 @@
             this.tlpInfo.Controls.Add(this.txtMotherboardVersion, 0, 2);
             this.tlpInfo.Controls.Add(this.lblMotherboard, 0, 0);
             this.tlpInfo.Controls.Add(this.txtMotherboard, 0, 1);
-            this.tlpInfo.Controls.Add(this.lblBios, 0, 3);
             this.tlpInfo.Controls.Add(this.ddlBioses, 0, 4);
             this.tlpInfo.Controls.Add(this.txtBiosProperties, 0, 5);
             this.tlpInfo.Controls.Add(this.txtToolVersion, 0, 9);
+            this.tlpInfo.Controls.Add(this.tlpBios, 0, 3);
             this.tlpInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpInfo.Location = new System.Drawing.Point(3, 3);
             this.tlpInfo.Name = "tlpInfo";
@@ -165,17 +169,6 @@
             this.txtMotherboard.Size = new System.Drawing.Size(438, 23);
             this.txtMotherboard.TabIndex = 1;
             // 
-            // lblBios
-            // 
-            this.lblBios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblBios.AutoSize = true;
-            this.lblBios.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblBios.Location = new System.Drawing.Point(3, 98);
-            this.lblBios.Name = "lblBios";
-            this.lblBios.Size = new System.Drawing.Size(438, 14);
-            this.lblBios.TabIndex = 0;
-            this.lblBios.Text = "BIOS:";
-            // 
             // ddlBioses
             // 
             this.ddlBioses.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -207,6 +200,44 @@
             this.txtToolVersion.ReadOnly = true;
             this.txtToolVersion.Size = new System.Drawing.Size(438, 23);
             this.txtToolVersion.TabIndex = 4;
+            // 
+            // tlpBios
+            // 
+            this.tlpBios.ColumnCount = 2;
+            this.tlpBios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBios.Controls.Add(this.lblBios, 0, 0);
+            this.tlpBios.Controls.Add(this.btnSelectBiosFile, 1, 0);
+            this.tlpBios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpBios.Location = new System.Drawing.Point(0, 90);
+            this.tlpBios.Margin = new System.Windows.Forms.Padding(0);
+            this.tlpBios.Name = "tlpBios";
+            this.tlpBios.RowCount = 1;
+            this.tlpBios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBios.Size = new System.Drawing.Size(444, 30);
+            this.tlpBios.TabIndex = 5;
+            // 
+            // lblBios
+            // 
+            this.lblBios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBios.AutoSize = true;
+            this.lblBios.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBios.Location = new System.Drawing.Point(3, 8);
+            this.lblBios.Name = "lblBios";
+            this.lblBios.Size = new System.Drawing.Size(216, 14);
+            this.lblBios.TabIndex = 0;
+            this.lblBios.Text = "BIOS:";
+            // 
+            // btnSelectBiosFile
+            // 
+            this.btnSelectBiosFile.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnSelectBiosFile.Location = new System.Drawing.Point(241, 3);
+            this.btnSelectBiosFile.Name = "btnSelectBiosFile";
+            this.btnSelectBiosFile.Size = new System.Drawing.Size(200, 23);
+            this.btnSelectBiosFile.TabIndex = 1;
+            this.btnSelectBiosFile.Text = "Select BIOS file";
+            this.btnSelectBiosFile.UseVisualStyleBackColor = true;
+            this.btnSelectBiosFile.Click += new System.EventHandler(this.btnSelectBiosFile_Click);
             // 
             // tlpRightColumn
             // 
@@ -287,6 +318,11 @@
             this.txtReadme.TabIndex = 1;
             this.txtReadme.Text = resources.GetString("txtReadme.Text");
             // 
+            // ofdBiosFile
+            // 
+            this.ofdBiosFile.FileName = "openFileDialog1";
+            this.ofdBiosFile.Filter = "BIOS files (*.bin;*.rom)|*.bin;*.rom|All files (*.*)|*.*";
+            // 
             // ToolPartialForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -297,6 +333,8 @@
             this.tlpMain.ResumeLayout(false);
             this.tlpInfo.ResumeLayout(false);
             this.tlpInfo.PerformLayout();
+            this.tlpBios.ResumeLayout(false);
+            this.tlpBios.PerformLayout();
             this.tlpRightColumn.ResumeLayout(false);
             this.tlpButtons.ResumeLayout(false);
             this.tlpButtons.PerformLayout();
@@ -324,5 +362,8 @@
         private System.Windows.Forms.ComboBox ddlBioses;
         private System.Windows.Forms.TextBox txtBiosProperties;
         private System.Windows.Forms.TextBox txtToolVersion;
+        private System.Windows.Forms.TableLayoutPanel tlpBios;
+        private System.Windows.Forms.Button btnSelectBiosFile;
+        private System.Windows.Forms.OpenFileDialog ofdBiosFile;
     }
 }

@@ -46,10 +46,22 @@ namespace Mi899
             string path = GetTempFolderPath();
             FileInfo toolFi = new FileInfo(tool.FileName);
             FileInfo tempBatFi = new FileInfo(Path.Combine(path, "flash.bat"));
-            string flashFileName = Path.GetFileNameWithoutExtension(bios.FileName);
+            string flashFileName = null;
 
             ZipFile.ExtractToDirectory(toolFi.FullName, path);
-            ZipFile.ExtractToDirectory(bios.FileName, path); using TextWriter writer = new StreamWriter(tempBatFi.FullName);
+
+            if (bios.IsZipped)
+            {
+                flashFileName = Path.GetFileNameWithoutExtension(bios.FileName);
+                ZipFile.ExtractToDirectory(bios.FileName, path);
+            }
+            else
+            {
+                flashFileName = Path.GetFileName(bios.FileName);
+                File.Copy(bios.FileName, Path.Combine(path, flashFileName));
+            }
+            
+            using TextWriter writer = new StreamWriter(tempBatFi.FullName);
 
             WriteScriptHeader(motherboard, bios, tool, writer);
             writer.WriteLine(string.Format(tool.FlashCommand, flashFileName));

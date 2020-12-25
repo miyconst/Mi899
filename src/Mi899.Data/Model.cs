@@ -4,6 +4,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Mi899.Data
 {
@@ -25,6 +26,43 @@ namespace Mi899.Data
             _bioses = new List<Bios>();
             _tools = new List<Tool>();
             _languages = new List<Language>();
+        }
+
+        public IBios AddBiosFromFile([NotNull] IMotherboard motherboard, [NotNull] string fileName)
+        {
+            if (motherboard == null) throw new ArgumentNullException(nameof(motherboard));
+            if (fileName == null) throw new ArgumentNullException(nameof(fileName));
+
+            FileInfo fi = new FileInfo(fileName);
+
+            if (!fi.Exists)
+            {
+                throw new FileNotFoundException("File not found", fi.FullName);
+            }
+
+            Bios oldBios = _bioses.FirstOrDefault(x => fi.FullName.Equals(x.FileName, StringComparison.OrdinalIgnoreCase));
+            Bios newBios = new Bios()
+            {
+                Name = fi.Name,
+                FileName = fi.FullName,
+                IsZipped = false,
+                Description = "User selected file",
+                Properties = new Dictionary<string, string>() 
+                {
+                    { "Path", fi.FullName }
+                },
+                MotherboardIds = new string[] { motherboard.Id },
+                Chipsets = new string[0]
+            };
+
+            if (oldBios != null)
+            {
+                _bioses.Remove(oldBios);
+            }
+
+            _bioses.Add(newBios);
+
+            return newBios;
         }
 
         public static Model LoadFromJson()
@@ -55,6 +93,7 @@ namespace Mi899.Data
             foreach (Bios b in model._bioses)
             {
                 b.FileName = Path.Combine(di.FullName, b.FileName);
+                b.IsZipped = true;
             }
 
             foreach (Tool t in model._tools)
