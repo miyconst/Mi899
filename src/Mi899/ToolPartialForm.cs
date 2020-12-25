@@ -43,6 +43,7 @@ namespace Mi899
 
             txtMotherboard.Text = motherboard.Name;
             txtMotherboardVersion.Text = motherboard.Version;
+            txtMotherboardDescription.Text = motherboard.Description;
             txtTool.Text = tool.Name;
             txtToolVersion.Text = tool.Version;
 

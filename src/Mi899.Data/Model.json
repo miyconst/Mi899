@@ -446,7 +446,7 @@
       "Model": "X99-K9",
       "Version": "V1.0",
       "Tags": [ "machinist", "x99-k9", "ddr4" ],
-      "Description": "",
+      "Description": "Machinist X99-K9 is compatible with the C612RD24 BIOS for Machinist X99Z, but flashing C612RD24 BIOS with AfuWin may brick the motherboard.",
       "ToolIds": [ "afu-win-x64-5.12.03.2045" ],
       "Images": [
         {
