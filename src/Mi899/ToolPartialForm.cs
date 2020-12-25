@@ -87,6 +87,7 @@ namespace Mi899
                 btnDump,
                 btnFlash,
                 cbExecuteScript,
+                btnSelectBiosFile
             };
         }
 

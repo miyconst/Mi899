@@ -207,8 +207,8 @@
             // tlpBios
             // 
             this.tlpBios.ColumnCount = 2;
-            this.tlpBios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpBios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tlpBios.Controls.Add(this.lblBios, 0, 0);
             this.tlpBios.Controls.Add(this.btnSelectBiosFile, 1, 0);
             this.tlpBios.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -216,7 +216,7 @@
             this.tlpBios.Margin = new System.Windows.Forms.Padding(0);
             this.tlpBios.Name = "tlpBios";
             this.tlpBios.RowCount = 1;
-            this.tlpBios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpBios.Size = new System.Drawing.Size(444, 30);
             this.tlpBios.TabIndex = 5;
             // 
@@ -227,16 +227,16 @@
             this.lblBios.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblBios.Location = new System.Drawing.Point(3, 8);
             this.lblBios.Name = "lblBios";
-            this.lblBios.Size = new System.Drawing.Size(216, 14);
+            this.lblBios.Size = new System.Drawing.Size(138, 14);
             this.lblBios.TabIndex = 0;
             this.lblBios.Text = "BIOS:";
             // 
             // btnSelectBiosFile
             // 
-            this.btnSelectBiosFile.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnSelectBiosFile.Location = new System.Drawing.Point(241, 3);
+            this.btnSelectBiosFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSelectBiosFile.Location = new System.Drawing.Point(147, 3);
             this.btnSelectBiosFile.Name = "btnSelectBiosFile";
-            this.btnSelectBiosFile.Size = new System.Drawing.Size(200, 23);
+            this.btnSelectBiosFile.Size = new System.Drawing.Size(294, 23);
             this.btnSelectBiosFile.TabIndex = 1;
             this.btnSelectBiosFile.Text = "Select BIOS file";
             this.btnSelectBiosFile.UseVisualStyleBackColor = true;
@@ -335,7 +335,6 @@
             // 
             // ofdBiosFile
             // 
-            this.ofdBiosFile.FileName = "openFileDialog1";
             this.ofdBiosFile.Filter = "BIOS files (*.bin;*.rom)|*.bin;*.rom|All files (*.*)|*.*";
             // 
             // ToolPartialForm
