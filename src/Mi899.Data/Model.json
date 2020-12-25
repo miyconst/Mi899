@@ -1503,6 +1503,19 @@
       "Tags": [ "machinist", "x99-k9", "stock", "x99", "c612" ]
     },
     {
+      "Id": "machinist-x99-k9.oc.ru",
+      "Name": "Stock Machinist X99-K9 BIOS, O.C.RU",
+      "MotherboardIds": [ "machinist-x99-k9" ],
+      "FileName": "Bioses/machinist-x99-k9.oc.ru.rom.zip",
+      "Description": "",
+      "Properties": {
+        "RAM timings": "Unlocked",
+        "URL": "https://forums.overclockers.ru/viewtopic.php?f=1&t=602922"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99-k9", "stock", "x99", "c612" ]
+    },
+    {
       "Id": "veineda-x99",
       "Name": "Stock Veineda X99 BIOS",
       "MotherboardIds": [ "vn-x99" ],
