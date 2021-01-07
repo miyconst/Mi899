@@ -1913,6 +1913,14 @@
       "FileName": "Tools/fpt-w64-9.1.10.1000.zip"
     },
     {
+      "Id": "fpt-w64-8.1.60.1561",
+      "Name": "Flash Programming Tool (FPT)",
+      "Version": "9.1.10.1000",
+      "DumpCommand": "fptw64.exe -d {0}",
+      "FlashCommand": "fptw64.exe -f {0}",
+      "FileName": "Tools/fpt-w64-8.1.60.1561.zip"
+    },
+    {
       "Id": "afu-win-x64-5.12.03.2045",
       "Name": "AMI Flasher Utility (AfuWin)",
       "Version": "5.12.03.2045",
