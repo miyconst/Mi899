@@ -800,6 +800,37 @@
           "Url": "https://youtu.be/DbqFLTAL2ns"
         }
       ]
+    },
+    {
+      "Id": "mn-x79-v2.82",
+      "Name": "Machinist X79 V2.82",
+      "Brand": "Machinist",
+      "Model": "X79",
+      "Version": "V2.82",
+      "Tags": [ "machinist", "kllisre", "qiyida", "atermiter", "x79", "v2.82" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-8.1.60.1561", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X79 V2.82/TopViewWithBox.jpg"
+        },
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X79 V2.82/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Machinist X79 V2.82/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 X79 v2.81 \\ 2.82",
+          "Url": "https://xeon-e5450.ru/socket-2011/motherboards/x79-v2-81/"
+        }
+      ]
     }
   ],
   "Bioses": [
