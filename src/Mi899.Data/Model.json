@@ -29,12 +29,16 @@
       "Code": "Se"
     },
     {
-      "Name": "Українська",
-      "Code": "Ua"
+      "Name": "Български",
+      "Code": "Bg"
     },
     {
       "Name": "Русский",
       "Code": "Ru"
+    },
+    {
+      "Name": "Українська",
+      "Code": "Ua"
     }
   ],
   "Motherboards": [
