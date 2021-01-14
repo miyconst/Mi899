@@ -812,8 +812,8 @@
       "Model": "X79",
       "Version": "V2.82",
       "Tags": [ "machinist", "kllisre", "qiyida", "atermiter", "x79", "v2.82" ],
-      "Description": "",
-      "ToolIds": [ "fpt-w64-8.1.60.1561", "afu-win-x64-5.12.03.2045" ],
+      "Description": "Use AfuDos to flash this motherboard's BIOS. Read more: https://xeon-e5450.ru/socket-2011/motherboards/x79-v2-81/",
+      "ToolIds": [],
       "Images": [
         {
           "Name": "Top view",
@@ -1936,6 +1936,21 @@
       "Properties": {},
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "ant", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x79-v2.82.e5450",
+      "Name": "Machinist X79 V2.82, xeon-e5450.ru",
+      "MotherboardIds": [ "mn-x79-v2.82" ],
+      "FileName": "Bioses/machinist-x79-v2.82.e5450.rom.zip",
+      "Description": "Machinist X79 V2.82 BIOS from xeon-e5450.ru",
+      "Properties": {
+        "Edition": "Kupi Deshevo",
+        "RAM Speed": "Up to DDR3-2133",
+        "RAM timings": "Unlocked",
+        "Url": "https://xeon-e5450.ru/socket-2011/motherboards/x79-v2-81/"
+      },
+      "Chipsets": [ "X79", "C602" ],
+      "Tags": [ "machinist", "x79", "c602" ]
     }
   ],
   "Tools": [
@@ -1946,14 +1961,6 @@
       "DumpCommand": "fptw64.exe -d {0}",
       "FlashCommand": "fptw64.exe -f {0}",
       "FileName": "Tools/fpt-w64-9.1.10.1000.zip"
-    },
-    {
-      "Id": "fpt-w64-8.1.60.1561",
-      "Name": "Flash Programming Tool (FPT)",
-      "Version": "9.1.10.1000",
-      "DumpCommand": "fptw64.exe -d {0}",
-      "FlashCommand": "fptw64.exe -f {0}",
-      "FileName": "Tools/fpt-w64-8.1.60.1561.zip"
     },
     {
       "Id": "afu-win-x64-5.12.03.2045",
