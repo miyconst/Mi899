@@ -1956,7 +1956,7 @@
   "Tools": [
     {
       "Id": "fpt-w64-9.1.10.1000",
-      "Name": "Flash Programming Tool (FPT)",
+      "Name": "Flash Programming Tool (FPT) 9.1",
       "Version": "9.1.10.1000",
       "DumpCommand": "fptw64.exe -d {0}",
       "FlashCommand": "fptw64.exe -f {0}",
@@ -1964,7 +1964,7 @@
     },
     {
       "Id": "afu-win-x64-5.12.03.2045",
-      "Name": "AMI Flasher Utility (AfuWin)",
+      "Name": "AMI Flasher Utility (AfuWin) 5.12",
       "Version": "5.12.03.2045",
       "DumpCommand": "AFUWINx64.exe {0} /O",
       "FlashCommand": "AFUWINx64.exe {0} /P /B /N /X",
