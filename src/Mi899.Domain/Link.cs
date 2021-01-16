@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Mi899.Data;
 
-namespace Mi899.Data
+namespace Mi899.Domain
 {
     internal class Link : ILink
     {

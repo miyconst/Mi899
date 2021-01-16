@@ -16,6 +16,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mi899.Data.Tests", "tests\Mi899.Data.Tests\Mi899.Data.Tests.csproj", "{D6EA25CB-907D-4509-A5D3-459A67D6E489}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mi899.Contracts", "Src\Mi899.Contracts\Mi899.Contracts.csproj", "{31A8DD53-A815-4301-BA8C-28EB1A7A4D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mi899.Domain", "src\Mi899.Domain\Mi899.Domain.csproj", "{09FED745-F587-413F-958A-B5421173690A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +38,14 @@ Global
 		{D6EA25CB-907D-4509-A5D3-459A67D6E489}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6EA25CB-907D-4509-A5D3-459A67D6E489}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6EA25CB-907D-4509-A5D3-459A67D6E489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31A8DD53-A815-4301-BA8C-28EB1A7A4D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A8DD53-A815-4301-BA8C-28EB1A7A4D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A8DD53-A815-4301-BA8C-28EB1A7A4D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A8DD53-A815-4301-BA8C-28EB1A7A4D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09FED745-F587-413F-958A-B5421173690A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09FED745-F587-413F-958A-B5421173690A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09FED745-F587-413F-958A-B5421173690A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09FED745-F587-413F-958A-B5421173690A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

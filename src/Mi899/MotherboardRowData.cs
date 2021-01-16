@@ -1,10 +1,8 @@
 ﻿using Mi899.Data;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 
 namespace Mi899
 {
@@ -43,14 +41,14 @@ namespace Mi899
         {
             get
             {
-                ILink link = Images.FirstOrDefault();
+                var link = Images.FirstOrDefault();
 
                 if (link == null)
                 {
                     return null;
                 }
 
-                Bitmap bmp = new Bitmap(link.Url);
+                var bmp = new Bitmap(link.Url);
 
                 return bmp;
             }

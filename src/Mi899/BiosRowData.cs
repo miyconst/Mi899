@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using System.Text;
 using Mi899.Data;
 
 namespace Mi899
@@ -38,12 +37,9 @@ namespace Mi899
         {
             get
             {
-                if (Source.Properties == null)
-                {
-                    return string.Empty;
-                }
-
-                return string.Join(Environment.NewLine, Properties.Select(x => $"{x.Key}: {x.Value}."));
+                return Source.Properties == null 
+                    ? string.Empty 
+                    : string.Join(Environment.NewLine, Properties.Select(x => $"{x.Key}: {x.Value}."));
             }
         }
 

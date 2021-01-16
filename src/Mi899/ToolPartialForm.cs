@@ -2,12 +2,11 @@
 using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Text;
 using System.Windows.Forms;
 using Mi899.Data;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Mi899.Domain;
 
 namespace Mi899
 {
@@ -17,7 +16,7 @@ namespace Mi899
         private readonly MdToHtmlConverter _mdToHtmlConverter;
         private IMotherboard _motherboard;
         private ITool _tool;
-        private readonly WebBrowser _wbReadme;
+        private readonly WebBrowser _webBrowserReadme;
         private readonly ToolManager _toolManager;
 
         public ToolPartialForm([NotNull] Model model, [NotNull] MdToHtmlConverter mdToHtmlConverter, [NotNull] ToolManager toolManager)
@@ -26,14 +25,14 @@ namespace Mi899
             _mdToHtmlConverter = mdToHtmlConverter ?? throw new ArgumentNullException(nameof(mdToHtmlConverter));
             _toolManager = toolManager ?? throw new ArgumentNullException(nameof(toolManager));
             InitializeComponent();
-            ddlBioses.DisplayMember = nameof(BiosRowData.Name);
-            ddlBioses.ValueMember = nameof(BiosRowData.Id);
-            txtReadme.Visible = false;
-            _wbReadme = new WebBrowser()
+            comboBoxBioses.DisplayMember = nameof(BiosRowData.Name);
+            comboBoxBioses.ValueMember = nameof(BiosRowData.Id);
+            textReadme.Visible = false;
+            _webBrowserReadme = new WebBrowser()
             {
                 Dock = DockStyle.Fill
             };
-            tlpRightColumn.Controls.Add(_wbReadme, 0, 0);
+            tlpRightColumn.Controls.Add(_webBrowserReadme, 0, 0);
         }
 
         public void LoadData([NotNull] IMotherboard motherboard, [NotNull] ITool tool, IBios selectedBios = null)
@@ -41,30 +40,25 @@ namespace Mi899
             _motherboard = motherboard ?? throw new ArgumentNullException(nameof(motherboard)); ;
             _tool = tool ?? throw new ArgumentNullException(nameof(tool));
 
-            txtMotherboard.Text = motherboard.Name;
-            txtMotherboardVersion.Text = motherboard.Version;
-            txtMotherboardDescription.Text = motherboard.Description;
-            txtTool.Text = tool.Name;
-            txtToolVersion.Text = tool.Version;
+            textMotherboard.Text = motherboard.Name;
+            textMotherboardVersion.Text = motherboard.Version;
+            textMotherboardDescription.Text = motherboard.Description;
+            textTool.Text = tool.Name;
+            textToolVersion.Text = tool.Version;
 
             {
-                BiosRowData[] bioses = _model
+                var bioses = _model
                     .Bioses
                     .Where(x => x.MotherboardIds.Contains(motherboard.Id))
                     .OrderBy(x => x.Name)
                     .Select(x => new BiosRowData(x))
                     .ToArray();
-                ddlBioses.Items.Clear();
-                ddlBioses.Items.AddRange(bioses);
+                comboBoxBioses.Items.Clear();
+                comboBoxBioses.Items.AddRange(bioses);
 
-                if (selectedBios == null)
-                {
-                    ddlBioses.SelectedItem = bioses.FirstOrDefault();
-                }
-                else
-                {
-                    ddlBioses.SelectedItem = bioses.First(x => x.Source.Equals(selectedBios));
-                }
+                comboBoxBioses.SelectedItem = selectedBios == null 
+                    ? bioses.FirstOrDefault() 
+                    : bioses.First(x => x.Source.Equals(selectedBios));
             }
         }
 
@@ -72,35 +66,35 @@ namespace Mi899
         {
             this.ApplyI18nToChildren(i18n);
 
-            string md = i18n.Get(txtReadme.Text, this.GetI18nCompatibleParent().Name, Name, txtReadme.Name, nameof(TextBox.Text));
-            string html = _mdToHtmlConverter.Convert(md);
-            _wbReadme.DocumentText = html;
+            var md = i18n.Get(textReadme.Text, this.GetI18nCompatibleParent().Name, Name, textReadme.Name, nameof(TextBox.Text));
+            var html = _mdToHtmlConverter.Convert(md);
+            _webBrowserReadme.DocumentText = html;
         }
 
         public IEnumerable<IComponent> SelectI18nCompatibleComponents()
         {
             return new IComponent[]
             {
-                lblBios,
-                lblMotherboard,
-                lblTool,
-                btnDump,
-                btnFlash,
-                cbExecuteScript,
-                btnSelectBiosFile
+                labelBios,
+                labelMotherboard,
+                labelTool,
+                buttonDump,
+                buttonFlash,
+                checkBoxExecuteScript,
+                buttonSelectBiosFile
             };
         }
 
         private void btnDump_Click(object sender, EventArgs e)
         {
             Cursor = Cursors.WaitCursor;
-            _toolManager.Dump(_motherboard, _tool, cbExecuteScript.Checked);
+            _toolManager.Dump(_motherboard, _tool, checkBoxExecuteScript.Checked);
             Cursor = Cursors.Default;
         }
 
         private void btnFlash_Click(object sender, EventArgs e)
         {
-            BiosRowData bios = ddlBioses.SelectedItem as BiosRowData;
+            var bios = comboBoxBioses.SelectedItem as BiosRowData;
 
             if (bios == null)
             {
@@ -108,15 +102,15 @@ namespace Mi899
             }
 
             Cursor = Cursors.WaitCursor;
-            _toolManager.Flash(_motherboard, bios, _tool, cbExecuteScript.Checked);
+            _toolManager.Flash(_motherboard, bios, _tool, checkBoxExecuteScript.Checked);
             Cursor = Cursors.Default;
         }
 
         private void ddlBioses_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox ddl = (ComboBox)sender;
+            var comboBox = (ComboBox)sender;
 
-            if (ddl.SelectedItem is BiosRowData bios)
+            if (comboBox.SelectedItem is BiosRowData bios)
             {
                 txtBiosDescription.Text = bios.Description;
 
@@ -140,22 +134,22 @@ namespace Mi899
 
         private void btnSelectBiosFile_Click(object sender, EventArgs e)
         {
-            DialogResult dr = ofdBiosFile.ShowDialog();
+            var dialogResult = ofdBiosFile.ShowDialog();
 
-            if (dr != DialogResult.OK)
+            if (dialogResult != DialogResult.OK)
             {
                 return;
             }
 
-            FileInfo fi = new FileInfo(ofdBiosFile.FileName);
+            var fileInfo = new FileInfo(ofdBiosFile.FileName);
 
-            if (!fi.Exists)
+            if (!fileInfo.Exists)
             {
                 MessageBox.Show("File not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            IBios bios = _model.AddBiosFromFile(_motherboard, fi.FullName);
+            var bios = _model.AddBiosFromFile(_motherboard, fileInfo.FullName);
             LoadData(_motherboard, _tool, bios);
         }
     }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using CommonMark;
+﻿using CommonMark;
 
 namespace Mi899
 {
@@ -14,7 +11,7 @@ namespace Mi899
                 return md;
             }
 
-            string html = "<style>* { font-family: Consolas; } a { text-decoration: none; }</style>" + CommonMarkConverter.Convert(md);
+            var html = "<style>* { font-family: Consolas; } a { text-decoration: none; }</style>" + CommonMarkConverter.Convert(md);
 
             return html;
         }

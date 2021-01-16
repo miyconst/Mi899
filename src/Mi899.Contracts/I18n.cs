@@ -30,18 +30,15 @@ namespace Mi899.Data
                 throw new ArgumentException(nameof(ids));
             }
 
-            string id = string.Join(".", ids);
-            Dictionary<string, string> localValues;
+            var id = string.Join(".", ids);
 
-            if (!_values.TryGetValue(Language, out localValues))
+            if (!_values.TryGetValue(Language, out var localValues))
             {
                 localValues = new Dictionary<string, string>();
                 _values.Add(Language, localValues);
             }
 
-            string value;
-
-            if (!localValues.TryGetValue(id, out value))
+            if (!localValues.TryGetValue(id, out var value))
             {
                 value = text;
                 localValues.Add(id, value);
@@ -52,7 +49,7 @@ namespace Mi899.Data
 
         public void Dump()
         {
-            Dictionary<string, Dictionary<string, string>> result = _values
+            var result = _values
                 .OrderBy(x => x.Key)
                 .ToDictionary
                 (
@@ -61,8 +58,8 @@ namespace Mi899.Data
                         .OrderBy(x => x.Key)
                         .ToDictionary(k => k.Key, v => v.Value)
                 );
-            string json = JsonConvert.SerializeObject(result, Formatting.Indented);
-            string dataPath = GetDataPath();
+            var json = JsonConvert.SerializeObject(result, Formatting.Indented);
+            var dataPath = GetDataPath();
             using TextWriter writer = new StreamWriter(dataPath, false, Encoding.UTF8);
             writer.Write(json);
             writer.Flush();
@@ -72,15 +69,15 @@ namespace Mi899.Data
         {
             I18n result = new I18n();
             string dataPath = GetDataPath();
-            FileInfo fi = new FileInfo(dataPath);
+            var fileInfo = new FileInfo(dataPath);
 
-            if (!fi.Exists)
+            if (!fileInfo.Exists)
             {
-                throw new FileNotFoundException(fi.FullName);
+                throw new FileNotFoundException(fileInfo.FullName);
             }
 
-            using TextReader reader = new StreamReader(fi.FullName);
-            string json = reader.ReadToEnd();
+            using TextReader reader = new StreamReader(fileInfo.FullName);
+            var json = reader.ReadToEnd();
 
             result._values = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, string>>>(json);
 
@@ -89,10 +86,10 @@ namespace Mi899.Data
 
         private static string GetDataPath()
         {
-            string assemblyLocation = System.Reflection.Assembly.GetAssembly(typeof(I18n)).Location;
-            FileInfo fi = new FileInfo(assemblyLocation);
-            DirectoryInfo di = fi.Directory;
-            string dataPath = Path.Combine(fi.DirectoryName, nameof(I18n) + ".json");
+            var assemblyLocation = System.Reflection.Assembly.GetAssembly(typeof(I18n)).Location;
+            var fileInfo = new FileInfo(assemblyLocation);
+            var directoryInfo = fileInfo.Directory;
+            var dataPath = Path.Combine(fileInfo.DirectoryName ?? string.Empty, nameof(I18n) + ".json");
 
             return dataPath;
         }

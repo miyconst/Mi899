@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Mi899.Data;
 
-namespace Mi899.Data
+namespace Mi899.Domain
 {
     internal class Bios : IBios
     {

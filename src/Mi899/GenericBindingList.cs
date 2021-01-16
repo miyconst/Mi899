@@ -1,14 +1,12 @@
-﻿using Mi899.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Text;
 
 namespace Mi899
 {
     internal class GenericBindingList<T> : List<T>, IBindingList
     {
-        private GenericComparer<T> _comparer = new GenericComparer<T>();
+        private readonly GenericComparer<T> _comparer = new GenericComparer<T>();
 
         public bool AllowEdit => false;
 

@@ -1,10 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Extensions.DependencyInjection;
 using Mi899.Data;
+using Mi899.Domain;
 
 namespace Mi899
 {
@@ -34,8 +32,8 @@ namespace Mi899
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-            MainForm frm = services.GetRequiredService<MainForm>();
-            Application.Run(frm);
+            var mainForm = services.GetRequiredService<MainForm>();
+            Application.Run(mainForm);
         }
     }
 }

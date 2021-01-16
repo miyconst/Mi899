@@ -1,7 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using Mi899.Data;
 
-namespace Mi899.Data
+namespace Mi899.Domain
 {
     internal class Motherboard : IMotherboard
     {
@@ -15,8 +14,6 @@ namespace Mi899.Data
         public Link[] Images { get; set; }
         public Link[] Links { get; set; }
         public string[] ToolIds { get; set; }
-        public string DefaultImageUrl => Images.FirstOrDefault()?.Url;
-
         ILink[] IMotherboard.Images => Images;
         ILink[] IMotherboard.Links => Links;
     }

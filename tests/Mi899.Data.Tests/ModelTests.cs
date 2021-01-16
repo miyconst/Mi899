@@ -1,14 +1,13 @@
-using System;
 using System.IO;
-using System.Linq;
-using System.Collections.Generic;
+using Mi899.Domain;
 using Xunit;
+using System.Linq;
 
 namespace Mi899.Data.Tests
 {
     public class ModelTests
     {
-        private Model _model;
+        private readonly Model _model;
 
         public ModelTests()
         {
@@ -46,7 +45,7 @@ namespace Mi899.Data.Tests
                 .SelectMany(x => x.MotherboardIds)
                 .Distinct();
 
-            foreach (string id in ids)
+            foreach (var id in ids)
             {
                 Assert.Single(_model.Motherboards.Where(x => x.Id == id));
             }
@@ -59,7 +58,7 @@ namespace Mi899.Data.Tests
                 .SelectMany(x => x.ToolIds)
                 .Distinct();
 
-            foreach (string id in ids)
+            foreach (var id in ids)
             {
                 Assert.Single(_model.Tools.Where(x => x.Id == id));
             }
@@ -68,7 +67,7 @@ namespace Mi899.Data.Tests
         [Fact]
         public void AllImageFilesExist()
         {
-            foreach (ILink link in _model.Motherboards.SelectMany(x => x.Images))
+            foreach (var link in _model.Motherboards.SelectMany(x => x.Images))
             {
                 Assert.True(Path.IsPathRooted(link.Url));
                 Assert.True(File.Exists(link.Url));
@@ -78,7 +77,7 @@ namespace Mi899.Data.Tests
         [Fact]
         public void AllBiosFilesExist()
         {
-            foreach (string pathname in _model.Bioses.Select(x => x.FileName))
+            foreach (var pathname in _model.Bioses.Select(x => x.FileName))
             {
                 Assert.True(Path.IsPathRooted(pathname));
                 Assert.True(File.Exists(pathname));

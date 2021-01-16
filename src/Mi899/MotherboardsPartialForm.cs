@@ -1,26 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
 using System.Windows.Forms;
 using Mi899.Data;
 using System.Linq;
+using Mi899.Domain;
 
 namespace Mi899
 {
     public partial class MotherboardsPartialForm : UserControl, II18nCompatible
     {
-        private readonly Model _model;
         private readonly GenericBindingList<IMotherboard> _motherboards;
 
         public event EventHandler<IMotherboard> MotherboardSelected;
 
         public MotherboardsPartialForm(Model model)
         {
-            _model = model ?? throw new ArgumentNullException(nameof(model));
-            _motherboards = new GenericBindingList<IMotherboard>(_model.Motherboards);
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+            _motherboards = new GenericBindingList<IMotherboard>(model.Motherboards);
             InitializeComponent();
             InitializeDataGridComponent();
         }
@@ -32,15 +32,15 @@ namespace Mi899
 
         public IEnumerable<IComponent> SelectI18nCompatibleComponents()
         {
-            List<IComponent> components = new List<IComponent>()
+            var compatibleComponents = new List<IComponent>()
             {
-                lblSearch,
-                btnSearch
+                labelSearch,
+                buttonSearch
             };
 
-            components.AddRange(grdMotherboards.Columns.OfType<DataGridViewColumn>());
+            compatibleComponents.AddRange(gridMotherboards.Columns.OfType<DataGridViewColumn>());
 
-            return components;
+            return compatibleComponents;
         }
 
         private void MotherboardsPartialForm_Load(object sender, EventArgs e)
@@ -49,27 +49,27 @@ namespace Mi899
 
         private void InitializeDataGridComponent()
         {
-            grdMotherboards.RowTemplate.Height = 120;
+            gridMotherboards.RowTemplate.Height = 120;
 
-            grdMotherboards.Columns.Add(new DataGridViewButtonColumn()
+            gridMotherboards.Columns.Add(new DataGridViewButtonColumn()
             {
                 Name = "colSelect",
                 Text = "Select",
                 UseColumnTextForButtonValue = true
             });
 
-            grdMotherboards.Columns.Add(new DataGridViewImageColumn()
+            gridMotherboards.Columns.Add(new DataGridViewImageColumn()
             {
                 Name = "colImage",
                 HeaderText = "Image",
                 DataPropertyName = nameof(MotherboardRowData.DefaultImage),
                 ReadOnly = true,
-                Width = grdMotherboards.RowTemplate.Height,
+                Width = gridMotherboards.RowTemplate.Height,
                 ImageLayout = DataGridViewImageCellLayout.Stretch,
                 SortMode = DataGridViewColumnSortMode.NotSortable
             });
 
-            grdMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
+            gridMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colName",
                 HeaderText = nameof(IMotherboard.Name),
@@ -79,7 +79,7 @@ namespace Mi899
                 SortMode = DataGridViewColumnSortMode.Automatic
             });
 
-            grdMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
+            gridMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colVersion",
                 HeaderText = nameof(IMotherboard.Version),
@@ -89,7 +89,7 @@ namespace Mi899
                 SortMode = DataGridViewColumnSortMode.Automatic
             });
 
-            grdMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
+            gridMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colDescription",
                 HeaderText = nameof(IMotherboard.Description),
@@ -103,7 +103,7 @@ namespace Mi899
                 }
             });
 
-            grdMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
+            gridMotherboards.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colTags",
                 HeaderText = nameof(IMotherboard.Tags),
@@ -118,19 +118,19 @@ namespace Mi899
             });
 
             PopulateDataSource();
-            grdMotherboards.AutoGenerateColumns = false;
-            grdMotherboards.DataSource = bsMotherboards;
-            grdMotherboards.AutoResizeColumns();
+            gridMotherboards.AutoGenerateColumns = false;
+            gridMotherboards.DataSource = bindingSourceMotherboards;
+            gridMotherboards.AutoResizeColumns();
         }
 
         private void PopulateDataSource()
         {
-            string key = txtSearch.Text;
-            IEnumerable<MotherboardRowData> source = _motherboards.Select(x => new MotherboardRowData(x));
+            var key = txtSearch.Text;
+            var motherboardRowDatas = _motherboards.Select(x => new MotherboardRowData(x));
 
             if (!string.IsNullOrWhiteSpace(key))
             {
-                source = source.Where
+                motherboardRowDatas = motherboardRowDatas.Where
                 (
                     x => x.Name.Contains(key, StringComparison.OrdinalIgnoreCase)
                         || x.TagsString.Contains(key, StringComparison.OrdinalIgnoreCase)
@@ -138,25 +138,27 @@ namespace Mi899
                 );
             }
 
-            bsMotherboards.DataSource = new GenericBindingList<MotherboardRowData>(source);
+            bindingSourceMotherboards.DataSource = new GenericBindingList<MotherboardRowData>(motherboardRowDatas);
         }
 
-        private void grdMotherboards_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void gridMotherboards_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var grid = (DataGridView)sender;
 
-            if (grid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            if (!(grid.Columns[e.ColumnIndex] is DataGridViewButtonColumn) || e.RowIndex < 0)
             {
-                GenericBindingList<MotherboardRowData> list = (GenericBindingList<MotherboardRowData>)bsMotherboards.DataSource;
-
-                MotherboardRowData motherboard = list[e.RowIndex];
-                MotherboardSelected?.Invoke(this, motherboard.Source);
+                return;
             }
+            var motherboardRowDatas = (GenericBindingList<MotherboardRowData>)bindingSourceMotherboards.DataSource;
+
+            var motherboard = motherboardRowDatas[e.RowIndex];
+            MotherboardSelected?.Invoke(this, motherboard.Source);
         }
 
-        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        private void textSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == 13)
+            const char KEY_ENTER = (char)13;
+            if (e.KeyChar == KEY_ENTER)
             {
                 PopulateDataSource();
             }

@@ -16,7 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Src\Mi899.Contracts\Mi899.Contracts.csproj" />
     <ProjectReference Include="..\..\src\Mi899.Data\Mi899.Data.csproj" />
+    <ProjectReference Include="..\..\src\Mi899.Domain\Mi899.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
 using System.Windows.Forms;
-using Mi899.Data;
 using System.Linq;
 using System.Diagnostics;
+using Mi899.Data;
+using Mi899.Domain;
 
 namespace Mi899
 {
@@ -29,15 +27,15 @@ namespace Mi899
 
         public IEnumerable<IComponent> SelectI18nCompatibleComponents()
         {
-            List<IComponent> components = new List<IComponent>()
+            var compatibleComponents = new List<IComponent>()
             {
                 lblSearch,
                 btnSearch
             };
 
-            components.AddRange(grdBioses.Columns.OfType<IComponent>());
+            compatibleComponents.AddRange(grdBioses.Columns.OfType<IComponent>());
 
-            return components;
+            return compatibleComponents;
         }
 
         private void InitializeDataGridComponent()
@@ -136,12 +134,12 @@ namespace Mi899
 
         private void PopulateDataSource()
         {
-            string key = txtSearch.Text;
-            IEnumerable<BiosRowData> source = _model.Bioses.Select(x => new BiosRowData(x));
+            var key = txtSearch.Text;
+            var biosRowDatas = _model.Bioses.Select(x => new BiosRowData(x));
 
             if (!string.IsNullOrWhiteSpace(key))
             { 
-                source = source.Where
+                biosRowDatas = biosRowDatas.Where
                 (
                     x => x.Name.Contains(key, StringComparison.OrdinalIgnoreCase)
                         || x.TagsString.Contains(key, StringComparison.OrdinalIgnoreCase)
@@ -150,30 +148,32 @@ namespace Mi899
                 );
             }
 
-            bsBioses.DataSource = new GenericBindingList<BiosRowData>(source);
+            bsBioses.DataSource = new GenericBindingList<BiosRowData>(biosRowDatas);
         }
 
         private void grdBioses_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var grid = (DataGridView)sender;
 
-            if (grid.Columns[e.ColumnIndex] is DataGridViewLinkColumn && e.RowIndex >= 0)
+            if (!(grid.Columns[e.ColumnIndex] is DataGridViewLinkColumn) || e.RowIndex < 0)
             {
-                GenericBindingList<BiosRowData> list = (GenericBindingList<BiosRowData>)bsBioses.DataSource;
-
-                BiosRowData bios = list[e.RowIndex];
-                ProcessStartInfo psi = new ProcessStartInfo(bios.FileName)
-                {
-                    UseShellExecute = true
-                };
-
-                Process.Start(psi);
+                return;
             }
+            var list = (GenericBindingList<BiosRowData>)bsBioses.DataSource;
+
+            var bios = list[e.RowIndex];
+            var processStartInfo = new ProcessStartInfo(bios.FileName)
+            {
+                UseShellExecute = true
+            };
+
+            Process.Start(processStartInfo);
         }
 
         private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == 13)
+            const char KEY_ENTER = (char)13;
+            if (e.KeyChar == KEY_ENTER)
             {
                 PopulateDataSource();
             }

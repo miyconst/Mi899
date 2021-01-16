@@ -23,7 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Mi899.Contracts\Mi899.Contracts.csproj" />
     <ProjectReference Include="..\Mi899.Data\Mi899.Data.csproj" />
+    <ProjectReference Include="..\Mi899.Domain\Mi899.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
-using System.Data;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using Mi899.Data;
+using Mi899.Domain;
 
 namespace Mi899
 {
@@ -57,26 +55,25 @@ namespace Mi899
 
         private void InitializeLanguageToolStripMenuItems()
         {
-            foreach (ILanguage l in _model.Languages)
+            foreach (var language in _model.Languages)
             {
-                ILanguage language = l;
-                ToolStripMenuItem tsmi = new ToolStripMenuItem()
+                var toolStripMenuItem = new ToolStripMenuItem()
                 {
-                    Text = l.Name
+                    Text = language.Name
                 };
 
-                tsmi.Click += (s, e) =>
+                toolStripMenuItem.Click += (s, e) =>
                 {
-                    SetLanguage(l.Code);
+                    SetLanguage(language.Code);
                 };
 
-                msiLanguage.DropDownItems.Add(tsmi);
+                msiLanguage.DropDownItems.Add(toolStripMenuItem);
             }
         }
 
         private void MotherboardPartialForm_ToolSelected(object sender, ITool e)
         {
-            MotherboardPartialForm form = (MotherboardPartialForm)sender;
+            var form = (MotherboardPartialForm)sender;
             _toolPartialForm.LoadData(form.Motherboard, e);
             Open(_toolPartialForm);
         }
@@ -119,14 +116,14 @@ namespace Mi899
             };
         }
 
-        private void Open(UserControl control)
+        private void Open(Control control)
         {
             if (_lastControl != null)
             {
-                tlpMain.Controls.Remove(_lastControl);
+                tableLayoutPanel.Controls.Remove(_lastControl);
             }
 
-            tlpMain.Controls.Add(control, 0, 1);
+            tableLayoutPanel.Controls.Add(control, 0, 1);
             control.Dock = DockStyle.Fill;
             control.Refresh();
             _lastControl = control;
@@ -134,19 +131,19 @@ namespace Mi899
 
         private void OpenUrl(string url)
         {
-            ProcessStartInfo psi = new ProcessStartInfo(url)
+            var processStartInfo = new ProcessStartInfo(url)
             {
                 UseShellExecute = true
             };
 
-            Process.Start(psi);
+            Process.Start(processStartInfo);
         }
 
         private void SetLanguage(string language)
         {
             _i18n.Language = language;
 
-            Configuration c = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            var c = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             c.AppSettings.Settings.Remove(nameof(I18n.Language));
             c.AppSettings.Settings.Add(nameof(I18n.Language), _i18n.Language);
             c.Save();

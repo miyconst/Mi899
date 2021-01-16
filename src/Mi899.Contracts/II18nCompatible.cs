@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Mi899
 {
-    internal interface II18nCompatible
+    public interface II18nCompatible
     {
         string Name { get; }
         void ApplyI18n(I18n i18n);

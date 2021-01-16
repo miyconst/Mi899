@@ -16,14 +16,14 @@ namespace Mi899
             if (motherboard == null) throw new ArgumentNullException(nameof(motherboard));
             if (tool == null) throw new ArgumentNullException(nameof(tool));
 
-            string path = GetTempFolderPath();
-            FileInfo toolFi = new FileInfo(tool.FileName);
-            FileInfo tempBatFi = new FileInfo(Path.Combine(path, "dump.bat"));
-            string dumpFileName = $"{motherboard.Id}-{DateTime.Now:yyyyMMdd-HHmmss}.rom";
+            var path = GetTempFolderPath();
+            var toolFileInfo = new FileInfo(tool.FileName);
+            var tempBatFileInfo = new FileInfo(Path.Combine(path, "dump.bat"));
+            var dumpFileName = $"{motherboard.Id}-{DateTime.Now:yyyyMMdd-HHmmss}.rom";
 
-            ZipFile.ExtractToDirectory(toolFi.FullName, path);
+            ZipFile.ExtractToDirectory(toolFileInfo.FullName, path);
 
-            using TextWriter writer = new StreamWriter(tempBatFi.FullName);
+            using TextWriter writer = new StreamWriter(tempBatFileInfo.FullName);
 
             WriteScriptHeader(motherboard, tool, writer);
             writer.WriteLine(string.Format(tool.DumpCommand, dumpFileName));
@@ -33,22 +33,25 @@ namespace Mi899
 
             if (autoExecuteScript)
             {
-                ProcessStart(tempBatFi.FullName);
+                ProcessStart(tempBatFileInfo.FullName);
             }
         }
 
         public void Flash([NotNull] IMotherboard motherboard, [NotNull] IBios bios, [NotNull] ITool tool, bool autoExecuteScript)
         {
-            if (motherboard == null) throw new ArgumentNullException(nameof(motherboard));
-            if (bios == null) throw new ArgumentNullException(nameof(bios));
-            if (tool == null) throw new ArgumentNullException(nameof(tool));
+            if (motherboard == null) 
+                throw new ArgumentNullException(nameof(motherboard));
+            if (bios == null) 
+                throw new ArgumentNullException(nameof(bios));
+            if (tool == null) 
+                throw new ArgumentNullException(nameof(tool));
 
-            string path = GetTempFolderPath();
-            FileInfo toolFi = new FileInfo(tool.FileName);
-            FileInfo tempBatFi = new FileInfo(Path.Combine(path, "flash.bat"));
+            var path = GetTempFolderPath();
+            var toolFileInfo = new FileInfo(tool.FileName);
+            var tempBatFileInfo = new FileInfo(Path.Combine(path, "flash.bat"));
             string flashFileName = null;
 
-            ZipFile.ExtractToDirectory(toolFi.FullName, path);
+            ZipFile.ExtractToDirectory(toolFileInfo.FullName, path);
 
             if (bios.IsZipped)
             {
@@ -61,7 +64,7 @@ namespace Mi899
                 File.Copy(bios.FileName, Path.Combine(path, flashFileName));
             }
             
-            using TextWriter writer = new StreamWriter(tempBatFi.FullName);
+            using TextWriter writer = new StreamWriter(tempBatFileInfo.FullName);
 
             WriteScriptHeader(motherboard, bios, tool, writer);
             writer.WriteLine(string.Format(tool.FlashCommand, flashFileName));
@@ -71,7 +74,7 @@ namespace Mi899
 
             if (autoExecuteScript)
             {
-                ProcessStart(tempBatFi.FullName);
+                ProcessStart(tempBatFileInfo.FullName);
             }
         }
 
@@ -104,7 +107,7 @@ namespace Mi899
 
         private string GetTempFolderPath()
         {
-            string path = Path.Combine(Path.GetTempPath(), nameof(Mi899), DateTime.Now.ToString("yyyy.MM.dd-HH.mm.ss"));
+            var path = Path.Combine(Path.GetTempPath(), nameof(Mi899), DateTime.Now.ToString("yyyy.MM.dd-HH.mm.ss"));
 
             if (!Directory.Exists(path))
             {
@@ -116,12 +119,12 @@ namespace Mi899
 
         private void ProcessStart(string path)
         {
-            ProcessStartInfo psi = new ProcessStartInfo(path)
+            var processStartInfo = new ProcessStartInfo(path)
             {
                 UseShellExecute = true
             };
 
-            Process.Start(psi);
+            Process.Start(processStartInfo);
         }
     }
 }

@@ -57,7 +57,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="txtReadme.Text" xml:space="preserve">
+  <data name="textReadme.Text" xml:space="preserve">
     <value># BIOS read and write 
 
 On this form, you can dump your current BIOS to create a backup or flash selected BIOS onto your motherboard.

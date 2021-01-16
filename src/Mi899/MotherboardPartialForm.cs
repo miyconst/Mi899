@@ -3,12 +3,11 @@ using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Text;
 using System.Windows.Forms;
 using Mi899.Data;
 using System.IO;
 using System.Diagnostics;
+using Mi899.Domain;
 
 namespace Mi899
 {
@@ -30,58 +29,57 @@ namespace Mi899
         {
             Motherboard = new MotherboardRowData(motherboard ?? throw new ArgumentNullException(nameof(motherboard)));
 
-            picMotherboard.ImageLocation = Motherboard.Images.FirstOrDefault()?.Url;
-            txtId.Text = Motherboard.Id;
-            txtName.Text = Motherboard.Name;
-            txtBrand.Text = Motherboard.Brand;
-            txtModel.Text = Motherboard.Model;
-            txtVersion.Text = Motherboard.Version;
-            txtTags.Text = Motherboard.TagsString;
-            txtDescription.Text = Motherboard.Description;
+            pictureBoxMotherboard.ImageLocation = Motherboard.Images.FirstOrDefault()?.Url;
+            textBoxId.Text = Motherboard.Id;
+            textBoxName.Text = Motherboard.Name;
+            textBoxBrand.Text = Motherboard.Brand;
+            textBoxModel.Text = Motherboard.Model;
+            textBoxVersion.Text = Motherboard.Version;
+            textBoxTags.Text = Motherboard.TagsString;
+            textBoxDescription.Text = Motherboard.Description;
 
             {
-                List<ITool> tools = _model.Tools.Where(x => motherboard.ToolIds.Contains(x.Id)).ToList();
+                var tools = _model.Tools.Where(x => motherboard.ToolIds.Contains(x.Id)).ToList();
 
-                flpTools.Controls.Clear();
+                flowLayoutPanel.Controls.Clear();
 
-                foreach (ITool item in tools)
+                foreach (var tool in tools)
                 {
-                    ITool tool = item;
-                    LinkLabel lbl = new LinkLabel()
+                    var linkLabel = new LinkLabel()
                     {
                         Text = tool.Name,
                         AutoSize = true,
                         Anchor = AnchorStyles.Left | AnchorStyles.Right
                     };
 
-                    flpTools.Controls.Add(lbl);
+                    flowLayoutPanel.Controls.Add(linkLabel);
 
-                    lbl.Click += (s, a) =>
+                    linkLabel.Click += (s, a) =>
                     {
                         ToolSelected?.Invoke(this, tool);
                     };
                 }
             }
 
-            grdImages.DataSource = motherboard.Images.Select(x => new
+            gridImages.DataSource = motherboard.Images.Select(x => new
             {
                 x.Name,
                 x.Url,
                 Image = new Bitmap(x.Url)
             }).ToList();
-            grdImages.AutoResizeColumns();
+            gridImages.AutoResizeColumns();
 
-            grdBioses.DataSource = new GenericBindingList<BiosRowData>
+            gridBioses.DataSource = new GenericBindingList<BiosRowData>
             (
                 _model
                     .Bioses
                     .Where(x => x.MotherboardIds.Contains(motherboard.Id))
                     .Select(x => new BiosRowData(x))
             );
-            grdBioses.AutoResizeColumns();
+            gridBioses.AutoResizeColumns();
 
-            grdLinks.DataSource = motherboard.Links;
-            grdLinks.AutoResizeColumns();
+            gridLinks.DataSource = motherboard.Links;
+            gridLinks.AutoResizeColumns();
         }
 
         public void ApplyI18n(I18n i18n)
@@ -91,55 +89,55 @@ namespace Mi899
 
         public IEnumerable<IComponent> SelectI18nCompatibleComponents()
         {
-            List<IComponent> components = new List<IComponent>();
+            var compatibleComponents = new List<IComponent>();
 
-            components.AddRange(new Control[]
+            compatibleComponents.AddRange(new Control[]
             {
-                lblId,
-                lblName,
-                lblBrand,
-                lblModel,
-                lblVersion,
-                lblTags,
-                lblDescription,
-                lblTools,
-                tpInfo,
-                tpImages,
-                tpBioses,
-                tpLinks
+                labelId,
+                labelName,
+                labelBrand,
+                labelModel,
+                labelVersion,
+                labelTags,
+                labelDescription,
+                labelTools,
+                tabPageInfo,
+                tabPageImages,
+                tabPageBioses,
+                tabPageLinks
             });
-            components.AddRange(grdBioses.Columns.OfType<IComponent>());
-            components.AddRange(grdImages.Columns.OfType<IComponent>());
-            components.AddRange(grdLinks.Columns.OfType<IComponent>());
+            compatibleComponents.AddRange(gridBioses.Columns.OfType<IComponent>());
+            compatibleComponents.AddRange(gridImages.Columns.OfType<IComponent>());
+            compatibleComponents.AddRange(gridLinks.Columns.OfType<IComponent>());
 
-            return components;
+            return compatibleComponents;
         }
 
         public override void Refresh()
         {
             base.Refresh();
-            grdImages.Columns[0].Width = grdImages.RowTemplate.Height;
+            gridImages.Columns[0].Width = gridImages.RowTemplate.Height;
         }
 
         private void InitializeExtraComponent()
         {
-            tcTabs.SelectedTab = tcTabs.TabPages[0];
+            tabControlTabs.SelectedTab = tabControlTabs.TabPages[0];
 
-            grdImages.RowTemplate.Height = 120;
-            grdImages.AutoGenerateColumns = false;
+            gridImages.RowTemplate.Height = 120;
+            gridImages.AutoGenerateColumns = false;
 
-            grdImages.Columns.Add(new DataGridViewImageColumn()
+            gridImages.Columns.Add(new DataGridViewImageColumn()
             {
                 Name = "colImage",
                 HeaderText = "Image",
                 DataPropertyName = "Image",
                 ImageLayout = DataGridViewImageCellLayout.Stretch,
-                Width = grdImages.RowTemplate.Height,
-                MinimumWidth = grdImages.RowTemplate.Height,
+                Width = gridImages.RowTemplate.Height,
+                MinimumWidth = gridImages.RowTemplate.Height,
                 Resizable = DataGridViewTriState.False
             });
 
-            grdImages.Columns.Add(new DataGridViewLinkColumn()
+            gridImages.Columns.Add(new DataGridViewLinkColumn()
             {
                 Name = "colPath",
                 HeaderText = "Path",
@@ -147,7 +145,7 @@ namespace Mi899
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
-            grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
+            gridBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colId",
                 HeaderText = nameof(BiosRowData.Id),
@@ -155,7 +153,7 @@ namespace Mi899
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
-            grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
+            gridBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colName",
                 HeaderText = nameof(BiosRowData.Name),
@@ -163,7 +161,7 @@ namespace Mi899
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
-            grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
+            gridBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colProperties",
                 HeaderText = nameof(BiosRowData.Properties),
@@ -175,7 +173,7 @@ namespace Mi899
                 }
             });
 
-            grdBioses.Columns.Add(new DataGridViewTextBoxColumn()
+            gridBioses.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colChipsets",
                 HeaderText = nameof(BiosRowData.Chipsets),
@@ -183,7 +181,7 @@ namespace Mi899
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
-            grdBioses.Columns.Add(new DataGridViewLinkColumn()
+            gridBioses.Columns.Add(new DataGridViewLinkColumn()
             {
                 Name = "colPath",
                 HeaderText = "Path",
@@ -191,10 +189,10 @@ namespace Mi899
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
-            grdBioses.RowTemplate.Height = 60;
-            grdBioses.AutoGenerateColumns = false;
+            gridBioses.RowTemplate.Height = 60;
+            gridBioses.AutoGenerateColumns = false;
 
-            grdLinks.Columns.Add(new DataGridViewTextBoxColumn()
+            gridLinks.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colAuthor",
                 HeaderText = nameof(ILink.Author),
@@ -202,7 +200,7 @@ namespace Mi899
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
-            grdLinks.Columns.Add(new DataGridViewTextBoxColumn()
+            gridLinks.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 Name = "colName",
                 HeaderText = nameof(ILink.Name),
@@ -210,7 +208,7 @@ namespace Mi899
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
-            grdLinks.Columns.Add(new DataGridViewLinkColumn()
+            gridLinks.Columns.Add(new DataGridViewLinkColumn()
             {
                 Name = "colUrl",
                 HeaderText = "URL",
@@ -218,63 +216,63 @@ namespace Mi899
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
             });
 
-            grdLinks.AutoGenerateColumns = false;
+            gridLinks.AutoGenerateColumns = false;
         }
 
-        private void grd_PathCellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void grid_PathCellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0 || e.ColumnIndex < 0)
             {
                 return;
             }
 
-            DataGridView grid = (DataGridView)sender;
+            var grid = (DataGridView)sender;
 
             if (!(grid.Columns[e.ColumnIndex] is DataGridViewLinkColumn))
             {
                 return;
             }
 
-            string path = grid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value?.ToString();
+            var path = grid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value?.ToString();
 
             if (string.IsNullOrEmpty(path))
             {
                 return;
             }
 
-            FileInfo fi = new FileInfo(path);
-            ProcessStartInfo startInfo = new ProcessStartInfo(fi.FullName)
+            var fileInfo = new FileInfo(path);
+            var processStartInfo = new ProcessStartInfo(fileInfo.FullName)
             {
                 UseShellExecute = true
             };
 
-            Process.Start(startInfo);
+            Process.Start(processStartInfo);
         }
 
-        private void grdImages_CellContentClick(object sender, DataGridViewCellEventArgs e) => grd_PathCellContentClick(sender, e);
+        private void gridImages_CellContentClick(object sender, DataGridViewCellEventArgs e) => grid_PathCellContentClick(sender, e);
 
-        private void grdBioses_CellContentClick(object sender, DataGridViewCellEventArgs e) => grd_PathCellContentClick(sender, e);
+        private void gridBioses_CellContentClick(object sender, DataGridViewCellEventArgs e) => grid_PathCellContentClick(sender, e);
 
-        private void grdLinks_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void gridLinks_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0 || e.ColumnIndex < 0)
             {
                 return;
             }
 
-            DataGridView grid = (DataGridView)sender;
+            var grid = (DataGridView)sender;
 
             if (!(grid.Columns[e.ColumnIndex] is DataGridViewLinkColumn))
             {
                 return;
             }
 
-            string url = grid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value?.ToString();
-            ProcessStartInfo psi = new ProcessStartInfo(url)
+            var url = grid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value?.ToString();
+            var processStartInfo = new ProcessStartInfo(url)
             {
                 UseShellExecute = true
             };
-            Process.Start(psi);
+            Process.Start(processStartInfo);
         }
     }
 }
