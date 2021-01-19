@@ -2057,8 +2057,7 @@
         "Logo": "Intel Inside",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-50mv",
-        "IMC Voltage": "-50mv",
-        "Sleep Mode": "Does not work"
+        "IMC Voltage": "-50mv"
       },
       "Chipsets": [ "B85" ],
       "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
@@ -2076,8 +2075,7 @@
         "Logo": "Intel Inside",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-60mv",
-        "IMC Voltage": "-50mv",
-        "Sleep Mode": "Does not work"
+        "IMC Voltage": "-50mv"
       },
       "Chipsets": [ "B85" ],
       "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
@@ -2095,8 +2093,7 @@
         "Logo": "Intel Inside",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-70mv",
-        "IMC Voltage": "-50mv",
-        "Sleep Mode": "Does not work"
+        "IMC Voltage": "-50mv"
       },
       "Chipsets": [ "B85" ],
       "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
@@ -2114,8 +2111,7 @@
         "Logo": "Intel Inside",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-80mv",
-        "IMC Voltage": "-50mv",
-        "Sleep Mode": "Does not work"
+        "IMC Voltage": "-50mv"
       },
       "Chipsets": [ "B85" ],
       "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
@@ -2133,8 +2129,7 @@
         "Logo": "Intel Inside",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-90mv",
-        "IMC Voltage": "-50mv",
-        "Sleep Mode": "Does not work"
+        "IMC Voltage": "-50mv"
       },
       "Chipsets": [ "B85" ],
       "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
@@ -2152,8 +2147,7 @@
         "Logo": "Intel Inside",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-100mv",
-        "IMC Voltage": "-50mv",
-        "Sleep Mode": "Does not work"
+        "IMC Voltage": "-50mv"
       },
       "Chipsets": [ "B85" ],
       "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
