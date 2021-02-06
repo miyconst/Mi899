@@ -2059,7 +2059,7 @@
     {
       "Id": "hz-x99-8m-f.rom",
       "Name": "Stock Huananzhi X99-8M-F",
-      "MotherboardIds": [ "hz-x99-8m-f" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.rom.zip",
       "Description": "",
       "Properties": {
@@ -2073,7 +2073,7 @@
     {
       "Id": "hz-x99-8m-f.tp.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP",
-      "MotherboardIds": [ "hz-x99-8m-f" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.rom.zip",
       "Description": "",
       "Properties": {
@@ -2088,7 +2088,7 @@
     {
       "Id": "hz-x99-8m-f.tp.tu.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU EFI",
-      "MotherboardIds": [ "hz-x99-8m-f" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.tu.rom.zip",
       "Description": "",
       "Properties": {
@@ -2104,7 +2104,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.5050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -50/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.5050.rom.zip",
       "Description": "",
       "Properties": {
@@ -2122,7 +2122,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.6050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -60/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.6050.rom.zip",
       "Description": "",
       "Properties": {
@@ -2140,7 +2140,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.7050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -70/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.7050.rom.zip",
       "Description": "",
       "Properties": {
@@ -2158,7 +2158,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.8050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -80/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.8050.rom.zip",
       "Description": "",
       "Properties": {
@@ -2176,7 +2176,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.9050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -90/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.9050.rom.zip",
       "Description": "",
       "Properties": {
@@ -2194,7 +2194,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.10050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -100/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.10050.rom.zip",
       "Description": "",
       "Properties": {
