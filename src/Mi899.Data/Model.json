@@ -533,6 +533,38 @@
       ]
     },
     {
+      "Id": "machinist-x99-rs9",
+      "Name": "Machinist X99-RS9",
+      "Brand": "Machinist",
+      "Model": "X99-RS9",
+      "Version": "",
+      "Tags": [ "machinist", "x99-rs9", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X99-RS9/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Machinist X99-RS9/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 ",
+          "Url": ""
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 ",
+          "Url": ""
+        }
+      ]
+    },
+    {
       "Id": "vn-x99",
       "Name": "Veineda X99",
       "Brand": "Veineda",
@@ -1583,6 +1615,31 @@
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "machinist", "x99-k9", "stock", "x99", "c612" ]
+    },
+    {
+      "Id": "machinist-x99-rs9",
+      "Name": "Stock Machinist X99-RS9",
+      "MotherboardIds": [ "machinist-x99-rs9" ],
+      "FileName": "Bioses/machinist-x99-rs9.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "machinist", "x99-rs9", "stock", "q87" ]
+    },
+    {
+      "Id": "machinist-x99-rs9.mi8",
+      "Name": "Stock Machinist X99-RS9, RAM Timings",
+      "MotherboardIds": [ "machinist-x99-rs9" ],
+      "FileName": "Bioses/machinist-x99-rs9.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Unlocked"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "machinist", "x99-rs9", "stock", "q87" ]
     },
     {
       "Id": "machinist-x99-k9.oc.ru",
