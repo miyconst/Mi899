@@ -8,16 +8,19 @@ using System.Windows.Forms;
 using Mi899.Data;
 using System.Linq;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace Mi899
 {
     public partial class BiosesPartialForm : UserControl, II18nCompatible
     {
         private readonly Model _model;
+        private readonly BiosManager _biosManager;
 
-        public BiosesPartialForm(Model model)
+        public BiosesPartialForm(Model model, BiosManager biosManager)
         {
             _model = model ?? throw new ArgumentNullException(nameof(model));
+            _biosManager = biosManager ?? throw new ArgumentNullException(nameof(biosManager));
             InitializeComponent();
             InitializeDataGridComponent();
         }
@@ -25,6 +28,7 @@ namespace Mi899
         public void ApplyI18n(I18n i18n)
         {
             this.ApplyI18nToChildren(i18n);
+            _biosManager.ApplyI18n(i18n);
         }
 
         public IEnumerable<IComponent> SelectI18nCompatibleComponents()
@@ -52,9 +56,9 @@ namespace Mi899
                 ReadOnly = true,
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells,
                 SortMode = DataGridViewColumnSortMode.Automatic,
-                DefaultCellStyle = new DataGridViewCellStyle() 
-                { 
-                    WrapMode = DataGridViewTriState.True 
+                DefaultCellStyle = new DataGridViewCellStyle()
+                {
+                    WrapMode = DataGridViewTriState.True
                 }
             });
 
@@ -140,7 +144,7 @@ namespace Mi899
             IEnumerable<BiosRowData> source = _model.Bioses.Select(x => new BiosRowData(x));
 
             if (!string.IsNullOrWhiteSpace(key))
-            { 
+            {
                 source = source.Where
                 (
                     x => x.Name.Contains(key, StringComparison.OrdinalIgnoreCase)
@@ -153,21 +157,30 @@ namespace Mi899
             bsBioses.DataSource = new GenericBindingList<BiosRowData>(source);
         }
 
-        private void grdBioses_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private async void grdBioses_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var grid = (DataGridView)sender;
 
             if (grid.Columns[e.ColumnIndex] is DataGridViewLinkColumn && e.RowIndex >= 0)
             {
                 GenericBindingList<BiosRowData> list = (GenericBindingList<BiosRowData>)bsBioses.DataSource;
-
                 BiosRowData bios = list[e.RowIndex];
+
+                Cursor.Current = Cursors.WaitCursor;
+
+                if (!await _biosManager.DownloadBiosIfMissingAsync(bios))
+                {
+                    Cursor = Cursors.Default;
+                    return;
+                }
+
                 ProcessStartInfo psi = new ProcessStartInfo(bios.FileName)
                 {
                     UseShellExecute = true
                 };
 
                 Process.Start(psi);
+                Cursor = Cursors.Default;
             }
         }
 

@@ -30,6 +30,8 @@ namespace Mi899
 
         public string FileName => Source.FileName;
 
+        public string DownloadUrl => Source.DownloadUrl;
+
         public bool IsZipped => Source.IsZipped;
 
         public IReadOnlyDictionary<string, string> Properties => Source.Properties;

@@ -22,6 +22,7 @@ namespace Mi899
                 .AddSingleton<MainForm>()
                 .AddTransient<MdToHtmlConverter>()
                 .AddTransient<ToolManager>()
+                .AddTransient<BiosManager>()
                 .AddTransient<ReadMePartialForm>()
                 .AddTransient<BiosesPartialForm>()
                 .AddTransient<MotherboardPartialForm>()

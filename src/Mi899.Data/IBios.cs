@@ -11,6 +11,7 @@ namespace Mi899.Data
         string Description { get; }
         string[] Tags { get; }
         string FileName { get; }
+        string DownloadUrl { get; }
         bool IsZipped { get; }
         IReadOnlyDictionary<string, string> Properties { get; }
         string[] Chipsets { get; }

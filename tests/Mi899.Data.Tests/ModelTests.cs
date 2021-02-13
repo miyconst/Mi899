@@ -3,6 +3,8 @@ using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 using Xunit;
+using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace Mi899.Data.Tests
 {
@@ -76,12 +78,22 @@ namespace Mi899.Data.Tests
         }
 
         [Fact]
-        public void AllBiosFilesExist()
+        public async Task AllBiosFilesExist()
         {
-            foreach (string pathname in _model.Bioses.Select(x => x.FileName))
+            using HttpClient client = new HttpClient();
+
+            foreach (IBios bios in _model.Bioses)
             {
+                string pathname = bios.FileName;
+
                 Assert.True(Path.IsPathRooted(pathname));
-                Assert.True(File.Exists(pathname));
+                Assert.NotEmpty(bios.DownloadUrl);
+
+                using MemoryStream ms = new MemoryStream();
+                using Stream steam = await client.GetStreamAsync(bios.DownloadUrl);
+
+                steam.CopyTo(ms);
+                Assert.True(ms.Length > 0);
             }
         }
     }

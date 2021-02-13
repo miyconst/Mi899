@@ -13,6 +13,7 @@ namespace Mi899.Data
         public string TagsString => string.Join(", ", Tags);
 
         public string FileName { get; set; }
+        public string DownloadUrl { get; set; }
         public bool IsZipped { get; set; }
 
         public string[] Chipsets { get; set; }

@@ -8,6 +8,8 @@ using System.Windows.Forms;
 using Mi899.Data;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Mi899
 {
@@ -19,12 +21,14 @@ namespace Mi899
         private ITool _tool;
         private readonly WebBrowser _wbReadme;
         private readonly ToolManager _toolManager;
+        private readonly BiosManager _biosManager;
 
-        public ToolPartialForm([NotNull] Model model, [NotNull] MdToHtmlConverter mdToHtmlConverter, [NotNull] ToolManager toolManager)
+        public ToolPartialForm([NotNull] Model model, [NotNull] MdToHtmlConverter mdToHtmlConverter, [NotNull] ToolManager toolManager, [NotNull] BiosManager biosManager)
         {
             _model = model ?? throw new ArgumentNullException(nameof(model));
             _mdToHtmlConverter = mdToHtmlConverter ?? throw new ArgumentNullException(nameof(mdToHtmlConverter));
             _toolManager = toolManager ?? throw new ArgumentNullException(nameof(toolManager));
+            _biosManager = biosManager ?? throw new ArgumentNullException(nameof(biosManager));
             InitializeComponent();
             ddlBioses.DisplayMember = nameof(BiosRowData.Name);
             ddlBioses.ValueMember = nameof(BiosRowData.Id);
@@ -75,6 +79,7 @@ namespace Mi899
             string md = i18n.Get(txtReadme.Text, this.GetI18nCompatibleParent().Name, Name, txtReadme.Name, nameof(TextBox.Text));
             string html = _mdToHtmlConverter.Convert(md);
             _wbReadme.DocumentText = html;
+            _biosManager.ApplyI18n(i18n);
         }
 
         public IEnumerable<IComponent> SelectI18nCompatibleComponents()
@@ -98,7 +103,7 @@ namespace Mi899
             Cursor = Cursors.Default;
         }
 
-        private void btnFlash_Click(object sender, EventArgs e)
+        private async void btnFlash_Click(object sender, EventArgs e)
         {
             BiosRowData bios = ddlBioses.SelectedItem as BiosRowData;
 
@@ -108,7 +113,15 @@ namespace Mi899
             }
 
             Cursor = Cursors.WaitCursor;
+
+            if (!await _biosManager.DownloadBiosIfMissingAsync(bios))
+            {
+                Cursor = Cursors.Default;
+                return;
+            }
+
             _toolManager.Flash(_motherboard, bios, _tool, cbExecuteScript.Checked);
+            
             Cursor = Cursors.Default;
         }
 
