@@ -2205,6 +2205,23 @@
       "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
     },
     {
+      "Id": "hz-x99-zd4.kot.rom",
+      "Name": "Stock Huananzhi X99-ZD4, RAM Timings",
+      "MotherboardIds": [ "hz-x99-zd4" ],
+      "FileName": "Bioses/huananzhi-x99-zd4.kot.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-zd4.kot.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-ZD4"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
+    },
+    {
       "Id": "hz-x99-8m-f.tp.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP",
       "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
