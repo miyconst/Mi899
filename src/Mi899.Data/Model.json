@@ -281,6 +281,48 @@
       ]
     },
     {
+      "Id": "hz-x99-zd4",
+      "Name": "Huananzhi X99-ZD4",
+      "Brand": "Huananzhi",
+      "Model": "X99-ZD4",
+      "Version": "",
+      "Tags": [ "huananzhi", "zd4", "ddr4", "b85" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi X99-ZD4/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Huananzhi X99-ZD4/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Huananzhi",
+          "Name": "🇨🇳 Official page",
+          "Url": "http://www.huananzhi.com/html/1/149/150/566.html"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧",
+          "Url": ""
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦",
+          "Url": ""
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Huananzhi X99-ZD4",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/huananzhi-x99-zd4/"
+        }
+      ]
+    },
+    {
       "Id": "js-x99-d8",
       "Name": "JingSha X99 D8",
       "Brand": "JingSha",
@@ -2059,7 +2101,7 @@
     {
       "Id": "hz-x99-8m-f.rom",
       "Name": "Stock Huananzhi X99-8M-F",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.rom.zip",
       "Description": "",
       "Properties": {
@@ -2071,9 +2113,23 @@
       "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
     },
     {
+      "Id": "hz-x99-zd4.rom",
+      "Name": "Stock Huananzhi X99-ZD4",
+      "MotherboardIds": [ "hz-x99-zd4" ],
+      "FileName": "Bioses/huananzhi-x99-zd4.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Date": "2020.11.27",
+        "Url": "http://www.huananzhi.com:8080/driversdownload/X99-BD4Drive/X99-ZD4%20V1.0Bios.rar"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
+    },
+    {
       "Id": "hz-x99-8m-f.tp.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.rom.zip",
       "Description": "",
       "Properties": {
@@ -2088,7 +2144,7 @@
     {
       "Id": "hz-x99-8m-f.tp.tu.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU EFI",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.tu.rom.zip",
       "Description": "",
       "Properties": {
@@ -2104,7 +2160,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.5050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -50/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.5050.rom.zip",
       "Description": "",
       "Properties": {
@@ -2122,7 +2178,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.6050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -60/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.6050.rom.zip",
       "Description": "",
       "Properties": {
@@ -2140,7 +2196,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.7050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -70/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.7050.rom.zip",
       "Description": "",
       "Properties": {
@@ -2158,7 +2214,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.8050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -80/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.8050.rom.zip",
       "Description": "",
       "Properties": {
@@ -2176,7 +2232,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.9050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -90/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.9050.rom.zip",
       "Description": "",
       "Properties": {
@@ -2194,7 +2250,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.10050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -100/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.10050.rom.zip",
       "Description": "",
       "Properties": {
