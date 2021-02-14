@@ -34,6 +34,13 @@ namespace Mi899
                 return true;
             }
 
+            FileInfo fi = new FileInfo(bios.FileName);
+
+            if (!fi.Directory.Exists)
+            {
+                fi.Directory.Create();
+            }
+
             try
             {
                 HttpClient client = new HttpClient();
