@@ -2206,7 +2206,7 @@
     },
     {
       "Id": "hz-x99-zd4.kot.rom",
-      "Name": "Stock Huananzhi X99-ZD4, RAM Timings",
+      "Name": "Stock Huananzhi X99-ZD4, Kot",
       "MotherboardIds": [ "hz-x99-zd4" ],
       "FileName": "Bioses/huananzhi-x99-zd4.kot.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-zd4.kot.rom.zip",
@@ -2367,6 +2367,144 @@
       },
       "Chipsets": [ "B85" ],
       "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
+    },
+    {
+      "Id": "hz-x99-zd4.kot.tu.rom",
+      "Name": "Stock Huananzhi X99-ZD4, Kot, TU EFI",
+      "MotherboardIds": [ "hz-x99-zd4" ],
+      "FileName": "Bioses/huananzhi-x99-zd4.kot.tu.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-zd4.kot.tu.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-ZD4",
+        "Turbo Unlock Driver": "Manual EFI installation is required"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
+    },
+    {
+      "Id": "hz-x99-zd4.kot.s3tt.5050.rom",
+      "Name": "Stock Huananzhi X99-ZD4, Kot, TU PEI -50/50mv",
+      "MotherboardIds": [ "hz-x99-zd4" ],
+      "FileName": "Bioses/huananzhi-x99-zd4.kot.s3tt.5050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-zd4.kot.s3tt.5050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-ZD4",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
+    },
+    {
+      "Id": "hz-x99-zd4.kot.s3tt.6050.rom",
+      "Name": "Stock Huananzhi X99-ZD4, Kot, TU PEI -60/50mv",
+      "MotherboardIds": [ "hz-x99-zd4" ],
+      "FileName": "Bioses/huananzhi-x99-zd4.kot.s3tt.6050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-zd4.kot.s3tt.6050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-ZD4",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
+    },
+    {
+      "Id": "hz-x99-zd4.kot.s3tt.7050.rom",
+      "Name": "Stock Huananzhi X99-ZD4, Kot, TU PEI -70/50mv",
+      "MotherboardIds": [ "hz-x99-zd4" ],
+      "FileName": "Bioses/huananzhi-x99-zd4.kot.s3tt.7050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-zd4.kot.s3tt.7050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-ZD4",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
+    },
+    {
+      "Id": "hz-x99-zd4.kot.s3tt.8050.rom",
+      "Name": "Stock Huananzhi X99-ZD4, Kot, TU PEI -80/50mv",
+      "MotherboardIds": [ "hz-x99-zd4" ],
+      "FileName": "Bioses/huananzhi-x99-zd4.kot.s3tt.8050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-zd4.kot.s3tt.8050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-ZD4",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
+    },
+    {
+      "Id": "hz-x99-zd4.kot.s3tt.9050.rom",
+      "Name": "Stock Huananzhi X99-ZD4, Kot, TU PEI -90/50mv",
+      "MotherboardIds": [ "hz-x99-zd4" ],
+      "FileName": "Bioses/huananzhi-x99-zd4.kot.s3tt.9050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-zd4.kot.s3tt.9050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-ZD4",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
+    },
+    {
+      "Id": "hz-x99-zd4.kot.s3tt.10050.rom",
+      "Name": "Stock Huananzhi X99-ZD4, Kot, TU PEI -100/50mv",
+      "MotherboardIds": [ "hz-x99-zd4" ],
+      "FileName": "Bioses/huananzhi-x99-zd4.kot.s3tt.10050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-zd4.kot.s3tt.10050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-ZD4",
+        "Turbo Unlock Driver": "S3TurboHack V0.2",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
     }
   ],
   "Tools": [
