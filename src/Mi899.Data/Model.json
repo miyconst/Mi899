@@ -1149,7 +1149,7 @@
     },
     {
       "Id": "hz-x99-f8.s3tt.7050.mi8",
-      "Name": "Stock Huananzhi X99-F8, TU PEI -70/500mv",
+      "Name": "Stock Huananzhi X99-F8, TU PEI -70/50mv",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
       "FileName": "Bioses/huananzhi-x99-f8.s3tt.7050.mi8.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-f8.s3tt.7050.mi8.rom.zip",
