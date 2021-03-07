@@ -612,6 +612,102 @@
       ]
     },
     {
+      "Id": "jginyue-x99m-plus",
+      "Name": "Jginyue X99M-Plus",
+      "Brand": "Jginyue",
+      "Model": "X99M-Plus",
+      "Version": "",
+      "Tags": [ "jginyue", "x99m-plus", "ddr4", "ddr3", "b85", "q87" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Jginyue X99M-Plus/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Jginyue X99M-Plus/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Jginyue X99M-Plus D4, Qiyida X99-H9, Kllisre X99 V201, Machinist X99-RS9 – tests and conclusion",
+          "Url": "https://youtu.be/q7lRrVK6O7E"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Jginyue X99M-Plus D4, Qiyida X99-H9, Kllisre X99 V201, Machinist X99-RS9 – тестування та вирок",
+          "Url": "https://youtu.be/eaXc2Ag2IEY"
+        }
+      ]
+    },
+    {
+      "Id": "qiyida-x99-h9",
+      "Name": "Qiyida X99-H9",
+      "Brand": "Qiyida",
+      "Model": "X99-H9",
+      "Version": "",
+      "Tags": [ "qiyida", "x99-h9", "ddr4", "b85", "q87" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Qiyida X99-H9/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Qiyida X99-H9/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Jginyue X99M-Plus D4, Qiyida X99-H9, Kllisre X99 V201, Machinist X99-RS9 – tests and conclusion",
+          "Url": "https://youtu.be/q7lRrVK6O7E"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Jginyue X99M-Plus D4, Qiyida X99-H9, Kllisre X99 V201, Machinist X99-RS9 – тестування та вирок",
+          "Url": "https://youtu.be/eaXc2Ag2IEY"
+        }
+      ]
+    },
+    {
+      "Id": "kllisre-x99-v201",
+      "Name": "Kllisre X99 V201",
+      "Brand": "Kllisre",
+      "Model": "X99 V201",
+      "Version": "",
+      "Tags": [ "kllisre", "x99-v201", "ddr4", "h81" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Kllisre X99-V201/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Kllisre X99-V201/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Jginyue X99M-Plus D4, Qiyida X99-H9, Kllisre X99 V201, Machinist X99-RS9 – tests and conclusion",
+          "Url": "https://youtu.be/q7lRrVK6O7E"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Jginyue X99M-Plus D4, Qiyida X99-H9, Kllisre X99 V201, Machinist X99-RS9 – тестування та вирок",
+          "Url": "https://youtu.be/eaXc2Ag2IEY"
+        }
+      ]
+    },
+    {
       "Id": "vn-x99",
       "Name": "Veineda X99",
       "Brand": "Veineda",
