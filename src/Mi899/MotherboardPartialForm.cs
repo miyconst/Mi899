@@ -15,12 +15,14 @@ namespace Mi899
     public partial class MotherboardPartialForm : UserControl, II18nCompatible
     {
         private readonly Model _model;
+        private readonly BiosManager _biosManager;
         public event EventHandler<ITool> ToolSelected;
         public MotherboardRowData Motherboard { get; private set; }
 
-        public MotherboardPartialForm(Model model)
+        public MotherboardPartialForm(Model model, BiosManager biosManager)
         {
             _model = model ?? throw new ArgumentNullException(nameof(model));
+            _biosManager = biosManager ?? throw new ArgumentNullException(nameof(biosManager));
 
             InitializeComponent();
             InitializeExtraComponent();
@@ -87,6 +89,7 @@ namespace Mi899
         public void ApplyI18n(I18n i18n)
         {
             this.ApplyI18nToChildren(i18n);
+            _biosManager.ApplyI18n(i18n);
         }
 
         public IEnumerable<IComponent> SelectI18nCompatibleComponents()
@@ -221,7 +224,7 @@ namespace Mi899
             grdLinks.AutoGenerateColumns = false;
         }
 
-        private void grd_PathCellContentClick(object sender, DataGridViewCellEventArgs e)
+        private async void grd_PathCellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0 || e.ColumnIndex < 0)
             {
@@ -235,10 +238,22 @@ namespace Mi899
                 return;
             }
 
+            GenericBindingList<BiosRowData> list = (GenericBindingList<BiosRowData>)grdBioses.DataSource;
+            BiosRowData bios = list[e.RowIndex];
+
+            Cursor.Current = Cursors.WaitCursor;
+
+            if (!await _biosManager.DownloadBiosIfMissingAsync(bios))
+            {
+                Cursor = Cursors.Default;
+                return;
+            }
+
             string path = grid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value?.ToString();
 
             if (string.IsNullOrEmpty(path))
             {
+                Cursor = Cursors.Default;
                 return;
             }
 
@@ -249,6 +264,7 @@ namespace Mi899
             };
 
             Process.Start(startInfo);
+            Cursor = Cursors.Default;
         }
 
         private void grdImages_CellContentClick(object sender, DataGridViewCellEventArgs e) => grd_PathCellContentClick(sender, e);
