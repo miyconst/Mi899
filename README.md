@@ -37,6 +37,7 @@ Read full readme - [`src/Mi899/README.md`](src/Mi899/README.md).
 - Bulgarian (Български) by [@dakata1337](https://github.com/dakata1337).
 - English by [@miyconst](https://github.com/miyconst).
 - French (Français) by [@Nicolas-93](https://github.com/Nicolas-93).
+- Hungarian (Magyar) by Gergő Palatinszky.
 - Italian (Italiano) by Emanuele Galdieri.
 - Polish (Polski) by [@Finchsize](https://github.com/Finchsize).
 - Portuguese (Portugues) by [@osamabilad4](https://github.com/osamabilad4).
