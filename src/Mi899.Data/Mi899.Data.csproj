@@ -13,7 +13,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Images\" />
     <Folder Include="Bioses\" />
   </ItemGroup>
 
@@ -203,6 +202,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\Machinist X99Z\TopView.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Panshi X99-D4 Plus\TopView.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\Qiyida X99-H9\IoPanel.jpg">

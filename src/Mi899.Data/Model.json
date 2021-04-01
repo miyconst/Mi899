@@ -1061,6 +1061,29 @@
           "Url": "https://xeon-e5450.ru/soft/afudos/"
         }
       ]
+    },
+    {
+      "Id": "panshi-x99-d4-plus",
+      "Name": "Panshi X99-D4 Plus",
+      "Brand": "Panshi",
+      "Model": "X99-D4",
+      "Version": "V9.1",
+      "Tags": [ "panshi", "x99", "c612" ],
+      "Description": "",
+      "ToolIds": [ "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Panshi X99-D4 Plus/TopView.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Panshi X99-D4 Plus - live test and Q/A",
+          "Url": "https://youtu.be/JCqDjB8tTYU"
+        }
+      ]
     }
   ],
   "Bioses": [
@@ -2738,6 +2761,20 @@
       },
       "Chipsets": [ "B85" ],
       "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
+    },
+    {
+      "Id": "panshi-x99-d4-plus.ch341a.rom",
+      "Name": "Stock Panshi X99-D8 Plus",
+      "MotherboardIds": [ "panshi-x99-d4-plus" ],
+      "FileName": "Bioses/panshi-x99-d4-plus.ch341a.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/panshi-x99-d4-plus.ch341a.rom.zip",
+      "Description": "This BIOS was read with a CH341A.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Locked"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "panshi", "c612", "x99", "ddr4" ]
     }
   ],
   "Tools": [
