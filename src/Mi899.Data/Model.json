@@ -2775,6 +2775,44 @@
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "panshi", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "panshi-x99-d4-plus.kot.rom",
+      "Name": "Panshi X99-D8 Plus, Kot",
+      "MotherboardIds": [ "panshi-x99-d4-plus" ],
+      "FileName": "Bioses/panshi-x99-d4-plus.kot.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/panshi-x99-d4-plus.kot.rom.zip",
+      "Description": "This BIOS was read with a CH341A.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Panshi%20X99-D4%20PLUS"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "panshi", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "panshi-x99-d4-plus.kot.s3tt.505030.rom",
+      "Name": "Panshi X99-D8 Plus, Kot, TU PEI -50/50/30mv",
+      "MotherboardIds": [ "panshi-x99-d4-plus" ],
+      "FileName": "Bioses/panshi-x99-d4-plus.kot.s3tt.505030.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/panshi-x99-d4-plus.kot.s3tt.505030.rom.zip",
+      "Description": "This BIOS was read with a CH341A.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Panshi%20X99-D4%20PLUS",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-30mv"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "panshi", "c612", "x99", "ddr4" ]
     }
   ],
   "Tools": [
