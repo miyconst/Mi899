@@ -1271,6 +1271,38 @@
       "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
     },
     {
+      "Id": "hz-x99-f8.s3tt.5050.mi8",
+      "Name": "Stock Huananzhi X99-F8, TU PEI -70/50mv",
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
+      "FileName": "Bioses/huananzhi-x99-f8.s3tt.5050.mi8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-f8.s3tt.5050.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "S3TurboHack V0.2"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
+    },
+    {
+      "Id": "hz-x99-f8.s3tt.6050.mi8",
+      "Name": "Stock Huananzhi X99-F8, TU PEI -70/50mv",
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
+      "FileName": "Bioses/huananzhi-x99-f8.s3tt.6050.mi8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-f8.s3tt.6050.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimal",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "S3TurboHack V0.2"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
+    },
+    {
       "Id": "hz-x99-f8.s3tt.7050.mi8",
       "Name": "Stock Huananzhi X99-F8, TU PEI -70/50mv",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
@@ -1394,6 +1426,21 @@
         "CPU Voltage": "-100mv",
         "IMC Voltage": "-70mv",
         "Turbo Unlock Driver": "S3TurboHack V0.2"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
+    },
+    {
+      "Id": "huananzhi-x99-f8.cx99de28.rom",
+      "Name": "CX99DE28 for Huananzhi X99-F8",
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
+      "FileName": "Bioses/huananzhi-x99-f8.cx99de28.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-f8.cx99de28.rom.zip",
+      "Description": "After flashing this BIOS you will not be able to use Flash Programming Tool (FPT) any more.\r\nThis BIOS may have problems with legacy boot, UEFI works well.\r\n⚠️ Some early samples of Huananzhi X99-TF have defective BIOS chips which are too small for this BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "BIOS-iEngineer",
+        "URL": "https://github.com/BIOS-iEngineer/HUANANZHI-X99-F8"
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
