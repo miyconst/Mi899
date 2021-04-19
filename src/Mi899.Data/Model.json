@@ -94,6 +94,38 @@
       ]
     },
     {
+      "Id": "qiyida-zx-99d3a4",
+      "Name": "Qiyida ZX-99D3A4",
+      "Brand": "Qiyida",
+      "Model": "ZX-99D3A4",
+      "Version": "V1.21",
+      "Tags": [ "qiyida", "kllisre", "ddr3", "ddr4", "x99", "c612" ],
+      "Description": "This motherboard is not compatible with Huananzhi X99-TF BIOS!",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Qiyida ZX-99D3A4/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Qiyida ZX-99D3A4/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦",
+          "Url": ""
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧",
+          "Url": ""
+        }
+      ]
+    },
+    {
       "Id": "hz-x99-t8",
       "Name": "Huananzhi X99-T8",
       "Brand": "Huananzhi",
@@ -2860,6 +2892,200 @@
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "panshi", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "qiyida-zx-99d3a4.rom",
+      "Name": "Qiyida ZX-99D3A4",
+      "MotherboardIds": [ "qiyida-zx-99d3a4" ],
+      "FileName": "Bioses/qiyida-zx-99d3a4.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-zx-99d3a4.rom.zip",
+      "Description": "Stock Qiyida ZX-99D3A4.",
+      "Properties": {
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "qiyida", "kllisre", "c612", "x99", "ddr4", "ddr3" ]
+    },
+    {
+      "Id": "qiyida-zx-99d3a4.kot.rom",
+      "Name": "Qiyida ZX-99D3A4, Kot",
+      "MotherboardIds": [ "qiyida-zx-99d3a4" ],
+      "FileName": "Bioses/qiyida-zx-99d3a4.kot.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-zx-99d3a4.kot.rom.zip",
+      "Description": "Enhanced Qiyida ZX-99D3A4 BIOS by Koshak1013.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "URL": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/blob/master/ZX-99D3A4/ZX99D3A4_200526_kot.zip"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "qiyida", "kllisre", "c612", "x99", "ddr4", "ddr3" ]
+    },
+    {
+      "Id": "qiyida-zx-99d3a4.bi.rom",
+      "Name": "Qiyida ZX-99D3A4, BIOS-iEngineer",
+      "MotherboardIds": [ "qiyida-zx-99d3a4" ],
+      "FileName": "Bioses/qiyida-zx-99d3a4.bi.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-zx-99d3a4.bi.rom.zip",
+      "Description": "iEngineer BIOS for Qiyida ZX-99D3A4.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "BIOS-iEngineer",
+        "RAM timings": "Unlocked",
+        "Overclocking": "Works",
+        "BCLK": "100.00 MHz",
+        "URL": "https://github.com/BIOS-iEngineer/qiyida-zx-99d3a4"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "qiyida", "kllisre", "c612", "x99", "ddr4", "ddr3" ]
+    },
+    {
+      "Id": "qiyida-zx-99d3a4.bi.tu.rom",
+      "Name": "Qiyida ZX-99D3A4, BIOS-iEngineer, TU",
+      "MotherboardIds": [ "qiyida-zx-99d3a4" ],
+      "FileName": "Bioses/qiyida-zx-99d3a4.bi.tu.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-zx-99d3a4.bi.tu.rom.zip",
+      "Description": "iEngineer BIOS for Qiyida ZX-99D3A4.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "BIOS-iEngineer",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "URL": "https://github.com/BIOS-iEngineer/qiyida-zx-99d3a4",
+        "CPU Voltage": "Default",
+        "IMC Voltage": "Default",
+        "Turbo Unlock Driver": "Manual EFI installation is required"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "qiyida", "kllisre", "c612", "x99", "ddr4", "ddr3" ]
+    },
+    {
+      "Id": "qiyida-zx-99d3a4.bi.s3tt.505050.rom",
+      "Name": "Qiyida ZX-99D3A4, BIOS-iEngineer, TU PEI -50/50/50mv",
+      "MotherboardIds": [ "qiyida-zx-99d3a4" ],
+      "FileName": "Bioses/qiyida-zx-99d3a4.bi.s3tt.505050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-zx-99d3a4.bi.s3tt.505050.rom.zip",
+      "Description": "iEngineer BIOS for Qiyida ZX-99D3A4.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "BIOS-iEngineer",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "URL": "https://github.com/BIOS-iEngineer/qiyida-zx-99d3a4",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "qiyida", "kllisre", "c612", "x99", "ddr4", "ddr3" ]
+    },
+    {
+      "Id": "qiyida-zx-99d3a4.bi.s3tt.605050.rom",
+      "Name": "Qiyida ZX-99D3A4, BIOS-iEngineer, TU PEI -60/50/50mv",
+      "MotherboardIds": [ "qiyida-zx-99d3a4" ],
+      "FileName": "Bioses/qiyida-zx-99d3a4.bi.s3tt.605050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-zx-99d3a4.bi.s3tt.605050.rom.zip",
+      "Description": "iEngineer BIOS for Qiyida ZX-99D3A4.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "BIOS-iEngineer",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "URL": "https://github.com/BIOS-iEngineer/qiyida-zx-99d3a4",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "qiyida", "kllisre", "c612", "x99", "ddr4", "ddr3" ]
+    },
+    {
+      "Id": "qiyida-zx-99d3a4.bi.s3tt.705050.rom",
+      "Name": "Qiyida ZX-99D3A4, BIOS-iEngineer, TU PEI -70/50/50mv",
+      "MotherboardIds": [ "qiyida-zx-99d3a4" ],
+      "FileName": "Bioses/qiyida-zx-99d3a4.bi.s3tt.705050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-zx-99d3a4.bi.s3tt.705050.rom.zip",
+      "Description": "iEngineer BIOS for Qiyida ZX-99D3A4.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "BIOS-iEngineer",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "URL": "https://github.com/BIOS-iEngineer/qiyida-zx-99d3a4",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "qiyida", "kllisre", "c612", "x99", "ddr4", "ddr3" ]
+    },
+    {
+      "Id": "qiyida-zx-99d3a4.bi.s3tt.805050.rom",
+      "Name": "Qiyida ZX-99D3A4, BIOS-iEngineer, TU PEI -80/50/50mv",
+      "MotherboardIds": [ "qiyida-zx-99d3a4" ],
+      "FileName": "Bioses/qiyida-zx-99d3a4.bi.s3tt.805050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-zx-99d3a4.bi.s3tt.805050.rom.zip",
+      "Description": "iEngineer BIOS for Qiyida ZX-99D3A4.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "BIOS-iEngineer",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "URL": "https://github.com/BIOS-iEngineer/qiyida-zx-99d3a4",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "qiyida", "kllisre", "c612", "x99", "ddr4", "ddr3" ]
+    },
+    {
+      "Id": "qiyida-zx-99d3a4.bi.s3tt.905050.rom",
+      "Name": "Qiyida ZX-99D3A4, BIOS-iEngineer, TU PEI -90/50/50mv",
+      "MotherboardIds": [ "qiyida-zx-99d3a4" ],
+      "FileName": "Bioses/qiyida-zx-99d3a4.bi.s3tt.905050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-zx-99d3a4.bi.s3tt.905050.rom.zip",
+      "Description": "iEngineer BIOS for Qiyida ZX-99D3A4.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "BIOS-iEngineer",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "URL": "https://github.com/BIOS-iEngineer/qiyida-zx-99d3a4",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "qiyida", "kllisre", "c612", "x99", "ddr4", "ddr3" ]
+    },
+    {
+      "Id": "qiyida-zx-99d3a4.bi.s3tt.1005050.rom",
+      "Name": "Qiyida ZX-99D3A4, BIOS-iEngineer, TU PEI -100/50/50mv",
+      "MotherboardIds": [ "qiyida-zx-99d3a4" ],
+      "FileName": "Bioses/qiyida-zx-99d3a4.bi.s3tt.1005050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-zx-99d3a4.bi.s3tt.1005050.rom.zip",
+      "Description": "iEngineer BIOS for Qiyida ZX-99D3A4.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "BIOS-iEngineer",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "URL": "https://github.com/BIOS-iEngineer/qiyida-zx-99d3a4",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "qiyida", "kllisre", "c612", "x99", "ddr4", "ddr3" ]
     }
   ],
   "Tools": [
