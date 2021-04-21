@@ -115,13 +115,28 @@
       "Links": [
         {
           "Author": "Miyconst",
-          "Name": "🇺🇦",
-          "Url": ""
+          "Name": "🇺🇦 ZX-99D3A4 (Qiyida, Kllisre) – детальний огляд плати, з BIOS від iEngineer працює майже все",
+          "Url": "https://youtu.be/GLjC4gr8FvM"
         },
         {
           "Author": "Miyconst",
-          "Name": "🇬🇧",
-          "Url": ""
+          "Name": "🇬🇧 ZX-99D3A4 (Qiyida, Kllisre) – detailed review, almost everything works with BIOS from iEngineer",
+          "Url": "https://youtu.be/yQ5LzOqLDDI"
+        },
+        {
+          "Author": "BIOS-iEngineer",
+          "Name": "BIOS for QIYIDA ZX-99D3A4",
+          "Url": "https://github.com/BIOS-iEngineer/QIYIDA-ZX99D3A4"
+        },
+        {
+          "Author": "BIOS-iEngineer",
+          "Name": "X99 Windows 10 x64 Drivers",
+          "Url": "https://github.com/BIOS-iEngineer/SZMZ-X99-Dual-Z8/tree/main/Drivers/Windows%2010%20x64"
+        },
+        {
+          "Author": "Koshak1013",
+          "Name": "Koshak1013 / HuananzhiX99_BIOS_mods / ZX-99D3A4",
+          "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/ZX-99D3A4"
         }
       ]
     },
