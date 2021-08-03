@@ -695,6 +695,43 @@
       ]
     },
     {
+      "Id": "jginyue-x99-d4",
+      "Name": "Jginyue X99 Titanium D4",
+      "Brand": "Jginyue",
+      "Model": "X99 Titanium D4",
+      "Version": "X99T202106290097",
+      "Tags": [ "jginyue", "x99", "ddr4", "b85", "q87" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Jginyue X99-D4/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Jginyue X99-D4/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 ",
+          "Url": ""
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 ",
+          "Url": ""
+        },
+        {
+          "Author": "Jginyue",
+          "Name": "🇨🇳 Official page",
+          "Url": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=153"
+        }
+      ]
+    },
+    {
       "Id": "qiyida-x99-h9",
       "Name": "Qiyida X99-H9",
       "Brand": "Qiyida",
@@ -3101,6 +3138,128 @@
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "qiyida", "kllisre", "c612", "x99", "ddr4", "ddr3" ]
+    },
+    {
+      "Id": "jginyue-x99-d4.rom",
+      "Name": "Jginyue X99 Titanium D4",
+      "MotherboardIds": [ "jginyue-x99-d4" ],
+      "FileName": "Bioses/jginyue-x99-d4.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d4.rom.zip",
+      "Description": "Stock Jginyue X99 Titanium D4 BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=153"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "jginyue", "b85", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d4.s3tt.505050.rom",
+      "Name": "Jginyue X99 Titanium D4, TU PEI -50/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d4" ],
+      "FileName": "Bioses/jginyue-x99-d4.s3tt.505050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d4.s3tt.505050.rom.zip",
+      "Description": "Stock Jginyue X99 Titanium D4 BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=153",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "jginyue", "b85", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d4.s3tt.605050.rom",
+      "Name": "Jginyue X99 Titanium D4, TU PEI -60/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d4" ],
+      "FileName": "Bioses/jginyue-x99-d4.s3tt.605050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d4.s3tt.605050.rom.zip",
+      "Description": "Stock Jginyue X99 Titanium D4 BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=153",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "jginyue", "b85", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d4.s3tt.705050.rom",
+      "Name": "Jginyue X99 Titanium D4, TU PEI -70/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d4" ],
+      "FileName": "Bioses/jginyue-x99-d4.s3tt.705050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d4.s3tt.705050.rom.zip",
+      "Description": "Stock Jginyue X99 Titanium D4 BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=153",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "jginyue", "b85", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d4.s3tt.805050.rom",
+      "Name": "Jginyue X99 Titanium D4, TU PEI -80/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d4" ],
+      "FileName": "Bioses/jginyue-x99-d4.s3tt.805050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d4.s3tt.805050.rom.zip",
+      "Description": "Stock Jginyue X99 Titanium D4 BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=153",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "jginyue", "b85", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d4.s3tt.905050.rom",
+      "Name": "Jginyue X99 Titanium D4, TU PEI -90/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d4" ],
+      "FileName": "Bioses/jginyue-x99-d4.s3tt.905050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d4.s3tt.905050.rom.zip",
+      "Description": "Stock Jginyue X99 Titanium D4 BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=153",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "jginyue", "b85", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d4.s3tt.1005050.rom",
+      "Name": "Jginyue X99 Titanium D4, TU PEI -100/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d4" ],
+      "FileName": "Bioses/jginyue-x99-d4.s3tt.1005050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d4.s3tt.1005050.rom.zip",
+      "Description": "Stock Jginyue X99 Titanium D4 BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=153",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "jginyue", "b85", "ddr4" ]
     }
   ],
   "Tools": [
