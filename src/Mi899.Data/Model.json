@@ -732,6 +732,43 @@
       ]
     },
     {
+      "Id": "jginyue-x99-d8",
+      "Name": "Jginyue X99-D8 Server",
+      "Brand": "Jginyue",
+      "Model": "X99-D8 Server",
+      "Version": "X99D8202106080193",
+      "Tags": [ "jginyue", "x99", "ddr4", "c612" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Jginyue X99-D8/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Jginyue X99-D8/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧",
+          "Url": ""
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦",
+          "Url": ""
+        },
+        {
+          "Author": "Jginyue",
+          "Name": "🇨🇳 Official page",
+          "Url": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=146"
+        }
+      ]
+    },
+    {
       "Id": "qiyida-x99-h9",
       "Name": "Qiyida X99-H9",
       "Brand": "Qiyida",
@@ -3260,6 +3297,146 @@
       },
       "Chipsets": [ "B85" ],
       "Tags": [ "jginyue", "b85", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d8.rom",
+      "Name": "Jginyue X99-D8 Server",
+      "MotherboardIds": [ "jginyue-x99-d8" ],
+      "FileName": "Bioses/jginyue-x99-d8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d8.rom.zip",
+      "Description": "Stock Jginyue X99-D8 Server BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=146"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "jginyue", "c612", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d8.s3tt.rom",
+      "Name": "Jginyue X99-D8 Server, TU DXE",
+      "MotherboardIds": [ "jginyue-x99-d8" ],
+      "FileName": "Bioses/jginyue-x99-d8.s3tt.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d8.s3tt.rom.zip",
+      "Description": "Stock Jginyue X99-D8 Server BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=146",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "Default",
+        "IMC Voltage": "Default",
+        "System Agent Voltage": "Default"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "jginyue", "c612", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d8.s3tt.505050.rom",
+      "Name": "Jginyue X99-D8 Server, TU DXE -50/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d8" ],
+      "FileName": "Bioses/jginyue-x99-d8.s3tt.505050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d8.s3tt.505050.rom.zip",
+      "Description": "Stock Jginyue X99-D8 Server BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=146",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "jginyue", "c612", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d8.s3tt.605050.rom",
+      "Name": "Jginyue X99-D8 Server, TU DXE -60/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d8" ],
+      "FileName": "Bioses/jginyue-x99-d8.s3tt.605050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d8.s3tt.605050.rom.zip",
+      "Description": "Stock Jginyue X99-D8 Server BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=146",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "jginyue", "c612", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d8.s3tt.705050.rom",
+      "Name": "Jginyue X99-D8 Server, TU DXE -70/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d8" ],
+      "FileName": "Bioses/jginyue-x99-d8.s3tt.705050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d8.s3tt.705050.rom.zip",
+      "Description": "Stock Jginyue X99-D8 Server BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=146",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "jginyue", "c612", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d8.s3tt.805050.rom",
+      "Name": "Jginyue X99-D8 Server, TU DXE -80/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d8" ],
+      "FileName": "Bioses/jginyue-x99-d8.s3tt.805050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d8.s3tt.805050.rom.zip",
+      "Description": "Stock Jginyue X99-D8 Server BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=146",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "jginyue", "c612", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d8.s3tt.905050.rom",
+      "Name": "Jginyue X99-D8 Server, TU DXE -90/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d8" ],
+      "FileName": "Bioses/jginyue-x99-d8.s3tt.905050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d8.s3tt.905050.rom.zip",
+      "Description": "Stock Jginyue X99-D8 Server BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=146",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "jginyue", "c612", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d8.s3tt.1005050.rom",
+      "Name": "Jginyue X99-D8 Server, TU DXE -100/50/50mv",
+      "MotherboardIds": [ "jginyue-x99-d8" ],
+      "FileName": "Bioses/jginyue-x99-d8.s3tt.1005050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d8.s3tt.1005050.rom.zip",
+      "Description": "Stock Jginyue X99-D8 Server BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=146",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "jginyue", "c612", "ddr4" ]
     }
   ],
   "Tools": [
