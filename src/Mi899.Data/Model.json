@@ -728,6 +728,11 @@
           "Author": "Jginyue",
           "Name": "🇨🇳 Official page",
           "Url": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=153"
+        },
+        {
+          "Author": "xeon-e5450.ru",
+          "Name": "🇷🇺 Jingyue X99 Titanium D4",
+          "Url": "https://xeon-e5450.ru/socket-2011-3/jingyue-x99-titanium-d4/"
         }
       ]
     },
@@ -753,18 +758,23 @@
       "Links": [
         {
           "Author": "Miyconst",
-          "Name": "🇬🇧",
-          "Url": ""
+          "Name": "🇬🇧 Jginyue (精粤) X99-D8 Server – detailed motherboard review, two E5-2690 V3 and E5-2620 V4",
+          "Url": "https://youtu.be/9v5s42DEC3I"
         },
         {
           "Author": "Miyconst",
-          "Name": "🇺🇦",
-          "Url": ""
+          "Name": "🇺🇦 Jginyue (精粤) X99-D8 Server – детальний огляд плати, два E5-2690 V3 та E5-2620 V4",
+          "Url": "https://youtu.be/597ZdBOLjvA"
         },
         {
           "Author": "Jginyue",
           "Name": "🇨🇳 Official page",
           "Url": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=146"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "Geekbench 5",
+          "Url": "https://browser.geekbench.com/v5/cpu/9243483"
         }
       ]
     },
