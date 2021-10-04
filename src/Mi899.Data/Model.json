@@ -300,6 +300,38 @@
       ]
     },
     {
+      "Id": "shuangwei-x99s",
+      "Name": "Shuangwei X99S",
+      "Brand": "Shuangwei",
+      "Model": "X99S",
+      "Version": "",
+      "Tags": [ "shuangwei", "x99s", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Shuangwei X99S/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Shuangwei X99S/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 ",
+          "Url": ""
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 ",
+          "Url": ""
+        }
+      ]
+    },
+    {
       "Id": "hz-x99-8md3",
       "Name": "Huananzhi X99-8MD3",
       "Brand": "Huananzhi",
@@ -2611,7 +2643,7 @@
     {
       "Id": "hz-x99-8m-f.rom",
       "Name": "Stock Huananzhi X99-8M-F",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.rom.zip",
       "Description": "",
@@ -2622,6 +2654,19 @@
       },
       "Chipsets": [ "B85" ],
       "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
+    },
+    {
+      "Id": "shuangwei-x99s.rom",
+      "Name": "Stock Shuangwei X99S",
+      "MotherboardIds": [ "shuangwei-x99s" ],
+      "FileName": "Bioses/shuangwei-x99s.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/shuangwei-x99s.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "B85", "C226" ],
+      "Tags": [ "shuangwei", "x99s", "b85", "c226", "ddr4" ]
     },
     {
       "Id": "hz-x99-zd4.rom",
@@ -2658,7 +2703,7 @@
     {
       "Id": "hz-x99-8m-f.tp.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.rom.zip",
       "Description": "",
@@ -2668,13 +2713,13 @@
         "Source": "ТехноПланета",
         "Logo": "Intel Inside"
       },
-      "Chipsets": [ "B85" ],
-      "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
+      "Chipsets": [ "B85", "C226" ],
+      "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
     },
     {
       "Id": "hz-x99-8m-f.tp.tu.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU EFI",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.tu.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.tu.rom.zip",
       "Description": "",
@@ -2685,13 +2730,13 @@
         "Logo": "Intel Inside",
         "Turbo Unlock Driver": "Manual EFI installation is required"
       },
-      "Chipsets": [ "B85" ],
-      "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
+      "Chipsets": [ "B85", "C226" ],
+      "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
     },
     {
       "Id": "hz-x99-8m-f.tp.s3tt.5050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -50/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.5050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.5050.rom.zip",
       "Description": "",
@@ -2704,13 +2749,13 @@
         "CPU Voltage": "-50mv",
         "IMC Voltage": "-50mv"
       },
-      "Chipsets": [ "B85" ],
-      "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
+      "Chipsets": [ "B85", "C226" ],
+      "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
     },
     {
       "Id": "hz-x99-8m-f.tp.s3tt.6050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -60/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.6050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.6050.rom.zip",
       "Description": "",
@@ -2723,13 +2768,13 @@
         "CPU Voltage": "-60mv",
         "IMC Voltage": "-50mv"
       },
-      "Chipsets": [ "B85" ],
-      "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
+      "Chipsets": [ "B85", "C226" ],
+      "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
     },
     {
       "Id": "hz-x99-8m-f.tp.s3tt.7050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -70/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.7050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.7050.rom.zip",
       "Description": "",
@@ -2742,13 +2787,13 @@
         "CPU Voltage": "-70mv",
         "IMC Voltage": "-50mv"
       },
-      "Chipsets": [ "B85" ],
-      "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
+      "Chipsets": [ "B85", "C226" ],
+      "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
     },
     {
       "Id": "hz-x99-8m-f.tp.s3tt.8050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -80/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.8050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.8050.rom.zip",
       "Description": "",
@@ -2761,13 +2806,13 @@
         "CPU Voltage": "-80mv",
         "IMC Voltage": "-50mv"
       },
-      "Chipsets": [ "B85" ],
-      "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
+      "Chipsets": [ "B85", "C226" ],
+      "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
     },
     {
       "Id": "hz-x99-8m-f.tp.s3tt.9050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -90/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.9050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.9050.rom.zip",
       "Description": "",
@@ -2780,13 +2825,13 @@
         "CPU Voltage": "-90mv",
         "IMC Voltage": "-50mv"
       },
-      "Chipsets": [ "B85" ],
-      "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
+      "Chipsets": [ "B85", "C226" ],
+      "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
     },
     {
       "Id": "hz-x99-8m-f.tp.s3tt.10050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -100/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.10050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.10050.rom.zip",
       "Description": "",
@@ -2799,8 +2844,8 @@
         "CPU Voltage": "-100mv",
         "IMC Voltage": "-50mv"
       },
-      "Chipsets": [ "B85" ],
-      "Tags": [ "huananzhi", "8mf", "b85", "ddr4" ]
+      "Chipsets": [ "B85", "C226" ],
+      "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
     },
     {
       "Id": "hz-x99-zd4.kot.tu.rom",
