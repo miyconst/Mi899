@@ -765,6 +765,11 @@
           "Author": "xeon-e5450.ru",
           "Name": "🇷🇺 Jingyue X99 Titanium D4",
           "Url": "https://xeon-e5450.ru/socket-2011-3/jingyue-x99-titanium-d4/"
+        },
+        {
+          "Author": "Купи дёшево",
+          "Name": "🇷🇺 Материнка JINGYUE X99 TITANIUM D4 + e5-2695v3",
+          "Url": "https://youtu.be/yVVA_eAzsYw"
         }
       ]
     },
@@ -3241,6 +3246,27 @@
       "Properties": {
         "BIOS Settings": "Default",
         "URL": "http://www.jginyue.com/index.php?m=content&c=index&a=show&catid=6&id=153"
+      },
+      "Chipsets": [ "B85" ],
+      "Tags": [ "jginyue", "b85", "ddr4" ]
+    },
+    {
+      "Id": "jginyue-x99-d4.kd.rom",
+      "Name": "Jginyue X99 Titanium D4, TU UPT",
+      "MotherboardIds": [ "jginyue-x99-d4" ],
+      "FileName": "Bioses/jginyue-x99-d4.kd.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jginyue-x99-d4.kd.rom.zip",
+      "Description": "Jginyue X99 Titanium D4 BIOS with Turbo Boost Unlock implemented using Ultimate Patcher Tool. According to the author this BIOS can also be used with Huananzhi X99-BD4",
+      "Properties": {
+        "Warning": "This BIOS is not compatible with unlocked CPUs, such as E5-1650 V3 or Core i7",
+        "BIOS Settings": "Default",
+        "Author": "Купи дёшево",
+        "URL": "https://youtu.be/yVVA_eAzsYw",
+        "Turbo Unlock Driver": "Ultimate Patcher Tool",
+        "Ultimate Patcher Tool": "https://nalex.me/ultimate-patcher-tool/",
+        "CPU Voltage": "Adjustable in BIOS",
+        "IMC Voltage": "Adjustable in BIOS",
+        "System Agent Voltage": "Adjustable in BIOS"
       },
       "Chipsets": [ "B85" ],
       "Tags": [ "jginyue", "b85", "ddr4" ]
