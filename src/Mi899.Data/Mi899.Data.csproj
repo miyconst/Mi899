@@ -48,9 +48,6 @@
     <None Update="Bioses\machinist-x99z.bi.rbe.tu.v3p90.mi8.rom.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Bioses\shuangwei-x99s.rom.zip">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="I18n.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
