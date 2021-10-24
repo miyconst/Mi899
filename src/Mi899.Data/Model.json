@@ -303,7 +303,7 @@
       "Id": "shuangwei-x99s",
       "Name": "Shuangwei X99S",
       "Brand": "Shuangwei",
-      "Model": "X99S",
+      "Model": "ST-X99S-2011",
       "Version": "",
       "Tags": [ "shuangwei", "x99s", "ddr4" ],
       "Description": "",
@@ -321,13 +321,13 @@
       "Links": [
         {
           "Author": "Miyconst",
-          "Name": "🇬🇧 ",
-          "Url": ""
+          "Name": "🇬🇧 Shuangwei X99S-2011 (C226) – motherboard review | E5-2640 V3",
+          "Url": "https://youtu.be/pOxxxinCkfs"
         },
         {
           "Author": "Miyconst",
-          "Name": "🇺🇦 ",
-          "Url": ""
+          "Name": "🇺🇦 Shuangwei X99S-2011 (C226) – огляд материнської плати | E5-2640 V3",
+          "Url": "https://youtu.be/BR3E23Oqnog"
         }
       ]
     },
