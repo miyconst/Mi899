@@ -564,6 +564,43 @@
       ]
     },
     {
+      "Id": "hz-x99-ch8",
+      "Name": "Huananzhi X99-CH8",
+      "Brand": "Huananzhi",
+      "Model": "X99-CH8",
+      "Version": "1.0",
+      "Tags": [ "huananzhi", "ch8", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "afu-win-x64-5.12.03.2045", "fpt-w64-9.1.10.1000" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi X99-CH8/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Huananzhi X99-CH8/IoPanel.png"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Huananzhi",
+          "Name": "🇨🇳 Official page",
+          "Url": "http://www.huananzhi.com/html/1/149/150/588.html"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧",
+          "Url": ""
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦",
+          "Url": ""
+        }
+      ]
+    },
+    {
       "Id": "mn-x99z",
       "Name": "Machinist X99Z",
       "Brand": "Machinist",
@@ -3518,6 +3555,56 @@
       },
       "Chipsets": [ "C612" ],
       "Tags": [ "jginyue", "c612", "ddr4" ]
+    },
+    {
+      "Id": "hz-x99-ch8.rom",
+      "Name": "Stock Huananzhi X99-CH8",
+      "MotherboardIds": [ "hz-x99-ch8" ],
+      "FileName": "Bioses/huananzhi-x99-ch8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-ch8.rom.zip",
+      "Description": "Stock BIOS.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Url": "http://www.huananzhi.com:8080/driversdownload/X99-CH8Drive/X99-CH8BIOS21-5-20.rar"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "huananzhi", "x99", "c612", "ddr4" ]
+    },
+    {
+      "Id": "hz-x99-ch8.kot.rom",
+      "Name": "Stock Huananzhi X99-CH8, Kot",
+      "MotherboardIds": [ "hz-x99-ch8" ],
+      "FileName": "Bioses/huananzhi-x99-ch8-kot.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-ch8-kot.rom.zip",
+      "Description": "Stock BIOS with adjustments from Koshak1013.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/blob/master/Huananzhi%20X99-CH8/HNX99CH8_210507_kot.zip"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "huananzhi", "x99", "c612", "ddr4" ]
+    },
+    {
+      "Id": "hz-x99-ch8.kot.upt.rom",
+      "Name": "Stock Huananzhi X99-CH8, Kot, TU UPT",
+      "MotherboardIds": [ "hz-x99-ch8" ],
+      "FileName": "Bioses/huananzhi-x99-ch8-kot.upt.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-ch8-kot.upt.rom.zip",
+      "Description": "Stock BIOS with adjustments from Koshak1013 and Turbo Boost Unlock using Ultimate Patcher Tool.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "Koshak1013",
+        "RAM timings": "Unlocked",
+        "BCLK": "100.00 MHz",
+        "Turbo Unlock Driver": "Ultimate Patcher Tool",
+        "UPT Url": "https://nalex.me/ultimate-patcher-tool/",
+        "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/blob/master/Huananzhi%20X99-CH8/HNX99CH8_210507_kot.zip"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "huananzhi", "x99", "c612", "ddr4" ]
     }
   ],
   "Tools": [
