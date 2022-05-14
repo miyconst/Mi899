@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <Folder Include="Bioses\" />
+    <Folder Include="Images\Machinist X99-MR9A\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -208,6 +209,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\Machinist X99-K9\TopView.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Machinist X99-MR9A\IoPanel.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Machinist X99-MR9A\TopView.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\Machinist X99-RS9\IoPanel.jpg">
