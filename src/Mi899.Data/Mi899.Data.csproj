@@ -7,7 +7,7 @@
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <RepositoryUrl>https://github.com/miyconst/Mi899</RepositoryUrl>
     <PackageProjectUrl>https://github.com/miyconst/Mi899</PackageProjectUrl>
-    <PackageIcon>Mi866.png</PackageIcon>
+    <PackageIcon>Mi899.png</PackageIcon>
     <PackageTags>x99 lga2011v3 fpt afuwin machinist huananzhi jingsha xeon bios tu</PackageTags>
     <Version>1.2.7</Version>
   </PropertyGroup>
@@ -269,7 +269,7 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-    <None Include="..\..\Mi866.png">
+    <None Include="..\..\Mi899.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
