@@ -1,5 +1,11 @@
 ﻿# Mi899
 
+![](https://user-images.githubusercontent.com/6435556/168416524-3215397e-a597-415f-ba23-061b2e911593.jpg)
+
+### [What should Russia do with Ukraine? (Translation of a propaganda article by a Russian publication)](https://medium.com/@kravchenko_mm/what-should-russia-do-with-ukraine-translation-of-a-propaganda-article-by-a-russian-journalist-a3e92e3cb64)
+
+------------
+
 <a href="https://github.com/miyconst/Mi899/releases/latest">
     <img src="https://img.shields.io/github/v/release/miyconst/Mi899.svg?color=silver&style=for-the-badge&logo=xiaomi" alt="Latest Version"/>
 </a>
