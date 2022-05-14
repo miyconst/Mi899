@@ -3,7 +3,7 @@
 <a href="https://github.com/miyconst/Mi899/releases/latest">
     <img src="https://img.shields.io/github/v/release/miyconst/Mi899.svg?color=silver&style=for-the-badge&logo=xiaomi" alt="Latest Version"/>
 </a>
-<a href="https://github.com/miyconst/Mi899/releases/download/1.2.6/Mi899-1.2.6.zip">
+<a href="https://github.com/miyconst/Mi899/releases/download/1.2.7/Mi899-1.2.7.zip">
     <img src="https://img.shields.io/github/downloads/miyconst/Mi899/total.svg?color=silver&style=for-the-badge&logo=xiaomi" alt="Downloads"/>
 </a>
 <a href="https://github.com/miyconst/Mi899/blob/master/LICENSE.md">
