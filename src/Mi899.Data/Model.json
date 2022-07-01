@@ -728,7 +728,7 @@
       "Brand": "Machinist",
       "Model": "X99-MR9A",
       "Version": "V1.0",
-      "Tags": [ "machinist", "x99-mr9s", "ddr4" ],
+      "Tags": [ "machinist", "x99-mr9a", "ddr4" ],
       "Description": "",
       "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
       "Images": [
