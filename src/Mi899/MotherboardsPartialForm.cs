@@ -132,9 +132,9 @@ namespace Mi899
             {
                 source = source.Where
                 (
-                    x => x.Name.Contains(key, StringComparison.OrdinalIgnoreCase)
-                        || x.TagsString.Contains(key, StringComparison.OrdinalIgnoreCase)
-                        || x.Description.Contains(key, StringComparison.OrdinalIgnoreCase)
+                    x => x.Name?.Contains(key, StringComparison.OrdinalIgnoreCase) is true
+                        || x.TagsString?.Contains(key, StringComparison.OrdinalIgnoreCase) is true
+                        || x.Description?.Contains(key, StringComparison.OrdinalIgnoreCase) is true
                 );
             }
 
