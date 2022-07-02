@@ -2874,7 +2874,7 @@
         "BIOS Settings": "Default",
         "RAM timings": "Unlocked",
         "Source": "ТехноПланета",
-        "Logo": "Intel Inside"
+        "Logo": "Huananzhi"
       },
       "Chipsets": [ "B85", "C226" ],
       "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
@@ -2890,7 +2890,7 @@
         "BIOS Settings": "Default",
         "RAM timings": "Unlocked",
         "Source": "ТехноПланета",
-        "Logo": "Intel Inside",
+        "Logo": "Huananzhi",
         "Turbo Unlock Driver": "Manual EFI installation is required"
       },
       "Chipsets": [ "B85", "C226" ],
@@ -2907,7 +2907,7 @@
         "BIOS Settings": "Default",
         "RAM timings": "Unlocked",
         "Source": "ТехноПланета",
-        "Logo": "Intel Inside",
+        "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-50mv",
         "IMC Voltage": "-50mv"
@@ -2926,7 +2926,7 @@
         "BIOS Settings": "Default",
         "RAM timings": "Unlocked",
         "Source": "ТехноПланета",
-        "Logo": "Intel Inside",
+        "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-60mv",
         "IMC Voltage": "-50mv"
@@ -2945,7 +2945,7 @@
         "BIOS Settings": "Default",
         "RAM timings": "Unlocked",
         "Source": "ТехноПланета",
-        "Logo": "Intel Inside",
+        "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-70mv",
         "IMC Voltage": "-50mv"
@@ -2964,7 +2964,7 @@
         "BIOS Settings": "Default",
         "RAM timings": "Unlocked",
         "Source": "ТехноПланета",
-        "Logo": "Intel Inside",
+        "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-80mv",
         "IMC Voltage": "-50mv"
@@ -2983,7 +2983,7 @@
         "BIOS Settings": "Default",
         "RAM timings": "Unlocked",
         "Source": "ТехноПланета",
-        "Logo": "Intel Inside",
+        "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-90mv",
         "IMC Voltage": "-50mv"
@@ -3002,7 +3002,7 @@
         "BIOS Settings": "Default",
         "RAM timings": "Unlocked",
         "Source": "ТехноПланета",
-        "Logo": "Intel Inside",
+        "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-100mv",
         "IMC Voltage": "-50mv"
