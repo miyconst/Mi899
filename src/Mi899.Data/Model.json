@@ -1429,7 +1429,7 @@
     {
       "Id": "huananzhi-x99-tf-q.rom",
       "Name": "Stock Huananzhi X99-TF-Q",
-      "MotherboardIds": [ "hz-x99-tf-q" ],
+      "MotherboardIds": [ "huananzhi-x99-tf-q" ],
       "FileName": "Bioses/huananzhi-x99-tf-q.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.rom.zip",
       "Description": "",
@@ -1442,7 +1442,7 @@
     {
       "Id": "huananzhi-x99-tf-q.mi8.rom",
       "Name": "Stock Huananzhi X99-TF-Q Mi8",
-      "MotherboardIds": [ "hz-x99-tf-q" ],
+      "MotherboardIds": [ "huananzhi-x99-tf-q" ],
       "FileName": "Bioses/huananzhi-x99-tf-q.mi8.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.mi8.rom.zip",
       "Description": "",
@@ -1457,7 +1457,7 @@
     {
       "Id": "huananzhi-x99-tf-q.mi8.upt.rom",
       "Name": "Stock Huananzhi X99-TF-Q Mi8 UPT TU",
-      "MotherboardIds": [ "hz-x99-tf-q" ],
+      "MotherboardIds": [ "huananzhi-x99-tf-q" ],
       "FileName": "Bioses/huananzhi-x99-tf-q.mi8.upt.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.mi8.upt.rom.zip",
       "Description": "",
