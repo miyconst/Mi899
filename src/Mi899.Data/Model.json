@@ -1440,6 +1440,142 @@
       "Tags": [ "huananzhi", "tfq", "stock", "ddr4", "ddr3" ]
     },
     {
+      "Id": "huananzhi-x99-tf-q.kot.rom",
+      "Name": "Stock Huananzhi X99-TF-Q, Kot",
+      "MotherboardIds": [ "huananzhi-x99-tf-q" ],
+      "FileName": "Bioses/huananzhi-x99-tf-q.kot.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Unlocked",
+        "Author": "Koshak1013",
+        "URL": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-TF-Q"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "tfq", "q87", "ddr3", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-tf-q.kot.s3tt.505050.rom",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-tf-q" ],
+      "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.505050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.505050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Unlocked",
+        "Author": "Koshak1013",
+        "URL": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-TF-Q",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "tfq", "q87", "ddr3", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-tf-q.kot.s3tt.605050.rom",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-tf-q" ],
+      "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.605050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.605050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Unlocked",
+        "Author": "Koshak1013",
+        "URL": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-TF-Q",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "tfq", "q87", "ddr3", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-tf-q.kot.s3tt.705050.rom",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-tf-q" ],
+      "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.705050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.705050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Unlocked",
+        "Author": "Koshak1013",
+        "URL": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-TF-Q",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "tfq", "q87", "ddr3", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-tf-q.kot.s3tt.805050.rom",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-tf-q" ],
+      "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.805050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.805050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Unlocked",
+        "Author": "Koshak1013",
+        "URL": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-TF-Q",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "tfq", "q87", "ddr3", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-tf-q.kot.s3tt.905050.rom",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-tf-q" ],
+      "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.905050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.905050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Unlocked",
+        "Author": "Koshak1013",
+        "URL": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-TF-Q",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "tfq", "q87", "ddr3", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-tf-q.kot.s3tt.1005050.rom",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-tf-q" ],
+      "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.1005050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.1005050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Unlocked",
+        "Author": "Koshak1013",
+        "URL": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Huananzhi%20X99-TF-Q",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "tfq", "q87", "ddr3", "ddr4" ]
+    },
+    {
       "Id": "js-x99-d8.rom",
       "Name": "Stock JingSha X99-D8",
       "MotherboardIds": [ "js-x99-d8" ],
