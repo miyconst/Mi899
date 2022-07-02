@@ -2864,43 +2864,6 @@
       "Tags": [ "huananzhi", "zd4", "b85", "ddr4" ]
     },
     {
-      "Id": "hz-x99-8m-f.mi8.rom",
-      "Name": "Stock Huananzhi X99-8M-F, Mi8",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a" ],
-      "FileName": "Bioses/huananzhi-x99-8m-f.mi8.rom.zip",
-      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.mi8.rom.zip",
-      "Description": "",
-      "Properties": {
-        "BIOS Settings": "Default",
-        "RAM timings": "Unlocked",
-        "Voltage settings": "Unlocked",
-        "Logo": "Huananzhi"
-      },
-      "Chipsets": [ "B85", "C226" ],
-      "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
-    },
-    {
-      "Id": "hz-x99-8m-f.mi8.upt.rom",
-      "Name": "Stock Huananzhi X99-8M-F, Mi8 TU UPT",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a" ],
-      "FileName": "Bioses/huananzhi-x99-8m-f.mi8.upt.rom.zip",
-      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.mi8.upt.rom.zip",
-      "Description": "",
-      "Properties": {
-        "BIOS Settings": "Default",
-        "RAM timings": "Unlocked",
-        "Voltage settings": "Unlocked",
-        "Logo": "Huananzhi",
-        "Turbo Unlock Driver": "Ultimate Patcher Tool",
-        "Ultimate Patcher Tool": "https://nalex.me/ultimate-patcher-tool/",
-        "CPU Voltage": "Adjustable in BIOS",
-        "IMC Voltage": "Adjustable in BIOS",
-        "System Agent Voltage": "Adjustable in BIOS"
-      },
-      "Chipsets": [ "B85", "C226" ],
-      "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
-    },
-    {
       "Id": "hz-x99-8m-f.tp.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP",
       "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a" ],
