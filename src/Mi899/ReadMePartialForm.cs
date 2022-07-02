@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.IO;
 using CommonMark;
 using Mi899.Data;
+using System.Diagnostics;
 
 namespace Mi899
 {
@@ -22,6 +23,7 @@ namespace Mi899
             InitializeComponent();
             _browser.Name = "wbReadme";
             _browser.Dock = DockStyle.Fill;
+            _browser.Navigating += OnBrowser_Navigating;
             Controls.Add(_browser);
         }
 
@@ -49,6 +51,37 @@ namespace Mi899
             path = Path.Join(fi.Directory.FullName, name);
 
             return path;
+        }
+
+        private void OnBrowser_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        {
+            if (e.Url.AbsolutePath == "blank")
+                return;
+
+            e.Cancel = true;
+
+            string url = e.Url.ToString();
+
+            try
+            {
+                Process.Start(url);
+                return;
+            }
+            catch
+            { 
+            }
+
+            try
+            {
+                url = url.Replace("&", "^&");
+                Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+                return;
+            }
+            catch
+            {
+            }
+
+            MessageBox.Show(url);
         }
     }
 }
