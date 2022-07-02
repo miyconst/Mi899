@@ -35,4 +35,4 @@ Se você deseja contribuir com o projeto você pode:
 - [▶️ YouTube](https://www.youtube.com/c/Miyconst).
 - [📷 Instagram](https://www.instagram.com/mi8.se/).
 - [📜 GitHub](https://github.com/miyconst).
-- [🖊️ Blog](https://www.miyconst.com/).
+- [🖊️ Blog](https://miyconst.github.io/).

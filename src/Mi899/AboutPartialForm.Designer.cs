@@ -206,7 +206,7 @@
             this.lblAuthor.Size = new System.Drawing.Size(158, 15);
             this.lblAuthor.TabIndex = 9;
             this.lblAuthor.TabStop = true;
-            this.lblAuthor.Text = "https://www.miyconst.com/";
+            this.lblAuthor.Text = "https://miyconst.github.io/";
             this.lblAuthor.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblAuthor_LinkClicked);
             // 
             // AboutPartialForm
