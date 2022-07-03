@@ -1457,7 +1457,7 @@
     },
     {
       "Id": "huananzhi-x99-tf-q.kot.s3tt.505050.rom",
-      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50/50mv",
       "MotherboardIds": [ "huananzhi-x99-tf-q" ],
       "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.505050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.505050.rom.zip",
@@ -1477,7 +1477,7 @@
     },
     {
       "Id": "huananzhi-x99-tf-q.kot.s3tt.605050.rom",
-      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -60/50/50mv",
       "MotherboardIds": [ "huananzhi-x99-tf-q" ],
       "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.605050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.605050.rom.zip",
@@ -1497,7 +1497,7 @@
     },
     {
       "Id": "huananzhi-x99-tf-q.kot.s3tt.705050.rom",
-      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -70/50/50mv",
       "MotherboardIds": [ "huananzhi-x99-tf-q" ],
       "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.705050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.705050.rom.zip",
@@ -1517,7 +1517,7 @@
     },
     {
       "Id": "huananzhi-x99-tf-q.kot.s3tt.805050.rom",
-      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -80/50/50mv",
       "MotherboardIds": [ "huananzhi-x99-tf-q" ],
       "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.805050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.805050.rom.zip",
@@ -1537,7 +1537,7 @@
     },
     {
       "Id": "huananzhi-x99-tf-q.kot.s3tt.905050.rom",
-      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -90/50/50mv",
       "MotherboardIds": [ "huananzhi-x99-tf-q" ],
       "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.905050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.905050.rom.zip",
@@ -1557,7 +1557,7 @@
     },
     {
       "Id": "huananzhi-x99-tf-q.kot.s3tt.1005050.rom",
-      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -50/50mv",
+      "Name": "Stock Huananzhi X99-TF-Q, TU PEI -100/50/50mv",
       "MotherboardIds": [ "huananzhi-x99-tf-q" ],
       "FileName": "Bioses/huananzhi-x99-tf-q.kot.s3tt.1005050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-q.kot.s3tt.1005050.rom.zip",
