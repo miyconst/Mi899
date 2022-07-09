@@ -90,4 +90,7 @@ If something goes wrong, you are the only one responsible for your actions.
 - Wait until Mi899 opens a temp folder with prepared files.
 - Run the `flash.bat` script from the folder as administrator.</value>
   </data>
+  <metadata name="ofdBiosFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
