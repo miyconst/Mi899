@@ -792,6 +792,38 @@
       ]
     },
     {
+      "Id": "machinist-x99-mr9d",
+      "Name": "Machinist X99-MR9D",
+      "Brand": "Machinist",
+      "Model": "X99-MR9D",
+      "Version": "V1.0",
+      "Tags": [ "machinist", "x99-mr9d", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X99-MR9D/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Machinist X99-MR9D/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Machinist X99-MR9D –motherboard review, i7-5820k, E5-2696 V3",
+          "Url": "https://youtu.be/c6_vx2rwrO0"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Machinist X99-MR9D –огляд материнської плати, i7-5820k, E5-2696 V3",
+          "Url": "https://youtu.be/Fg0Pxs0HhNo"
+        }
+      ]
+    },
+    {
       "Id": "jginyue-x99m-plus",
       "Name": "Jginyue X99M-Plus",
       "Brand": "Jginyue",
@@ -2461,6 +2493,122 @@
       "Tags": [ "machinist", "x99-mr9a", "stock", "c226" ]
     },
     {
+      "Id": "machinist-x99-mr9d",
+      "Name": "Stock Machinist X99-MR9D",
+      "MotherboardIds": [ "machinist-x99-mr9d" ],
+      "FileName": "Bioses/machinist-x99-mr9d-afu.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9d-afu.rom.zip",
+      "Description": "",
+      "Properties": {
+        "Important": "This is only half of the stock BIOS, read with AfuWin. DO NOT use it, if you flashed your motherboard with a custom BIOS",
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "machinist", "x99-mr9d", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "machinist-x99-mr9d-afu.s3tt.505050",
+      "Name": "Stock Machinist X99-MR9D, TU PEI -50/50/50mv",
+      "MotherboardIds": [ "machinist-x99-mr9d" ],
+      "FileName": "Bioses/machinist-x99-mr9d-afu.s3tt.505050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9d-afu.s3tt.505050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "Important": "This is only half of the stock BIOS, read with AfuWin. DO NOT use it, if you flashed your motherboard with a custom BIOS",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "machinist", "x99-mr9d", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "machinist-x99-mr9d-afu.s3tt.605050",
+      "Name": "Stock Machinist X99-MR9D, TU PEI -60/50/50mv",
+      "MotherboardIds": [ "machinist-x99-mr9d" ],
+      "FileName": "Bioses/machinist-x99-mr9d-afu.s3tt.605050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9d-afu.s3tt.605050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "Important": "This is only half of the stock BIOS, read with AfuWin. DO NOT use it, if you flashed your motherboard with a custom BIOS",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "machinist", "x99-mr9d", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "machinist-x99-mr9d-afu.s3tt.705050",
+      "Name": "Stock Machinist X99-MR9D, TU PEI -70/50/50mv",
+      "MotherboardIds": [ "machinist-x99-mr9d" ],
+      "FileName": "Bioses/machinist-x99-mr9d-afu.s3tt.705050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9d-afu.s3tt.705050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "Important": "This is only half of the stock BIOS, read with AfuWin. DO NOT use it, if you flashed your motherboard with a custom BIOS",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "machinist", "x99-mr9d", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "machinist-x99-mr9d-afu.s3tt.805050",
+      "Name": "Stock Machinist X99-MR9D, TU PEI -80/50/50mv",
+      "MotherboardIds": [ "machinist-x99-mr9d" ],
+      "FileName": "Bioses/machinist-x99-mr9d-afu.s3tt.805050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9d-afu.s3tt.805050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "Important": "This is only half of the stock BIOS, read with AfuWin. DO NOT use it, if you flashed your motherboard with a custom BIOS",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "machinist", "x99-mr9d", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "machinist-x99-mr9d-afu.s3tt.905050",
+      "Name": "Stock Machinist X99-MR9D, TU PEI -90/50/50mv",
+      "MotherboardIds": [ "machinist-x99-mr9d" ],
+      "FileName": "Bioses/machinist-x99-mr9d-afu.s3tt.905050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9d-afu.s3tt.905050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "Important": "This is only half of the stock BIOS, read with AfuWin. DO NOT use it, if you flashed your motherboard with a custom BIOS",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "machinist", "x99-mr9d", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "machinist-x99-mr9d-afu.s3tt.1005050",
+      "Name": "Stock Machinist X99-MR9D, TU PEI -100/50/50mv",
+      "MotherboardIds": [ "machinist-x99-mr9d" ],
+      "FileName": "Bioses/machinist-x99-mr9d-afu.s3tt.1005050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9d-afu.s3tt.1005050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "Important": "This is only half of the stock BIOS, read with AfuWin. DO NOT use it, if you flashed your motherboard with a custom BIOS",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "machinist", "x99-mr9d", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
       "Id": "machinist-x99-k9.oc.ru",
       "Name": "Stock Machinist X99-K9, O.C.RU",
       "MotherboardIds": [ "machinist-x99-k9" ],
@@ -3294,7 +3442,7 @@
         "BCLK": "100.00 MHz",
         "Url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods/tree/master/Panshi%20X99-D4%20PLUS",
         "Turbo Unlock Driver": "S3TurboHack V1.53",
-        "CPU Voltage": "-100mv",
+        "CPU Voltage": "-50mv",
         "IMC Voltage": "-50mv",
         "System Agent Voltage": "-30mv"
       },
