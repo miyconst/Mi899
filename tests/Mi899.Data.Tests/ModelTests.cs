@@ -90,10 +90,18 @@ namespace Mi899.Data.Tests
                 Assert.NotEmpty(bios.DownloadUrl);
 
                 using MemoryStream ms = new MemoryStream();
-                using Stream steam = await client.GetStreamAsync(bios.DownloadUrl);
 
-                steam.CopyTo(ms);
-                Assert.True(ms.Length > 0);
+                try
+                {
+                    using Stream steam = await client.GetStreamAsync(bios.DownloadUrl);
+
+                    steam.CopyTo(ms);
+                    Assert.True(ms.Length > 0);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Failed to download BIOS with URL: " + bios.DownloadUrl, ex);
+                }
             }
         }
     }
