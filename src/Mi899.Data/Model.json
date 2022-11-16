@@ -333,6 +333,69 @@
       ]
     },
     {
+      "Id": "huananzhi-x99-qd4",
+      "Name": "Huananzhi X99-QD4",
+      "Brand": "Huananzhi",
+      "Model": "X99-QD4",
+      "Version": "",
+      "Tags": [ "huananzhi", "qd4", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi X99-QD4/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Huananzhi X99-QD4/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Huananzhi",
+          "Name": "🇨🇳 Official page",
+          "Url": "http://www.huananzhi.com/html/1/149/150/691.html"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "",
+          "Url": ""
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "",
+          "Url": ""
+        },
+        {
+          "Author": "ТехноПланета",
+          "Name": "🇷🇺 Huananzhi X99-QD4 новый ТОП 2011-3 Мощнейший VRM как у X99-TF v2.0, но при этом в два раза доступнее",
+          "Url": "https://youtu.be/niR1IoCFFnU"
+        }
+      ]
+    },
+    {
+      "Id": "huananzhi-x99-qd3",
+      "Name": "Huananzhi X99-QD3",
+      "Brand": "Huananzhi",
+      "Model": "X99-QD3",
+      "Version": "",
+      "Tags": [ "huananzhi", "qd3", "ddr3" ],
+      "Description": "The motherboard is not tested yet, but it should be compatible with the Huananzhi X99-QD4 BIOS. Still, the compatibility is not guaranteed by me.",
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi X99-QD3/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Huananzhi X99-QD3/IoPanel.jpg"
+        }
+      ],
+      "Links": []
+    },
+    {
       "Id": "shuangwei-x99s",
       "Name": "Shuangwei X99S",
       "Brand": "Shuangwei",
@@ -3258,6 +3321,156 @@
       },
       "Chipsets": [ "B85", "C226" ],
       "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-qd4.rom",
+      "Name": "Stock Huananzhi X99-QD4",
+      "MotherboardIds": [ "huananzhi-x99-qd4" ],
+      "FileName": "Bioses/huananzhi-x99-qd4.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-qd4.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Logo": "Huananzhi"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "qd4", "q87", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-qd4.mi8.rom",
+      "Name": "Stock Huananzhi X99-QD4, Mi8",
+      "MotherboardIds": [ "huananzhi-x99-qd4" ],
+      "FileName": "Bioses/huananzhi-x99-qd4.mi899.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-qd4.mi899.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimized",
+        "RAM timings": "Unlocked",
+        "ReBarDxe": "Injected",
+        "Logo": "Huananzhi"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "qd4", "q87", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-qd4.mi8.s3tt.5050.rom",
+      "Name": "Stock Huananzhi X99-QD4, Mi8, TU PEI -50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-qd4" ],
+      "FileName": "Bioses/huananzhi-x99-qd4.mi899.s3tt.5050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-qd4.mi899.s3tt.5050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimized",
+        "RAM timings": "Unlocked",
+        "ReBarDxe": "Injected",
+        "Logo": "Huananzhi",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "qd4", "q87", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-qd4.mi8.s3tt.6050.rom",
+      "Name": "Stock Huananzhi X99-QD4, Mi8, TU PEI -60/50mv",
+      "MotherboardIds": [ "huananzhi-x99-qd4" ],
+      "FileName": "Bioses/huananzhi-x99-qd4.mi899.s3tt.6050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-qd4.mi899.s3tt.6050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimized",
+        "RAM timings": "Unlocked",
+        "ReBarDxe": "Injected",
+        "Logo": "Huananzhi",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "qd4", "q87", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-qd4.mi8.s3tt.7050.rom",
+      "Name": "Stock Huananzhi X99-QD4, Mi8, TU PEI -70/50mv",
+      "MotherboardIds": [ "huananzhi-x99-qd4" ],
+      "FileName": "Bioses/huananzhi-x99-qd4.mi899.s3tt.7050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-qd4.mi899.s3tt.7050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimized",
+        "RAM timings": "Unlocked",
+        "ReBarDxe": "Injected",
+        "Logo": "Huananzhi",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "qd4", "q87", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-qd4.mi8.s3tt.8050.rom",
+      "Name": "Stock Huananzhi X99-QD4, Mi8, TU PEI -80/50mv",
+      "MotherboardIds": [ "huananzhi-x99-qd4" ],
+      "FileName": "Bioses/huananzhi-x99-qd4.mi899.s3tt.8050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-qd4.mi899.s3tt.8050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimized",
+        "RAM timings": "Unlocked",
+        "ReBarDxe": "Injected",
+        "Logo": "Huananzhi",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "qd4", "q87", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-qd4.mi8.s3tt.9050.rom",
+      "Name": "Stock Huananzhi X99-QD4, Mi8, TU PEI -90/50mv",
+      "MotherboardIds": [ "huananzhi-x99-qd4" ],
+      "FileName": "Bioses/huananzhi-x99-qd4.mi899.s3tt.9050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-qd4.mi899.s3tt.9050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimized",
+        "RAM timings": "Unlocked",
+        "ReBarDxe": "Injected",
+        "Logo": "Huananzhi",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "qd4", "q87", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-qd4.mi8.s3tt.10050.rom",
+      "Name": "Stock Huananzhi X99-QD4, Mi8, TU PEI -100/50mv",
+      "MotherboardIds": [ "huananzhi-x99-qd4" ],
+      "FileName": "Bioses/huananzhi-x99-qd4.mi899.s3tt.10050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-qd4.mi899.s3tt.10050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Miyconst optimized",
+        "RAM timings": "Unlocked",
+        "ReBarDxe": "Injected",
+        "Logo": "Huananzhi",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "qd4", "q87", "ddr4" ]
     },
     {
       "Id": "hz-x99-zd4.kot.tu.rom",

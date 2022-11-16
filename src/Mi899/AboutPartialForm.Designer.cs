@@ -55,20 +55,22 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 267F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(949, 641);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1085, 855);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(377, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(431, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(194, 194);
+            this.pictureBox1.Size = new System.Drawing.Size(222, 259);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -89,16 +91,17 @@
             this.tableLayoutPanel2.Controls.Add(this.lblYouTube, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.lblAuthor, 1, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 203);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 271);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(943, 435);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1079, 580);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // label1
@@ -106,9 +109,9 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(405, 5);
+            this.label1.Location = new System.Drawing.Point(460, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 19);
+            this.label1.Size = new System.Drawing.Size(76, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mi899:";
             // 
@@ -116,9 +119,9 @@
             // 
             this.lblVersionCaption.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblVersionCaption.AutoSize = true;
-            this.lblVersionCaption.Location = new System.Drawing.Point(420, 37);
+            this.lblVersionCaption.Location = new System.Drawing.Point(476, 50);
             this.lblVersionCaption.Name = "lblVersionCaption";
-            this.lblVersionCaption.Size = new System.Drawing.Size(48, 15);
+            this.lblVersionCaption.Size = new System.Drawing.Size(60, 20);
             this.lblVersionCaption.TabIndex = 1;
             this.lblVersionCaption.Text = "Version:";
             // 
@@ -126,9 +129,9 @@
             // 
             this.lblGitHubCaption.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblGitHubCaption.AutoSize = true;
-            this.lblGitHubCaption.Location = new System.Drawing.Point(420, 67);
+            this.lblGitHubCaption.Location = new System.Drawing.Point(477, 90);
             this.lblGitHubCaption.Name = "lblGitHubCaption";
-            this.lblGitHubCaption.Size = new System.Drawing.Size(48, 15);
+            this.lblGitHubCaption.Size = new System.Drawing.Size(59, 20);
             this.lblGitHubCaption.TabIndex = 2;
             this.lblGitHubCaption.Text = "GitHub:";
             // 
@@ -136,9 +139,9 @@
             // 
             this.lblYouTubeCaption.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblYouTubeCaption.AutoSize = true;
-            this.lblYouTubeCaption.Location = new System.Drawing.Point(412, 97);
+            this.lblYouTubeCaption.Location = new System.Drawing.Point(467, 130);
             this.lblYouTubeCaption.Name = "lblYouTubeCaption";
-            this.lblYouTubeCaption.Size = new System.Drawing.Size(56, 15);
+            this.lblYouTubeCaption.Size = new System.Drawing.Size(69, 20);
             this.lblYouTubeCaption.TabIndex = 3;
             this.lblYouTubeCaption.Text = "YouTube:";
             // 
@@ -146,9 +149,9 @@
             // 
             this.lblAuthorCaption.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblAuthorCaption.AutoSize = true;
-            this.lblAuthorCaption.Location = new System.Drawing.Point(421, 127);
+            this.lblAuthorCaption.Location = new System.Drawing.Point(479, 170);
             this.lblAuthorCaption.Name = "lblAuthorCaption";
-            this.lblAuthorCaption.Size = new System.Drawing.Size(47, 15);
+            this.lblAuthorCaption.Size = new System.Drawing.Size(57, 20);
             this.lblAuthorCaption.TabIndex = 4;
             this.lblAuthorCaption.Text = "Author:";
             // 
@@ -157,9 +160,9 @@
             this.lblToolSet.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblToolSet.AutoSize = true;
             this.lblToolSet.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblToolSet.Location = new System.Drawing.Point(474, 5);
+            this.lblToolSet.Location = new System.Drawing.Point(542, 8);
             this.lblToolSet.Name = "lblToolSet";
-            this.lblToolSet.Size = new System.Drawing.Size(117, 19);
+            this.lblToolSet.Size = new System.Drawing.Size(142, 23);
             this.lblToolSet.TabIndex = 5;
             this.lblToolSet.Text = "X99 Tool Set";
             // 
@@ -167,9 +170,9 @@
             // 
             this.lblVersion.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblVersion.AutoSize = true;
-            this.lblVersion.Location = new System.Drawing.Point(474, 37);
+            this.lblVersion.Location = new System.Drawing.Point(542, 50);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(31, 15);
+            this.lblVersion.Size = new System.Drawing.Size(39, 20);
             this.lblVersion.TabIndex = 6;
             this.lblVersion.Text = "1.0.0";
             // 
@@ -177,9 +180,9 @@
             // 
             this.lblGitHub.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblGitHub.AutoSize = true;
-            this.lblGitHub.Location = new System.Drawing.Point(474, 67);
+            this.lblGitHub.Location = new System.Drawing.Point(542, 90);
             this.lblGitHub.Name = "lblGitHub";
-            this.lblGitHub.Size = new System.Drawing.Size(200, 15);
+            this.lblGitHub.Size = new System.Drawing.Size(244, 20);
             this.lblGitHub.TabIndex = 7;
             this.lblGitHub.TabStop = true;
             this.lblGitHub.Text = "https://github.com/miyconst/Mi899";
@@ -189,9 +192,9 @@
             // 
             this.lblYouTube.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblYouTube.AutoSize = true;
-            this.lblYouTube.Location = new System.Drawing.Point(474, 97);
+            this.lblYouTube.Location = new System.Drawing.Point(542, 130);
             this.lblYouTube.Name = "lblYouTube";
-            this.lblYouTube.Size = new System.Drawing.Size(213, 15);
+            this.lblYouTube.Size = new System.Drawing.Size(257, 20);
             this.lblYouTube.TabIndex = 8;
             this.lblYouTube.TabStop = true;
             this.lblYouTube.Text = "https://www.youtube.com/c/Miyconst";
@@ -201,9 +204,9 @@
             // 
             this.lblAuthor.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblAuthor.AutoSize = true;
-            this.lblAuthor.Location = new System.Drawing.Point(474, 127);
+            this.lblAuthor.Location = new System.Drawing.Point(542, 170);
             this.lblAuthor.Name = "lblAuthor";
-            this.lblAuthor.Size = new System.Drawing.Size(158, 15);
+            this.lblAuthor.Size = new System.Drawing.Size(184, 20);
             this.lblAuthor.TabIndex = 9;
             this.lblAuthor.TabStop = true;
             this.lblAuthor.Text = "https://miyconst.github.io/";
@@ -211,11 +214,12 @@
             // 
             // AboutPartialForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AboutPartialForm";
-            this.Size = new System.Drawing.Size(949, 641);
+            this.Size = new System.Drawing.Size(1085, 855);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);

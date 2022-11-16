@@ -9,7 +9,7 @@
     <PackageProjectUrl>https://github.com/miyconst/Mi899</PackageProjectUrl>
     <PackageIcon>Mi899.png</PackageIcon>
     <PackageTags>x99 lga2011v3 fpt afuwin machinist huananzhi jingsha xeon bios tu</PackageTags>
-    <Version>1.2.8</Version>
+    <Version>1.2.9</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -98,6 +98,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\Huananzhi X99-F8\TopView.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Huananzhi X99-QD3\IoPanel.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Huananzhi X99-QD3\TopView.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Huananzhi X99-QD4\IoPanel.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Huananzhi X99-QD4\TopView.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\Huananzhi X99-T8D\IoPanel.jpg">
