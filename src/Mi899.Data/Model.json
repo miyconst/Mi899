@@ -1448,6 +1448,50 @@
   ],
   "Bioses": [
     {
+      "Id": "huananzhi-x99-tf-cx99de30.upt.rebar.rom",
+      "Name": "CX99DE30 for Huananzhi X99-TF/F8/T8 V2.0 from BIOS-iEngineer UPT",
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
+      "FileName": "Bioses/huananzhi-x99-tf-cx99de30.upt.rebar.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-cx99de30.upt.rebar.rom.zip",
+      "Description": "This is custom made BIOS for the SECOND revision of the X99-TF/F8 motherboards.",
+      "Properties": {
+        "Important": "This BIOS MUST BE flashed with a CH341A or another programmer!",
+        "Warning": "The BIOS is not compatible with the first X99-TF/F8 revision!",
+        "RAM Timings": "Available",
+        "Overclocking": "Works",
+        "BIOS Settings": "Default",
+        "ReBarDxe": "Injected",
+        "URL": "https://youtu.be/I_a1CI-31g8?si=r9Mv44kgnsR0bkBa",
+        "Turbo Unlock Driver": "Ultimate Patcher Tool",
+        "Ultimate Patcher Tool": "https://nalex.me/ultimate-patcher-tool/",
+        "CPU Voltage": "Adjustable in BIOS",
+        "IMC Voltage": "Adjustable in BIOS",
+        "System Agent Voltage": "Adjustable in BIOS"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
+    },
+    {
+      "Id": "huananzhi-x99-tf-cx99de30.upt.no-tbu.rebar.rom",
+      "Name": "CX99DE30 for Huananzhi X99-TF/F8/T8 V2.0 from BIOS-iEngineer",
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
+      "FileName": "Bioses/huananzhi-x99-tf-cx99de30.upt.no-tbu.rebar.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-tf-cx99de30.upt.no-tbu.rebar.rom.zip",
+      "Description": "This is custom made BIOS for the SECOND revision of the X99-TF/F8 motherboards.",
+      "Properties": {
+        "Important": "This BIOS MUST BE flashed with a CH341A or another programmer!",
+        "Warning": "The BIOS is not compatible with the first X99-TF/F8 revision!",
+        "RAM Timings": "Available",
+        "Overclocking": "Works",
+        "BIOS Settings": "Default",
+        "ReBarDxe": "Injected",
+        "URL": "https://youtu.be/I_a1CI-31g8?si=r9Mv44kgnsR0bkBa",
+        "Turbo Unlock Driver": "Not available"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "stock", "x99", "c612" ]
+    },
+    {
       "Id": "hz-x99-tf.rom",
       "Name": "Stock Huananzhi X99-TF",
       "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
