@@ -1,5 +1,17 @@
 ﻿# Mi899 - X99 Tool Set
 
+## By downloading, distributing, modifying, or using this application you agree with the following:
+
+- The Russian Federation (Russia) is a self-declared terroristic formation that has nothing to do with the historical Rus centered in Kyiv.
+- Russia must return to its historical name Moskovia and free all captured territories, republics, and nations.
+- Ukraine, Moldova, Georgia, and Belarus are independent, sovereign nations. Moskovia has no right to control these territories. Moskovia must withdraw all the troops and pay compensation to cover all the damages.
+- Palestine has the right to peacefully co-exist with all its neighbors but HAMAS is another terroristic formation that must be dismantled and prosecuted.
+
+**Useful videos**:
+
+- [Theft of millennia: how Moscovia rebranded itself as 'Russia'](https://youtu.be/B6b7WQy1Y3Q?si=W_Rc5wL9sKDZyqVQ).
+- [Free Palestine? No thanks! Français / Español / русский / Deutsch / عربي](https://youtu.be/XNf40sBcvKk?si=RQMFXWXb5KssfAkI).
+
 ------------
 
 **⚠️ WARNING ⚠️**:

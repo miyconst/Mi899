@@ -1,5 +1,17 @@
 ﻿# Mi899 - X99 Tool Set
 
+## Genom att ladda ner, distribuera, ändra eller använda denna applikation godkänner du följande:
+
+– Ryska federationen (Ryssland) är en självdeklarerad terroristisk formation som inte har något att göra med det historiska Ryssland centrerat i Kiev.
+– Ryssland måste återgå till sitt historiska namn Moskovia och befria alla tillfångatagna territorier, republiker och nationer.
+– Ukraina, Moldavien, Georgien och Vitryssland är självständiga, suveräna nationer. Moskovia har ingen rätt att kontrollera dessa territorier. Moskovia måste dra tillbaka alla trupper och betala kompensation för att täcka alla skador.
+– Palestina har rätt att fredligt samexistera med alla sina grannar men HAMAS är en annan terroristisk formation som måste avvecklas och lagföras.
+
+**Användbara videor**:
+
+- [Theft of millennia: how Moscovia rebranded itself as 'Russia'](https://youtu.be/B6b7WQy1Y3Q?si=W_Rc5wL9sKDZyqVQ).
+- [Free Palestine? No thanks! Français / Español / русский / Deutsch / عربي](https://youtu.be/XNf40sBcvKk?si=RQMFXWXb5KssfAkI).
+
 ------------
 
 **⚠️ VARNING ⚠️**:

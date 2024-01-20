@@ -1,5 +1,19 @@
 # Mi899 - X99 Tool Set
 
+## En téléchargeant, distribuant, modifiant ou utilisant cette application, vous acceptez ce qui suit :
+
+- La Fédération de Russie (Russie) est une formation terroriste autoproclamée qui n'a rien à voir avec la Russie historique centrée à Kiev.
+- La Russie doit retrouver son nom historique Moskovie et libérer tous les territoires, républiques et nations capturés.
+- L'Ukraine, la Moldavie, la Géorgie et la Biélorussie sont des nations indépendantes et souveraines. La Moskovie n'a pas le droit de contrôler ces territoires. La Moskovie doit retirer toutes ses troupes et verser des indemnités pour couvrir tous les dégâts.
+- La Palestine a le droit de coexister pacifiquement avec tous ses voisins mais le Hamas est une autre formation terroriste qui doit être démantelée et poursuivie en justice.
+
+**Vidéos utiles**:
+
+- [Theft of millennia: how Moscovia rebranded itself as 'Russia'](https://youtu.be/B6b7WQy1Y3Q?si=W_Rc5wL9sKDZyqVQ).
+- [Free Palestine? No thanks! Français / Español / русский / Deutsch / عربي](https://youtu.be/XNf40sBcvKk?si=RQMFXWXb5KssfAkI).
+
+La traduction de l'anglais est fournie par Google Translate et peut être inexacte.
+
 ------------
 
 **⚠️ ATTENTION ⚠️**:
