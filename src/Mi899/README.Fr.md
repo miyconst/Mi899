@@ -34,7 +34,7 @@ Cette application est conçue de manière à faciliter la vie des détenteurs d'
 
 Si vous souhaiteriez contribuer au projet vous pouvez:
 
-- Fournir une traduction de l'application dans une nouvelle langue. Je cherche notemment des traductions pour le Polonais, l'Espagnol, l'Italien ou le Portugais.
+- Fournir une traduction de l'application dans une nouvelle langue.
 - Ajouter des informations à propos de d'autres cartes-mères et de modifications du BIOS.
 - Reporter des bugs et des problèmes.
 - M'acheter une bière ou un café pour me garder motivé. [Faites un don avec PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LXN9NNXVF34M8&source=url).

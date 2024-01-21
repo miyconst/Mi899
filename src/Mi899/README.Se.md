@@ -32,7 +32,7 @@ Denna applikationen är designad för att förenkla livet för ägare av Kinesis
 
 Om du vill bidra till projektet kan du:
 
-- Bistå med en översättning av applikationen på ett nytt språk. För tillfället är översättningar på Polska och Italienska eftertraktade.
+- Bistå med en översättning av applikationen på ett nytt språk.
 - Bistå med information om andra moderkort eller modifikationer för BIOS. 
 - Rapportera buggar eller övriga problem.
 - Bjuda mig på en öl eller en kopp kaffe för att hålla mig motiverad. [Donera via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LXN9NNXVF34M8&source=url).
