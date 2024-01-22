@@ -12,13 +12,11 @@
 - [Theft of millennia: how Moscovia rebranded itself as 'Russia'](https://youtu.be/B6b7WQy1Y3Q?si=W_Rc5wL9sKDZyqVQ).
 - [Free Palestine? No thanks! Français / Español / русский / Deutsch / عربي](https://youtu.be/XNf40sBcvKk?si=RQMFXWXb5KssfAkI).
 
-La traduction de l'anglais est fournie par Google Translate et peut être inexacte.
-
 ------------------------------------------------------------------------------------------------------
 
 **⚠️ FIGYELMEZTETÉS ⚠️**:
 
-- ❗ A program készítője nem felelős semmilyen következményért, amely ennek használatából ered!
+- ❗ A program készítője nem vállal felelősséget semmilyen következményért, amely ennek használatából ered!
 - ❗ Kizárólag az alkalmazás felhasználója felel minden cselekedetéért és az okozott következményekért! 
 - ❗ Csak akkor használd ezt az alkalmazást, ha tudod és érted mit csinálsz!
 - ❗ Az alaplap BIOS-ának felülírásával tönkreteheted az alaplapodat! A kockázat egyedül a tied.
@@ -43,7 +41,7 @@ Ha szeretnél hozzájárulni a projekthez, az alábbiakból választhatsz:
 
 #### Hogyan adhatsz hozzá
 
-- Minden fejlesztést Github "Pull Request"-két várok (https://yangsu.github.io/pull-request-tutorial/#:~:text=What%20is%20a%20Pull%20Request,follow%2Dup%20commits%20if%20necessary.).
+- Minden fejlesztést Github "Pull Request"-ként várok (https://yangsu.github.io/pull-request-tutorial/#:~:text=What%20is%20a%20Pull%20Request,follow%2Dup%20commits%20if%20necessary.).
 - Github "Issue" létrehozása (https://github.com/miyconst/Mi899) Hibajelentésre, vagy fejlesztési javaslatra ezt használd.
 
 ##### Kapcsolat
