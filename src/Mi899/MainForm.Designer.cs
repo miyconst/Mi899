@@ -213,7 +213,7 @@
             // 
             this.tsslVersion.Name = "tsslVersion";
             this.tsslVersion.Size = new System.Drawing.Size(301, 25);
-            this.tsslVersion.Text = "Mi899 Version 1.2.9 - Copyright © Miyconst";
+            this.tsslVersion.Text = "Mi899 Version 1.3.0 - Copyright © Miyconst";
             // 
             // msiHelpHowToRebar
             // 

@@ -9,7 +9,7 @@
     <PackageProjectUrl>https://github.com/miyconst/Mi899</PackageProjectUrl>
     <PackageIcon>Mi899.png</PackageIcon>
     <PackageTags>x99 lga2011v3 fpt afuwin machinist huananzhi jingsha xeon bios tu</PackageTags>
-    <Version>1.2.9</Version>
+    <Version>1.3.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
