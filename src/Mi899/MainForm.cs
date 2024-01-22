@@ -192,12 +192,17 @@ namespace Mi899
 
         private void msiHelpHowToTurboUnlock_Click(object sender, EventArgs e)
         {
-            OpenUrl("https://miyconst.github.io/hardware/cpu/intel/2020/01/04/xeon-e5-2600-v3-turbo-boost-unlock.html");
+            OpenUrl("https://miyconst.github.io/hardware/cpu/intel/2023/11/18/tbu-s3turbotool.html");
         }
 
         private void msiHelpHowToUseCh341a_Click(object sender, EventArgs e)
         {
             OpenUrl("https://miyconst.github.io/hardware/2020/07/13/ch341a-guide.html");
+        }
+
+        private void msiHelpHowToRebar_Click(object sender, EventArgs e)
+        {
+            OpenUrl("https://youtu.be/vcJDWMpxpjE?si=yQvAfhZx8KPNDTtJ");
         }
 
         private void msiHelpAbout_Click(object sender, EventArgs e)

@@ -48,6 +48,7 @@
             this.msiLanguage = new System.Windows.Forms.ToolStripMenuItem();
             this.ssStatus = new System.Windows.Forms.StatusStrip();
             this.tsslVersion = new System.Windows.Forms.ToolStripStatusLabel();
+            this.msiHelpHowToRebar = new System.Windows.Forms.ToolStripMenuItem();
             this.tlpMain.SuspendLayout();
             this.msMenu.SuspendLayout();
             this.ssStatus.SuspendLayout();
@@ -152,41 +153,42 @@
             this.msiHelpHowTo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msiHelpHowToTurboUnlock,
             this.msiHelpHowToRamTimings,
-            this.msiHelpHowToUseCh341a});
+            this.msiHelpHowToUseCh341a,
+            this.msiHelpHowToRebar});
             this.msiHelpHowTo.Name = "msiHelpHowTo";
-            this.msiHelpHowTo.Size = new System.Drawing.Size(130, 22);
+            this.msiHelpHowTo.Size = new System.Drawing.Size(180, 22);
             this.msiHelpHowTo.Text = "How to";
             // 
             // msiHelpHowToTurboUnlock
             // 
             this.msiHelpHowToTurboUnlock.Name = "msiHelpHowToTurboUnlock";
-            this.msiHelpHowToTurboUnlock.Size = new System.Drawing.Size(305, 22);
+            this.msiHelpHowToTurboUnlock.Size = new System.Drawing.Size(361, 22);
             this.msiHelpHowToTurboUnlock.Text = "Unlock Turbo Boost";
             this.msiHelpHowToTurboUnlock.Click += new System.EventHandler(this.msiHelpHowToTurboUnlock_Click);
             // 
             // msiHelpHowToRamTimings
             // 
             this.msiHelpHowToRamTimings.Name = "msiHelpHowToRamTimings";
-            this.msiHelpHowToRamTimings.Size = new System.Drawing.Size(305, 22);
+            this.msiHelpHowToRamTimings.Size = new System.Drawing.Size(361, 22);
             this.msiHelpHowToRamTimings.Text = "Tighten RAM timings";
             this.msiHelpHowToRamTimings.Click += new System.EventHandler(this.msiHelpHowToRamTimings_Click);
             // 
             // msiHelpHowToUseCh341a
             // 
             this.msiHelpHowToUseCh341a.Name = "msiHelpHowToUseCh341a";
-            this.msiHelpHowToUseCh341a.Size = new System.Drawing.Size(305, 22);
+            this.msiHelpHowToUseCh341a.Size = new System.Drawing.Size(361, 22);
             this.msiHelpHowToUseCh341a.Text = "How to use CH341A BIOS Programmer";
             this.msiHelpHowToUseCh341a.Click += new System.EventHandler(this.msiHelpHowToUseCh341a_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(127, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
             // 
             // msiHelpAbout
             // 
             this.msiHelpAbout.Name = "msiHelpAbout";
-            this.msiHelpAbout.Size = new System.Drawing.Size(130, 22);
+            this.msiHelpAbout.Size = new System.Drawing.Size(180, 22);
             this.msiHelpAbout.Text = "&About...";
             this.msiHelpAbout.Click += new System.EventHandler(this.msiHelpAbout_Click);
             // 
@@ -212,6 +214,13 @@
             this.tsslVersion.Name = "tsslVersion";
             this.tsslVersion.Size = new System.Drawing.Size(301, 25);
             this.tsslVersion.Text = "Mi899 Version 1.2.9 - Copyright © Miyconst";
+            // 
+            // msiHelpHowToRebar
+            // 
+            this.msiHelpHowToRebar.Name = "msiHelpHowToRebar";
+            this.msiHelpHowToRebar.Size = new System.Drawing.Size(361, 22);
+            this.msiHelpHowToRebar.Text = "Resizable Bar (ReBar, SAM) on LGA 2011-33";
+            this.msiHelpHowToRebar.Click += new System.EventHandler(this.msiHelpHowToRebar_Click);
             // 
             // MainForm
             // 
@@ -260,5 +269,6 @@
         private System.Windows.Forms.ToolStripMenuItem msiFile;
         private System.Windows.Forms.ToolStripMenuItem msiLanguage;
         private System.Windows.Forms.ToolStripMenuItem msiHelpHowToUseCh341a;
+        private System.Windows.Forms.ToolStripMenuItem msiHelpHowToRebar;
     }
 }
