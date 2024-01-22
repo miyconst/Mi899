@@ -842,6 +842,16 @@
         }
       ],
       "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Machinist X99-PR9 – cheap yet decent, detailed review of the motherboard",
+          "Url": "https://youtu.be/j58Fpm0uetI"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Machinist X99-PR8 – дешево але якісно, детальний огляд материнської плати",
+          "Url": "https://youtu.be/sTnXWRpE3PQ"
+        }
       ]
     },
     {
@@ -2620,6 +2630,126 @@
         "RAM timings": "Available",
         "Above 4G Decoding": "Available",
         "Resizable Bar": "Available"
+      },
+      "Chipsets": [ "Z97" ],
+      "Tags": [ "machinist", "x99-pr9", "stock", "z97" ]
+    },
+    {
+      "Id": "machinist-x99-pr9.s3tt.5050",
+      "Name": "Stock Machinist X99-PR9, TU PEI -50/50mv",
+      "MotherboardIds": [ "machinist-x99-pr9" ],
+      "FileName": "Bioses/machinist-x99-pr9.s3tt.5050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-pr9.s3tt.5050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "Default"
+      },
+      "Chipsets": [ "Z97" ],
+      "Tags": [ "machinist", "x99-pr9", "stock", "z97" ]
+    },
+    {
+      "Id": "machinist-x99-pr9.s3tt.6050",
+      "Name": "Stock Machinist X99-PR9, TU PEI -60/50mv",
+      "MotherboardIds": [ "machinist-x99-pr9" ],
+      "FileName": "Bioses/machinist-x99-pr9.s3tt.6050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-pr9.s3tt.6050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "Default"
+      },
+      "Chipsets": [ "Z97" ],
+      "Tags": [ "machinist", "x99-pr9", "stock", "z97" ]
+    },
+    {
+      "Id": "machinist-x99-pr9.s3tt.7050",
+      "Name": "Stock Machinist X99-PR9, TU PEI -70/50mv",
+      "MotherboardIds": [ "machinist-x99-pr9" ],
+      "FileName": "Bioses/machinist-x99-pr9.s3tt.7050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-pr9.s3tt.7050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "Default"
+      },
+      "Chipsets": [ "Z97" ],
+      "Tags": [ "machinist", "x99-pr9", "stock", "z97" ]
+    },
+    {
+      "Id": "machinist-x99-pr9.s3tt.8050",
+      "Name": "Stock Machinist X99-PR9, TU PEI -80/50mv",
+      "MotherboardIds": [ "machinist-x99-pr9" ],
+      "FileName": "Bioses/machinist-x99-pr9.s3tt.8050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-pr9.s3tt.8050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "Default"
+      },
+      "Chipsets": [ "Z97" ],
+      "Tags": [ "machinist", "x99-pr9", "stock", "z97" ]
+    },
+    {
+      "Id": "machinist-x99-pr9.s3tt.9050",
+      "Name": "Stock Machinist X99-PR9, TU PEI -90/50mv",
+      "MotherboardIds": [ "machinist-x99-pr9" ],
+      "FileName": "Bioses/machinist-x99-pr9.s3tt.9050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-pr9.s3tt.9050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "Default"
+      },
+      "Chipsets": [ "Z97" ],
+      "Tags": [ "machinist", "x99-pr9", "stock", "z97" ]
+    },
+    {
+      "Id": "machinist-x99-pr9.s3tt.10050",
+      "Name": "Stock Machinist X99-PR9, TU PEI -100/50mv",
+      "MotherboardIds": [ "machinist-x99-pr9" ],
+      "FileName": "Bioses/machinist-x99-pr9.s3tt.10050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-pr9.s3tt.10050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "Default"
       },
       "Chipsets": [ "Z97" ],
       "Tags": [ "machinist", "x99-pr9", "stock", "z97" ]
