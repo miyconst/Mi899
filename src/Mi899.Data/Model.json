@@ -823,6 +823,28 @@
       ]
     },
     {
+      "Id": "machinist-x99-pr9",
+      "Name": "Machinist X99-PR9",
+      "Brand": "Machinist",
+      "Model": "X99-PR9",
+      "Version": "",
+      "Tags": [ "machinist", "x99-pr9", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X99-PR9/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Machinist X99-PR9/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+      ]
+    },
+    {
       "Id": "machinist-x99-mr9a",
       "Name": "Machinist X99-MR9A",
       "Brand": "Machinist",
@@ -2585,6 +2607,22 @@
       },
       "Chipsets": [ "Q87" ],
       "Tags": [ "machinist", "x99-rs9", "stock", "q87" ]
+    },
+    {
+      "Id": "machinist-x99-pr9",
+      "Name": "Stock Machinist X99-PR9",
+      "MotherboardIds": [ "machinist-x99-pr9" ],
+      "FileName": "Bioses/machinist-x99-pr9.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-pr9.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available"
+      },
+      "Chipsets": [ "Z97" ],
+      "Tags": [ "machinist", "x99-pr9", "stock", "z97" ]
     },
     {
       "Id": "machinist-x99-mr9a",
