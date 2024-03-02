@@ -2058,6 +2058,24 @@
       "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
     },
     {
+      "Id": "huananzhi-x99-f8.tu.rb.cmnt.rom",
+      "Name": "Stock Huananzhi X99-F8, TU PEI, -50/50, ReBar, Community",
+      "MotherboardIds": [ "hz-x99-tf", "hz-x99-f8", "hz-x99-t8", "js-x99-d8", "hz-x99-8m", "ac-x99s-d3", "ac-x99s-d4" ],
+      "FileName": "Bioses/huananzhi-x99-f8.tu.rb.cmnt.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-f8.tu.rb.cmnt.rom.zip",
+      "Description": "This BIOS is provided by a community member, it is not verified by me.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Author": "wavypalasbabys",
+        "URL": "https://github.com/miyconst/Mi899/issues/107",
+        "Resizable Bar": "Available",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "huananzhi", "tf", "f8", "t8", "8m", "tu", "x99", "c612" ]
+    },
+    {
       "Id": "jingsha-x99-e8i.rom",
       "Name": "Stock JingSha X99-E8I",
       "MotherboardIds": [ "js-x99-e8i" ],
