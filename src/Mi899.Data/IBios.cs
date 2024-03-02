@@ -15,5 +15,6 @@ namespace Mi899.Data
         bool IsZipped { get; }
         IReadOnlyDictionary<string, string> Properties { get; }
         string[] Chipsets { get; }
+        bool IsCommercial { get; }
     }
 }

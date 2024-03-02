@@ -166,6 +166,12 @@ namespace Mi899
                 GenericBindingList<BiosRowData> list = (GenericBindingList<BiosRowData>)bsBioses.DataSource;
                 BiosRowData bios = list[e.RowIndex];
 
+                if (bios.IsCommercial)
+                {
+                    UrlManager.OpenUrl(bios.DownloadUrl);
+                    return;
+                }
+
                 Cursor.Current = Cursors.WaitCursor;
 
                 if (!await _biosManager.DownloadBiosIfMissingAsync(bios))

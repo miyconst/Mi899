@@ -823,6 +823,33 @@
       ]
     },
     {
+      "Id": "g629a",
+      "Name": "G629A - Qiyida, Atermiter, ERYING",
+      "Brand": "Qiyida, Atermiter, ERYING and other",
+      "Model": "G629A",
+      "Version": "",
+      "Tags": [ "machinist", "x99-rs9", "x99-qd4", "ddr4" ],
+      "Description": "The motherboard is sold under multiple different names such as Qiyida X99-Q4, ERYING, Atermiter and others. BIOS from Huananzhi X99-8M-F, X99-QD4, and Machinist X99-RS9 are compatible.",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/G629A/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/G629A/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "BIOS-iEngineer",
+          "Name": "MACHINIST RS9 Custom BIOS from iEngineer",
+          "Url": "https://youtu.be/E_d8ieG7heg?si=nSmkjt0lr0PsJuES"
+        }
+      ]
+    },
+    {
       "Id": "machinist-x99-pr9",
       "Name": "Machinist X99-PR9",
       "Brand": "Machinist",
@@ -2592,6 +2619,38 @@
       "Tags": [ "machinist", "x99-k9", "stock", "x99", "c612" ]
     },
     {
+      "Id": "g629a",
+      "Name": "Stock G629A (Qiyida, Atermiter, ERYING)",
+      "MotherboardIds": [ "g629a" ],
+      "FileName": "Bioses/g629a.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/g629a.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default"
+      },
+      "Chipsets": [ "Q87", "B85" ],
+      "Tags": [ "machinist", "g629a", "stock", "q87", "b85", "qiyida", "atermiter", "erying" ]
+    },
+    {
+      "Id": "BX99DA08",
+      "Name": "Machinist X99-RS9 BX99DA08 - Custom BIOS from iEngineer",
+      "MotherboardIds": [ "machinist-x99-rs9", "g629a" ],
+      "FileName": "",
+      "DownloadUrl": "https://www.patreon.com/BIOSiEngineer/shop/machinist-e5-rs9-bx99da08-gamers-bios-139771",
+      "Description": "",
+      "Properties": {
+        "RAM timings": "Unlocked",
+        "CPU Overclocking": "Supported",
+        "ReBar": "Supported",
+        "Smart Fan": "Works",
+        "Sleep Mode": "Not supported",
+        "Commercial": true
+      },
+      "Chipsets": [ "Q87", "B85" ],
+      "Tags": [ "machinist", "x99-rs9", "stock", "q87", "b85", "c629a" ],
+      "IsCommercial": true
+    },
+    {
       "Id": "machinist-x99-rs9",
       "Name": "Stock Machinist X99-RS9",
       "MotherboardIds": [ "machinist-x99-rs9" ],
@@ -2607,7 +2666,7 @@
     {
       "Id": "machinist-x99-rs9.mi8",
       "Name": "Stock Machinist X99-RS9, RAM Timings",
-      "MotherboardIds": [ "machinist-x99-rs9" ],
+      "MotherboardIds": [ "machinist-x99-rs9", "g629a" ],
       "FileName": "Bioses/machinist-x99-rs9.mi8.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-rs9.mi8.rom.zip",
       "Description": "",
@@ -3330,7 +3389,7 @@
     {
       "Id": "hz-x99-8m-f.rom",
       "Name": "Stock Huananzhi X99-8M-F",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus", "g629a" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.rom.zip",
       "Description": "",
@@ -3390,7 +3449,7 @@
     {
       "Id": "hz-x99-8m-f.tp.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus", "g629a" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.rom.zip",
       "Description": "",
@@ -3406,7 +3465,7 @@
     {
       "Id": "hz-x99-8m-f.tp.tu.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU EFI",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus", "g629a" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.tu.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.tu.rom.zip",
       "Description": "",
@@ -3423,7 +3482,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.5050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -50/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus", "g629a" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.5050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.5050.rom.zip",
       "Description": "",
@@ -3442,7 +3501,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.6050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -60/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus", "g629a" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.6050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.6050.rom.zip",
       "Description": "",
@@ -3461,7 +3520,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.7050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -70/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus", "g629a" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.7050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.7050.rom.zip",
       "Description": "",
@@ -3480,7 +3539,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.8050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -80/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus", "g629a" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.8050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.8050.rom.zip",
       "Description": "",
@@ -3499,7 +3558,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.9050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -90/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus", "g629a" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.9050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.9050.rom.zip",
       "Description": "",
@@ -3518,7 +3577,7 @@
     {
       "Id": "hz-x99-8m-f.tp.s3tt.10050.rom",
       "Name": "Stock Huananzhi X99-8M-F, TP, TU PEI -100/50mv",
-      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus" ],
+      "MotherboardIds": [ "hz-x99-8m-f", "machinist-x99-rs9", "hz-x99-zd4", "shuangwei-x99s", "machinist-x99-mr9a", "jginyue-x99m-plus", "g629a" ],
       "FileName": "Bioses/huananzhi-x99-8m-f.tp.s3tt.10050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-8m-f.tp.s3tt.10050.rom.zip",
       "Description": "",

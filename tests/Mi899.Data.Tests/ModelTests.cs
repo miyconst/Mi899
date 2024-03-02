@@ -84,6 +84,9 @@ namespace Mi899.Data.Tests
 
             foreach (IBios bios in _model.Bioses)
             {
+                if (bios.IsCommercial)
+                    continue;
+
                 string pathname = bios.FileName;
 
                 Assert.True(Path.IsPathRooted(pathname));

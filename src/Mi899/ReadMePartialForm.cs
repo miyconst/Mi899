@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
-using CommonMark;
 using Mi899.Data;
-using System.Diagnostics;
 
 namespace Mi899
 {
@@ -61,27 +56,8 @@ namespace Mi899
             e.Cancel = true;
 
             string url = e.Url.ToString();
-
-            try
-            {
-                Process.Start(url);
-                return;
-            }
-            catch
-            { 
-            }
-
-            try
-            {
-                url = url.Replace("&", "^&");
-                Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
-                return;
-            }
-            catch
-            {
-            }
-
-            MessageBox.Show(url);
+            
+            UrlManager.OpenUrl(url);
         }
     }
 }

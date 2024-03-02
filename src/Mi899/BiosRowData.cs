@@ -28,7 +28,16 @@ namespace Mi899
 
         public string TagsString => string.Join(", ", Tags);
 
-        public string FileName => Source.FileName;
+        public string FileName
+        {
+            get
+            {
+                if (Source.IsCommercial)
+                    return Source.DownloadUrl;
+                else
+                    return Source.FileName;
+            }
+        }
 
         public string DownloadUrl => Source.DownloadUrl;
 
@@ -52,5 +61,7 @@ namespace Mi899
         public string[] Chipsets => Source.Chipsets;
 
         public string ChipsetsStrings => string.Join(", ", Chipsets);
+
+        public bool IsCommercial => Source.IsCommercial;
     }
 }

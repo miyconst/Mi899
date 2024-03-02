@@ -19,6 +19,8 @@ namespace Mi899.Data
         public string[] Chipsets { get; set; }
         public Dictionary<string, string> Properties { get; set; }
 
+        public bool IsCommercial { get; set; }
+
         IReadOnlyDictionary<string, string> IBios.Properties => Properties;
     }
 }

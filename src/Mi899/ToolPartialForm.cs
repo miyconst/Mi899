@@ -22,6 +22,10 @@ namespace Mi899
         private readonly WebBrowser _wbReadme;
         private readonly ToolManager _toolManager;
         private readonly BiosManager _biosManager;
+        private readonly string _commercialBiosCaption = "Commercial BIOS";
+        private readonly string _commercialBiosDescription = "This BIOS is not free. You can purchase a copy from the supplier. Would you want to open the BIOS page in browser?";
+        private string _commercialBiosCaptionI18n;
+        private string _commercialBiosDescriptionI18n;
 
         public ToolPartialForm([NotNull] Model model, [NotNull] MdToHtmlConverter mdToHtmlConverter, [NotNull] ToolManager toolManager, [NotNull] BiosManager biosManager)
         {
@@ -80,6 +84,9 @@ namespace Mi899
             string html = _mdToHtmlConverter.Convert(md);
             _wbReadme.DocumentText = html;
             _biosManager.ApplyI18n(i18n);
+
+            _commercialBiosCaptionI18n = i18n.Get(_commercialBiosCaption, this.GetI18nCompatibleParent().Name, Name, nameof(_commercialBiosCaption));
+            _commercialBiosDescriptionI18n = i18n.Get(_commercialBiosDescription, this.GetI18nCompatibleParent().Name, Name, nameof(_commercialBiosDescription));
         }
 
         public IEnumerable<IComponent> SelectI18nCompatibleComponents()
@@ -112,6 +119,16 @@ namespace Mi899
                 return;
             }
 
+            if (bios.IsCommercial)
+            {
+                if (MessageBox.Show(_commercialBiosDescriptionI18n, _commercialBiosCaptionI18n, MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    UrlManager.OpenUrl(bios.DownloadUrl);
+                }
+
+                return;
+            }
+
             Cursor = Cursors.WaitCursor;
 
             if (!await _biosManager.DownloadBiosIfMissingAsync(bios))
@@ -121,7 +138,7 @@ namespace Mi899
             }
 
             _toolManager.Flash(_motherboard, bios, _tool, cbExecuteScript.Checked);
-            
+
             Cursor = Cursors.Default;
         }
 

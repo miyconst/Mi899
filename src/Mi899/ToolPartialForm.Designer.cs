@@ -67,11 +67,10 @@
             this.tlpMain.Controls.Add(this.tlpRightColumn, 1, 0);
             this.tlpMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpMain.Location = new System.Drawing.Point(0, 0);
-            this.tlpMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tlpMain.Name = "tlpMain";
             this.tlpMain.RowCount = 1;
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpMain.Size = new System.Drawing.Size(1029, 933);
+            this.tlpMain.Size = new System.Drawing.Size(900, 700);
             this.tlpMain.TabIndex = 0;
             // 
             // tlpInfo
@@ -90,22 +89,21 @@
             this.tlpInfo.Controls.Add(this.tlpBios, 0, 4);
             this.tlpInfo.Controls.Add(this.txtMotherboardDescription, 0, 3);
             this.tlpInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpInfo.Location = new System.Drawing.Point(3, 4);
-            this.tlpInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tlpInfo.Location = new System.Drawing.Point(3, 3);
             this.tlpInfo.Name = "tlpInfo";
             this.tlpInfo.RowCount = 11;
-            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.92593F));
-            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.92593F));
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.92593F));
-            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
-            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tlpInfo.Size = new System.Drawing.Size(508, 925);
+            this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tlpInfo.Size = new System.Drawing.Size(444, 694);
             this.tlpInfo.TabIndex = 1;
             // 
             // txtTool
@@ -113,12 +111,11 @@
             this.txtTool.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTool.Location = new System.Drawing.Point(3, 745);
-            this.txtTool.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTool.Location = new System.Drawing.Point(3, 558);
             this.txtTool.Multiline = true;
             this.txtTool.Name = "txtTool";
             this.txtTool.ReadOnly = true;
-            this.txtTool.Size = new System.Drawing.Size(502, 135);
+            this.txtTool.Size = new System.Drawing.Size(438, 101);
             this.txtTool.TabIndex = 1;
             // 
             // lblTool
@@ -126,9 +123,9 @@
             this.lblTool.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTool.AutoSize = true;
             this.lblTool.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTool.Location = new System.Drawing.Point(3, 712);
+            this.lblTool.Location = new System.Drawing.Point(3, 533);
             this.lblTool.Name = "lblTool";
-            this.lblTool.Size = new System.Drawing.Size(502, 18);
+            this.lblTool.Size = new System.Drawing.Size(438, 14);
             this.lblTool.TabIndex = 0;
             this.lblTool.Text = "Tool:";
             // 
@@ -137,13 +134,12 @@
             this.txtBiosDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBiosDescription.Location = new System.Drawing.Point(3, 538);
-            this.txtBiosDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBiosDescription.Location = new System.Drawing.Point(3, 403);
             this.txtBiosDescription.Multiline = true;
             this.txtBiosDescription.Name = "txtBiosDescription";
             this.txtBiosDescription.ReadOnly = true;
             this.txtBiosDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtBiosDescription.Size = new System.Drawing.Size(502, 159);
+            this.txtBiosDescription.Size = new System.Drawing.Size(438, 119);
             this.txtBiosDescription.TabIndex = 1;
             // 
             // txtMotherboardVersion
@@ -151,11 +147,10 @@
             this.txtMotherboardVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMotherboardVersion.Location = new System.Drawing.Point(3, 84);
-            this.txtMotherboardVersion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMotherboardVersion.Location = new System.Drawing.Point(3, 63);
             this.txtMotherboardVersion.Name = "txtMotherboardVersion";
             this.txtMotherboardVersion.ReadOnly = true;
-            this.txtMotherboardVersion.Size = new System.Drawing.Size(502, 27);
+            this.txtMotherboardVersion.Size = new System.Drawing.Size(438, 23);
             this.txtMotherboardVersion.TabIndex = 1;
             // 
             // lblMotherboard
@@ -163,20 +158,19 @@
             this.lblMotherboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMotherboard.AutoSize = true;
             this.lblMotherboard.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblMotherboard.Location = new System.Drawing.Point(3, 11);
+            this.lblMotherboard.Location = new System.Drawing.Point(3, 8);
             this.lblMotherboard.Name = "lblMotherboard";
-            this.lblMotherboard.Size = new System.Drawing.Size(502, 18);
+            this.lblMotherboard.Size = new System.Drawing.Size(438, 14);
             this.lblMotherboard.TabIndex = 0;
             this.lblMotherboard.Text = "Motherboard:";
             // 
             // txtMotherboard
             // 
             this.txtMotherboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMotherboard.Location = new System.Drawing.Point(3, 46);
-            this.txtMotherboard.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMotherboard.Location = new System.Drawing.Point(3, 33);
             this.txtMotherboard.Name = "txtMotherboard";
             this.txtMotherboard.ReadOnly = true;
-            this.txtMotherboard.Size = new System.Drawing.Size(502, 27);
+            this.txtMotherboard.Size = new System.Drawing.Size(438, 23);
             this.txtMotherboard.TabIndex = 1;
             // 
             // ddlBioses
@@ -184,10 +178,9 @@
             this.ddlBioses.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.ddlBioses.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ddlBioses.FormattingEnabled = true;
-            this.ddlBioses.Location = new System.Drawing.Point(3, 333);
-            this.ddlBioses.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ddlBioses.Location = new System.Drawing.Point(3, 248);
             this.ddlBioses.Name = "ddlBioses";
-            this.ddlBioses.Size = new System.Drawing.Size(502, 28);
+            this.ddlBioses.Size = new System.Drawing.Size(438, 23);
             this.ddlBioses.TabIndex = 2;
             this.ddlBioses.SelectedIndexChanged += new System.EventHandler(this.ddlBioses_SelectedIndexChanged);
             // 
@@ -196,39 +189,37 @@
             this.txtBiosProperties.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBiosProperties.Location = new System.Drawing.Point(3, 371);
-            this.txtBiosProperties.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBiosProperties.Location = new System.Drawing.Point(3, 278);
             this.txtBiosProperties.Multiline = true;
             this.txtBiosProperties.Name = "txtBiosProperties";
             this.txtBiosProperties.ReadOnly = true;
             this.txtBiosProperties.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtBiosProperties.Size = new System.Drawing.Size(502, 159);
+            this.txtBiosProperties.Size = new System.Drawing.Size(438, 119);
             this.txtBiosProperties.TabIndex = 3;
             // 
             // txtToolVersion
             // 
             this.txtToolVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtToolVersion.Location = new System.Drawing.Point(3, 891);
-            this.txtToolVersion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtToolVersion.Location = new System.Drawing.Point(3, 666);
             this.txtToolVersion.Name = "txtToolVersion";
             this.txtToolVersion.ReadOnly = true;
-            this.txtToolVersion.Size = new System.Drawing.Size(502, 27);
+            this.txtToolVersion.Size = new System.Drawing.Size(438, 23);
             this.txtToolVersion.TabIndex = 4;
             // 
             // tlpBios
             // 
             this.tlpBios.ColumnCount = 2;
             this.tlpBios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 343F));
+            this.tlpBios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tlpBios.Controls.Add(this.lblBios, 0, 0);
             this.tlpBios.Controls.Add(this.btnSelectBiosFile, 1, 0);
             this.tlpBios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpBios.Location = new System.Drawing.Point(0, 287);
+            this.tlpBios.Location = new System.Drawing.Point(0, 215);
             this.tlpBios.Margin = new System.Windows.Forms.Padding(0);
             this.tlpBios.Name = "tlpBios";
             this.tlpBios.RowCount = 1;
             this.tlpBios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBios.Size = new System.Drawing.Size(508, 40);
+            this.tlpBios.Size = new System.Drawing.Size(444, 30);
             this.tlpBios.TabIndex = 5;
             // 
             // lblBios
@@ -236,19 +227,18 @@
             this.lblBios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBios.AutoSize = true;
             this.lblBios.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblBios.Location = new System.Drawing.Point(3, 11);
+            this.lblBios.Location = new System.Drawing.Point(3, 8);
             this.lblBios.Name = "lblBios";
-            this.lblBios.Size = new System.Drawing.Size(159, 18);
+            this.lblBios.Size = new System.Drawing.Size(138, 14);
             this.lblBios.TabIndex = 0;
             this.lblBios.Text = "BIOS:";
             // 
             // btnSelectBiosFile
             // 
             this.btnSelectBiosFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSelectBiosFile.Location = new System.Drawing.Point(168, 4);
-            this.btnSelectBiosFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSelectBiosFile.Location = new System.Drawing.Point(147, 3);
             this.btnSelectBiosFile.Name = "btnSelectBiosFile";
-            this.btnSelectBiosFile.Size = new System.Drawing.Size(337, 31);
+            this.btnSelectBiosFile.Size = new System.Drawing.Size(294, 23);
             this.btnSelectBiosFile.TabIndex = 1;
             this.btnSelectBiosFile.Text = "Select BIOS file";
             this.btnSelectBiosFile.UseVisualStyleBackColor = true;
@@ -259,13 +249,12 @@
             this.txtMotherboardDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMotherboardDescription.Location = new System.Drawing.Point(3, 124);
-            this.txtMotherboardDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMotherboardDescription.Location = new System.Drawing.Point(3, 93);
             this.txtMotherboardDescription.Multiline = true;
             this.txtMotherboardDescription.Name = "txtMotherboardDescription";
             this.txtMotherboardDescription.ReadOnly = true;
             this.txtMotherboardDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMotherboardDescription.Size = new System.Drawing.Size(502, 159);
+            this.txtMotherboardDescription.Size = new System.Drawing.Size(438, 119);
             this.txtMotherboardDescription.TabIndex = 6;
             // 
             // tlpRightColumn
@@ -275,41 +264,39 @@
             this.tlpRightColumn.Controls.Add(this.tlpButtons, 0, 1);
             this.tlpRightColumn.Controls.Add(this.txtReadme, 0, 0);
             this.tlpRightColumn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpRightColumn.Location = new System.Drawing.Point(514, 0);
+            this.tlpRightColumn.Location = new System.Drawing.Point(450, 0);
             this.tlpRightColumn.Margin = new System.Windows.Forms.Padding(0);
             this.tlpRightColumn.Name = "tlpRightColumn";
             this.tlpRightColumn.RowCount = 2;
             this.tlpRightColumn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpRightColumn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
-            this.tlpRightColumn.Size = new System.Drawing.Size(515, 933);
+            this.tlpRightColumn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tlpRightColumn.Size = new System.Drawing.Size(450, 700);
             this.tlpRightColumn.TabIndex = 3;
             // 
             // tlpButtons
             // 
             this.tlpButtons.ColumnCount = 4;
             this.tlpButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
-            this.tlpButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 229F));
-            this.tlpButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 229F));
+            this.tlpButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tlpButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tlpButtons.Controls.Add(this.btnDump, 2, 0);
             this.tlpButtons.Controls.Add(this.btnFlash, 3, 0);
             this.tlpButtons.Controls.Add(this.cbExecuteScript, 0, 0);
             this.tlpButtons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpButtons.Location = new System.Drawing.Point(3, 890);
-            this.tlpButtons.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tlpButtons.Location = new System.Drawing.Point(3, 668);
             this.tlpButtons.Name = "tlpButtons";
             this.tlpButtons.RowCount = 1;
             this.tlpButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpButtons.Size = new System.Drawing.Size(509, 39);
+            this.tlpButtons.Size = new System.Drawing.Size(444, 29);
             this.tlpButtons.TabIndex = 0;
             // 
             // btnDump
             // 
             this.btnDump.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDump.Location = new System.Drawing.Point(54, 4);
-            this.btnDump.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDump.Location = new System.Drawing.Point(47, 3);
             this.btnDump.Name = "btnDump";
-            this.btnDump.Size = new System.Drawing.Size(223, 31);
+            this.btnDump.Size = new System.Drawing.Size(194, 23);
             this.btnDump.TabIndex = 0;
             this.btnDump.Text = "Dump current BIOS";
             this.btnDump.UseVisualStyleBackColor = true;
@@ -318,10 +305,9 @@
             // btnFlash
             // 
             this.btnFlash.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFlash.Location = new System.Drawing.Point(283, 4);
-            this.btnFlash.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnFlash.Location = new System.Drawing.Point(247, 3);
             this.btnFlash.Name = "btnFlash";
-            this.btnFlash.Size = new System.Drawing.Size(223, 31);
+            this.btnFlash.Size = new System.Drawing.Size(194, 23);
             this.btnFlash.TabIndex = 1;
             this.btnFlash.Text = "Flash selected BIOS";
             this.btnFlash.UseVisualStyleBackColor = true;
@@ -332,10 +318,9 @@
             this.cbExecuteScript.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbExecuteScript.AutoSize = true;
             this.cbExecuteScript.Enabled = false;
-            this.cbExecuteScript.Location = new System.Drawing.Point(3, 7);
-            this.cbExecuteScript.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbExecuteScript.Location = new System.Drawing.Point(3, 5);
             this.cbExecuteScript.Name = "cbExecuteScript";
-            this.cbExecuteScript.Size = new System.Drawing.Size(22, 24);
+            this.cbExecuteScript.Size = new System.Drawing.Size(18, 19);
             this.cbExecuteScript.TabIndex = 2;
             this.cbExecuteScript.Text = "Execute script";
             this.cbExecuteScript.UseVisualStyleBackColor = true;
@@ -344,11 +329,10 @@
             // txtReadme
             // 
             this.txtReadme.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtReadme.Location = new System.Drawing.Point(3, 4);
-            this.txtReadme.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtReadme.Location = new System.Drawing.Point(3, 3);
             this.txtReadme.Name = "txtReadme";
             this.txtReadme.ReadOnly = true;
-            this.txtReadme.Size = new System.Drawing.Size(509, 878);
+            this.txtReadme.Size = new System.Drawing.Size(444, 659);
             this.txtReadme.TabIndex = 1;
             this.txtReadme.Text = resources.GetString("txtReadme.Text");
             // 
@@ -358,12 +342,11 @@
             // 
             // ToolPartialForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tlpMain);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ToolPartialForm";
-            this.Size = new System.Drawing.Size(1029, 933);
+            this.Size = new System.Drawing.Size(900, 700);
             this.tlpMain.ResumeLayout(false);
             this.tlpInfo.ResumeLayout(false);
             this.tlpInfo.PerformLayout();
