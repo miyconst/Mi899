@@ -2659,7 +2659,7 @@
       "Properties": {
         "RAM timings": "Unlocked",
         "CPU Overclocking": "Supported",
-        "ReBar": "Supported",
+        "Resizable Bar": "Available",
         "Smart Fan": "Works",
         "Sleep Mode": "Not supported",
         "Commercial": true
@@ -3475,7 +3475,8 @@
         "BIOS Settings": "Default",
         "RAM timings": "Unlocked",
         "Source": "ТехноПланета",
-        "Logo": "Huananzhi"
+        "Logo": "Huananzhi",
+        "Resizable Bar": "Available"
       },
       "Chipsets": [ "B85", "C226" ],
       "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
@@ -3492,7 +3493,8 @@
         "RAM timings": "Unlocked",
         "Source": "ТехноПланета",
         "Logo": "Huananzhi",
-        "Turbo Unlock Driver": "Manual EFI installation is required"
+        "Turbo Unlock Driver": "Manual EFI installation is required",
+        "Resizable Bar": "Available"
       },
       "Chipsets": [ "B85", "C226" ],
       "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
@@ -3511,7 +3513,8 @@
         "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-50mv",
-        "IMC Voltage": "-50mv"
+        "IMC Voltage": "-50mv",
+        "Resizable Bar": "Available"
       },
       "Chipsets": [ "B85", "C226" ],
       "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
@@ -3530,7 +3533,8 @@
         "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-60mv",
-        "IMC Voltage": "-50mv"
+        "IMC Voltage": "-50mv",
+        "Resizable Bar": "Available"
       },
       "Chipsets": [ "B85", "C226" ],
       "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
@@ -3549,7 +3553,8 @@
         "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-70mv",
-        "IMC Voltage": "-50mv"
+        "IMC Voltage": "-50mv",
+        "Resizable Bar": "Available"
       },
       "Chipsets": [ "B85", "C226" ],
       "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
@@ -3568,7 +3573,8 @@
         "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-80mv",
-        "IMC Voltage": "-50mv"
+        "IMC Voltage": "-50mv",
+        "Resizable Bar": "Available"
       },
       "Chipsets": [ "B85", "C226" ],
       "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
@@ -3587,7 +3593,8 @@
         "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-90mv",
-        "IMC Voltage": "-50mv"
+        "IMC Voltage": "-50mv",
+        "Resizable Bar": "Available"
       },
       "Chipsets": [ "B85", "C226" ],
       "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
@@ -3606,7 +3613,8 @@
         "Logo": "Huananzhi",
         "Turbo Unlock Driver": "S3TurboHack V0.2",
         "CPU Voltage": "-100mv",
-        "IMC Voltage": "-50mv"
+        "IMC Voltage": "-50mv",
+        "Resizable Bar": "Available"
       },
       "Chipsets": [ "B85", "C226" ],
       "Tags": [ "huananzhi", "8mf", "b85", "c226", "ddr4" ]
