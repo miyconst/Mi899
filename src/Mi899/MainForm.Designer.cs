@@ -43,12 +43,13 @@
             this.msiHelpHowToTurboUnlock = new System.Windows.Forms.ToolStripMenuItem();
             this.msiHelpHowToRamTimings = new System.Windows.Forms.ToolStripMenuItem();
             this.msiHelpHowToUseCh341a = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiHelpHowToRebar = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.msiHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.msiLanguage = new System.Windows.Forms.ToolStripMenuItem();
             this.ssStatus = new System.Windows.Forms.StatusStrip();
             this.tsslVersion = new System.Windows.Forms.ToolStripStatusLabel();
-            this.msiHelpHowToRebar = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiRealtekHda = new System.Windows.Forms.ToolStripMenuItem();
             this.tlpMain.SuspendLayout();
             this.msMenu.SuspendLayout();
             this.ssStatus.SuspendLayout();
@@ -154,7 +155,8 @@
             this.msiHelpHowToTurboUnlock,
             this.msiHelpHowToRamTimings,
             this.msiHelpHowToUseCh341a,
-            this.msiHelpHowToRebar});
+            this.msiHelpHowToRebar,
+            this.msiRealtekHda});
             this.msiHelpHowTo.Name = "msiHelpHowTo";
             this.msiHelpHowTo.Size = new System.Drawing.Size(180, 22);
             this.msiHelpHowTo.Text = "How to";
@@ -179,6 +181,13 @@
             this.msiHelpHowToUseCh341a.Size = new System.Drawing.Size(361, 22);
             this.msiHelpHowToUseCh341a.Text = "How to use CH341A BIOS Programmer";
             this.msiHelpHowToUseCh341a.Click += new System.EventHandler(this.msiHelpHowToUseCh341a_Click);
+            // 
+            // msiHelpHowToRebar
+            // 
+            this.msiHelpHowToRebar.Name = "msiHelpHowToRebar";
+            this.msiHelpHowToRebar.Size = new System.Drawing.Size(361, 22);
+            this.msiHelpHowToRebar.Text = "Resizable Bar (ReBar, SAM) on LGA 2011-33";
+            this.msiHelpHowToRebar.Click += new System.EventHandler(this.msiHelpHowToRebar_Click);
             // 
             // toolStripSeparator5
             // 
@@ -215,12 +224,12 @@
             this.tsslVersion.Size = new System.Drawing.Size(301, 25);
             this.tsslVersion.Text = "Mi899 Version 1.3.0 - Copyright © Miyconst";
             // 
-            // msiHelpHowToRebar
+            // msiRealtekHda
             // 
-            this.msiHelpHowToRebar.Name = "msiHelpHowToRebar";
-            this.msiHelpHowToRebar.Size = new System.Drawing.Size(361, 22);
-            this.msiHelpHowToRebar.Text = "Resizable Bar (ReBar, SAM) on LGA 2011-33";
-            this.msiHelpHowToRebar.Click += new System.EventHandler(this.msiHelpHowToRebar_Click);
+            this.msiRealtekHda.Name = "msiRealtekHda";
+            this.msiRealtekHda.Size = new System.Drawing.Size(361, 22);
+            this.msiRealtekHda.Text = "Realtek Audio Drivers";
+            this.msiRealtekHda.Click += new System.EventHandler(this.msiRealtekHda_Click);
             // 
             // MainForm
             // 
@@ -270,5 +279,6 @@
         private System.Windows.Forms.ToolStripMenuItem msiLanguage;
         private System.Windows.Forms.ToolStripMenuItem msiHelpHowToUseCh341a;
         private System.Windows.Forms.ToolStripMenuItem msiHelpHowToRebar;
+        private System.Windows.Forms.ToolStripMenuItem msiRealtekHda;
     }
 }

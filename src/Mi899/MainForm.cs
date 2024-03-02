@@ -134,12 +134,7 @@ namespace Mi899
 
         private void OpenUrl(string url)
         {
-            ProcessStartInfo psi = new ProcessStartInfo(url)
-            {
-                UseShellExecute = true
-            };
-
-            Process.Start(psi);
+            UrlManager.OpenUrl(url);
         }
 
         private void SetLanguage(string language)
@@ -208,6 +203,11 @@ namespace Mi899
         private void msiHelpAbout_Click(object sender, EventArgs e)
         {
             Open(_aboutPartialForm);
+        }
+
+        private void msiRealtekHda_Click(object sender, EventArgs e)
+        {
+            OpenUrl("https://www.station-drivers.com/index.php/en-us/forum/realtek-hda-uad-drivers-firmwares-utilities/24-realtek-hda-uah-component-drivers");
         }
     }
 }
