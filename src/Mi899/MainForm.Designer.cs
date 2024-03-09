@@ -186,7 +186,7 @@
             // 
             this.msiHelpHowToRebar.Name = "msiHelpHowToRebar";
             this.msiHelpHowToRebar.Size = new System.Drawing.Size(361, 22);
-            this.msiHelpHowToRebar.Text = "Resizable Bar (ReBar, SAM) on LGA 2011-33";
+            this.msiHelpHowToRebar.Text = "Resizable Bar (ReBar, SAM) on LGA 2011-3";
             this.msiHelpHowToRebar.Click += new System.EventHandler(this.msiHelpHowToRebar_Click);
             // 
             // toolStripSeparator5
