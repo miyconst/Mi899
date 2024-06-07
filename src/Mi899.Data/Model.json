@@ -353,6 +353,14 @@
         {
           "Name": "IO panel",
           "Url": "Images/Huananzhi X99-QD4/IoPanel.jpg"
+        },
+        {
+          "Name": "Top view 2024",
+          "Url": "Images/Huananzhi X99-QD4/TopView.2024.jpg"
+        },
+        {
+          "Name": "Layout 2024",
+          "Url": "Images/Huananzhi X99-QD4/Layout.2024.jpg"
         }
       ],
       "Links": [
@@ -3643,6 +3651,21 @@
       "Properties": {
         "BIOS Settings": "Default",
         "Logo": "Huananzhi"
+      },
+      "Chipsets": [ "Q87" ],
+      "Tags": [ "huananzhi", "qd4", "q87", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-qd4.2024.rom",
+      "Name": "Stock Huananzhi X99-QD4 2024",
+      "MotherboardIds": [ "huananzhi-x99-qd4" ],
+      "FileName": "Bioses/huananzhi-x99-qd4.2024.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-qd4.2024.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "Logo": "Huananzhi",
+        "RAM timings": "Available"
       },
       "Chipsets": [ "Q87" ],
       "Tags": [ "huananzhi", "qd4", "q87", "ddr4" ]
