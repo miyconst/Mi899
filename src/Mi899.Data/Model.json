@@ -182,7 +182,7 @@
       "Name": "Qiyida E5-A99",
       "Brand": "Qiyida",
       "Model": "E5-A99",
-      "Version": "",
+      "Version": "V1.2",
       "Tags": [ "qiyida", "ddr4", "q85" ],
       "Description": "",
       "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
@@ -197,6 +197,11 @@
         }
       ],
       "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_DBP3GxZ"
+        }
       ]
     },
     {
@@ -2738,6 +2743,195 @@
       },
       "Chipsets": [ "Q87" ],
       "Tags": [ "machinist", "x99-rs9", "stock", "q87" ]
+    },
+    {
+      "Id": "qiyida-e5-a99",
+      "Name": "Stock Qiyida E5-A99",
+      "MotherboardIds": [ "qiyida-e5-a99" ],
+      "FileName": "Bioses/qiyida-e5-a99.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-e5-a99.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available"
+      },
+      "Chipsets": [ "Q85" ],
+      "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
+    },
+    {
+      "Id": "qiyida-e5-a99",
+      "Name": "Stock Qiyida E5-A99, Mi8",
+      "MotherboardIds": [ "qiyida-e5-a99" ],
+      "FileName": "Bioses/qiyida-e5-a99.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-e5-a99.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Restore on Power Loss": "Unlocked",
+        "Smart Fan": "Unlocked for the second header, does not work",
+        "Power & Performance": "Tuned for max performance"
+      },
+      "Chipsets": [ "Q85" ],
+      "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
+    },
+    {
+      "Id": "qiyida-e5-a99.s3tt.505000",
+      "Name": "Stock Qiyida E5-A99, Mi8, TU PEI -50/50/00mv",
+      "MotherboardIds": [ "qiyida-e5-a99" ],
+      "FileName": "Bioses/qiyida-e5-a99.mi8.s3tt.505000.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-e5-a99.mi8.s3tt.505000.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Smart Fan": "Unlocked for the second header, does not work",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "Default"
+      },
+      "Chipsets": [ "Q85" ],
+      "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
+    },
+    {
+      "Id": "qiyida-e5-a99.s3tt.505050",
+      "Name": "Stock Qiyida E5-A99, Mi8, TU PEI -50/50/50mv",
+      "MotherboardIds": [ "qiyida-e5-a99" ],
+      "FileName": "Bioses/qiyida-e5-a99.mi8.s3tt.505050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-e5-a99.mi8.s3tt.505050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Smart Fan": "Unlocked for the second header, does not work",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q85" ],
+      "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
+    },
+    {
+      "Id": "qiyida-e5-a99.s3tt.605050",
+      "Name": "Stock Qiyida E5-A99, Mi8, TU PEI -60/50/50mv",
+      "MotherboardIds": [ "qiyida-e5-a99" ],
+      "FileName": "Bioses/qiyida-e5-a99.mi8.s3tt.605050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-e5-a99.mi8.s3tt.605050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Smart Fan": "Unlocked for the second header, does not work",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q85" ],
+      "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
+    },
+    {
+      "Id": "qiyida-e5-a99.s3tt.705050",
+      "Name": "Stock Qiyida E5-A99, Mi8, TU PEI -70/50/50mv",
+      "MotherboardIds": [ "qiyida-e5-a99" ],
+      "FileName": "Bioses/qiyida-e5-a99.mi8.s3tt.705050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-e5-a99.mi8.s3tt.705050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Smart Fan": "Unlocked for the second header, does not work",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q85" ],
+      "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
+    },
+    {
+      "Id": "qiyida-e5-a99.s3tt.805050",
+      "Name": "Stock Qiyida E5-A99, Mi8, TU PEI -80/50/50mv",
+      "MotherboardIds": [ "qiyida-e5-a99" ],
+      "FileName": "Bioses/qiyida-e5-a99.mi8.s3tt.805050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-e5-a99.mi8.s3tt.805050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Smart Fan": "Unlocked for the second header, does not work",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q85" ],
+      "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
+    },
+    {
+      "Id": "qiyida-e5-a99.s3tt.905050",
+      "Name": "Stock Qiyida E5-A99, Mi8, TU PEI -90/50/50mv",
+      "MotherboardIds": [ "qiyida-e5-a99" ],
+      "FileName": "Bioses/qiyida-e5-a99.mi8.s3tt.905050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-e5-a99.mi8.s3tt.905050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Smart Fan": "Unlocked for the second header, does not work",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q85" ],
+      "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
+    },
+    {
+      "Id": "qiyida-e5-a99.s3tt.1005050",
+      "Name": "Stock Qiyida E5-A99, Mi8, TU PEI -100/50/50mv",
+      "MotherboardIds": [ "qiyida-e5-a99" ],
+      "FileName": "Bioses/qiyida-e5-a99.mi8.s3tt.1005050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-e5-a99.mi8.s3tt.1005050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Smart Fan": "Unlocked for the second header, does not work",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "Q85" ],
+      "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
     },
     {
       "Id": "machinist-x99-pr9",
