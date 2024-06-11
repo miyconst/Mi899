@@ -392,9 +392,29 @@
       ],
       "Links": [
         {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_DdnCrlp"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "Huananzhi X99-QD4 – the 2024 version with three M.2 slots",
+          "Url": "https://youtu.be/o0jH2ormcSE"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "Huananzhi X99-QD4 – версія 2024 року з трьома M.2 слотами",
+          "Url": "https://youtu.be/lKtp83XSCko"
+        },
+        {
           "Author": "Huananzhi",
           "Name": "🇨🇳 Official page",
           "Url": "http://www.huananzhi.com/html/1/149/150/691.html"
+        },
+        {
+          "Author": "Huananzhi",
+          "Name": "🇨🇳 Official page 2024",
+          "Url": "http://www.huananzhi.com/en/more.php?lm=10&id=745"
         },
         {
           "Author": "Miyconst",
@@ -2701,7 +2721,7 @@
     {
       "Id": "BX99DA08",
       "Name": "Machinist X99-RS9 BX99DA08 - Custom BIOS from iEngineer",
-      "MotherboardIds": [ "machinist-x99-rs9", "g629a" ],
+      "MotherboardIds": [ "machinist-x99-rs9", "g629a", "huananzhi-x99-qd4" ],
       "FileName": "",
       "DownloadUrl": "https://www.patreon.com/BIOSiEngineer/shop/machinist-e5-rs9-bx99da08-gamers-bios-139771",
       "Description": "",
@@ -2711,6 +2731,7 @@
         "Resizable Bar": "Available",
         "Smart Fan": "Works",
         "Sleep Mode": "Not supported",
+        "TPM 2.0": "Supported",
         "Commercial": true
       },
       "Chipsets": [ "Q87", "B85" ],
@@ -2755,7 +2776,8 @@
         "BIOS Settings": "Default",
         "RAM timings": "Available",
         "Above 4G Decoding": "Available",
-        "Resizable Bar": "Available"
+        "Resizable Bar": "Available",
+        "TPM 2.0": "Supported"
       },
       "Chipsets": [ "Q85" ],
       "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
@@ -2772,6 +2794,7 @@
         "RAM timings": "Available",
         "Above 4G Decoding": "Available",
         "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
         "Restore on Power Loss": "Unlocked",
         "Smart Fan": "Unlocked for the second header, does not work",
         "Power & Performance": "Tuned for max performance"
@@ -2791,6 +2814,7 @@
         "RAM timings": "Available",
         "Above 4G Decoding": "Available",
         "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
         "Smart Fan": "Unlocked for the second header, does not work",
         "Power & Performance": "Tuned for max performance",
         "Turbo Unlock Driver": "S3TurboHack V1.53",
@@ -2813,6 +2837,7 @@
         "RAM timings": "Available",
         "Above 4G Decoding": "Available",
         "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
         "Smart Fan": "Unlocked for the second header, does not work",
         "Power & Performance": "Tuned for max performance",
         "Turbo Unlock Driver": "S3TurboHack V1.53",
@@ -2835,6 +2860,7 @@
         "RAM timings": "Available",
         "Above 4G Decoding": "Available",
         "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
         "Smart Fan": "Unlocked for the second header, does not work",
         "Power & Performance": "Tuned for max performance",
         "Turbo Unlock Driver": "S3TurboHack V1.53",
@@ -2857,6 +2883,7 @@
         "RAM timings": "Available",
         "Above 4G Decoding": "Available",
         "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
         "Smart Fan": "Unlocked for the second header, does not work",
         "Power & Performance": "Tuned for max performance",
         "Turbo Unlock Driver": "S3TurboHack V1.53",
@@ -2879,6 +2906,7 @@
         "RAM timings": "Available",
         "Above 4G Decoding": "Available",
         "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
         "Smart Fan": "Unlocked for the second header, does not work",
         "Power & Performance": "Tuned for max performance",
         "Turbo Unlock Driver": "S3TurboHack V1.53",
@@ -2901,6 +2929,7 @@
         "RAM timings": "Available",
         "Above 4G Decoding": "Available",
         "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
         "Smart Fan": "Unlocked for the second header, does not work",
         "Power & Performance": "Tuned for max performance",
         "Turbo Unlock Driver": "S3TurboHack V1.53",
@@ -2923,6 +2952,7 @@
         "RAM timings": "Available",
         "Above 4G Decoding": "Available",
         "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
         "Smart Fan": "Unlocked for the second header, does not work",
         "Power & Performance": "Tuned for max performance",
         "Turbo Unlock Driver": "S3TurboHack V1.53",
