@@ -35,6 +35,8 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.ddlMotherboardName = new System.Windows.Forms.ComboBox();
+            this.btnClearSearch = new System.Windows.Forms.Button();
             this.bsMotherboards = new System.Windows.Forms.BindingSource(this.components);
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdMotherboards)).BeginInit();
@@ -70,13 +72,17 @@
             // 
             // tlpSearch
             // 
-            this.tlpSearch.ColumnCount = 3;
+            this.tlpSearch.ColumnCount = 5;
             this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tlpSearch.Controls.Add(this.txtSearch, 1, 0);
+            this.tlpSearch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
+            this.tlpSearch.Controls.Add(this.txtSearch, 2, 0);
             this.tlpSearch.Controls.Add(this.lblSearch, 0, 0);
-            this.tlpSearch.Controls.Add(this.btnSearch, 2, 0);
+            this.tlpSearch.Controls.Add(this.btnSearch, 3, 0);
+            this.tlpSearch.Controls.Add(this.ddlMotherboardName, 1, 0);
+            this.tlpSearch.Controls.Add(this.btnClearSearch, 4, 0);
             this.tlpSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpSearch.Location = new System.Drawing.Point(0, 0);
             this.tlpSearch.Margin = new System.Windows.Forms.Padding(0);
@@ -89,9 +95,9 @@
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.Location = new System.Drawing.Point(54, 3);
+            this.txtSearch.Location = new System.Drawing.Point(330, 3);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(726, 23);
+            this.txtSearch.Size = new System.Drawing.Size(270, 23);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
@@ -108,13 +114,35 @@
             // btnSearch
             // 
             this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.Location = new System.Drawing.Point(786, 3);
+            this.btnSearch.Location = new System.Drawing.Point(606, 3);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(114, 23);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Apply";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // ddlMotherboardName
+            // 
+            this.ddlMotherboardName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ddlMotherboardName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlMotherboardName.FormattingEnabled = true;
+            this.ddlMotherboardName.Location = new System.Drawing.Point(54, 3);
+            this.ddlMotherboardName.Name = "ddlMotherboardName";
+            this.ddlMotherboardName.Size = new System.Drawing.Size(270, 23);
+            this.ddlMotherboardName.TabIndex = 3;
+            this.ddlMotherboardName.SelectedIndexChanged += new System.EventHandler(this.ddlMotherboardName_SelectedIndexChanged);
+            // 
+            // btnClearSearch
+            // 
+            this.btnClearSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearSearch.Location = new System.Drawing.Point(726, 3);
+            this.btnClearSearch.Name = "btnClearSearch";
+            this.btnClearSearch.Size = new System.Drawing.Size(174, 23);
+            this.btnClearSearch.TabIndex = 4;
+            this.btnClearSearch.Text = "Show All";
+            this.btnClearSearch.UseVisualStyleBackColor = true;
+            this.btnClearSearch.Click += new System.EventHandler(this.btnClearSearch_Click);
             // 
             // MotherboardsPartialForm
             // 
@@ -142,5 +170,7 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.BindingSource bsMotherboards;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ComboBox ddlMotherboardName;
+        private System.Windows.Forms.Button btnClearSearch;
     }
 }

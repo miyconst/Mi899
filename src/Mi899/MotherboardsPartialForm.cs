@@ -22,6 +22,17 @@ namespace Mi899
             _model = model ?? throw new ArgumentNullException(nameof(model));
             _motherboards = new GenericBindingList<IMotherboard>(_model.Motherboards);
             InitializeComponent();
+
+            List<string> brands = _model.Motherboards
+                .Select(x => x.Brand)
+                .Distinct()
+                .OrderBy(x => x)
+                .ToList();
+
+            brands.Insert(0, string.Empty);
+            ddlMotherboardName.DataSource = brands;
+            ddlMotherboardName.SelectedItem = "Machinist";
+
             InitializeDataGridComponent();
         }
 
@@ -35,7 +46,8 @@ namespace Mi899
             List<IComponent> components = new List<IComponent>()
             {
                 lblSearch,
-                btnSearch
+                btnSearch,
+                btnClearSearch
             };
 
             components.AddRange(grdMotherboards.Columns.OfType<DataGridViewColumn>());
@@ -125,8 +137,17 @@ namespace Mi899
 
         private void PopulateDataSource()
         {
+            string brand = ddlMotherboardName.SelectedItem as string;
             string key = txtSearch.Text;
-            IEnumerable<MotherboardRowData> source = _motherboards.Select(x => new MotherboardRowData(x));
+            IEnumerable<MotherboardRowData> source = _motherboards
+                .OrderBy(x => x.Brand)
+                .ThenBy(x => x.Name)
+                .Select(x => new MotherboardRowData(x));
+
+            if (!string.IsNullOrEmpty(brand))
+            {
+                source = source.Where(x => x.Brand == brand);
+            }
 
             if (!string.IsNullOrWhiteSpace(key))
             {
@@ -164,6 +185,18 @@ namespace Mi899
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            PopulateDataSource();
+        }
+
+        private void ddlMotherboardName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            PopulateDataSource();
+        }
+
+        private void btnClearSearch_Click(object sender, EventArgs e)
+        {
+            ddlMotherboardName.SelectedItem = string.Empty;
+            txtSearch.Text = string.Empty;
             PopulateDataSource();
         }
     }
