@@ -178,6 +178,28 @@
       ]
     },
     {
+      "Id": "qiyida-e5-a99",
+      "Name": "Qiyida E5-A99",
+      "Brand": "Qiyida",
+      "Model": "E5-A99",
+      "Version": "",
+      "Tags": [ "qiyida", "ddr4", "q85" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Qiyida E5-A99/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Qiyida E5-A99/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+      ]
+    },
+    {
       "Id": "hz-x99-t8",
       "Name": "Huananzhi X99-T8",
       "Brand": "Huananzhi",
