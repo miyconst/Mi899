@@ -1025,6 +1025,43 @@
       ]
     },
     {
+      "Id": "machinist-x99-d8-max",
+      "Name": "Machinist X99-D8 MAX",
+      "Brand": "Machinist",
+      "Model": "X99-D8 MAX",
+      "Version": "",
+      "Tags": [ "machinist", "x99-d8", "ddr4" ],
+      "Description": "X99-D8 and X99-D8 MAX seem to be identical but I can't confirm it without testing.",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X99-D8 MAX/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Machinist X99-D8 MAX/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "Buy BIOS & TPM 2.0 module",
+          "Url": "https://onegigahertz.company.site/"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_DB0Nl1H"
+        },
+        {
+          "Author": "BIOS-iEngineer",
+          "Name": "Today you can place pre-order in the @Miyconst store. BIOS+TPM2.0 for MACHINIST X99-D8 MAX",
+          "Url": "https://youtu.be/rOs3F917tTw?si=LH0Qky4ixlDItCO0"
+        }
+      ]
+    },
+    {
       "Id": "jginyue-x99m-plus",
       "Name": "Jginyue X99M-Plus",
       "Brand": "Jginyue",
@@ -2275,6 +2312,21 @@
       },
       "Chipsets": [ "Z87" ],
       "Tags": [ "jingsha", "e8i", "stock", "z87", "ddr4" ]
+    },
+    {
+      "Id": "machinist-x99-d8-max",
+      "Name": "Stock Machinist X99-D8 MAX from AliExpress",
+      "MotherboardIds": [ "machinist-x99-d8-max" ],
+      "FileName": "Bioses/machinist-x99-d8-max.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-d8-max.rom.zip",
+      "Description": "The BIOS was provided by AliExpress seller 'MACHINIST official Store' and was not tested by me.",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "BIOS Version": "X99D8001",
+        "AliExpress": "https://s.click.aliexpress.com/e/_DB0Nl1H"
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99-d8", "stock", "x99", "c612" ]
     },
     {
       "Id": "mn-x99z",
