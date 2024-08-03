@@ -2821,6 +2821,26 @@
       "IsCommercial": true
     },
     {
+      "Id": "C612DS01",
+      "Name": "Machinist X99-D8 MAX C612DS01 - Custom BIOS from iEngineer",
+      "MotherboardIds": [ "machinist-x99-d8-max" ],
+      "FileName": "",
+      "DownloadUrl": "https://www.patreon.com/BIOSiEngineer/shop/machinist-x99-d8-max-c612ds01-bios-290587",
+      "Description": "",
+      "Properties": {
+        "RAM timings": "Unlocked",
+        "CPU Overclocking": "Supported",
+        "Resizable Bar": "Available",
+        "Smart Fan": "Works",
+        "Sleep Mode": "Motherboard does not support",
+        "TPM 2.0": "Development in progress",
+        "Commercial": true
+      },
+      "Chipsets": [ "X99", "C612" ],
+      "Tags": [ "machinist", "x99-d8", "x99-d8-max", "iengineer", "x99", "c612", "tpm" ],
+      "IsCommercial": true
+    },
+    {
       "Id": "machinist-x99-rs9",
       "Name": "Stock Machinist X99-RS9",
       "MotherboardIds": [ "machinist-x99-rs9" ],
