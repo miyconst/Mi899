@@ -238,21 +238,24 @@ namespace Mi899
                 return;
             }
 
-            GenericBindingList<BiosRowData> list = (GenericBindingList<BiosRowData>)grdBioses.DataSource;
-            BiosRowData bios = list[e.RowIndex];
-
-            if (bios.IsCommercial)
-            {
-                UrlManager.OpenUrl(bios.DownloadUrl);
-                return;
-            }
-
             Cursor.Current = Cursors.WaitCursor;
 
-            if (!await _biosManager.DownloadBiosIfMissingAsync(bios))
+            if (grid.DataSource is GenericBindingList<BiosRowData> list)
             {
-                Cursor = Cursors.Default;
-                return;
+                BiosRowData bios = list[e.RowIndex];
+
+                if (bios.IsCommercial)
+                {
+                    UrlManager.OpenUrl(bios.DownloadUrl);
+                    Cursor = Cursors.Default;
+                    return;
+                }
+
+                if (!await _biosManager.DownloadBiosIfMissingAsync(bios))
+                {
+                    Cursor = Cursors.Default;
+                    return;
+                }
             }
 
             string path = grid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value?.ToString();
