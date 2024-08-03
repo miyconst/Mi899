@@ -2797,7 +2797,27 @@
         "Commercial": true
       },
       "Chipsets": [ "Q87", "B85" ],
-      "Tags": [ "machinist", "x99-rs9", "stock", "q87", "b85", "c629a" ],
+      "Tags": [ "machinist", "x99-rs9", "iengineer", "q87", "b85", "c629a" ],
+      "IsCommercial": true
+    },
+    {
+      "Id": "BX99DA04",
+      "Name": "Machinist E5-MR9A / X99-MR9A Pro MAX BX99DA08 - Custom BIOS from iEngineer",
+      "MotherboardIds": [ "machinist-x99-mr9a" ],
+      "FileName": "",
+      "DownloadUrl": "https://www.patreon.com/BIOSiEngineer/shop/machinist-e5-mr9a-pro-max-bx99da04-bios-108674",
+      "Description": "",
+      "Properties": {
+        "RAM timings": "Unlocked",
+        "CPU Overclocking": "Supported",
+        "Resizable Bar": "Available",
+        "Smart Fan": "Works",
+        "Sleep Mode": "Depends on the motherboard",
+        "TPM 2.0": "Supported",
+        "Commercial": true
+      },
+      "Chipsets": [ "Q87", "B85", "C226" ],
+      "Tags": [ "machinist", "x99-mr9a", "iengineer", "q87", "b85", "tpm" ],
       "IsCommercial": true
     },
     {
