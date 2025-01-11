@@ -47,6 +47,33 @@
   ],
   "Motherboards": [
     {
+      "Id": "c236-bkhd-1151np-17",
+      "Name": "C326 mITX NAS",
+      "Brand": "Noname",
+      "Model": "BKHD-1151NP-17",
+      "Version": "",
+      "Tags": [ "c236", "lga1151", "mitx", "nas", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-11.8.50.3460" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/C326 mITX NAS BKHD-1151NP-17/TopView.png"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/C326 mITX NAS BKHD-1151NP-17/IoPanel.png"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress: C326 mITX NAS",
+          "Url": "https://s.click.aliexpress.com/e/_oneyIMB"
+        }
+      ]
+    },
+    {
       "Id": "hz-x99-tf",
       "Name": "Huananzhi X99-TF",
       "Brand": "Huananzhi",
@@ -1622,6 +1649,42 @@
     }
   ],
   "Bioses": [
+    {
+      "Id": "c236-itx-bkhd-1151np-17.rom",
+      "Name": "Stock C326 mITX NAS BKHD-1151NP-17",
+      "MotherboardIds": [ "c236-bkhd-1151np-17" ],
+      "FileName": "Bioses/c236-itx-bkhd-1151np-17.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/c236-itx-bkhd-1151np-17.rom.zip",
+      "Description": "BKHD1151NP17V104 2024.07.31",
+      "Properties": {
+        "BIOS Version": "BKHD1151NP17V104",
+        "BIOS Build Date": "07/31/2024 16:45:10",
+        "RAM Timings": "Not available",
+        "Overclocking": "Not available",
+        "BIOS Settings": "Default",
+        "ReBar": "Not available"
+      },
+      "Chipsets": [ "C236" ],
+      "Tags": [ "lga1151", "c236" ]
+    },
+    {
+      "Id": "c236-itx-bkhd-1151np-17-mi8.rom",
+      "Name": "Stock C326 mITX NAS BKHD-1151NP-17, Mi8",
+      "MotherboardIds": [ "c236-bkhd-1151np-17" ],
+      "FileName": "Bioses/c236-itx-bkhd-1151np-17-mi8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/c236-itx-bkhd-1151np-17-mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Version": "BKHD1151NP17V104",
+        "BIOS Build Date": "07/31/2024 16:45:10",
+        "RAM Timings": "Unlocked",
+        "Overclocking": "Unlocked",
+        "BIOS Settings": "Default",
+        "ReBar": "Not available"
+      },
+      "Chipsets": [ "C236" ],
+      "Tags": [ "lga1151", "c236" ]
+    },
     {
       "Id": "huananzhi-x99-tf-cx99de30.upt.rebar.rom",
       "Name": "CX99DE30 for Huananzhi X99-TF/F8/T8 V2.0 from BIOS-iEngineer UPT",
@@ -4880,6 +4943,14 @@
       "DumpCommand": "fptw64.exe -d {0}",
       "FlashCommand": "fptw64.exe -f {0}",
       "FileName": "Tools/fpt-w64-9.1.10.1000.zip"
+    },
+    {
+      "Id": "fpt-w64-11.8.50.3460",
+      "Name": "Flash Programming Tool (FPT) 11.8",
+      "Version": "11.8.50.3460",
+      "DumpCommand": "FPTW.exe -d {0}",
+      "FlashCommand": "FPTW.exe -f {0}",
+      "FileName": "Tools/fpt-w64-11.8.50.3460.zip"
     },
     {
       "Id": "afu-win-x64-5.12.03.2045",
