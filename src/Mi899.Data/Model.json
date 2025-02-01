@@ -3387,6 +3387,22 @@
       "Tags": [ "qiyida", "x99-h9s", "stock" ]
     },
     {
+      "Id": "machinist-x99-pr8",
+      "Name": "Stock + ReBar Machinist X99-PR8",
+      "MotherboardIds": [ "machinist-x99-pr8" ],
+      "FileName": "Bioses/machinist-x99-pr8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-pr8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available"
+      },
+      "Chipsets": [ "Z97" ],
+      "Tags": [ "machinist", "x99-pr8", "stock", "z97" ]
+    },
+    {
       "Id": "machinist-x99-pr9",
       "Name": "Stock Machinist X99-PR9",
       "MotherboardIds": [ "machinist-x99-pr9" ],
