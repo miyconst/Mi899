@@ -1033,6 +1033,29 @@
       ]
     },
     {
+      "Id": "machinist-x99-pr8",
+      "Name": "Machinist X99-PR8",
+      "Brand": "Machinist",
+      "Model": "X99-PR8",
+      "Version": "",
+      "Tags": [ "machinist", "x99-pr8", "ddr3" ],
+      "Description": "Very similar to the X99-PR9 but with DDR3 memory.",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X99-PR8/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Machinist X99-PR8/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        
+      ]
+    },
+    {
       "Id": "machinist-x99-mr9a",
       "Name": "Machinist X99-MR9A",
       "Brand": "Machinist",
