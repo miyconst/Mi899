@@ -1,5 +1,7 @@
 ﻿# Mi899 - X99 Tool Set
 
+[English](https://github.com/miyconst/Mi899/blob/master/README.md) | [Български език](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Bg.md) | [Deutsch](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.De.md) | [Español](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Es.md) | [Français](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Fr.md) | [Magyar](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Hu.md) | [Italiano](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.It.md) | [Nederlands](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Nl.md) | [Polski](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Pl.md) | [Português](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Pt.md) | [Svenska](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Se.md) | [Українська](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Ua.md)
+
 ## By downloading, distributing, modifying, or using this application you agree with the following:
 
 - The Russian Federation (Russia) is a self-declared terroristic formation that has nothing to do with the historical Rus centered in Kyiv.
@@ -54,7 +56,7 @@ Read full readme - [`src/Mi899/README.md`](src/Mi899/README.md).
 - French (Français) by [@Nicolas-93](https://github.com/Nicolas-93).
 - Hungarian (Magyar) by Gergő Palatinszky.
 - Italian (Italiano) by Emanuele Galdieri.
-- Polish (Polski) by [@Finchsize](https://github.com/Finchsize).
+- Polish (Polski) by [@Finchsize](https://github.com/Finchsize) and [@0x8008](https://github.com/0x8008).
 - Portuguese (Portugues) by [@osamabilad4](https://github.com/osamabilad4).
 - Russian (Русский) by [@chandrey206](https://github.com/chandrey206).
 - Spanish (Español) by [@skyirim](https://github.com/skyirim).
