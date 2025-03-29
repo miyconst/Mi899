@@ -252,6 +252,43 @@
       ]
     },
     {
+      "Id": "machinist-x99-b9",
+      "Name": "Machinist X99-B9",
+      "Brand": "Machinist",
+      "Model": "X99-B9",
+      "Version": "",
+      "Tags": [ "machinist", "ddr4", "x99", "c612" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X99-B9/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Machinist X99-B9/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "Machinist X99-B9 – X99 chipset & 4 memory channels but is it good enough?",
+          "Url": "https://youtu.be/LCtVt9Cb6SE"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_oCb9Zvt"
+        },
+        {
+          "Author": "OPCzao",
+          "Name": "MODIFYING THE MACHINIST X99 B9 BIOS! UNLOCK, MEMORY TIMINGS AND RESIZABLE BAR.",
+          "Url": "https://youtu.be/Uqza78lIKZw?si=_JsiNCKJt2TgJQZA"
+        }
+      ]
+    },
+    {
       "Id": "qiyida-x99-h9s",
       "Name": "Qiyida X99-H9S",
       "Brand": "Qiyida",
@@ -3195,6 +3232,44 @@
       },
       "Chipsets": [ "Q85" ],
       "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
+    },
+    {
+      "Id": "machinist-x99-b9",
+      "Name": "Stock Machinist X99-B9",
+      "MotherboardIds": [ "machinist-x99-b9" ],
+      "FileName": "Bioses/machinist-x99-b9.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-b9.rom.zip",
+      "Description": "",
+      "Properties": {
+        "Version": "5.11 2024-06-07",
+        "BIOS Settings": "Default",
+        "RAM timings": "Not Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "machinist", "x99-b9", "ddr4", "stock" ]
+    },
+    {
+      "Id": "machinist-x99-b9-opczao-mod",
+      "Name": "Modified Machinist X99-B9 from OPCzao with TBU",
+      "MotherboardIds": [ "machinist-x99-b9" ],
+      "FileName": "Bioses/machinist-x99-b9-opczao-mod.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-b9-opczao-mod.rom.zip",
+      "Description": "",
+      "Properties": {
+        "Version": "5.11 2024-06-07",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Url": "https://youtu.be/Uqza78lIKZw?si=LKWfwNtkJW5E1sb9",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "Turbo Unlock Driver": "v3_payne_50_50.ffs"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "machinist", "x99-b9", "ddr4" ]
     },
     {
       "Id": "qiyida-x99-h9s",
