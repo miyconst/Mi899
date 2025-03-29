@@ -1064,7 +1064,7 @@
         },
         {
           "Author": "Miyconst",
-          "Name": "🇺🇦 Machinist X99-PR8 – дешево але якісно, детальний огляд материнської плати",
+          "Name": "🇺🇦 Machinist X99-PR9 – дешево але якісно, детальний огляд материнської плати",
           "Url": "https://youtu.be/sTnXWRpE3PQ"
         }
       ]
@@ -1076,7 +1076,7 @@
       "Model": "X99-PR8",
       "Version": "",
       "Tags": [ "machinist", "x99-pr8", "ddr3" ],
-      "Description": "Very similar to the X99-PR9 but with DDR3 memory.",
+      "Description": "Idential to Machinist X99-PR9 but with DDR3 memory.",
       "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
       "Images": [
         {
@@ -1089,7 +1089,21 @@
         }
       ],
       "Links": [
-        
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_oF3lWit"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇬🇧 Machinist X99-PR9 – cheap yet decent, detailed review of the motherboard",
+          "Url": "https://youtu.be/j58Fpm0uetI"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "🇺🇦 Machinist X99-PR9 – дешево але якісно, детальний огляд материнської плати",
+          "Url": "https://youtu.be/sTnXWRpE3PQ"
+        }
       ]
     },
     {
@@ -3469,6 +3483,8 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-pr8.rom.zip",
       "Description": "",
       "Properties": {
+        "Warning": "This BIOS was not tested by me (Miyconst)",
+        "Author": "https://github.com/Performensch",
         "BIOS Settings": "Default",
         "RAM timings": "Available",
         "Above 4G Decoding": "Available",
