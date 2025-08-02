@@ -553,6 +553,38 @@
       ]
     },
     {
+      "Id": "huananzhi-x99-cd4",
+      "Name": "Huananzhi X99-CD4",
+      "Brand": "Huananzhi",
+      "Model": "X99-CD4",
+      "Version": "",
+      "Tags": [ "huananzhi", "cd4", "ddr4", "x99", "c612" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi X99-CD4/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Huananzhi X99-CD4/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_oopZYcx"
+        },
+        {
+          "Author": "Huananzhi",
+          "Name": "Official page",
+          "Url": "http://www.huananzhi.com/en/more.php?lm=10&id=843"
+        }
+      ]
+    },
+    {
       "Id": "huananzhi-x99-qd3",
       "Name": "Huananzhi X99-QD3",
       "Brand": "Huananzhi",
@@ -4581,6 +4613,157 @@
       },
       "Chipsets": [ "Q87" ],
       "Tags": [ "huananzhi", "qd4", "q87", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-cd4.rom",
+      "Name": "Stock Huananzhi X99-cD4",
+      "MotherboardIds": [ "huananzhi-x99-cd4" ],
+      "FileName": "Bioses/huananzhi-x99-cd4.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Name": "X9CD4002",
+        "BIOS Settings": "Default",
+        "Logo": "Huananzhi"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "huananzhi", "cd4", "x99", "c612", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-cd4.mi8.rom",
+      "Name": "Stock Huananzhi X99-CD4, Mi8",
+      "MotherboardIds": [ "huananzhi-x99-cd4" ],
+      "FileName": "Bioses/huananzhi-x99-cd4.mi8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Name": "X9CD4002",
+        "BIOS Settings": "Miyconst optimized",
+        "Restore on power loss": "Unlocked",
+        "Smart fan": "Optimized"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "huananzhi", "cd4", "x99", "c612", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-cd4.mi8.s3tt.505050.rom",
+      "Name": "Stock Huananzhi X99-CD4, Mi8, TU PEI -50/50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-cd4" ],
+      "FileName": "Bioses/huananzhi-x99-cd4.mi8.s3tt.505050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.505050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Name": "X9CD4002",
+        "BIOS Settings": "Miyconst optimized",
+        "Restore on power loss": "Unlocked",
+        "Smart fan": "Optimized",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "huananzhi", "cd4", "x99", "c612", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-cd4.mi8.s3tt.605050.rom",
+      "Name": "Stock Huananzhi X99-CD4, Mi8, TU PEI -60/50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-cd4" ],
+      "FileName": "Bioses/huananzhi-x99-cd4.mi8.s3tt.605050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.605050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Name": "X9CD4002",
+        "BIOS Settings": "Miyconst optimized",
+        "Restore on power loss": "Unlocked",
+        "Smart fan": "Optimized",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "huananzhi", "cd4", "x99", "c612", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-cd4.mi8.s3tt.705050.rom",
+      "Name": "Stock Huananzhi X99-CD4, Mi8, TU PEI -70/50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-cd4" ],
+      "FileName": "Bioses/huananzhi-x99-cd4.mi8.s3tt.705050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.705050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Name": "X9CD4002",
+        "BIOS Settings": "Miyconst optimized",
+        "Restore on power loss": "Unlocked",
+        "Smart fan": "Optimized",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "huananzhi", "cd4", "x99", "c612", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-cd4.mi8.s3tt.805050.rom",
+      "Name": "Stock Huananzhi X99-CD4, Mi8, TU PEI -80/50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-cd4" ],
+      "FileName": "Bioses/huananzhi-x99-cd4.mi8.s3tt.805050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.805050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Name": "X9CD4002",
+        "BIOS Settings": "Miyconst optimized",
+        "Restore on power loss": "Unlocked",
+        "Smart fan": "Optimized",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "huananzhi", "cd4", "x99", "c612", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-cd4.mi8.s3tt.905050.rom",
+      "Name": "Stock Huananzhi X99-CD4, Mi8, TU PEI -90/50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-cd4" ],
+      "FileName": "Bioses/huananzhi-x99-cd4.mi8.s3tt.905050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.905050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Name": "X9CD4002",
+        "BIOS Settings": "Miyconst optimized",
+        "Restore on power loss": "Unlocked",
+        "Smart fan": "Optimized",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "huananzhi", "cd4", "x99", "c612", "ddr4" ]
+    },
+    {
+      "Id": "huananzhi-x99-cd4.mi8.s3tt.1005050.rom",
+      "Name": "Stock Huananzhi X99-CD4, Mi8, TU PEI -100/50/50mv",
+      "MotherboardIds": [ "huananzhi-x99-cd4" ],
+      "FileName": "Bioses/huananzhi-x99-cd4.mi8.s3tt.1005050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.1005050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Name": "X9CD4002",
+        "BIOS Settings": "Miyconst optimized",
+        "Restore on power loss": "Unlocked",
+        "Smart fan": "Optimized",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-100mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "huananzhi", "cd4", "x99", "c612", "ddr4" ]
     },
     {
       "Id": "hz-x99-zd4.kot.tu.rom",
