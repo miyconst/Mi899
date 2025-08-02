@@ -68,8 +68,8 @@
       "Links": [
         {
           "Author": "Miyconst",
-          "Name": "AliExpress: C326 mITX NAS",
-          "Url": "https://s.click.aliexpress.com/e/_oneyIMB"
+          "Name": "AliExpress: C236 mITX NAS",
+          "Url": "https://s.click.aliexpress.com/e/_oBQCh5F"
         },
         {
           "Author": "Miyconst",
@@ -237,7 +237,7 @@
         {
           "Author": "Miyconst",
           "Name": "AliExpress",
-          "Url": "https://s.click.aliexpress.com/e/_DBP3GxZ"
+          "Url": "https://s.click.aliexpress.com/e/_oB92Hdx"
         },
         {
           "Author": "Miyconst",
@@ -279,7 +279,7 @@
         {
           "Author": "Miyconst",
           "Name": "AliExpress",
-          "Url": "https://s.click.aliexpress.com/e/_oCb9Zvt"
+          "Url": "https://s.click.aliexpress.com/e/_o2dtx4v"
         },
         {
           "Author": "OPCzao",
@@ -314,7 +314,7 @@
         {
           "Author": "Miyconst",
           "Name": "AliExpress: Qiyida X99-H9S",
-          "Url": "https://s.click.aliexpress.com/e/_ootjLPJ"
+          "Url": "https://s.click.aliexpress.com/e/_oDSilKH"
         },
         {
           "Author": "Miyconst",
@@ -513,7 +513,7 @@
         {
           "Author": "Miyconst",
           "Name": "AliExpress",
-          "Url": "https://s.click.aliexpress.com/e/_DdnCrlp"
+          "Url": "https://s.click.aliexpress.com/e/_olWRurF"
         },
         {
           "Author": "Miyconst",
@@ -1124,7 +1124,7 @@
         {
           "Author": "Miyconst",
           "Name": "AliExpress",
-          "Url": "https://s.click.aliexpress.com/e/_oF3lWit"
+          "Url": "https://s.click.aliexpress.com/e/_oEt3sMd"
         },
         {
           "Author": "Miyconst",
@@ -1158,6 +1158,11 @@
         }
       ],
       "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_oo97XBR"
+        },
         {
           "Author": "Miyconst",
           "Name": "🇬🇧 Machinist X99-MR9A – better than expected, detailed motherboard review",
@@ -1224,18 +1229,8 @@
       "Links": [
         {
           "Author": "Miyconst",
-          "Name": "Buy BIOS & TPM 2.0 module",
-          "Url": "https://onegigahertz.company.site/"
-        },
-        {
-          "Author": "Miyconst",
           "Name": "AliExpress",
-          "Url": "https://s.click.aliexpress.com/e/_DB0Nl1H"
-        },
-        {
-          "Author": "BIOS-iEngineer",
-          "Name": "Today you can place pre-order in the @Miyconst store. BIOS+TPM2.0 for MACHINIST X99-D8 MAX",
-          "Url": "https://youtu.be/rOs3F917tTw?si=LH0Qky4ixlDItCO0"
+          "Url": "https://s.click.aliexpress.com/e/_oB01dVT"
         }
       ]
     },
@@ -2536,8 +2531,7 @@
       "Description": "The BIOS was provided by AliExpress seller 'MACHINIST official Store' and was not tested by me.",
       "Properties": {
         "BIOS Settings": "Default",
-        "BIOS Version": "X99D8001",
-        "AliExpress": "https://s.click.aliexpress.com/e/_DB0Nl1H"
+        "BIOS Version": "X99D8001"
       },
       "Chipsets": [ "X99", "C612" ],
       "Tags": [ "machinist", "x99-d8", "stock", "x99", "c612" ]
@@ -4622,7 +4616,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.rom.zip",
       "Description": "",
       "Properties": {
-        "BIOS Name": "X9CD4002",
+        "BIOS Version": "X9CD4002",
         "BIOS Settings": "Default",
         "Logo": "Huananzhi"
       },
@@ -4637,7 +4631,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.rom.zip",
       "Description": "",
       "Properties": {
-        "BIOS Name": "X9CD4002",
+        "BIOS Version": "X9CD4002",
         "BIOS Settings": "Miyconst optimized",
         "Restore on power loss": "Unlocked",
         "Smart fan": "Optimized"
@@ -4653,7 +4647,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.505050.rom.zip",
       "Description": "",
       "Properties": {
-        "BIOS Name": "X9CD4002",
+        "BIOS Version": "X9CD4002",
         "BIOS Settings": "Miyconst optimized",
         "Restore on power loss": "Unlocked",
         "Smart fan": "Optimized",
@@ -4673,7 +4667,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.605050.rom.zip",
       "Description": "",
       "Properties": {
-        "BIOS Name": "X9CD4002",
+        "BIOS Version": "X9CD4002",
         "BIOS Settings": "Miyconst optimized",
         "Restore on power loss": "Unlocked",
         "Smart fan": "Optimized",
@@ -4693,7 +4687,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.705050.rom.zip",
       "Description": "",
       "Properties": {
-        "BIOS Name": "X9CD4002",
+        "BIOS Version": "X9CD4002",
         "BIOS Settings": "Miyconst optimized",
         "Restore on power loss": "Unlocked",
         "Smart fan": "Optimized",
@@ -4713,7 +4707,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.805050.rom.zip",
       "Description": "",
       "Properties": {
-        "BIOS Name": "X9CD4002",
+        "BIOS Version": "X9CD4002",
         "BIOS Settings": "Miyconst optimized",
         "Restore on power loss": "Unlocked",
         "Smart fan": "Optimized",
@@ -4733,7 +4727,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.905050.rom.zip",
       "Description": "",
       "Properties": {
-        "BIOS Name": "X9CD4002",
+        "BIOS Version": "X9CD4002",
         "BIOS Settings": "Miyconst optimized",
         "Restore on power loss": "Unlocked",
         "Smart fan": "Optimized",
@@ -4753,7 +4747,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-cd4.mi8.s3tt.1005050.rom.zip",
       "Description": "",
       "Properties": {
-        "BIOS Name": "X9CD4002",
+        "BIOS Version": "X9CD4002",
         "BIOS Settings": "Miyconst optimized",
         "Restore on power loss": "Unlocked",
         "Smart fan": "Optimized",
