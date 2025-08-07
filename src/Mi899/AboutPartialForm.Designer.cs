@@ -174,7 +174,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(39, 20);
             this.lblVersion.TabIndex = 6;
-            this.lblVersion.Text = "1.4.2";
+            this.lblVersion.Text = "1.4.3";
             // 
             // lblGitHub
             // 
