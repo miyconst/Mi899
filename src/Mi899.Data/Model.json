@@ -764,6 +764,52 @@
       ]
     },
     {
+      "Id": "js-a320m-itx",
+      "Name": "JingSha A320M-ITX",
+      "Brand": "JingSha",
+      "Model": "A320M-ITX",
+      "Version": "",
+      "Tags": [ "jingsha", "a320", "ddr4", "itx" ],
+      "Description": "",
+      "ToolIds": [ "afu-win-x64-5.16.02.0111" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/JingSha A350-B350-B450M-ITX/TopView.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "JingSha A320/B350/B450M-ITX AM4 motherboard for €50",
+          "Url": "https://youtu.be/aEuotspE_NU"
+        }
+      ]
+    },
+    {
+      "Id": "js-b350m-itx",
+      "Name": "JingSha B350M-ITX",
+      "Brand": "JingSha",
+      "Model": "B350M-ITX",
+      "Version": "",
+      "Tags": [ "jingsha", "b350", "ddr4", "itx" ],
+      "Description": "",
+      "ToolIds": [ "afu-win-x64-5.16.02.0111" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/JingSha A350-B350-B450M-ITX/TopView.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "JingSha A320/B350/B450M-ITX AM4 motherboard for €50",
+          "Url": "https://youtu.be/aEuotspE_NU"
+        }
+      ]
+    },
+    {
       "Id": "js-x99-e8i",
       "Name": "JingSha X99-E8I",
       "Brand": "JingSha",
@@ -1800,6 +1846,38 @@
     }
   ],
   "Bioses": [
+    {
+      "Id": "jingsha-a320m-itx.rom.zip",
+      "Name": "Stock JingSha A320M-ITX",
+      "MotherboardIds": [ "js-a320m-itx" ],
+      "FileName": "Bioses/jingsha-a320m-itx.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jingsha-a320m-itx.rom.zip",
+      "Description": "AM4M_I_P3C0S1 2025.07.03",
+      "Properties": {
+        "BIOS Version": "AM4M_I_P3C0S1",
+        "BIOS Build Date": "07/03/2025",
+        "RAM XMP": "Not available",
+        "ReBar": "Not available"
+      },
+      "Chipsets": [ "A320" ],
+      "Tags": [ "am4", "a320" ]
+    },
+    {
+      "Id": "jingsha-b350m-itx.rom.zip",
+      "Name": "Stock JingSha B350M-ITX",
+      "MotherboardIds": [ "js-b350m-itx" ],
+      "FileName": "Bioses/jingsha-b350m-itx.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jingsha-b350-itx.rom.zip",
+      "Description": "AM4M_I_P3C0S1 2025.07.03",
+      "Properties": {
+        "BIOS Version": "AM4M_I_P3C0S1",
+        "BIOS Build Date": "07/03/2025",
+        "RAM XMP": "Not available",
+        "ReBar": "Not available"
+      },
+      "Chipsets": [ "B350" ],
+      "Tags": [ "am4", "B350" ]
+    },
     {
       "Id": "c236-itx-bkhd-1151np-17.rom",
       "Name": "Stock C326 mITX NAS BKHD-1151NP-17",
