@@ -4588,8 +4588,8 @@
       "Id": "huananzhi-x99-qd4.2024.rom",
       "Name": "Stock Huananzhi X99-QD4 2024",
       "MotherboardIds": [ "huananzhi-x99-qd4" ],
-      "FileName": "Bioses/huananzhi-x99-qd4.2024.rom.zip",
-      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-qd4.2024.rom.zip",
+      "FileName": "Bioses/huananzhi-x99-qd4-2024.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-x99-qd4-2024.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Settings": "Default",
