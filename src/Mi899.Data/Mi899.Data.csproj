@@ -349,6 +349,9 @@
     <None Update="Tools\afu-win-x64-5.12.03.2045.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Tools\afu-win-x64-5.16.02.0111.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Tools\fpt-w64-11.8.50.3460.zip">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

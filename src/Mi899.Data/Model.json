@@ -5506,6 +5506,14 @@
       "DumpCommand": "AFUWINx64.exe {0} /O",
       "FlashCommand": "AFUWINx64.exe {0} /P /B /N /X",
       "FileName": "Tools/afu-win-x64-5.12.03.2045.zip"
+    },
+    {
+      "Id": "afu-win-x64-5.16.02.0111",
+      "Name": "AMI Flasher Utility (AfuWin) 5.16",
+      "Version": "5.16.02.0111",
+      "DumpCommand": "AFUWINx64.exe {0} /O",
+      "FlashCommand": "AFUWINx64.exe {0} /P /B /N /X",
+      "FileName": "Tools/afu-win-x64-5.16.02.0111.zip"
     }
   ]
 }
