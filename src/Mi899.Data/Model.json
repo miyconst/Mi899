@@ -1894,7 +1894,7 @@
       "Name": "Stock JingSha B350M-ITX",
       "MotherboardIds": [ "js-b350m-itx" ],
       "FileName": "Bioses/jingsha-b350m-itx.rom.zip",
-      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jingsha-b350-itx.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/jingsha-b350m-itx.rom.zip",
       "Description": "AM4M_I_P3C0S1 2025.07.03",
       "Properties": {
         "BIOS Version": "AM4M_I_P3C0S1",
