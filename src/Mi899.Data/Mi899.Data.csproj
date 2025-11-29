@@ -64,10 +64,10 @@
     <None Update="Images\Ant Country X99S-D4\TopView.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Images\C326 mITX NAS BKHD-1151NP-17\IoPanel.png">
+    <None Update="Images\C236 mITX NAS BKHD-1151NP-17\IoPanel.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Images\C326 mITX NAS BKHD-1151NP-17\TopView.png">
+    <None Update="Images\C236 mITX NAS BKHD-1151NP-17\TopView.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\G629A\IoPanel.jpg">
@@ -344,6 +344,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\Shuangwei X99S\TopView.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Soyo H311M-DVH\TopView.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\Veineda X99\IoPanel.jpg">

@@ -48,7 +48,7 @@
   "Motherboards": [
     {
       "Id": "c236-bkhd-1151np-17",
-      "Name": "C326 mITX NAS",
+      "Name": "C236 mITX NAS",
       "Brand": "Noname",
       "Model": "BKHD-1151NP-17",
       "Version": "",
@@ -58,11 +58,11 @@
       "Images": [
         {
           "Name": "Top view",
-          "Url": "Images/C326 mITX NAS BKHD-1151NP-17/TopView.png"
+          "Url": "Images/C236 mITX NAS BKHD-1151NP-17/TopView.png"
         },
         {
           "Name": "IO panel",
-          "Url": "Images/C326 mITX NAS BKHD-1151NP-17/IoPanel.png"
+          "Url": "Images/C236 mITX NAS BKHD-1151NP-17/IoPanel.png"
         }
       ],
       "Links": [
@@ -1912,7 +1912,7 @@
     },
     {
       "Id": "c236-itx-bkhd-1151np-17.rom",
-      "Name": "Stock C326 mITX NAS BKHD-1151NP-17",
+      "Name": "Stock C236 mITX NAS BKHD-1151NP-17",
       "MotherboardIds": [ "c236-bkhd-1151np-17" ],
       "FileName": "Bioses/c236-itx-bkhd-1151np-17.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/c236-itx-bkhd-1151np-17.rom.zip",
@@ -1930,7 +1930,7 @@
     },
     {
       "Id": "c236-itx-bkhd-1151np-17-mi8.rom",
-      "Name": "Stock C326 mITX NAS BKHD-1151NP-17, Mi8",
+      "Name": "Stock C236 mITX NAS BKHD-1151NP-17, Mi8",
       "MotherboardIds": [ "c236-bkhd-1151np-17" ],
       "FileName": "Bioses/c236-itx-bkhd-1151np-17-mi8.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/c236-itx-bkhd-1151np-17-mi8.rom.zip",
