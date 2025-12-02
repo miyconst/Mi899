@@ -71,6 +71,11 @@
           "Author": "Miyconst",
           "Name": "Unboxing Machinist X99-V9S, Qiyida X99-K9S-TPM2.0, and SOYO H311M-DVH",
           "Url": "https://youtu.be/xQIrCARJOLY"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "SOYO H311M-DVH – viable LGA 1151 option for 6-9th gen and Xeon E3 V5/V6?",
+          "Url": "https://youtu.be/aSToapKLsAk"
         }
       ]
     },
@@ -2010,7 +2015,8 @@
         "BIOS Settings": "Default",
         "ReBar": "Not available",
         "Intel PTT": "Not available",
-        "CoffeeTime": "0.99"
+        "CoffeeTime": "0.99",
+        "Tested With": "i5-8400, E3-1275 V5, E3-1275 V6"
       },
       "Chipsets": [ "H110" ],
       "Tags": [ "lga1151", "h110" ]
