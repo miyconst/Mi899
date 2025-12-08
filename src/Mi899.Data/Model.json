@@ -64,7 +64,7 @@
       "Links": [
         {
           "Author": "Miyconst",
-          "Name": "AliExpress: C236 mITX NAS",
+          "Name": "AliExpress: SOYO H311M-DVH M.2",
           "Url": "https://s.click.aliexpress.com/e/_c4kVHGLL"
         },
         {
@@ -76,6 +76,43 @@
           "Author": "Miyconst",
           "Name": "SOYO H311M-DVH – viable LGA 1151 option for 6-9th gen and Xeon E3 V5/V6?",
           "Url": "https://youtu.be/aSToapKLsAk"
+        }
+      ]
+    },
+    {
+      "Id": "huananzhi-b250m-i-ddr3",
+      "Name": "Huananzhi B250M-I DDR3",
+      "Brand": "Huananzhi",
+      "Model": "B250M-I DDR3",
+      "Version": "",
+      "Tags": [ "Q270", "lga1151", "mitx", "ddr3" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-11.8.50.3460" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi B250M-I/TopView.jpg"
+        },
+        {
+          "Name": "Top view",
+          "Url": "Images/Huananzhi B250M-I/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress: Huananzhi B250M-I DDR3",
+          "Url": "https://s.click.aliexpress.com/e/_c4OEL5vJ"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "Unboxing Huananzhi B250M-I DDR3",
+          "Url": "https://www.youtube.com/watch?v=BxFEnOnWWaM"
+        },
+        {
+          "Author": "Huananzhi",
+          "Name": "Huananzhi B250M-I DDR3",
+          "Url": "http://www.huananzhi.com/en/more.php?lm=10&id=402"
         }
       ]
     },
@@ -2020,6 +2057,99 @@
       },
       "Chipsets": [ "H110" ],
       "Tags": [ "lga1151", "h110" ]
+    },
+    {
+      "Id": "huananzhi-b250m-i.rom",
+      "Name": "Stock Huananzhi B250M-I DDR3",
+      "MotherboardIds": [ "huananzhi-b250m-i-ddr3" ],
+      "FileName": "Bioses/huananzhi-b250m-i.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-b250m-i.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "310CH204",
+        "Major Version": "02",
+        "Minor Version": "04",
+        "Build Date and Time": "09/21/2022 17:15:14",
+        "Fan Speed": "Full Speed",
+        "Turbo Boost": "Disabled",
+        "RAM Timings": "Not available",
+        "Overclocking": "Not available",
+        "BIOS Settings": "Default",
+        "ReBar": "Not available",
+        "Intel PTT": "Not available"
+      },
+      "Chipsets": [ "Q270" ],
+      "Tags": [ "lga1151", "q270", "ddr3" ]
+    },
+    {
+      "Id": "huananzhi-b250m-i-mi8.rom",
+      "Name": "Stock Huananzhi B250M-I DDR3 Mi8",
+      "MotherboardIds": [ "huananzhi-b250m-i-ddr3" ],
+      "FileName": "Bioses/huananzhi-b250m-i-mi8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-b250m-i-mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "310CH204",
+        "Major Version": "02",
+        "Minor Version": "04",
+        "Build Date and Time": "09/21/2022 17:15:14",
+        "Fan Speed": "Smart Auto",
+        "Turbo Boost": "Enabled",
+        "RAM Timings": "Available",
+        "Overclocking": "Available",
+        "ReBar": "Not available",
+        "Intel PTT": "Not available"
+      },
+      "Chipsets": [ "Q270" ],
+      "Tags": [ "lga1151", "q270", "ddr3" ]
+    },
+    {
+      "Id": "huananzhi-b250m-i-v20.rom",
+      "Name": "Stock Huananzhi B250M-I DDR3 V2.0",
+      "MotherboardIds": [ "huananzhi-b250m-i-ddr3" ],
+      "FileName": "Bioses/huananzhi-b250m-i-v20.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-b250m-i-v20.rom.zip",
+      "Description": "Huananzhi claims support of laptop mutant CPUs with this BIOS.",
+      "Properties": {
+        "BIOS Tag": "B250D402",
+        "Major Version": "04",
+        "Minor Version": "02",
+        "Build Date and Time": "08/30/2022 13:51:01",
+        "Fan Speed": "Full Speed",
+        "Turbo Boost": "Disabled",
+        "RAM Timings": "Not available",
+        "Overclocking": "Not available",
+        "BIOS Settings": "Default",
+        "ReBar": "Not available",
+        "Intel PTT": "Not available"
+      },
+      "Chipsets": [ "Q270" ],
+      "Tags": [ "lga1151", "q270", "ddr3" ]
+    },
+    {
+      "Id": "huananzhi-b250m-i-v20-mi8.rom",
+      "Name": "Stock Huananzhi B250M-I DDR3 V2.0 Mi8",
+      "MotherboardIds": [ "huananzhi-b250m-i-ddr3" ],
+      "FileName": "Bioses/huananzhi-b250m-i-v20-mi8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/huananzhi-b250m-i-v20-mi8.rom.zip",
+      "Description": "Huananzhi claims support of laptop mutant CPUs with this BIOS. Extra modded with CoffeeTime 0.99 to work with Xeon E3 V5/V6.",
+      "Properties": {
+        "BIOS Tag": "B250D402",
+        "Major Version": "04",
+        "Minor Version": "02",
+        "Build Date and Time": "08/30/2022 13:51:01",
+        "Fan Speed": "Smart Auto",
+        "Turbo Boost": "Enabled",
+        "RAM Timings": "Available",
+        "Overclocking": "Available",
+        "BIOS Settings": "Default",
+        "ReBar": "Not available",
+        "Intel PTT": "Not available",
+        "CoffeeTime": "0.99",
+        "Tested With": "i5-8400, E3-1275 V5, E3-1275 V6"
+      },
+      "Chipsets": [ "Q270" ],
+      "Tags": [ "lga1151", "q270", "ddr3" ]
     },
     {
       "Id": "huananzhi-x99-tf-cx99de30.upt.rebar.rom",
