@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mi899.Data.Tests", "tests\Mi899.Data.Tests\Mi899.Data.Tests.csproj", "{D6EA25CB-907D-4509-A5D3-459A67D6E489}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mi899.Online", "src\Mi899.Online\Mi899.Online.csproj", "{BF8740F5-6A72-4E97-B971-D8535863FFEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mi899.Online", "Mi899.Online\Mi899.Online.csproj", "{BF8740F5-6A72-4E97-B971-D8535863FFEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
