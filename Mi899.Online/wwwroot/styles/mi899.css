@@ -1,0 +1,62 @@
+﻿body {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+body div:first-of-type {
+    flex-grow: 1;
+}
+
+footer {
+    font-family: Consolas, monospace;
+}
+
+footer hr {
+    margin-bottom: 0px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.fs-7 {
+    font-size: 0.8rem !important;
+}
+
+nav.mi899-main-nav + hr {
+    margin-top: 0px;
+}
+
+td.mi899-img-motherboard-thumbnail,
+th.mi899-img-motherboard-thumbnail {
+    max-width: 170px;
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+img.mi899-img-motherboard-thumbnail {
+    width: 150px;
+}
+
+div.mi899-nav-tabs-content {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid rgb(222, 226, 230);
+    border-top: none;
+}
+
+div.mi899-spinner {
+    display: flex;
+    vertical-align: middle;
+    gap: 15px;
+}

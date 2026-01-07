@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mi899 - Motherboard Details</title>
+    <link href="libs/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/mi899.css" rel="stylesheet" />
+</head>
+<body class="bg-body-tertiary">
+    <script src="libs/bootstrap.bundle.min.js"></script>
+    <script src="libs/knockout-min.js"></script>
+    <div>
+        <div class="mi899-template" href="nav.html">
+            <div class="mi899-spinner">
+                <div class="spinner-border" role="status"></div>
+                <span>Loading...</span>
+            </div>
+        </div>
+        <section>
+            <h1 data-bind="text: name"></h1>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <img class="img-thumbnail" data-bind="attr: { src: document.Mi899.dataRepositoryUrl + images()[0]?.Url }" />
+                </div>
+                <div class="col-lg-10 col-md-9 col-sm-8">
+                    <ul class="nav nav-tabs" data-bind="foreach: tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:" data-bind="text: $data, css: { active: $root.activeTab() == $data }, click: function(d, e) { $root.activeTab(d); }"></a>
+                        </li>
+                    </ul>
+                    <div class="mi899-nav-tabs-content" data-bind="visible: activeTab() == 'Info'">
+                        <form>
+                            <div class="row mb-3">
+                                <label for="txtId" class="col-sm-2 col-form-label">Id:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" readonly class="form-control" id="txtId" data-bind="value: id" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="txtName" class="col-sm-2 col-form-label">Name:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" readonly class="form-control" id="txtName" data-bind="value: name" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="txtBrand" class="col-sm-2 col-form-label">Brand:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" readonly class="form-control" id="txtBrand" data-bind="value: brand" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="txtModel" class="col-sm-2 col-form-label">Model:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" readonly class="form-control" id="txtModel" data-bind="value: model" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="txtVersion" class="col-sm-2 col-form-label">Version:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" readonly class="form-control" id="txtVersion" data-bind="value: version" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label">Tags:</label>
+                                <div class="col-sm-10" data-bind="foreach: tags">
+                                    <span class="badge text-bg-secondary" data-bind="text: $data"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="txtDescription" class="col-sm-2 col-form-label">Description:</label>
+                                <div class="col-sm-10">
+                                    <textarea type="text" readonly class="form-control" id="txtDescription" data-bind="value: description"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label">Tools:</label>
+                                <div class="col-sm-10" data-bind="foreach: tools">
+                                    <a class="btn btn-info" data-bind="text: Name, attr: { href: 'tool.html?m=' + $root.id() + '&t=' + $data.Id }"></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mi899-nav-tabs-content" data-bind="visible: activeTab() == 'Images'">
+                        <table class="table table-striped table-bordered table-sm">
+                            <thead>
+                                <tr>
+                                    <th class="mi899-img-motherboard-thumbnail">Image</th>
+                                    <th>Name</th>
+                                    <th>Path</th>
+                                </tr>
+                            </thead>
+                            <tbody data-bind="foreach: images">
+                                <tr>
+                                    <td class="mi899-img-motherboard-thumbnail">
+                                        <img class="img-thumbnail mi899-img-motherboard-thumbnail" data-bind="attr: { src: document.Mi899.dataRepositoryUrl + Url }" />
+                                    </td>
+                                    <td data-bind="text: Name"></td>
+                                    <td>
+                                        <a class="btn btn-link" data-bind="attr: { href: document.Mi899.dataRepositoryUrl + Url }, text: Url" target="_blank"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mi899-nav-tabs-content" data-bind="visible: activeTab() == 'BIOS'">
+                        <table class="table table-striped table-bordered table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Properties</th>
+                                    <th>Chipsets</th>
+                                    <th>Path</th>
+                                </tr>
+                            </thead>
+                            <tbody data-bind="foreach: bios">
+                                <tr>
+                                    <td data-bind="text: Id"></td>
+                                    <td data-bind="text: Name"></td>
+                                    <td data-bind="foreach: PropertiesArray" class="fs-7">
+                                        <div data-bind="text: $data"></div>
+                                    </td>
+                                    <td data-bind="foreach: Chipsets">
+                                        <span class="badge text-bg-secondary" data-bind="text: $data"></span>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-link" data-bind="attr: { href: DownloadUrl }, text: FileName" target="_blank"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mi899-nav-tabs-content" data-bind="visible: activeTab() == 'Links'">
+                        <table class="table table-striped table-bordered table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Author</th>
+                                    <th>Name</th>
+                                    <th>URL</th>
+                                </tr>
+                            </thead>
+                            <tbody data-bind="foreach: links">
+                                <tr>
+                                    <td data-bind="text: Author"></td>
+                                    <td data-bind="text: Name"></td>
+                                    <td>
+                                        <a class="btn btn-link" rel="nofollow" data-bind="attr: { href: Url }, text: Url" target="_blank"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="mi899-template" href="footer.html">
+        <div class="mi899-spinner">
+            <div class="spinner-border" role="status"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+    <script>
+        document.mi899NavPage = "motherboards.html";
+    </script>
+    <script src="scripts/mi899.js"></script>
+    <script>
+        const ViewModel = function () {
+            this.id = ko.observable("");
+            this.name = ko.observable("Loading...");
+            this.brand = ko.observable("");
+            this.model = ko.observable("");
+            this.version = ko.observable("");
+            this.description = ko.observable("");
+            this.tags = ko.observableArray([]);
+            this.images = ko.observableArray([]);
+            this.bios = ko.observableArray([]);
+            this.links = ko.observableArray([]);
+            this.tools = ko.observableArray([]);
+
+            this.tabs = ["Info", "Images", "BIOS", "Links"];
+            this.activeTab = ko.observable(this.tabs[0]);
+        };
+
+        const viewModel = new ViewModel();
+
+        ko.applyBindings(viewModel);
+
+        fetch(document.Mi899.modelUrl)
+            .then(r => r.json())
+            .then(model => {
+                const id = new URL(document.URL).searchParams.get("m");
+                const motherboard = model.Motherboards.filter((x) => x.Id == id)[0];
+
+                if (!motherboard) {
+                    viewModel.id("Not found");
+                } else {
+                    viewModel.id(motherboard.Id);
+                    viewModel.name(motherboard.Name);
+                    viewModel.brand(motherboard.Brand);
+                    viewModel.model(motherboard.Model);
+                    viewModel.version(motherboard.Version);
+                    viewModel.description(motherboard.Description);
+                    viewModel.tags(motherboard.Tags);
+                    viewModel.images(motherboard.Images);
+                    viewModel.bios([]);
+                    viewModel.links(motherboard.Links);
+                    viewModel.tools(model.Tools.filter(x => motherboard.ToolIds.indexOf(x.Id) >= 0));
+
+                    const bios = model.Bioses.filter(x => x.MotherboardIds.indexOf(motherboard.Id) >= 0);
+
+                    for (let i = 0; i < bios.length; i++) {
+                        bios[i].PropertiesArray = [];
+
+                        for (let p in bios[i].Properties) {
+                            bios[i].PropertiesArray.push(p + ": " + bios[i].Properties[p]);
+                        }
+                    }
+
+                    viewModel.bios(bios);
+
+                    document.title = "Mi899 - " + motherboard.Name;
+                }
+            });
+    </script>
+</body>
+</html>

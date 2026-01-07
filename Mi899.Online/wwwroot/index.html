@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mi899 - X99 Online Tool Set</title>
+    <link href="libs/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/mi899.css" rel="stylesheet" />
+</head>
+<body class="bg-body-tertiary">
+    <script src="libs/bootstrap.bundle.min.js"></script>
+    <script src="libs/marked.min.js"></script>
+    <div>
+        <div class="mi899-template" href="nav.html">
+            <div class="mi899-spinner">
+                <div class="spinner-border" role="status"></div>
+                <span>Loading...</span>
+            </div>
+        </div>
+        <div id="divReadMeContent">
+            <div class="mi899-spinner">
+                <div class="spinner-border" role="status"></div>
+                <span>Loading...</span>
+            </div>
+        </div>
+    </div>
+    <div class="mi899-template" href="footer.html">
+        <div class="mi899-spinner">
+            <div class="spinner-border" role="status"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+    <script>
+        document.mi899NavPage = "index.html";
+    </script>
+    <script src="scripts/mi899.js"></script>
+    <script>
+        fetch(document.Mi899.readmeUrl)
+            .then(r => r.text())
+            .then(md => {
+                document.getElementById("divReadMeContent").innerHTML = marked.parse(md);
+            });
+    </script>
+</body>
+</html>

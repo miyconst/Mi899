@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mi899 - Motherboard Operation</title>
+    <link href="libs/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/mi899.css" rel="stylesheet" />
+</head>
+<body class="bg-body-tertiary">
+    <script src="libs/bootstrap.bundle.min.js"></script>
+    <script src="libs/jszip.min.js"></script>
+    <script src="libs/knockout-min.js"></script>
+    <script src="libs/marked.min.js"></script>
+    <div>
+        <div class="mi899-template" href="nav.html">
+            <div class="mi899-spinner">
+                <div class="spinner-border" role="status"></div>
+                <span>Loading...</span>
+            </div>
+        </div>
+        <section>
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <h1 class="text-center">
+                                <span data-bind="text: motherboard.name"></span>
+                                <a data-bind="attr: { href: 'motherboard.html?m=' + motherboard.id() }" class="btn btn-link fs-6">Back</a>
+                            </h1>
+                            <img class="img-thumbnail" data-bind="attr: { src: motherboard.imageUrl }" />
+                        </div>
+                        <div class="col-6">
+                            <form class="form-floating mb-3">
+                                <input type="text" readonly class="form-control" data-bind="value: motherboard.version" id="txtMotherboardVersion" />
+                                <label for="txtMotherboardVersion">Motherboard Version:</label>
+                            </form>
+                            <form class="form-floating mb-3">
+                                <textarea type="text" readonly class="form-control" data-bind="value: motherboard.description" id="txtMotherboardDescription" style="height: 100px; resize: vertical;"></textarea>
+                                <label for="txtMotherboardDescription">Motherboard Description:</label>
+                            </form>
+                            <form class="form-floating mb-3">
+                                <select class="form-select" data-bind="options: bios.list, selectedOptions: bios.selectedIds, optionsText: 'Name', optionsValue: 'Id'" id="ddlBios"></select>
+                                <label for="ddlBios">BIOS:</label>
+                            </form>
+                            <form class="form-floating mb-3" data-bind="with: bios.selected">
+                                <textarea type="text" readonly class="form-control fs-7" data-bind="value: PropertiesText" id="txtBiosProperties" style="height: 200px; resize: vertical;"></textarea>
+                                <label for="txtBiosProperties">BIOS Properties:</label>
+                            </form>
+                            <form class="form-floating mb-3" data-bind="with: bios.selected">
+                                <textarea type="text" readonly class="form-control" data-bind="value: Description" id="txtBiosDescription" style="height: 100px; resize: vertical;"></textarea>
+                                <label for="txtBiosDescription">BIOS Description:</label>
+                            </form>
+                            <form class="form-floating mb-3">
+                                <input type="text" readonly class="form-control" data-bind="value: tool.name" id="txtToolName" />
+                                <label for="txtToolName">Tool Name:</label>
+                            </form>
+                            <form class="form-floating mb-3">
+                                <input type="text" readonly class="form-control" data-bind="value: tool.version" id="txtToolVersion" />
+                                <label for="txtToolVersion">Tool Version:</label>
+                            </form>
+                            <div>
+                                <button class="btn btn-success" data-bind="click: btnDumpBiosClick, disable: btnDumpBiosDisable">
+                                    <span class="spinner-border spinner-border-sm" data-bind="visible: btnDumpBiosDisable"></span>
+                                    <span>Dump current BIOS</span>
+                                </button>
+                                <button class="btn btn-danger" data-bind="click: btnFlashBiosClick, disable: btnFlashBiosDisable">
+                                    <span class="spinner-border spinner-border-sm" data-bind="visible: btnFlashBiosDisable"></span>
+                                    <span>Flash selected BIOS</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div id="divInfoContent">
+                        <div class="mi899-spinner">
+                            <div class="spinner-border" role="status"></div>
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="mi899-template" href="footer.html">
+        <div class="mi899-spinner">
+            <div class="spinner-border" role="status"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+    <script>
+        document.mi899NavPage = "motherboards.html";
+    </script>
+    <script src="scripts/mi899.js"></script>
+    <script>
+        const getCurrentDateAsString = function () {
+            const d = new Date();
+            const s =
+                d.getFullYear() +
+                String(d.getMonth() + 1).padStart(2, "0") +
+                String(d.getDate()).padStart(2, "0") + "-" +
+                String(d.getHours()).padStart(2, "0") +
+                String(d.getMinutes()).padStart(2, "0") +
+                String(d.getSeconds()).padStart(2, "0");
+
+            return s;
+        };
+
+        const ViewModel = function () {
+            this.motherboard = {
+                id: ko.observable(""),
+                name: ko.observable("Loading..."),
+                version: ko.observable(""),
+                description: ko.observable(""),
+                imageUrl: ko.observable("")
+            };
+
+            this.tool = {
+                name: ko.observable("Loading..."),
+                version: ko.observable("")
+            };
+
+            this.bios = {
+                list: ko.observableArray([]),
+                selectedIds: ko.observableArray([]),
+                selected: ko.pureComputed(() => {
+                    const id = this.bios.selectedIds()[0];
+                    const selected = this.bios.list().filter((x) => x.Id == id)[0];
+                    return selected;
+                })
+            };
+
+            this.btnDumpBiosDisable = ko.observable(false);
+            this.btnFlashBiosDisable = ko.observable(false);
+
+            this.writeScriptHeader = function (text, dateString, bios) {
+                text.push("@echo off");
+                text.push(":: Mi899.Online - " + dateString);
+                text.push(":: Motherboard: " + this.motherboard.name() + " " + this.motherboard.version());
+                text.push(":: BIOS: " + bios.Name);
+
+                text.push(":: Tool: " + this.tool.name() + " " + this.tool.version());
+                text.push("");
+                text.push("cd /d %~dp0");
+            }.bind(this);
+
+            this.writeScriptFooter = function (text) {
+                text.push("");
+                text.push("echo Thank you for using Mi899.Online.");
+                text.push("PAUSE");
+            }.bind(this);
+
+            this.btnDumpBiosClick = async function () {
+                const bios = this.bios.selected();
+                const dateString = getCurrentDateAsString();
+
+                if (!bios) {
+                    console.warn("No BIOS selected.");
+                    return;
+                }
+
+                this.btnDumpBiosDisable(true);
+
+                // Download and load tool ZIP.
+                const toolResp = await fetch(document.Mi899.dataRepositoryUrl + this.tool.fileName);
+                const toolData = await toolResp.arrayBuffer();
+                const toolZip = await JSZip.loadAsync(toolData);
+
+                // Generate dump.bat file.
+                const biosFileName = this.motherboard.id() + "-" + dateString + ".rom";
+                const text = [];
+                this.writeScriptHeader(text, dateString, bios);
+                text.push(this.tool.dumpCommand.replace("{0}", biosFileName));
+                this.writeScriptFooter(text);
+
+                const textContent = text.join("\r\n");
+
+                // Add dump.bat file to ZIP.
+                toolZip.file("dump.bat", textContent);
+
+                // Generate final ZIP and trigger download.
+                const finalZipBlob = await toolZip.generateAsync({ type: "blob" });
+                const url = URL.createObjectURL(finalZipBlob);
+
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = this.motherboard.id() + "-" + dateString + "-dump-bios.zip";
+                a.click();
+
+                URL.revokeObjectURL(url);
+                this.btnDumpBiosDisable(false);
+            }.bind(this);
+
+            this.btnFlashBiosClick = async function () {
+                const bios = this.bios.selected();
+                const dateString = getCurrentDateAsString();
+
+                if (!bios) {
+                    console.warn("No BIOS selected.");
+                    return;
+                }
+
+                this.btnFlashBiosDisable(true);
+
+                // Download and load BIOS ZIP.
+                const biosUrl = bios.DownloadUrl.replace("https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/", document.Mi899.dataRepositoryUrl);
+                const biosResp = await fetch(biosUrl);
+                const biosData = await biosResp.arrayBuffer();
+                const biosZip = await JSZip.loadAsync(biosData);
+
+                // Download and load tool ZIP.
+                const toolResp = await fetch(document.Mi899.dataRepositoryUrl + this.tool.fileName);
+                const toolData = await toolResp.arrayBuffer();
+                const toolZip = await JSZip.loadAsync(toolData);
+
+                let biosFileName = "";
+
+                // Extract name of the binary BIOS file.
+                // It shall be a single file.
+                biosZip.forEach((path, _) => {
+                    biosFileName = path;
+                });
+
+                // Generate flash.bat file.
+                const text = [];
+                this.writeScriptHeader(text, dateString, bios);
+                text.push(this.tool.flashCommand.replace("{0}", biosFileName));
+                this.writeScriptFooter(text);
+
+                const textContent = text.join("\r\n");
+
+                // Add flash.bat file to ZIP.
+                biosZip.file("flash.bat", textContent);
+
+                // Move all files from the tool ZIP to the BIOS ZIP.
+                toolZip.forEach((path, file) => {
+                    biosZip.file(path, file.async("arraybuffer"));
+                });
+
+                // Generate final ZIP and trigger download.
+                const finalZipBlob = await biosZip.generateAsync({ type: "blob" });
+                const url = URL.createObjectURL(finalZipBlob);
+
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = this.motherboard.id() + "-" + dateString + "-flash-bios.zip";
+                a.click();
+
+                URL.revokeObjectURL(url);
+                this.btnFlashBiosDisable(false);
+            }.bind(this);
+        };
+
+        const viewModel = new ViewModel();
+
+        ko.applyBindings(viewModel);
+
+        fetch(document.Mi899.modelUrl)
+            .then(r => r.json())
+            .then(model => {
+                const url = new URL(document.URL);
+                const mbId = url.searchParams.get("m");
+                const tId = url.searchParams.get("t");
+                const motherboard = model.Motherboards.filter((x) => x.Id == mbId)[0];
+                const tool = model.Tools.filter((x) => x.Id == tId)[0];
+
+                if (!motherboard || !tool) {
+                    viewModel.motherboard.name("Not found");
+                    viewModel.tool.name("Not found");
+                } else {
+                    viewModel.motherboard.id(motherboard.Id);
+                    viewModel.motherboard.name(motherboard.Name);
+                    viewModel.motherboard.version(motherboard.Version);
+                    viewModel.motherboard.description(motherboard.Description);
+                    viewModel.motherboard.imageUrl(document.Mi899.dataRepositoryUrl + motherboard.Images[0]?.Url);
+
+                    const bios = model.Bioses.filter(x => x.MotherboardIds.indexOf(motherboard.Id) >= 0);
+
+                    for (let i = 0; i < bios.length; i++) {
+                        bios[i].PropertiesArray = [];
+
+                        for (let p in bios[i].Properties) {
+                            bios[i].PropertiesArray.push(p + ": " + bios[i].Properties[p]);
+                        }
+
+                        bios[i].PropertiesText = bios[i].PropertiesArray.join("\r\n");
+                    }
+
+                    viewModel.bios.list(bios);
+                    viewModel.bios.selectedIds([bios[0]?.Id]);
+
+                    viewModel.tool.name(tool.Name);
+                    viewModel.tool.version(tool.Version);
+                    viewModel.tool.fileName = tool.FileName;
+                    viewModel.tool.dumpCommand = tool.DumpCommand;
+                    viewModel.tool.flashCommand = tool.FlashCommand;
+
+                    document.title = "Mi899 - " + tool.Name + " for " + motherboard.Name;
+                }
+            });
+
+        fetch(document.Mi899.i18nUrl)
+            .then(r => r.json())
+            .then(i18n => {
+                const md = i18n.En["ToolPartialForm.ToolPartialForm.txtReadme.Text"];
+                document.getElementById("divInfoContent").innerHTML = marked.parse(md);
+            });
+    </script>
+</body>
+</html>
