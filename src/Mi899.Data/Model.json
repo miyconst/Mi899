@@ -396,6 +396,47 @@
       ]
     },
     {
+      "Id": "machinist-x99-xd3",
+      "Name": "Machinist X99-XD3",
+      "Brand": "Machinist",
+      "Model": "X99-XD3",
+      "Version": "",
+      "Tags": [ "machinist", "ddr3", "x99", "c612" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X99-XD3/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Machinist X99-XD4/IoPanel.jpg"
+        },
+        {
+          "Name": "Schematics",
+          "Url": "Images/Machinist X99-XD3/Schematics.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_c4VUrR8J"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "Machinist X99-XD4 – decent package for the money, even O.C. works",
+          "Url": "https://youtu.be/x7Uywenr-7k"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "Unboxing X99-XD3 DDR3 LGA 2011-3 motherboard with E5-2696 V4",
+          "Url": "https://youtu.be/GdkRO9_jc9o"
+        }
+      ]
+    },
+    {
       "Id": "qiyida-x99-h9s",
       "Name": "Qiyida X99-H9S",
       "Brand": "Qiyida",
@@ -3637,9 +3678,26 @@
       "Tags": [ "machinist", "x99-b9", "ddr4" ]
     },
     {
+      "Id": "machinist-x99-xd3",
+      "Name": "Stock Machinist X99-XD3",
+      "MotherboardIds": [ "machinist-x99-xd3" ],
+      "FileName": "Bioses/machinist-x99-xd3.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd3.rom.zip",
+      "Description": "X9XD3 Ver:003 13/11/2025 09:30:09",
+      "Properties": {
+        "Version": "003 2025-11-13",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available"
+      },
+      "Chipsets": [ "C612", "X99" ],
+      "Tags": [ "machinist", "x99-xd3", "ddr3", "stock" ]
+    },
+    {
       "Id": "machinist-x99-xd4",
       "Name": "Stock Machinist X99-XD4",
-      "MotherboardIds": [ "machinist-x99-xd4" ],
+      "MotherboardIds": [ "machinist-x99-xd4", "machinist-x99-xd3" ],
       "FileName": "Bioses/machinist-x99-xd4.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
@@ -3656,7 +3714,7 @@
     {
       "Id": "machinist-x99-xd4.mi8.rom",
       "Name": "Stock Machinist X99-XD4, Mi8",
-      "MotherboardIds": [ "machinist-x99-xd4" ],
+      "MotherboardIds": [ "machinist-x99-xd4", "machinist-x99-xd3" ],
       "FileName": "Bioses/machinist-x99-xd4.mi8.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
@@ -3675,7 +3733,7 @@
     {
       "Id": "machinist-x99-xd4.mi8.oc.rom",
       "Name": "Stock Machinist X99-XD4, Mi8, O.C.",
-      "MotherboardIds": [ "machinist-x99-xd4" ],
+      "MotherboardIds": [ "machinist-x99-xd4", "machinist-x99-xd3" ],
       "FileName": "Bioses/machinist-x99-xd4.mi8.oc.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.oc.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
@@ -3694,7 +3752,7 @@
     {
       "Id": "machinist-x99-xd4.mi8.s3tt.505050.rom",
       "Name": "Stock Machinist X99-XD4, Mi8, TU PEI -50//5050mv",
-      "MotherboardIds": [ "machinist-x99-xd4" ],
+      "MotherboardIds": [ "machinist-x99-xd4", "machinist-x99-xd3" ],
       "FileName": "Bioses/machinist-x99-xd4.mi8.s3tt.505050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.s3tt.505050.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
@@ -3716,7 +3774,7 @@
     {
       "Id": "machinist-x99-xd4.mi8.s3tt.605050.rom",
       "Name": "Stock Machinist X99-XD4, Mi8, TU PEI -60/50/50mv",
-      "MotherboardIds": [ "machinist-x99-xd4" ],
+      "MotherboardIds": [ "machinist-x99-xd4", "machinist-x99-xd3" ],
       "FileName": "Bioses/machinist-x99-xd4.mi8.s3tt.605050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.s3tt.605050.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
@@ -3738,7 +3796,7 @@
     {
       "Id": "machinist-x99-xd4.mi8.s3tt.705050.rom",
       "Name": "Stock Machinist X99-XD4, Mi8, TU PEI -70/50/50mv",
-      "MotherboardIds": [ "machinist-x99-xd4" ],
+      "MotherboardIds": [ "machinist-x99-xd4", "machinist-x99-xd3" ],
       "FileName": "Bioses/machinist-x99-xd4.mi8.s3tt.705050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.s3tt.705050.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
@@ -3760,7 +3818,7 @@
     {
       "Id": "machinist-x99-xd4.mi8.s3tt.805050.rom",
       "Name": "Stock Machinist X99-XD4, Mi8, TU PEI -80/50/50mv",
-      "MotherboardIds": [ "machinist-x99-xd4" ],
+      "MotherboardIds": [ "machinist-x99-xd4", "machinist-x99-xd3" ],
       "FileName": "Bioses/machinist-x99-xd4.mi8.s3tt.805050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.s3tt.805050.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
@@ -3782,7 +3840,7 @@
     {
       "Id": "machinist-x99-xd4.mi8.s3tt.905050.rom",
       "Name": "Stock Machinist X99-XD4, Mi8, TU PEI -90/50/50mv",
-      "MotherboardIds": [ "machinist-x99-xd4" ],
+      "MotherboardIds": [ "machinist-x99-xd4", "machinist-x99-xd3" ],
       "FileName": "Bioses/machinist-x99-xd4.mi8.s3tt.905050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.s3tt.905050.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
