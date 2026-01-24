@@ -63,10 +63,13 @@
                                     <span class="spinner-border spinner-border-sm" data-bind="visible: btnDumpBiosDisable"></span>
                                     <span>Dump current BIOS</span>
                                 </button>
-                                <button class="btn btn-danger" data-bind="click: btnFlashBiosClick, disable: btnFlashBiosDisable">
+                                <button class="btn btn-danger" data-bind="click: btnFlashBiosClick, disable: btnFlashBiosDisable, hidden: bios.isCommercial">
                                     <span class="spinner-border spinner-border-sm" data-bind="visible: btnFlashBiosDisable"></span>
                                     <span>Flash selected BIOS</span>
                                 </button>
+                                <a class="btn btn-info" data-bind="visible: bios.isCommercial, attr: { href: bios.downloadUrl }" target="_blank">
+                                    <span>Open commercial BIOS info page</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -127,6 +130,14 @@
                     const id = this.bios.selectedIds()[0];
                     const selected = this.bios.list().filter((x) => x.Id == id)[0];
                     return selected;
+                }),
+                isCommercial: ko.pureComputed(() => {
+                    const bios = this.bios.selected();
+                    return !!bios?.IsCommercial;
+                }),
+                downloadUrl: ko.pureComputed(() => {
+                    const bios = this.bios.selected();
+                    return bios?.DownloadUrl;
                 })
             };
 
