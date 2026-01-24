@@ -29,7 +29,9 @@
 
 ------------
 
-Alternatively you can [download Mi899 from Microsoft OneDrive](https://1drv.ms/u/s!AtZZXDjjb94kgY1URfN0g6vTewMbdg?e=YPRl1z).
+Alternatively you can:
+- Use [Mi899.Online](https://miyconst.github.io/Mi899/) from your web browser.
+- [Download Mi899 from Microsoft OneDrive](https://1drv.ms/u/s!AtZZXDjjb94kgY1URfN0g6vTewMbdg?e=YPRl1z).
 
 ------------
 
