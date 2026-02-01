@@ -148,7 +148,9 @@
                 text.push("@echo off");
                 text.push(":: Mi899.Online - " + dateString);
                 text.push(":: Motherboard: " + this.motherboard.name() + " " + this.motherboard.version());
-                text.push(":: BIOS: " + bios.Name);
+
+                if (bios)
+                    text.push(":: BIOS: " + bios.Name);
 
                 text.push(":: Tool: " + this.tool.name() + " " + this.tool.version());
                 text.push("");
@@ -162,13 +164,7 @@
             }.bind(this);
 
             this.btnDumpBiosClick = async function () {
-                const bios = this.bios.selected();
                 const dateString = getCurrentDateAsString();
-
-                if (!bios) {
-                    console.warn("No BIOS selected.");
-                    return;
-                }
 
                 this.btnDumpBiosDisable(true);
 
@@ -180,7 +176,7 @@
                 // Generate dump.bat file.
                 const biosFileName = this.motherboard.id() + "-" + dateString + ".rom";
                 const text = [];
-                this.writeScriptHeader(text, dateString, bios);
+                this.writeScriptHeader(text, dateString, null);
                 text.push(this.tool.dumpCommand.replace("{0}", biosFileName));
                 this.writeScriptFooter(text);
 
