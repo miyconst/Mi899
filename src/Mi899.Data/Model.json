@@ -364,6 +364,42 @@
       ]
     },
     {
+      "Id": "machinist-x99-v9s",
+      "Name": "Machinist X99-V9S",
+      "Brand": "Machinist",
+      "Model": "X99-V9S",
+      "Version": "G796K-V1.0",
+      "Tags": [ "machinist", "ddr4", "x99", "c612" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X99-V9S/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Machinist X99-V9S/IoPanel.jpg"
+        },
+        {
+          "Name": "Schematics",
+          "Url": "Images/Machinist X99-V9S/Schematics.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_c4KFiOox"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "Unboxing Machinist X99-V9S, Qiyida X99-K9S-TPM2.0, and SOYO H311M-DVH",
+          "Url": "https://youtu.be/xQIrCARJOLY"
+        }
+      ]
+    },
+    {
       "Id": "machinist-x99-xd4",
       "Name": "Machinist X99-XD4",
       "Brand": "Machinist",
