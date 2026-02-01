@@ -3947,7 +3947,7 @@
     },
     {
       "Id": "machinist-x99-xd4.mi8.s3tt.505050.rom",
-      "Name": "Stock Machinist X99-XD4, Mi8, TU PEI -50//5050mv",
+      "Name": "Stock Machinist X99-XD4, Mi8, TU PEI -50/50/50mv",
       "MotherboardIds": [ "machinist-x99-xd4", "machinist-x99-xd3" ],
       "FileName": "Bioses/machinist-x99-xd4.mi8.s3tt.505050.rom.zip",
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.s3tt.505050.rom.zip",
