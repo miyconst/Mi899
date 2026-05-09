@@ -1411,6 +1411,38 @@
       ]
     },
     {
+      "Id": "machinist-x99-mr9s",
+      "Name": "Machinist X99-MR9S",
+      "Brand": "Machinist",
+      "Model": "X99-MR9S",
+      "Version": "V6.0",
+      "Tags": [ "machinist", "x99-mr9s", "ddr4" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Machinist X99-MR9S/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Machinist X99-MR9S/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_c3xvGVtN"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "Low Profile 14-pin MSI LPC TPM 2.0",
+          "Url": "https://s.click.aliexpress.com/e/_c4tkNQ9v"
+        }
+      ]
+    },
+    {
       "Id": "machinist-x99-mr9d",
       "Name": "Machinist X99-MR9D",
       "Brand": "Machinist",
