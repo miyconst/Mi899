@@ -1415,7 +1415,7 @@
       "Name": "Machinist X99-MR9S",
       "Brand": "Machinist",
       "Model": "X99-MR9S",
-      "Version": "V6.0",
+      "Version": "V6.2 with 14-pin MSI LPC TPM 2.0",
       "Tags": [ "machinist", "x99-mr9s", "ddr4" ],
       "Description": "",
       "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
@@ -4086,6 +4086,152 @@
       },
       "Chipsets": [ "C612", "X99" ],
       "Tags": [ "machinist", "x99-xd4", "xd4", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "machinist-x99-mr9s",
+      "Name": "Stock Machinist X99-MR9S",
+      "MotherboardIds": [ "machinist-x99-mr9s" ],
+      "FileName": "Bioses/machinist-x99-mr9s.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9s.rom.zip",
+      "Description": "X9MRS Ver:010 02/21/2025 17:00:52",
+      "Properties": {
+        "BIOS Tag": "X9MRS010",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available"
+      },
+      "Chipsets": [ "B85", "Q85", "Q87", "C226" ],
+      "Tags": [ "machinist", "x99-mr9s", "mr9s", "ddr4", "stock" ]
+    },
+    {
+      "Id": "machinist-x99-mr9s.mi8.rom",
+      "Name": "Stock Machinist X99-MR9S, Mi8",
+      "MotherboardIds": [ "machinist-x99-mr9s" ],
+      "FileName": "Bioses/machinist-x99-mr9s.mi8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9s.mi8.rom.zip",
+      "Description": "X9MRS Ver:010 02/21/2025 17:00:52",
+      "Properties": {
+        "BIOS Tag": "X9MRS010",
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Restore On AC Power Loss": "Unlocked",
+        "Overclocking": "Does not work"
+      },
+      "Chipsets": [ "B85", "Q85", "Q87", "C226" ],
+      "Tags": [ "machinist", "x99-mr9s", "mr9s", "ddr4", "stock" ]
+    },
+    {
+      "Id": "machinist-x99-mr9s.mi8.s3tt.505050.rom",
+      "Name": "Stock Machinist X99-MR9S, Mi8, TU PEI -50/50/50mv",
+      "MotherboardIds": [ "machinist-x99-mr9s" ],
+      "FileName": "Bioses/machinist-x99-mr9s.mi8.s3tt.505050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9s.mi8.s3tt.505050.rom.zip",
+      "Description": "X9MRS Ver:010 02/21/2025 17:00:52",
+      "Properties": {
+        "BIOS Tag": "X9MRS010",
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Restore On AC Power Loss": "Unlocked",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85", "Q85", "Q87", "C226" ],
+      "Tags": [ "machinist", "x99-mr9s", "mr9s", "ddr4", "s3tt" ]
+    },
+    {
+      "Id": "machinist-x99-mr9s.mi8.s3tt.605050.rom",
+      "Name": "Stock Machinist X99-MR9S, Mi8, TU PEI -60/50/50mv",
+      "MotherboardIds": [ "machinist-x99-mr9s" ],
+      "FileName": "Bioses/machinist-x99-mr9s.mi8.s3tt.605050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9s.mi8.s3tt.605050.rom.zip",
+      "Description": "X9MRS Ver:010 02/21/2025 17:00:52",
+      "Properties": {
+        "BIOS Tag": "X9MRS010",
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Restore On AC Power Loss": "Unlocked",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85", "Q85", "Q87", "C226" ],
+      "Tags": [ "machinist", "x99-mr9s", "mr9s", "ddr4", "s3tt" ]
+    },
+    {
+      "Id": "machinist-x99-mr9s.mi8.s3tt.705050.rom",
+      "Name": "Stock Machinist X99-MR9S, Mi8, TU PEI -70/50/50mv",
+      "MotherboardIds": [ "machinist-x99-mr9s" ],
+      "FileName": "Bioses/machinist-x99-mr9s.mi8.s3tt.705050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9s.mi8.s3tt.705050.rom.zip",
+      "Description": "X9MRS Ver:010 02/21/2025 17:00:52",
+      "Properties": {
+        "BIOS Tag": "X9MRS010",
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Restore On AC Power Loss": "Unlocked",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85", "Q85", "Q87", "C226" ],
+      "Tags": [ "machinist", "x99-mr9s", "mr9s", "ddr4", "s3tt" ]
+    },
+    {
+      "Id": "machinist-x99-mr9s.mi8.s3tt.805050.rom",
+      "Name": "Stock Machinist X99-MR9S, Mi8, TU PEI -80/50/50mv",
+      "MotherboardIds": [ "machinist-x99-mr9s" ],
+      "FileName": "Bioses/machinist-x99-mr9s.mi8.s3tt.805050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9s.mi8.s3tt.805050.rom.zip",
+      "Description": "X9MRS Ver:010 02/21/2025 17:00:52",
+      "Properties": {
+        "BIOS Tag": "X9MRS010",
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Restore On AC Power Loss": "Unlocked",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85", "Q85", "Q87", "C226" ],
+      "Tags": [ "machinist", "x99-mr9s", "mr9s", "ddr4", "s3tt" ]
+    },
+    {
+      "Id": "machinist-x99-mr9s.mi8.s3tt.905050.rom",
+      "Name": "Stock Machinist X99-MR9S, Mi8, TU PEI -90/50/50mv",
+      "MotherboardIds": [ "machinist-x99-mr9s" ],
+      "FileName": "Bioses/machinist-x99-mr9s.mi8.s3tt.905050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-mr9s.mi8.s3tt.905050.rom.zip",
+      "Description": "X9MRS Ver:010 02/21/2025 17:00:52",
+      "Properties": {
+        "BIOS Tag": "X9MRS010",
+        "BIOS Settings": "Miyconst optimal",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "Restore On AC Power Loss": "Unlocked",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "B85", "Q85", "Q87", "C226" ],
+      "Tags": [ "machinist", "x99-mr9s", "mr9s", "ddr4", "s3tt" ]
     },
     {
       "Id": "qiyida-x99-h9s",
