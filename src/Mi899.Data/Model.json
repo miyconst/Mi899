@@ -3976,6 +3976,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd3.rom.zip",
       "Description": "X9XD3 Ver:003 13/11/2025 09:30:09",
       "Properties": {
+        "Important": "⚠️ Only for the first version of X99-XD3/4 without VRM radiator fan and with W25Q128FV BIOS chip",
         "Version": "003 2025-11-13",
         "BIOS Settings": "Default",
         "RAM timings": "Available",
@@ -3993,6 +3994,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
       "Properties": {
+        "Important": "⚠️ Only for the first version of X99-XD3/4 without VRM radiator fan and with W25Q128FV BIOS chip",
         "Version": "002 2025-05-07",
         "BIOS Settings": "Default",
         "RAM timings": "Available",
@@ -4010,6 +4012,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
       "Properties": {
+        "Important": "⚠️ Only for the first version of X99-XD3/4 without VRM radiator fan and with W25Q128FV BIOS chip",
         "Version": "002 2025-05-07",
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Available",
@@ -4029,6 +4032,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.oc.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
       "Properties": {
+        "Important": "⚠️ Only for the first version of X99-XD3/4 without VRM radiator fan and with W25Q128FV BIOS chip",
         "Version": "002 2025-05-07",
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Available",
@@ -4048,6 +4052,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.s3tt.505050.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
       "Properties": {
+        "Important": "⚠️ Only for the first version of X99-XD3/4 without VRM radiator fan and with W25Q128FV BIOS chip",
         "Version": "002 2025-05-07",
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Available",
@@ -4070,6 +4075,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.s3tt.605050.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
       "Properties": {
+        "Important": "⚠️ Only for the first version of X99-XD3/4 without VRM radiator fan and with W25Q128FV BIOS chip",
         "Version": "002 2025-05-07",
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Available",
@@ -4092,6 +4098,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.s3tt.705050.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
       "Properties": {
+        "Important": "⚠️ Only for the first version of X99-XD3/4 without VRM radiator fan and with W25Q128FV BIOS chip",
         "Version": "002 2025-05-07",
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Available",
@@ -4114,6 +4121,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.s3tt.805050.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
       "Properties": {
+        "Important": "⚠️ Only for the first version of X99-XD3/4 without VRM radiator fan and with W25Q128FV BIOS chip",
         "Version": "002 2025-05-07",
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Available",
@@ -4136,6 +4144,7 @@
       "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/machinist-x99-xd4.mi8.s3tt.905050.rom.zip",
       "Description": "X9XD4 Ver:002 05/07/2025 10:34:02",
       "Properties": {
+        "Important": "⚠️ Only for the first version of X99-XD3/4 without VRM radiator fan and with W25Q128FV BIOS chip",
         "Version": "002 2025-05-07",
         "BIOS Settings": "Miyconst optimal",
         "RAM timings": "Available",
