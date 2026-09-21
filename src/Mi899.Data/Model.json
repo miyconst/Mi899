@@ -3662,11 +3662,11 @@
       "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
     },
     {
-      "Id": "topton-cw-ns-c612-20g",
+      "Id": "topton-cw-ns-c612-20g-v2",
       "Name": "Stock Topton CW-NAS-C612-20G V2",
       "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
-      "FileName": "Bioses/topton-cw-ns-c612-20g.rom.zip",
-      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.rom.zip",
+      "FileName": "Bioses/topton-cw-ns-c612-20g-v2.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g-v2.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Tag": "CNC20002",
@@ -3681,11 +3681,11 @@
       "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
     },
     {
-      "Id": "topton-cw-ns-c612-20g.mi8",
+      "Id": "topton-cw-ns-c612-20g-v2.mi8",
       "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8",
       "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
-      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.rom.zip",
-      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.rom.zip",
+      "FileName": "Bioses/topton-cw-ns-c612-20g-v2.mi8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g-v2.mi8.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Tag": "CNC20002",
@@ -3703,11 +3703,11 @@
       "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
     },
     {
-      "Id": "topton-cw-ns-c612-20g.mi8.s3tt.505050",
+      "Id": "topton-cw-ns-c612-20g-v2.mi8.s3tt.505050",
       "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8, TU PEI -50/50/50mv",
       "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
-      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.s3tt.505050.rom.zip",
-      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.s3tt.505050.rom.zip",
+      "FileName": "Bioses/topton-cw-ns-c612-20g-v2.mi8.s3tt.505050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g-v2.mi8.s3tt.505050.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Tag": "CNC20002",
@@ -3729,11 +3729,11 @@
       "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
     },
     {
-      "Id": "topton-cw-ns-c612-20g.mi8.s3tt.605050",
+      "Id": "topton-cw-ns-c612-20g-v2.mi8.s3tt.605050",
       "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8, TU PEI -60/50/50mv",
       "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
-      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.s3tt.605050.rom.zip",
-      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.s3tt.605050.rom.zip",
+      "FileName": "Bioses/topton-cw-ns-c612-20g-v2.mi8.s3tt.605050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g-v2.mi8.s3tt.605050.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Tag": "CNC20002",
@@ -3755,11 +3755,11 @@
       "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
     },
     {
-      "Id": "topton-cw-ns-c612-20g.mi8.s3tt.705050",
+      "Id": "topton-cw-ns-c612-20g-v2.mi8.s3tt.705050",
       "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8, TU PEI -70/50/50mv",
       "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
-      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.s3tt.705050.rom.zip",
-      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.s3tt.705050.rom.zip",
+      "FileName": "Bioses/topton-cw-ns-c612-20g-v2.mi8.s3tt.705050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g-v2.mi8.s3tt.705050.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Tag": "CNC20002",
@@ -3781,11 +3781,11 @@
       "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
     },
     {
-      "Id": "topton-cw-ns-c612-20g.mi8.s3tt.805050",
+      "Id": "topton-cw-ns-c612-20g-v2.mi8.s3tt.805050",
       "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8, TU PEI -80/50/50mv",
       "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
-      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.s3tt.805050.rom.zip",
-      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.s3tt.805050.rom.zip",
+      "FileName": "Bioses/topton-cw-ns-c612-20g-v2.mi8.s3tt.805050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g-v2.mi8.s3tt.805050.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Tag": "CNC20002",
@@ -3807,11 +3807,11 @@
       "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
     },
     {
-      "Id": "topton-cw-ns-c612-20g.mi8.s3tt.905050",
+      "Id": "topton-cw-ns-c612-20g-v2.mi8.s3tt.905050",
       "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8, TU PEI -90/50/50mv",
       "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
-      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.s3tt.905050.rom.zip",
-      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.s3tt.905050.rom.zip",
+      "FileName": "Bioses/topton-cw-ns-c612-20g-v2.mi8.s3tt.905050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g-v2.mi8.s3tt.905050.rom.zip",
       "Description": "",
       "Properties": {
         "BIOS Tag": "CNC20002",
