@@ -16,6 +16,7 @@
     <Folder Include="Bioses\" />
     <Folder Include="Images\Machinist X99-MR9A\" />
     <Folder Include="Images\Machinist X99-V9S\" />
+    <Folder Include="Images\Topton CW-NAS-C612-20G\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -390,6 +391,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\Soyo H311M-DVH\TopView.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Topton CW-NAS-C612-20G\IoPanel.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Topton CW-NAS-C612-20G\TopView.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\Veineda X99\IoPanel.jpg">

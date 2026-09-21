@@ -47,6 +47,37 @@
   ],
   "Motherboards": [
     {
+      "Id": "topton-cw-ns-c612-20g",
+      "Name": "Topton CW-NAS-C612-20G",
+      "Brand": "Topton",
+      "Model": "CW-NAS-C612-20G",
+      "Version": "",
+      "Tags": [ "lga2011v3", "mitx", "ddr4", "x99", "c612", "nas" ],
+      "ToolIds": [ "fpt-w64-11.8.50.3460" ],
+      "Images": [
+        {
+          "Name": "Top View",
+          "Url": "Images/Topton CW-NAS-C612-20G/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Topton CW-NAS-C612-20G/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "Unboxing Topton CW-NAS-C612-20G Mini ITX LGA 2011-3 / X99 motherboard",
+          "Url": "https://youtu.be/BTI59SvTpEo?si=pHlu1bM5GOdpuEte"
+        },
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress: Topton CW-NAS-C612-20G",
+          "Url": "https://s.click.aliexpress.com/e/_c4sT650V"
+        }
+      ]
+    },
+    {
       "Id": "asrock-imb-194-d",
       "Name": "ASRock IMB-194-D",
       "Brand": "ASRock",
@@ -3629,6 +3660,177 @@
       },
       "Chipsets": [ "Q85" ],
       "Tags": [ "qiyida", "e5-a99", "stock", "q85" ]
+    },
+    {
+      "Id": "topton-cw-ns-c612-20g",
+      "Name": "Stock Topton CW-NAS-C612-20G V2",
+      "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
+      "FileName": "Bioses/topton-cw-ns-c612-20g.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "CNC20002",
+        "BIOS Message": "CNC20 Ver:002 03/11/2026 10:29:12",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "TPM 2.0": "Supported"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "topton-cw-ns-c612-20g.mi8",
+      "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8",
+      "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
+      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "CNC20002",
+        "BIOS Message": "CNC20 Ver:002 03/11/2026 10:29:12",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
+        "CPU Overclocking": "Unlocked",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "topton-cw-ns-c612-20g.mi8.s3tt.505050",
+      "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8, TU PEI -50/50/50mv",
+      "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
+      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.s3tt.505050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.s3tt.505050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "CNC20002",
+        "BIOS Message": "CNC20 Ver:002 03/11/2026 10:29:12",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
+        "CPU Overclocking": "Unlocked",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "topton-cw-ns-c612-20g.mi8.s3tt.605050",
+      "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8, TU PEI -60/50/50mv",
+      "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
+      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.s3tt.605050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.s3tt.605050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "CNC20002",
+        "BIOS Message": "CNC20 Ver:002 03/11/2026 10:29:12",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
+        "CPU Overclocking": "Unlocked",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "topton-cw-ns-c612-20g.mi8.s3tt.705050",
+      "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8, TU PEI -70/50/50mv",
+      "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
+      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.s3tt.705050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.s3tt.705050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "CNC20002",
+        "BIOS Message": "CNC20 Ver:002 03/11/2026 10:29:12",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
+        "CPU Overclocking": "Unlocked",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "topton-cw-ns-c612-20g.mi8.s3tt.805050",
+      "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8, TU PEI -80/50/50mv",
+      "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
+      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.s3tt.805050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.s3tt.805050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "CNC20002",
+        "BIOS Message": "CNC20 Ver:002 03/11/2026 10:29:12",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
+        "CPU Overclocking": "Unlocked",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "topton-cw-ns-c612-20g.mi8.s3tt.905050",
+      "Name": "Stock Topton CW-NAS-C612-20G V2, Mi8, TU PEI -90/50/50mv",
+      "MotherboardIds": [ "topton-cw-ns-c612-20g" ],
+      "FileName": "Bioses/topton-cw-ns-c612-20g.mi8.s3tt.905050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/topton-cw-ns-c612-20g.mi8.s3tt.905050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "CNC20002",
+        "BIOS Message": "CNC20 Ver:002 03/11/2026 10:29:12",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "Available",
+        "TPM 2.0": "Supported",
+        "CPU Overclocking": "Unlocked",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
     },
     {
       "Id": "qiyida-e5-a99",
