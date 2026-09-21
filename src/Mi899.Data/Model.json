@@ -53,7 +53,7 @@
       "Model": "CW-NAS-C612-20G",
       "Version": "",
       "Tags": [ "lga2011v3", "mitx", "ddr4", "x99", "c612", "nas" ],
-      "ToolIds": [ "fpt-w64-11.8.50.3460" ],
+      "ToolIds": [ "fpt-w64-9.1.10.1000" ],
       "Images": [
         {
           "Name": "Top View",
