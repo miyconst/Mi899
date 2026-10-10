@@ -357,6 +357,37 @@
       ]
     },
     {
+      "Id": "qiyida-x99-k9s",
+      "Name": "Qiyida X99-K9S",
+      "Brand": "Qiyida",
+      "Model": "X99-K9S",
+      "Version": "",
+      "Tags": [ "qiyida", "ddr4", "c612", "x99" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Qiyida X99-K9S/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Qiyida X99-K9S/IoPanel.jpg"
+        },
+        {
+          "Name": "Schematics",
+          "Url": "Images/Qiyida X99-K9S/Schematics.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_c3sgPhDJ"
+        }
+      ]
+    },
+    {
       "Id": "qiyida-e5-a99",
       "Name": "Qiyida E5-A99",
       "Brand": "Qiyida",
@@ -3831,6 +3862,171 @@
       },
       "Chipsets": [ "C612" ],
       "Tags": [ "topton", "nas", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "qiyida-x99-k9s",
+      "Name": "Stock Qiyida X99-K9S",
+      "MotherboardIds": [ "qiyida-x99-k9s" ],
+      "FileName": "Bioses/qiyida-x99-k9s.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-x99-k9s.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "X99H8816",
+        "BIOS Message": "X99 BIOS Date: 10/12/2024 Ver: X99 K9S",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "N/A",
+        "TPM 2.0": "Supported"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "qiyida", "k9s", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "qiyida-x99-k9s.mi8",
+      "Name": "Stock Qiyida X99-K9S, Mi8",
+      "MotherboardIds": [ "qiyida-x99-k9s" ],
+      "FileName": "Bioses/qiyida-x99-k9s.mi.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-x99-k9s.mi8.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "X99H8816",
+        "BIOS Message": "X99 BIOS Date: 10/12/2024 Ver: X99 K9S",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "N/A",
+        "TPM 2.0": "Supported",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "qiyida", "k9s", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "qiyida-x99-k9s.mi8.s3tt.505050",
+      "Name": "Stock Qiyida X99-K9S, Mi8, TU PEI -50/50/50mv",
+      "MotherboardIds": [ "qiyida-x99-k9s" ],
+      "FileName": "Bioses/qiyida-x99-k9s.mi.s3tt.505050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-x99-k9s.mi8.s3tt.505050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "X99H8816",
+        "BIOS Message": "X99 BIOS Date: 10/12/2024 Ver: X99 K9S",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "N/A",
+        "TPM 2.0": "Supported",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-50mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "qiyida", "k9s", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "qiyida-x99-k9s.mi8.s3tt.605050",
+      "Name": "Stock Qiyida X99-K9S, Mi8, TU PEI -60/50/50mv",
+      "MotherboardIds": [ "qiyida-x99-k9s" ],
+      "FileName": "Bioses/qiyida-x99-k9s.mi.s3tt.605050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-x99-k9s.mi8.s3tt.605050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "X99H8816",
+        "BIOS Message": "X99 BIOS Date: 10/12/2024 Ver: X99 K9S",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "N/A",
+        "TPM 2.0": "Supported",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-60mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "qiyida", "k9s", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "qiyida-x99-k9s.mi8.s3tt.705050",
+      "Name": "Stock Qiyida X99-K9S, Mi8, TU PEI -70/50/50mv",
+      "MotherboardIds": [ "qiyida-x99-k9s" ],
+      "FileName": "Bioses/qiyida-x99-k9s.mi.s3tt.705050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-x99-k9s.mi8.s3tt.705050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "X99H8816",
+        "BIOS Message": "X99 BIOS Date: 10/12/2024 Ver: X99 K9S",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "N/A",
+        "TPM 2.0": "Supported",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-70mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "qiyida", "k9s", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "qiyida-x99-k9s.mi8.s3tt.805050",
+      "Name": "Stock Qiyida X99-K9S, Mi8, TU PEI -80/50/50mv",
+      "MotherboardIds": [ "qiyida-x99-k9s" ],
+      "FileName": "Bioses/qiyida-x99-k9s.mi.s3tt.805050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-x99-k9s.mi8.s3tt.805050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "X99H8816",
+        "BIOS Message": "X99 BIOS Date: 10/12/2024 Ver: X99 K9S",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "N/A",
+        "TPM 2.0": "Supported",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-80mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "qiyida", "k9s", "stock", "c612", "x99", "ddr4" ]
+    },
+    {
+      "Id": "qiyida-x99-k9s.mi8.s3tt.905050",
+      "Name": "Stock Qiyida X99-K9S, Mi8, TU PEI -90/50/50mv",
+      "MotherboardIds": [ "qiyida-x99-k9s" ],
+      "FileName": "Bioses/qiyida-x99-k9s.mi.s3tt.905050.rom.zip",
+      "DownloadUrl": "https://github.com/miyconst/Mi899/raw/master/src/Mi899.Data/Bioses/qiyida-x99-k9s.mi8.s3tt.905050.rom.zip",
+      "Description": "",
+      "Properties": {
+        "BIOS Tag": "X99H8816",
+        "BIOS Message": "X99 BIOS Date: 10/12/2024 Ver: X99 K9S",
+        "BIOS Settings": "Default",
+        "RAM timings": "Available",
+        "Above 4G Decoding": "Available",
+        "Resizable Bar": "N/A",
+        "TPM 2.0": "Supported",
+        "Smart Fan": "Tuned for quieter operation",
+        "Power & Performance": "Tuned for max performance",
+        "Turbo Unlock Driver": "S3TurboHack V1.53",
+        "CPU Voltage": "-90mv",
+        "IMC Voltage": "-50mv",
+        "System Agent Voltage": "-50mv"
+      },
+      "Chipsets": [ "C612" ],
+      "Tags": [ "qiyida", "k9s", "stock", "c612", "x99", "ddr4" ]
     },
     {
       "Id": "qiyida-e5-a99",
