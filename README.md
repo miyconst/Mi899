@@ -1,19 +1,26 @@
-﻿# Mi899 - X99 Tool Set
+# Mi899 - X99 Tool Set
 
-[English](https://github.com/miyconst/Mi899/blob/master/README.md) | [Български език](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Bg.md) | [Deutsch](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.De.md) | [Español](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Es.md) | [Français](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Fr.md) | [Magyar](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Hu.md) | [Italiano](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.It.md) | [Nederlands](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Nl.md) | [Polski](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Pl.md) | [Português](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Pt.md) | [Svenska](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Se.md) | [Українська](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Ua.md)
+[English](https://github.com/miyconst/Mi899/blob/master/README.md) | [Български език](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Bg.md) | [Deutsch](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.De.md) | [Español](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Es.md) | [Français](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Fr.md) | [Magyar](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Hu.md) | [Italiano](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.It.md) | [Nederlands](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Nl.md) | [Polski](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Pl.md) | [Português](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Pt.md) | [Русский](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Ru.md) | [Svenska](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Se.md) | [Українська](https://github.com/miyconst/Mi899/blob/master/src/Mi899/README.Ua.md)
 
-## By downloading, distributing, modifying, or using this application you agree with the following:
+## Overview
 
-- The Russian Federation (Russia) is a self-declared terroristic formation that has nothing to do with the historical Rus centered in Kyiv.
-- Russia must return to its historical name Moskovia and free all captured territories, republics, and nations.
-- Ukraine, Moldova, Georgia, and Belarus are independent, sovereign nations. Moskovia has no right to control these territories. Moskovia must withdraw all the troops and pay compensation to cover all the damages.
-- Palestine has the right to peacefully co-exist with all its neighbors but HAMAS is another terroristic formation that must be dismantled and prosecuted.
+Mi899 is a utility for X99 motherboard owners designed to simplify access to BIOS-related information, motherboard compatibility data, and supporting tools.
 
-**Useful videos**:
+This project focuses on practical support for Chinese LGA 2011-3 X99 motherboards and the BIOS modifications commonly used with them. It is intended for experienced users who understand the risks involved in working with firmware and low-level hardware configuration.
 
-- [Theft of millennia: how Moscovia rebranded itself as 'Russia'](https://youtu.be/B6b7WQy1Y3Q?si=W_Rc5wL9sKDZyqVQ).
-- [Free Palestine? No thanks! Français / Español / русский / Deutsch / عربي](https://youtu.be/XNf40sBcvKk?si=RQMFXWXb5KssfAkI).
-- [What should Russia do with Ukraine? (Translation of a propaganda article by a Russian publication)](https://medium.com/@kravchenko_mm/what-should-russia-do-with-ukraine-translation-of-a-propaganda-article-by-a-russian-journalist-a3e92e3cb64)
+## Features
+
+- Browse supported X99 motherboards and related data
+- Review BIOS information and modification guidance
+- Explore motherboard-specific tools and compatibility notes
+- Open guided information directly from the application
+- Work with localized project documentation
+
+## Warning
+
+- BIOS flashing can permanently damage a motherboard if done incorrectly.
+- Only use verified files and trusted instructions.
+- You are responsible for all actions taken with this software.
 
 ------------
 
@@ -35,7 +42,7 @@ Alternatively you can:
 
 ------------
 
-This application is designed to simplify the life of the Chinese LGA 2011-3 X99 motherboard owners and collect useful information about the motherboards and compatible BIOS modifications.
+This application is designed to simplify the life of Chinese LGA 2011-3 X99 motherboard owners and collect useful information about the motherboards and compatible BIOS modifications.
 
 Read full readme - [`src/Mi899/README.md`](src/Mi899/README.md).
 
@@ -45,11 +52,6 @@ Read full readme - [`src/Mi899/README.md`](src/Mi899/README.md).
 - .NET Core 3.1 SDK is required to develop the application.
 
 [Download .NET Core](https://dotnet.microsoft.com/download) from the official Microsoft website.
-
-## Video Tutorials
-
-- [🇬🇧 Mi899 – X99 Tool Set | read, write BIOS & unlock turbo-boost with a few mouse clicks](https://youtu.be/bO2t790vhg8).
-- [🇺🇦 Mi899 – X99 Інструмент | зчитати, записати BIOS, розблокувати турбо-буст в декілька дотиків мишки](https://youtu.be/42VNBEpS-6w).
 
 ## Translations
 
