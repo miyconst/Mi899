@@ -876,6 +876,33 @@
       ]
     },
     {
+      "Id": "noname-x99-qd3",
+      "Name": "Noname X99-QD3",
+      "Brand": "Noname",
+      "Model": "X99-QD3",
+      "Version": "",
+      "Tags": [ "qd3", "ddr3", "x99", "c612" ],
+      "Description": "",
+      "ToolIds": [ "fpt-w64-9.1.10.1000", "afu-win-x64-5.12.03.2045" ],
+      "Images": [
+        {
+          "Name": "Top view",
+          "Url": "Images/Noname X99-QD3/TopView.jpg"
+        },
+        {
+          "Name": "IO panel",
+          "Url": "Images/Noname X99-QD3/IoPanel.jpg"
+        }
+      ],
+      "Links": [
+        {
+          "Author": "Miyconst",
+          "Name": "AliExpress",
+          "Url": "https://s.click.aliexpress.com/e/_c347SKCR"
+        }
+      ]
+    },
+    {
       "Id": "huananzhi-x99-cd4",
       "Name": "Huananzhi X99-CD4",
       "Brand": "Huananzhi",
